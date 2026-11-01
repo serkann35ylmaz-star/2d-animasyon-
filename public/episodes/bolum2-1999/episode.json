@@ -1,0 +1,281 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 2: Sessiz Plan",
+  "outfit": "(he comes from 2026, so modern streetwear) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, chunky red-and-white high-top sneakers",
+  "targetDuration": 30,
+  "series": {
+    "name": "Seri Adı",
+    "handle": "@kanaladi",
+    "avatar": "brand/avatar.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Istanbul, autumn 1999, an old working-class neighborhood",
+    "people": "all background people wear authentic late-1990s Turkish clothing: men with thick mustaches in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets; older men with flat caps and prayer beads; women in long skirts and cardigans, some with headscarves; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "GEÇERLİ NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "sarj",
+      "label": "ŞARJ",
+      "format": "percent",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "image",
+      "id": "sustun",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "palette": "soguk",
+      "tone": "dramatic",
+      "text": "Kimseye söylemedin.",
+      "prompt": "Karakter gece eski bir apartman penceresinden İstanbul'a bakıyor, sırtı yarı dönük",
+      "prompt_en": "the character standing at the window of an old 1999 Istanbul apartment at night, seen half from behind, looking out over rooftops with TV antennas, minarets and lit windows, lace curtain, a radiator under the window"
+    },
+    {
+      "type": "image",
+      "id": "metelik",
+      "image": "img/s02.png",
+      "motion": "panRight",
+      "palette": "nostalji",
+      "tone": "tense",
+      "text": "Cebinde tek kuruş yok.",
+      "prompt": "Karakter sokakta ceplerini ters çevirmiş, boş; arkada 1999 İstanbul sokağı",
+      "prompt_en": "the character on a busy 1999 Istanbul street in daylight pulling out his empty trouser pockets, a simit seller with a cart, a yellow taxi, shop awnings, pedestrians in 1990s clothes"
+    },
+    {
+      "type": "title",
+      "image": "img/s03.png",
+      "kicker": "BÖLÜM 2 · SESSİZ PLAN",
+      "lines": [
+        "GELECEĞİ",
+        "*BİLEN*",
+        "ADAM"
+      ],
+      "duration": 1.9,
+      "palette": "neon",
+      "prompt": "Gece Galata Köprüsü, balıkçılar, karakter arkadan küçük",
+      "prompt_en": "a wide night view of the Galata Bridge in 1999 with fishermen and their rods along the railing, old ferries on the water, the character small in the lower third seen from behind, upper half dark sky for the title"
+    },
+    {
+      "type": "image",
+      "id": "sarj",
+      "image": "img/s04.png",
+      "motion": "shake",
+      "tag": "PROBLEM 1",
+      "palette": "gerilim",
+      "tone": "tense",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 9
+      },
+      "text": "Telefonun ölmek üzere.",
+      "prompt": "Karakterin elindeki akıllı telefonda kırmızı yüzde 9 uyarısı, yüzü panik",
+      "prompt_en": "close-up of the character holding his modern smartphone showing a red low-battery warning, panicked face, sitting on a creaky bed in a small rented room with peeling wallpaper and a single bulb"
+    },
+    {
+      "type": "image",
+      "id": "defter",
+      "image": "img/s05.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "palette": "kahve",
+      "tone": "calm",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 3
+      },
+      "text": "Bildiğin her şeyi bir deftere yazıyorsun.",
+      "prompt": "Karakter masa lambası altında spiralli deftere hızlıca yazıyor, yanında telefon",
+      "prompt_en": "the character hunched over a wooden desk under a warm desk lamp, writing fast in a spiral notebook with a ballpoint pen, his smartphone beside him, a tulip tea glass, an old radio, crumpled paper"
+    },
+    {
+      "type": "info",
+      "id": "defter-liste",
+      "tone": "dramatic",
+      "text": "En önemlisi: Şubat 2001'de büyük kriz geliyor.",
+      "info": {
+        "layout": "list",
+        "kicker": "DEFTER · SAYFA 1",
+        "heading": "Kimsenin bilmediği tarihler",
+        "items": [
+          {
+            "text": "17 Mayıs 2000 · UEFA Kupası",
+            "state": "ok"
+          },
+          {
+            "text": "21 Şubat 2001 · *Kara Çarşamba*",
+            "state": "bad"
+          },
+          {
+            "text": "Dolar *uçacak*",
+            "state": "ok"
+          }
+        ]
+      }
+    },
+    {
+      "type": "info",
+      "id": "dolar",
+      "tone": "tense",
+      "text": "Dolar iki yılda neredeyse üç katına çıkacak.",
+      "info": {
+        "layout": "compare",
+        "kicker": "1 DOLAR KAÇ LİRA?",
+        "heading": "Bildiğin tek kesin yatırım",
+        "items": [
+          {
+            "label": "1999 sonu",
+            "value": 540000,
+            "format": "tl"
+          },
+          {
+            "label": "2001 sonu",
+            "value": 1440000,
+            "format": "tl",
+            "accent": true
+          }
+        ],
+        "caption": "Lirada kalan *kaybedecek*"
+      }
+    },
+    {
+      "type": "image",
+      "id": "karardi",
+      "image": "img/s08.png",
+      "motion": "push",
+      "palette": "soguk",
+      "tone": "whisper",
+      "transition": "flash",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 0
+      },
+      "text": "Ekran karardı. Geriye defter kaldı.",
+      "prompt": "Kararmış telefon ekranı, yanında dolu defter, karakter iki eliyle defteri tutuyor",
+      "prompt_en": "the character holding the filled spiral notebook against his chest with both hands, his smartphone lying dead with a black screen on the bed beside him, moonlight through the window of the small room"
+    },
+    {
+      "type": "image",
+      "id": "sok",
+      "image": "img/s09.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "dramatic",
+      "text": "Ama asıl şok başka.",
+      "prompt": "Karakter sokakta bir şey görüp donup kalıyor",
+      "prompt_en": "the character frozen mid-step on a 1999 Istanbul residential street at dusk, eyes wide in shock, staring at something off-screen, old apartment buildings with balconies and laundry lines, a parked Tofas car"
+    },
+    {
+      "type": "image",
+      "id": "aile",
+      "image": "img/s10.png",
+      "motion": "panLeft",
+      "palette": "gunbatimi",
+      "tone": "calm",
+      "text": "Bu şehirde ailen de yaşıyor.",
+      "prompt": "Karşıdaki balkonda 90'lar giyimli genç bir anne ve baba, çay içiyorlar",
+      "prompt_en": "view across the street to a balcony of an old apartment where a young couple in authentic 1999 clothes (the mother with a long skirt and cardigan, the father with a mustache and knitted vest) drink tea at sunset, potted geraniums, the character watching from the street below in the foreground"
+    },
+    {
+      "type": "image",
+      "id": "kucuksen",
+      "image": "img/s11.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "palette": "gunbatimi",
+      "tone": "whisper",
+      "text": "Ve yedi yaşındaki sen.",
+      "outfit": "(this shot also shows a 7-year-old child version of the same character: same round white head, black eyes and bare white hands, but small, wearing a 1990s striped sweater, shorts and plastic sandals) the adult main character keeps his mustard-yellow beanie, navy bomber jacket, black cargo pants and red sneakers",
+      "prompt": "Sokakta top oynayan, aynı yuvarlak kafalı 7 yaşında çocuk; büyük karakter arkada şaşkın bakıyor",
+      "prompt_en": "a 7-year-old child version of the main character (same round glossy white head, black oval eyes, bare white hands, but small, in a 1990s striped sweater, shorts and plastic sandals) kicking a plastic football in a 1999 neighborhood street, the adult main character in the background behind a parked car, staring at him speechless"
+    },
+    {
+      "type": "image",
+      "id": "bul",
+      "image": "img/s12.png",
+      "motion": "panRight",
+      "palette": "sabah",
+      "tone": "neutral",
+      "text": "Onları bulabilirsin.",
+      "prompt": "Karakter apartman kapısının zil paneline uzanıyor",
+      "prompt_en": "the character standing at the entrance of an old 1999 apartment building, his bare white finger reaching toward the brass doorbell panel, a wooden door with frosted glass, morning light"
+    },
+    {
+      "type": "image",
+      "id": "uzak",
+      "image": "img/s13.png",
+      "motion": "zoomOut",
+      "palette": "soguk",
+      "tone": "whisper",
+      "text": "Ya da uzak durabilirsin.",
+      "prompt": "Karakter yağmurda uzaklaşıyor, arkasında ışıkları yanan aile evi",
+      "prompt_en": "the character walking away in the rain at night, seen from behind, hands in his jacket pockets, in the background a warm lit window of the family apartment, wet cobblestones"
+    },
+    {
+      "type": "bait",
+      "image": "img/s14.png",
+      "words": [
+        "BUL",
+        "UZAK DUR"
+      ],
+      "duration": 2.4,
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "palette": "neon",
+      "tone": "question",
+      "text": "Sen olsan ne yapardın?",
+      "prompt": "Karakter yakın plan, eli kameraya, endişeli; arkada gece sokağı",
+      "prompt_en": "close-up of the character with one open bare white hand raised toward the camera, worried face, behind him a detailed 1999 Istanbul night street with a lit corner shop and a yellow taxi"
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "3. BÖLÜM",
+        "*YARIN*"
+      ],
+      "body": "Yorumlara **BUL** ya da **UZAK DUR** yaz.\nÇoğunluk 3. bölümü yazar.",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.0
+    }
+  ]
+}

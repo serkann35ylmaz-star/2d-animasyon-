@@ -1,0 +1,13 @@
+[dramatic] Kimseye söylemedin.
+[tense] Cebinde tek kuruş yok.
+[tense] Telefonun ölmek üzere.
+[calm] Bildiğin her şeyi bir deftere yazıyorsun.
+[dramatic] En önemlisi: Şubat 2001'de büyük kriz geliyor.
+[tense] Dolar iki yılda neredeyse üç katına çıkacak.
+[whispers] Ekran karardı. Geriye defter kaldı.
+[dramatic] Ama asıl şok başka.
+[calm] Bu şehirde ailen de yaşıyor.
+[whispers] Ve yedi yaşındaki sen.
+Onları bulabilirsin.
+[whispers] Ya da uzak durabilirsin.
+[curious] Sen olsan ne yapardın?
