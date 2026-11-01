@@ -59,6 +59,15 @@ def syllables(word: str) -> int:
     return max(1, len(VOWELS.findall(w)))
 
 
+def pause_after_word(word: str) -> float:
+    """Kelimeden sonraki doğal duraklama (sn) — src/lib/text.ts pauseAfter ile aynı"""
+    if re.search(r"[.!?…][\"')]*$", word):
+        return 0.38
+    if re.search(r"[,;:—–-][\"')]*$", word):
+        return 0.18
+    return 0.02
+
+
 def punct_strength(word: str) -> float:
     if re.search(r"[.!?…][\"')]*$", word):
         return 1.0

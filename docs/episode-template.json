@@ -1,5 +1,6 @@
 {
   "title": "Bölüm Başlığı",
+  "targetDuration": 45,
   "series": {"name": "Seri Adı", "handle": "@kanaladi", "avatar": "brand/avatar.png"},
   "fps": 30,
   "voice": "voice.mp3",

@@ -161,6 +161,8 @@ export interface Series {
 
 export interface Episode {
   title: string;
+  /** Hedef video süresi (sn): 30, 45 ya da 60. Gerçek süre ±%12 dışına çıkarsa uyarı verilir. */
+  targetDuration?: number;
   series: Series;
   fps?: number;
   /** Seslendirme dosyası (bölüm klasörüne göre). Yoksa sessiz önizleme yapılır. */

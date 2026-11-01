@@ -3,7 +3,7 @@
 Referans: 21 saniyelik dikey (9:16) TikTok bölümü. Yapay zeka ile üretilmiş durağan illüstrasyonlar,
 kamera hareketi, kelime kelime altyazı, Türkçe erkek anlatıcı, bilgi grafikleri ve "2. bölüm yarın" kapanışı.
 
-## 1. Kurgu iskeleti (≈20–30 sn, 10–13 çekim)
+## 1. Kurgu iskeleti (referans: 21 sn, 12 çekim)
 
 | Zaman | Bölüm | Örnek (referans) | Motor sahnesi |
 |---|---|---|---|
@@ -18,8 +18,29 @@ kamera hareketi, kelime kelime altyazı, Türkçe erkek anlatıcı, bilgi grafik
 | 19–20 sn | **Yorum tuzağı**: tek kelime | SAKLA / HARCA | `bait` |
 | 20–21 sn | **Kapanış kartı** | "2. BÖLÜM YARIN" + takip butonu | `end` |
 
+## 1b. Hedef süreler: 30 / 45 / 60 sn
+
+Referans 21 sn; bizim videolarımız **30, 45 ya da 60 sn**. Uzadıkça izleyiciyi tutmak için
+yapıya **ek problemler, ara kancalar ve zaman atlamaları** eklenir. Tempo değişmez: çekim başına 1,5–2,5 sn.
+
+| | **30 sn** | **45 sn** | **60 sn** |
+|---|---|---|---|
+| Kelime (anlatım) | ~50–70 | ~80–105 | ~110–140 |
+| Çekim sayısı | 12–16 | 16–24 | 22–32 |
+| Problem sayısı | 1 | 2 | 3 |
+| Ara kanca | — | ~%45'te ("Ama asıl sorun bu değil.") | ~%35 ve ~%65'te |
+| Zaman atlaması | durum panosunda ("3. GÜN") | durum panosunda ("5. GÜN") | ayrı sahne + pano ("7. GÜN") |
+| Son darbe (ters köşe) | — | isteğe bağlı | ~%80'de ("Ve tam o sırada kapı çalıyor.") |
+
+**60 sn akışı:** Kanca → Durum → Bükülme → Başlık kartı → Problem 1 (+birim, +ölçek grafiği, +sonuç) →
+Ara kanca → Problem 2 (+hesap, +sonuç) → Zaman atlaması → Problem 3 (+kıyas, +sonuç) → Son darbe →
+Durum panosu → İkilem A → İkilem B → Yorum tuzağı → Kapanış.
+
+`python3 scripts/ep.py new <slug> "<Başlık>" --sure 30|45|60` bu iskeleti hazır kurar.
+`ep.py check` süreyi hedefle karşılaştırır ("≈ 7 kelime çıkar" gibi) ve 4 sn'yi geçen çekimleri uyarır.
+
 Kurallar:
-- Her çekim **1,2–2,5 sn**. Bir cümle = bir çekim. Uzun cümleyi böl.
+- Her çekim **1,2–2,5 sn**, en fazla 4 sn. Bir cümle = bir çekim. Uzun cümleyi böl.
 - Anlatım hep **ikinci tekil şahıs** ("çaldın", "bıktın") — izleyici hikâyenin kahramanı.
 - Sayılar **gerçek ve hesaplanabilir** olmalı (inandırıcılık buradan gelir).
 - Bitiş her zaman **iki seçenekli** bir soru: yorum sayısını ve 2. bölüm beklentisini artırır.

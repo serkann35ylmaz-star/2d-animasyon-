@@ -136,5 +136,13 @@ export const buildTimeline = (episode: Episode, timings: Timings | null): Timeli
     warnings.push(`Zamanlamada kullanılmayan ${tw.length - cursor} kelime var — senaryo ile ses uyuşmuyor olabilir.`);
   }
 
+  const total = frame / fps;
+  const target = episode.targetDuration;
+  if (target && Math.abs(total - target) > target * 0.12) {
+    warnings.push(
+      `Süre ${total.toFixed(1)} sn, hedef ${target} sn. ${total > target ? 'Metni kısalt ya da sahne çıkar.' : 'Metni uzat ya da sahne ekle.'}`,
+    );
+  }
+
   return {fps, durationInFrames: Math.max(1, frame), scenes, estimated, warnings};
 };

@@ -16,7 +16,7 @@ Gereken: Node 18+, Python 3.10+, ffmpeg.
 ## Bir bölüm üretme
 
 ```bash
-python3 scripts/ep.py new bolum1 "Bölüm Başlığı"   # 1) iskelet: public/episodes/bolum1/episode.json
+python3 scripts/ep.py new bolum1 "Bölüm Başlığı" --sure 45   # 1) 30/45/60 sn iskelet
 #   episode.json'u düzenle: sahneler, metinler, HUD değerleri, bilgi grafikleri
 python3 scripts/ep.py prompts bolum1               # 2) görsel istemleri -> prompts.md
 #   görselleri üret, ardından her birini 1080x1920'ye oturt:
@@ -24,10 +24,13 @@ python3 scripts/ep.py fit bolum1 ~/indir/a.png img/s01.png
 python3 scripts/ep.py script bolum1                # 3) seslendirme metni -> voice-script.txt
 #   sesi üret (TTS) ve public/episodes/bolum1/voice.mp3 olarak koy
 python3 scripts/align.py public/episodes/bolum1    # 4) kelime kelime zamanlama -> timings.json
-python3 scripts/ep.py check bolum1                 # 5) eksik kontrolü
+python3 scripts/ep.py check bolum1                 # 5) eksik + süre/tempo kontrolü
 node scripts/render.mjs bolum1 --stills            # 6) storyboard -> out/bolum1-storyboard.jpg
 node scripts/render.mjs bolum1                     # 7) final -> out/bolum1.mp4
 ```
+Videolar **30, 45 ya da 60 sn** hedeflenir (`targetDuration`). Süre sesten otomatik hesaplanır;
+hedefin ±%12 dışına çıkarsa render ve `check` uyarır. Ayrıntı: `docs/STIL.md` → "Hedef süreler".
+
 Görseller ya da ses henüz yoksa da render alınır: yer tutucu görseller ve tahmini zamanlama kullanılır.
 Canlı önizleme: `npm run studio`.
 

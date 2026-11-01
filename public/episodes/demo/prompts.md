@@ -1,4 +1,4 @@
-# Görsel istemleri — Demo — Bir Gecede Ünlü
+# Görsel istemleri — Demo — Bir Gecede Ünlü (45 sn)
 
 Her görsel: **dikey 9:16 (1080x1920)**, yazısız, logosuz.
 
@@ -36,7 +36,31 @@ _Karakter kapı deliğinden bakıyor, kapının arkasında telefonlu kalabalık 
 Karakter kapı deliğinden bakıyor, kapının arkasında telefonlu kalabalık gölgeleri, the same recurring cartoon protagonist in every image: a young man with a perfectly round smooth white head, big simple glossy black eyes with white highlights, expressive eyebrows, no nose, a mustard-yellow knit beanie, an oversized dark navy bomber jacket, grey jeans, chunky red sneakers and white four-finger cartoon gloves, 2D digital illustration in the style of a modern adult animated series, thick clean black ink outlines, cel shading with soft gradients, detailed lived-in Turkish environment, cinematic moody lighting with strong neon magenta and hot pink accents and warm tungsten practical lights, subtle grit texture, high detail, vertical 9:16 composition, main subject in the middle third, keep the bottom 25% of the frame visually calm for subtitles, keep the top 12% calm for an overlay bar
 ```
 
-## 08 · `img/s08.png` (image)
+## 07 · `img/s07.png` (image)
+
+_Karakter telefona bakarken donup kalıyor, ekranın ışığı yüzünde, dramatik_
+
+```
+Karakter telefona bakarken donup kalıyor, ekranın ışığı yüzünde, dramatik, the same recurring cartoon protagonist in every image: a young man with a perfectly round smooth white head, big simple glossy black eyes with white highlights, expressive eyebrows, no nose, a mustard-yellow knit beanie, an oversized dark navy bomber jacket, grey jeans, chunky red sneakers and white four-finger cartoon gloves, 2D digital illustration in the style of a modern adult animated series, thick clean black ink outlines, cel shading with soft gradients, detailed lived-in Turkish environment, cinematic moody lighting with strong neon magenta and hot pink accents and warm tungsten practical lights, subtle grit texture, high detail, vertical 9:16 composition, main subject in the middle third, keep the bottom 25% of the frame visually calm for subtitles, keep the top 12% calm for an overlay bar
+```
+
+## 08 · `img/s08b.png` (image)
+
+_Telefon ekranında eski utanç verici video, karakter elleriyle yüzünü kapatıyor_
+
+```
+Telefon ekranında eski utanç verici video, karakter elleriyle yüzünü kapatıyor, the same recurring cartoon protagonist in every image: a young man with a perfectly round smooth white head, big simple glossy black eyes with white highlights, expressive eyebrows, no nose, a mustard-yellow knit beanie, an oversized dark navy bomber jacket, grey jeans, chunky red sneakers and white four-finger cartoon gloves, 2D digital illustration in the style of a modern adult animated series, thick clean black ink outlines, cel shading with soft gradients, detailed lived-in Turkish environment, cinematic moody lighting with strong neon magenta and hot pink accents and warm tungsten practical lights, subtle grit texture, high detail, vertical 9:16 composition, main subject in the middle third, keep the bottom 25% of the frame visually calm for subtitles, keep the top 12% calm for an overlay bar
+```
+
+## 10 · `img/s10.png` (image)
+
+_Karakterin etrafında havada uçuşan yorum baloncukları, kırmızı ve pembe ışık_
+
+```
+Karakterin etrafında havada uçuşan yorum baloncukları, kırmızı ve pembe ışık, the same recurring cartoon protagonist in every image: a young man with a perfectly round smooth white head, big simple glossy black eyes with white highlights, expressive eyebrows, no nose, a mustard-yellow knit beanie, an oversized dark navy bomber jacket, grey jeans, chunky red sneakers and white four-finger cartoon gloves, 2D digital illustration in the style of a modern adult animated series, thick clean black ink outlines, cel shading with soft gradients, detailed lived-in Turkish environment, cinematic moody lighting with strong neon magenta and hot pink accents and warm tungsten practical lights, subtle grit texture, high detail, vertical 9:16 composition, main subject in the middle third, keep the bottom 25% of the frame visually calm for subtitles, keep the top 12% calm for an overlay bar
+```
+
+## 12 · `img/s08.png` (image)
 
 _Karakter masada, önünde sözleşme ve kalem, karşısında takım elbiseli gölge_
 
@@ -44,7 +68,23 @@ _Karakter masada, önünde sözleşme ve kalem, karşısında takım elbiseli g�
 Karakter masada, önünde sözleşme ve kalem, karşısında takım elbiseli gölge, the same recurring cartoon protagonist in every image: a young man with a perfectly round smooth white head, big simple glossy black eyes with white highlights, expressive eyebrows, no nose, a mustard-yellow knit beanie, an oversized dark navy bomber jacket, grey jeans, chunky red sneakers and white four-finger cartoon gloves, 2D digital illustration in the style of a modern adult animated series, thick clean black ink outlines, cel shading with soft gradients, detailed lived-in Turkish environment, cinematic moody lighting with strong neon magenta and hot pink accents and warm tungsten practical lights, subtle grit texture, high detail, vertical 9:16 composition, main subject in the middle third, keep the bottom 25% of the frame visually calm for subtitles, keep the top 12% calm for an overlay bar
 ```
 
-## 09 · `img/s09.png` (bait)
+## 13 · `img/s12.png` (image)
+
+_Masada sözleşme yakın plan, imza yeri boş, kalem karakterin elinde titriyor_
+
+```
+Masada sözleşme yakın plan, imza yeri boş, kalem karakterin elinde titriyor, the same recurring cartoon protagonist in every image: a young man with a perfectly round smooth white head, big simple glossy black eyes with white highlights, expressive eyebrows, no nose, a mustard-yellow knit beanie, an oversized dark navy bomber jacket, grey jeans, chunky red sneakers and white four-finger cartoon gloves, 2D digital illustration in the style of a modern adult animated series, thick clean black ink outlines, cel shading with soft gradients, detailed lived-in Turkish environment, cinematic moody lighting with strong neon magenta and hot pink accents and warm tungsten practical lights, subtle grit texture, high detail, vertical 9:16 composition, main subject in the middle third, keep the bottom 25% of the frame visually calm for subtitles, keep the top 12% calm for an overlay bar
+```
+
+## 14 · `img/s13.png` (image)
+
+_Karakterin parmağı telefondaki 'sil' butonunun üstünde, yüzü gergin, neon ışık_
+
+```
+Karakterin parmağı telefondaki 'sil' butonunun üstünde, yüzü gergin, neon ışık, the same recurring cartoon protagonist in every image: a young man with a perfectly round smooth white head, big simple glossy black eyes with white highlights, expressive eyebrows, no nose, a mustard-yellow knit beanie, an oversized dark navy bomber jacket, grey jeans, chunky red sneakers and white four-finger cartoon gloves, 2D digital illustration in the style of a modern adult animated series, thick clean black ink outlines, cel shading with soft gradients, detailed lived-in Turkish environment, cinematic moody lighting with strong neon magenta and hot pink accents and warm tungsten practical lights, subtle grit texture, high detail, vertical 9:16 composition, main subject in the middle third, keep the bottom 25% of the frame visually calm for subtitles, keep the top 12% calm for an overlay bar
+```
+
+## 15 · `img/s09.png` (bait)
 
 _Karakter yakın plan, eli kameraya doğru 'dur' işareti, endişeli yüz, neon arka plan_
 
