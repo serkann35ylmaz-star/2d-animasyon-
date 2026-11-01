@@ -68,7 +68,7 @@ Altyazı 1–3 kelimelik parçalar halinde, ekranın ~%67'sinde (TikTok arayüz�
 
 ## 4. Ses
 
-- **ElevenLabs v4** (`eleven_v4`), ses: **Onur AGCNL** (`mCTNxePO8hqCg6KFnASN`) — izleyiciye "sen" diye hitap eden sıcak anlatıcı. Sakin ama hızlı (≈ 3 kelime/sn).
+- Ana ses: **SpeechGenAI — Nihat** (ölçülü, bilgili anlatıcı). Yedek: ElevenLabs v4 — Onur. Ayrıntı: `docs/SES.md`.
 - Altında düşük seviyede karanlık lo-fi müzik (konuşurken otomatik kısılır).
 - Efektler: başlık kartında darbe (`impact`), bilgi grafiğinde `whoosh` + para sayma (`cash`),
   HUD değişiminde `tick`, yorum tuzağında `pop`, kapanışta `ding`.

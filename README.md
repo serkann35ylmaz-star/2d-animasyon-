@@ -22,7 +22,7 @@ python3 scripts/ep.py prompts bolum1               # 2) görsel istemleri -> pro
 #   görselleri üret, ardından her birini 1080x1920'ye oturt:
 python3 scripts/ep.py image bolum1 <görsel-url> img/s01.png   # indir + 1080x1920'ye oturt
 python3 scripts/ep.py script bolum1                # 3) seslendirme metni -> voice-script.txt
-#   ElevenLabs v4 (eleven_v4) ile seslendir — varsayılan ses: Onur AGCNL (mCTNxePO8hqCg6KFnASN)
+#   Seslendir: ana ses SpeechGenAI Nihat, yedek ElevenLabs v4 Onur (docs/SES.md)
 python3 scripts/ep.py voice bolum1 <ses-url>       # 4) indir + voice.mp3 + kelime kelime zamanlama
 python3 scripts/ep.py check bolum1                 # 5) eksik + süre/tempo kontrolü
 node scripts/render.mjs bolum1 --stills            # 6) storyboard -> out/bolum1-storyboard.jpg
