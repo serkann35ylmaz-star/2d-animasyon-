@@ -8,7 +8,7 @@ Bir bölüm tek bir `episode.json` dosyasıyla tanımlanır. Stil analizi: [`doc
 
 ```bash
 npm install                     # Remotion + fontlar
-pip install numpy scipy         # ses üretimi ve hizalama
+pip install numpy scipy edge-tts gradio_client   # ses, hizalama, ücretsiz TTS ve görsel
 python3 scripts/make_audio.py   # efektleri ve müziği üretir (public/sfx, public/music)
 ```
 Gereken: Node 18+, Python 3.10+, ffmpeg.
@@ -20,10 +20,11 @@ python3 scripts/ep.py new bolum1 "Bölüm Başlığı" --sure 45   # 1) 30/45/60
 #   episode.json'u düzenle: sahneler, metinler, HUD değerleri, bilgi grafikleri
 python3 scripts/ep.py prompts bolum1               # 2) görsel istemleri -> prompts.md
 #   görselleri üret, ardından her birini 1080x1920'ye oturt:
-python3 scripts/ep.py image bolum1 <görsel-url> img/s01.png   # indir + 1080x1920'ye oturt
+python3 scripts/free_images.py bolum1             #    ÜCRETSİZ sahne görselleri (HF FLUX Kontext, karakter referanslı)
+python3 scripts/ep.py image bolum1 <görsel-url> img/s01.png   # ya da dışarıda üretilen görseli indir + 1080x1920'ye oturt
 python3 scripts/ep.py script bolum1                # 3) seslendirme metni -> voice-script.txt
-#   Seslendir: ana ses SpeechGenAI Nihat, yedek ElevenLabs v4 Onur (docs/SES.md)
-python3 scripts/ep.py voice bolum1 <ses-url>       # 4) indir + voice.mp3 + kelime kelime zamanlama
+python3 scripts/tts.py bolum1                      # 4) ÜCRETSİZ seslendirme (Edge — Ahmet) + kelime kelime zamanlama
+#   (ücretli ses kullanırsan: python3 scripts/ep.py voice bolum1 <ses-url>)
 python3 scripts/ep.py check bolum1                 # 5) eksik + süre/tempo kontrolü
 node scripts/render.mjs bolum1 --stills            # 6) storyboard -> out/bolum1-storyboard.jpg
 node scripts/render.mjs bolum1                     # 7) final -> out/bolum1.mp4

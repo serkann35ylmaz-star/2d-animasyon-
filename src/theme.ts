@@ -16,6 +16,16 @@ export const C = {
   hudEdge: 'rgba(255,255,255,0.10)',
 };
 
+/** Bölüm vurgu rengi (varsayılan referanstaki pembe). Episode render başında setAccent ile değişir. */
+export const setAccent = (hex?: string) => {
+  if (hex && /^#[0-9a-fA-F]{6}$/.test(hex)) C.pink = hex;
+};
+export const rgba = (hex: string, a: number) => {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
+};
+export const accentA = (a: number) => rgba(C.pink, a);
+
 export const W = 1080;
 export const H = 1920;
 

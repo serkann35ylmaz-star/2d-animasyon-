@@ -54,6 +54,26 @@ Kurallar:
 - **Işık**: karanlık, sinematik; **neon magenta/pembe** + sıcak tungsten.
 - **Kamera**: durağan görsele yavaş yakınlaşma/kaydırma; gerilimde hızlı "push" ya da hafif titreme.
 
+## 2b. Renk paletleri (sahneye göre)
+
+Referansın çizim dili korunur ama her sahne mor-siyah olmaz; sahnenin duygusuna göre palet seçilir
+(`"palette"` alanı — sahnede ya da bölümde). Palet hem görsel istemine ışık tarifi olarak girer hem de
+videoda görselin üstüne renk tonu olarak uygulanır.
+
+| Palet | Ne zaman |
+|---|---|
+| `neon` | gece, şehir, gizem (referans) |
+| `sabah` | uyanış, umut, yeni başlangıç |
+| `nostalji` | geçmiş, 90'lar, anı |
+| `gerilim` | sorun, panik, sıkışmışlık (yeşil floresan) |
+| `soguk` | yalnızlık, yağmur, gece düşünceleri (mavi) |
+| `gunbatimi` | dönüm noktası, veda |
+| `tehlike` | kriz, karar anı (kırmızı) |
+| `gunduz` | sıradan hayat, kalabalık |
+| `kahve` | ev, kahvehane, sıcak iç mekân (amber) |
+
+Arayüz vurgu rengi de bölüme göre değişebilir: `"accent": "#F5A524"` (varsayılan referans pembesi `#E8257F`).
+
 ## 3. Tipografi ve renk
 
 | Öğe | Font | Renk |
@@ -68,7 +88,7 @@ Altyazı 1–3 kelimelik parçalar halinde, ekranın ~%67'sinde (TikTok arayüz�
 
 ## 4. Ses
 
-- Ana ses: **SpeechGenAI — Nihat** (ölçülü, bilgili anlatıcı). Yedek: ElevenLabs v4 — Onur. Ayrıntı: `docs/SES.md`.
+- Ana ses: **ücretsiz Microsoft Edge — Ahmet** (sahne başına ton: dramatik, gergin, fısıltı…). Ücretli yedekler: SpeechGenAI Nihat, ElevenLabs Onur. Ayrıntı: `docs/SES.md`.
 - Altında düşük seviyede karanlık lo-fi müzik (konuşurken otomatik kısılır).
 - Efektler: başlık kartında darbe (`impact`), bilgi grafiğinde `whoosh` + para sayma (`cash`),
   HUD değişiminde `tick`, yorum tuzağında `pop`, kapanışta `ding`.

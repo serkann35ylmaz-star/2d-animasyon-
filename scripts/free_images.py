@@ -32,10 +32,12 @@ def build_prompt(scene: dict, ep: dict, style: dict) -> str:
         "thick black eyebrows, no nose, bare white four-finger hands (no gloves), thin black limbs. "
         f"Outfit: {outfit}. Keep the same 2D adult-animation illustration style with thick clean ink outlines and cel shading. "
     )
+    pal = scene.get("palette") or ep.get("palette") or "neon"
+    light = style["palettes"].get(pal, style["palettes"]["neon"])
     if scene["type"] == "title":
-        tail = " Moody night; leave the upper-middle area dark and empty for a large title. No text."
+        tail = f" Lighting and colors: {light}. Leave the upper-middle area dark and empty for a large title. No text, no letters, no signs with words."
     else:
-        tail = " Cinematic moody lighting with magenta neon accents and warm lamp light. No text, no letters."
+        tail = f" Lighting and colors: {light}. No text, no letters, no signs with words."
     return keep + "New scene: " + what + "." + tail
 
 

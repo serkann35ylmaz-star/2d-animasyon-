@@ -1,20 +1,40 @@
-# Seslendirme — ana ses ve yedekler
+# Seslendirme — ücretsiz ana ses ve yedekler
 
-Sıra: önce 1, olmazsa 2, o da olmazsa 3.
-
-| Sıra | Servis | Ses | Durum |
+| Sıra | Servis | Ses | Maliyet |
 |---|---|---|---|
-| 1 | **SpeechGenAI** (Türkçe yerli ses) — **ANA SES** | **Nihat** (`sg-tr-nihat`) — ölçülü, bilgili belgesel anlatıcısı | Ses dosyaları `media.speechgenai.com` adresinden iniyor; bu adres ortamın ağ ayarlarında izinli olmalı. 30 sn ≈ 400 (hızlı) / 600 (kaliteli) kredi. |
-| 2 | **ElevenLabs v4** (`eleven_v4`) | Onur AGCNL (`mCTNxePO8hqCg6KFnASN`) | Çalışıyor. 30 sn bölüm ≈ 340 kredi. |
-| 3 | **ElevenLabs — başka hesap** | Aynı ses (kütüphane sesi, her hesapta var) | Ayarlar → Bağlayıcılar'dan ElevenLabs bağlantısını diğer hesapla yeniden bağla. |
+| 1 | **Microsoft Edge sinir ağı sesi** (`edge-tts`) — **ANA SES** | **tr-TR-AhmetNeural** | **Ücretsiz, kredisiz, anahtarsız** |
+| 2 | SpeechGenAI | Nihat (`sg-tr-nihat`) | Ücretli kredi (30 sn ≈ 1.170 kredi) |
+| 3 | ElevenLabs v4 | Onur AGCNL (`mCTNxePO8hqCg6KFnASN`) | Ücretli kredi (30 sn ≈ 340 kredi) |
 
-Ses hangi servisten gelirse gelsin akış aynı:
+Neden Ahmet? Türkçe konuşabilen tüm ücretsiz erkek sesler aynı metinle okutulup Whisper ile geri yazdırıldı:
+Ahmet (yerli) her kelimeyi doğru okuyan tek ses oldu; çok dilli sesler "Uyandın", "Birinci" gibi kelimeleri bozdu.
+
+## Kullanım
 
 ```bash
-python3 scripts/ep.py voice <bölüm> <ses-url>   # indir → voice.mp3 → kelime kelime zamanlama
+python3 scripts/tts.py <bölüm>     # voice.mp3 + kelime kelime zamanlama (timings.json) + cümle zamanları
+python3 scripts/tts.py --list      # kullanılabilir Türkçe sesler
 ```
 
-Notlar:
-- SpeechGenAI etiketleri: `[whispering]`, `[short pause]`, `[long pause]`; okuma tarzı için `direction` alanı.
-- ElevenLabs v4 satır içi yönlendirme etiketlerini anlar: `[whispers] Ya da susabilirsin.`
-- Ücretsiz ElevenLabs kuyruğu bazen "meşgul" döner; kredi düşmez, birkaç dakika sonra yeniden denenir.
+`episode.json`:
+```json
+"tts": {"engine": "edge", "voice": "tr-TR-AhmetNeural", "rate": "+6%", "pitch": "-3Hz"}
+```
+
+## Hikâyeye göre ton
+
+Her sahneye `"tone"` verilir; her cümle o tonla ayrı seslendirilir:
+
+| Ton | Ne zaman | Etki |
+|---|---|---|
+| `dramatic` | kanca, başlık, koz | yavaş, kalın, uzun duraklama |
+| `tense` | problemler, gerilim | hızlı, hafif kalın |
+| `excited` | iyi haber, keşif | hızlı, ince |
+| `whisper` | sır, tehlike | yavaş, kısık |
+| `calm` | açıklama, kapanış | sakin |
+| `sad` | kayıp, pişmanlık | çok yavaş, kalın, kısık |
+| `question` | yorum sorusu | soru tonlaması |
+
+Tek bir cümlenin tonu da değiştirilebilir: `"text": "Herkese anlatabilirsin. [whisper] Ya da susabilirsin."`
+
+Ücretli seslere geçmek için: sesi üret → `python3 scripts/ep.py voice <bölüm> <url> [cümle-zamanları.json]`

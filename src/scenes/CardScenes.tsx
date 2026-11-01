@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Img, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {KenBurns} from '../components/KenBurns';
 import {Rich} from '../components/Rich';
-import {C, FONT, MONO} from '../theme';
+import {accentA, C, FONT, MONO} from '../theme';
 import type {Motion, Series} from '../types';
 
 const Dot: React.FC<{color?: string}> = ({color = '#9fc4ff'}) => (
@@ -23,7 +23,7 @@ const Dot: React.FC<{color?: string}> = ({color = '#9fc4ff'}) => (
 );
 
 /** Bölüm başlık kartı: "HER LİRA / İZ / BIRAKIR" */
-export const TitleCard: React.FC<{image: string | null; kicker?: string; lines: string[]; footer?: string}> = ({image, kicker, lines, footer}) => {
+export const TitleCard: React.FC<{image: string | null; kicker?: string; lines: string[]; footer?: string; palette?: string}> = ({image, kicker, lines, footer, palette}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const shake = interpolate(frame, [0, 10], [1, 0], {extrapolateRight: 'clamp'});
@@ -32,7 +32,7 @@ export const TitleCard: React.FC<{image: string | null; kicker?: string; lines: 
   const kickIn = spring({frame, fps, config: {damping: 20}});
   return (
     <AbsoluteFill>
-      <KenBurns src={image} motion="zoomOut" focus={[0.5, 0.6]} dim={0.48} />
+      <KenBurns src={image} motion="zoomOut" focus={[0.5, 0.6]} dim={0.48} palette={palette} />
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.55) 100%)'}} />
       <div
         style={{
@@ -98,7 +98,8 @@ export const BaitCard: React.FC<{
   words: string[];
   motion?: Motion;
   focus?: [number, number];
-}> = ({image, label = 'YORUMA TEK KELİME YAZ', words, motion = 'zoomIn', focus = [0.5, 0.4]}) => {
+  palette?: string;
+}> = ({image, label = 'YORUMA TEK KELİME YAZ', words, motion = 'zoomIn', focus = [0.5, 0.4], palette}) => {
   const frame = useCurrentFrame();
   const {fps, durationInFrames} = useVideoConfig();
   const start = Math.round(fps * 0.25);
@@ -110,7 +111,7 @@ export const BaitCard: React.FC<{
   const boxIn = spring({frame: frame - start, fps, config: {damping: 14}});
   return (
     <AbsoluteFill>
-      <KenBurns src={image} motion={motion} focus={focus} label="Yorum tuzağı: karakter yakın plan, eli kameraya" />
+      <KenBurns src={image} motion={motion} focus={focus} palette={palette} label="Yorum tuzağı: karakter yakın plan, eli kameraya" />
       <AbsoluteFill style={{background: 'linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.45) 100%)'}} />
       <div
         style={{
@@ -180,7 +181,7 @@ export const EndCard: React.FC<{
     .toUpperCase();
   return (
     <AbsoluteFill style={{backgroundColor: C.night}}>
-      <AbsoluteFill style={{background: 'radial-gradient(70% 40% at 50% 30%, rgba(232,37,127,0.16), transparent 70%)'}} />
+      <AbsoluteFill style={{background: `radial-gradient(70% 40% at 50% 30%, ${accentA(0.16)}, transparent 70%)`}} />
       <div style={{position: 'absolute', top: 300, left: 70, right: 70, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
         <div
           style={{
@@ -255,7 +256,7 @@ export const EndCard: React.FC<{
               fontSize: 40,
               padding: '20px 54px',
               borderRadius: 999,
-              boxShadow: '0 12px 40px rgba(232,37,127,0.45)',
+              boxShadow: `0 12px 40px ${accentA(0.45)}`,
               ...rise(a(20)),
               transform: `scale(${pulse})`,
             }}

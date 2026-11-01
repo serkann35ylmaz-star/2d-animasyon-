@@ -2,7 +2,8 @@ import React from 'react';
 import {AbsoluteFill, Easing, Img, interpolate, OffthreadVideo, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {Motion} from '../types';
 import {Placeholder} from './Placeholder';
-import {Grade, GRADE_FILTER} from './Grade';
+import {Grade} from './Grade';
+import {getPalette} from '../palettes';
 
 interface Props {
   src: string | null; // çözümlenmiş URL ya da null (eksik görsel)
@@ -12,12 +13,13 @@ interface Props {
   intensity?: number;
   label?: string; // görsel eksikse yer tutucuda gösterilecek açıklama
   dim?: number; // 0-1 karartma
+  palette?: string;
 }
 
 const ease = Easing.bezier(0.33, 0, 0.2, 1);
 
 /** Durağan illüstrasyona kamera hareketi (yakınlaşma / kaydırma / titreme) verir */
-export const KenBurns: React.FC<Props> = ({src, video, motion = 'zoomIn', focus = [0.5, 0.45], intensity = 1, label, dim = 0}) => {
+export const KenBurns: React.FC<Props> = ({src, video, motion = 'zoomIn', focus = [0.5, 0.45], intensity = 1, label, dim = 0, palette}) => {
   const frame = useCurrentFrame();
   const {durationInFrames, fps} = useVideoConfig();
   const p = interpolate(frame, [0, Math.max(1, durationInFrames - 1)], [0, 1], {
@@ -79,7 +81,7 @@ export const KenBurns: React.FC<Props> = ({src, video, motion = 'zoomIn', focus 
     objectFit: 'cover',
     transformOrigin: `${focus[0] * 100}% ${focus[1] * 100}%`,
     transform: `translate(${tx * 100}%, ${ty * 100}%) scale(${scale})`,
-    filter: src || video ? GRADE_FILTER : undefined,
+    filter: src || video ? getPalette(palette).filter : undefined,
   };
 
   return (
@@ -93,7 +95,7 @@ export const KenBurns: React.FC<Props> = ({src, video, motion = 'zoomIn', focus 
           <Placeholder label={label} />
         </div>
       )}
-      {src || video ? <Grade /> : null}
+      {src || video ? <Grade palette={palette} /> : null}
       {dim > 0 ? <AbsoluteFill style={{backgroundColor: `rgba(0,0,0,${dim})`}} /> : null}
     </AbsoluteFill>
   );

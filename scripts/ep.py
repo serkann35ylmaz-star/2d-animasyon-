@@ -204,6 +204,8 @@ def cmd_prompts(slug: str) -> None:
             outfit = s.get("outfit") or ep.get("outfit") or style["default_outfit"]
             parts.append(style["body"] + "; outfit in this image: " + outfit)
         parts.append(style["style"])
+        pal = s.get("palette") or ep.get("palette") or "neon"
+        parts.append("lighting and colors: " + style["palettes"].get(pal, style["palettes"]["neon"]))
         if s["type"] == "title":
             parts.append("lots of empty dark space in the upper-middle for a big title")
         else:

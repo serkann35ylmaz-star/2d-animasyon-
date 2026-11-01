@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {HudItemDef} from '../types';
 import {formatValue} from '../lib/text';
-import {C, FONT, MONO} from '../theme';
+import {accentA, C, FONT, MONO} from '../theme';
 
 interface Props {
   defs: HudItemDef[];
@@ -54,10 +54,10 @@ export const Hud: React.FC<Props> = ({defs, values, prev, tag, enter}) => {
               style={{
                 flex: 1,
                 background: C.hudBg,
-                border: `2px solid ${glow > 0.01 ? `rgba(232,37,127,${0.25 + glow * 0.75})` : C.hudEdge}`,
+                border: `2px solid ${glow > 0.01 ? accentA(0.25 + glow * 0.75) : C.hudEdge}`,
                 borderRadius: 16,
                 padding: '12px 18px 14px',
-                boxShadow: glow > 0.01 ? `0 0 ${28 * glow}px rgba(232,37,127,${0.6 * glow})` : '0 6px 24px rgba(0,0,0,0.35)',
+                boxShadow: glow > 0.01 ? `0 0 ${28 * glow}px ${accentA(0.6 * glow)}` : '0 6px 24px rgba(0,0,0,0.35)',
                 transform: `scale(${1 + glow * 0.04}) translateY(${(1 - itemIn) * -20}px)`,
               }}
             >

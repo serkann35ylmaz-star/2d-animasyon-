@@ -55,6 +55,10 @@ interface SceneBase {
   sfx?: SfxCue[];
   /** Sahne girişi: kesme (varsayılan), flaş, ya da hızlı kaydırma */
   transition?: 'cut' | 'flash' | 'whip';
+  /** Renk paleti: neon, sabah, nostalji, gerilim, soguk, gunbatimi, tehlike, gunduz, kahve */
+  palette?: string;
+  /** Seslendirme tonu: calm, dramatic, whisper, excited, tense, sad, question */
+  tone?: string;
   /** Görsel üretimi için istem (render'da kullanılmaz, scripts/prompts ile dışa aktarılır) */
   prompt?: string;
 }
@@ -161,6 +165,12 @@ export interface Series {
 
 export interface Episode {
   title: string;
+  /** Bölümün varsayılan renk paleti */
+  palette?: string;
+  /** Arayüz vurgu rengi (#RRGGBB) — varsayılan referanstaki pembe */
+  accent?: string;
+  /** Ücretsiz seslendirme ayarları (scripts/tts.py) */
+  tts?: {engine?: string; voice?: string; rate?: string; pitch?: string};
   /** Bu hikâyedeki kıyafet (İngilizce, görsel istemleri için). Karakterin kafası/yüzü/elleri sabittir. */
   outfit?: string;
   /** Hedef video süresi (sn): 30, 45 ya da 60. Gerçek süre ±%12 dışına çıkarsa uyarı verilir. */

@@ -7,7 +7,7 @@ import {stripMarkup} from './lib/text';
 import {BaitCard, EndCard, TitleCard} from './scenes/CardScenes';
 import {InfoScene} from './scenes/InfoScene';
 import {KenBurns} from './components/KenBurns';
-import {loadFonts} from './theme';
+import {loadFonts, setAccent} from './theme';
 import type {Episode as EpisodeT} from './types';
 
 loadFonts();
@@ -41,6 +41,7 @@ const SceneView: React.FC<{bs: BuiltScene; ep: EpisodeT; assets: Record<string, 
   const {fps} = useVideoConfig();
   const frame = useCurrentFrame();
   const a = (p?: string) => (p ? assets[p] ?? null : null);
+  const palette = scene.palette ?? ep.palette;
   const label = scene.prompt ? `${scene.prompt}` : scene.text ? stripMarkup(scene.text) : scene.id ?? `Sahne ${bs.index + 1}`;
 
   let visual: React.ReactNode = null;
@@ -54,17 +55,18 @@ const SceneView: React.FC<{bs: BuiltScene; ep: EpisodeT; assets: Record<string, 
           focus={scene.focus}
           intensity={scene.intensity}
           label={label}
+          palette={palette}
         />
       );
       break;
     case 'title':
-      visual = <TitleCard image={a(scene.image)} kicker={scene.kicker} lines={scene.lines} footer={scene.footer} />;
+      visual = <TitleCard image={a(scene.image)} kicker={scene.kicker} lines={scene.lines} footer={scene.footer} palette={palette} />;
       break;
     case 'info':
       visual = <InfoScene info={scene.info} />;
       break;
     case 'bait':
-      visual = <BaitCard image={a(scene.image)} label={scene.prompt_label} words={scene.words} motion={scene.motion} focus={scene.focus} />;
+      visual = <BaitCard image={a(scene.image)} label={scene.prompt_label} words={scene.words} motion={scene.motion} focus={scene.focus} palette={palette} />;
       break;
     case 'end':
       visual = (
@@ -149,6 +151,7 @@ export const Episode: React.FC<EpisodeProps> = ({episode, timeline, assets = {}}
     });
   }, [timeline, durationInFrames]);
 
+  setAccent(episode?.accent);
   if (!episode || !timeline) {
     return <AbsoluteFill style={{backgroundColor: '#111'}} />;
   }

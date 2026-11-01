@@ -1,12 +1,12 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
-import {C, MONO} from '../theme';
+import {accentA, C, MONO} from '../theme';
 
 /** Görsel henüz üretilmediyse: storyboard önizlemesi için koyu, neon tonlu yer tutucu */
 export const Placeholder: React.FC<{label?: string}> = ({label}) => (
   <AbsoluteFill
     style={{
-      background: `radial-gradient(120% 70% at 70% 15%, rgba(232,37,127,0.55) 0%, rgba(80,20,60,0.5) 35%, #120e14 75%),
+      background: `radial-gradient(120% 70% at 70% 15%, ${accentA(0.55)} 0%, rgba(80,20,60,0.5) 35%, #120e14 75%),
         repeating-linear-gradient(0deg, rgba(255,255,255,0.03) 0 2px, transparent 2px 46px)`,
       justifyContent: 'center',
       alignItems: 'center',
