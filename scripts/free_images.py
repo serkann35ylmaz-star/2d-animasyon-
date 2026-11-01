@@ -49,7 +49,7 @@ def build_prompt(scene: dict, ep: dict, style: dict) -> str:
     if scene["type"] == "title":
         tail = f" Lighting and colors: {light}. Leave the upper-middle area dark and empty for a large title. No text, no letters, no signs with words."
     else:
-        tail = f" Lighting and colors: {light}. No text, no letters, no signs with words."
+        tail = f" Lighting and colors: {light}. The background must be a fully detailed, recognizable environment from that place and period, never an empty black or plain background. No text, no letters, no signs with words."
     return keep + "New scene: " + what + ". " + era_text(ep) + tail
 
 
