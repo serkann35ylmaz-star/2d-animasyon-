@@ -174,16 +174,48 @@ def cmd_new(slug: str, title: str, sure: int = 45) -> None:
     print("  Not: yer tutucu metinler gerçek senaryoyla değiştirilince süre yeniden hesaplanır.")
 
 
+# Sahne tonu -> ElevenLabs v4 satır içi yönlendirme etiketi
+V4_TAGS = {
+    "dramatic": "[dramatic]",
+    "tense": "[tense]",
+    "excited": "[excited]",
+    "whisper": "[whispers]",
+    "calm": "[calm]",
+    "sad": "[sad]",
+    "question": "[curious]",
+}
+
+
 def cmd_script(slug: str) -> None:
     ep = load(slug)
     lines = [s["text"] for s in ep["scenes"] if s.get("text")]
     text = "\n".join(lines)
     out = os.path.join(ep_dir(slug), "voice-script.txt")
     open(out, "w", encoding="utf-8").write(text + "\n")
+    # ElevenLabs v4 için etiketli metin (etiketler okunmaz, sadece tonu yönlendirir)
+    tagged = []
+    for s in ep["scenes"]:
+        if not s.get("text"):
+            continue
+        tag = V4_TAGS.get(s.get("tone", ""), "")
+        tagged.append((tag + " " if tag else "") + s["text"])
+    open(os.path.join(ep_dir(slug), "voice-script-v4.txt"), "w", encoding="utf-8").write("\n".join(tagged) + "\n")
     words = sum(len(l.split()) for l in lines)
     print(text)
     print(f"\n✓ {os.path.relpath(out, ROOT)} · {len(text)} karakter · {words} kelime")
     duration_report(slug, ep)
+
+
+def era_text(ep: dict) -> str:
+    era = ep.get("era")
+    if not era:
+        return ""
+    parts = [f"Period setting: {era['setting']}." if era.get("setting") else "",
+             f"People: {era['people']}." if era.get("people") else "",
+             f"Period details: {era['details']}." if era.get("details") else "",
+             f"Note: {era['exception']}." if era.get("exception") else "",
+             "Everything else must be accurate to that period; nothing anachronistic."]
+    return " ".join(x for x in parts if x)
 
 
 def cmd_prompts(slug: str) -> None:
@@ -206,6 +238,8 @@ def cmd_prompts(slug: str) -> None:
         parts.append(style["style"])
         pal = s.get("palette") or ep.get("palette") or "neon"
         parts.append("lighting and colors: " + style["palettes"].get(pal, style["palettes"]["neon"]))
+        if era_text(ep):
+            parts.append(era_text(ep))
         if s["type"] == "title":
             parts.append("lots of empty dark space in the upper-middle for a big title")
         else:

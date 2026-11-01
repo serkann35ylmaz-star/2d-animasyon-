@@ -54,6 +54,16 @@ Kurallar:
 - **Işık**: karanlık, sinematik; **neon magenta/pembe** + sıcak tungsten.
 - **Kamera**: durağan görsele yavaş yakınlaşma/kaydırma; gerilimde hızlı "push" ya da hafif titreme.
 
+## 2a. Dönem doğruluğu
+
+Her bölümde `"era"` alanı vardır ve her görsel istemine otomatik eklenir:
+- `setting`: yer ve zaman (ör. "Istanbul, autumn 1999")
+- `people`: figüranların o döneme ait kıyafet, saç, aksesuarları
+- `details`: arabalar, telefonlar, televizyonlar, dükkânlar, eşyalar
+- `exception`: dönem dışı kalması gereken tek şey (ör. zamanda yolculuk yapan ana karakterin kıyafeti)
+
+Ana karakterin kimliği (kafa, yüz, eller) hiç değişmez; kıyafeti hikâyeye ve döneme göre `"outfit"` ile değişir.
+
 ## 2b. Renk paletleri (sahneye göre)
 
 Referansın çizim dili korunur ama her sahne mor-siyah olmaz; sahnenin duygusuna göre palet seçilir
@@ -88,7 +98,7 @@ Altyazı 1–3 kelimelik parçalar halinde, ekranın ~%67'sinde (TikTok arayüz�
 
 ## 4. Ses
 
-- Ana ses: **ücretsiz Microsoft Edge — Ahmet** (sahne başına ton: dramatik, gergin, fısıltı…). Ücretli yedekler: SpeechGenAI Nihat, ElevenLabs Onur. Ayrıntı: `docs/SES.md`.
+- Ana ses: **ElevenLabs v4 — Onur**; sahne tonları v4 etiketleriyle (`[dramatic]`, `[whispers]`…). Ayrıntı: `docs/SES.md`.
 - Altında düşük seviyede karanlık lo-fi müzik (konuşurken otomatik kısılır).
 - Efektler: başlık kartında darbe (`impact`), bilgi grafiğinde `whoosh` + para sayma (`cash`),
   HUD değişiminde `tick`, yorum tuzağında `pop`, kapanışta `ding`.

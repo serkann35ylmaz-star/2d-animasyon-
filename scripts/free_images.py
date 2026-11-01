@@ -24,6 +24,18 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SPACE = "black-forest-labs/FLUX.1-Kontext-Dev"
 
 
+def era_text(ep: dict) -> str:
+    era = ep.get("era")
+    if not era:
+        return ""
+    parts = [f"Period setting: {era['setting']}." if era.get("setting") else "",
+             f"People: {era['people']}." if era.get("people") else "",
+             f"Period details: {era['details']}." if era.get("details") else "",
+             f"Note: {era['exception']}." if era.get("exception") else "",
+             "Everything else must be accurate to that period; nothing anachronistic."]
+    return " ".join(x for x in parts if x)
+
+
 def build_prompt(scene: dict, ep: dict, style: dict) -> str:
     outfit = scene.get("outfit") or ep.get("outfit") or style["default_outfit"]
     what = scene.get("prompt_en") or scene.get("prompt")
@@ -38,7 +50,7 @@ def build_prompt(scene: dict, ep: dict, style: dict) -> str:
         tail = f" Lighting and colors: {light}. Leave the upper-middle area dark and empty for a large title. No text, no letters, no signs with words."
     else:
         tail = f" Lighting and colors: {light}. No text, no letters, no signs with words."
-    return keep + "New scene: " + what + "." + tail
+    return keep + "New scene: " + what + ". " + era_text(ep) + tail
 
 
 def main() -> None:

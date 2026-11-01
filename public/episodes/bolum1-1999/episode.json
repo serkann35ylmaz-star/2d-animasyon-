@@ -236,11 +236,17 @@
     }
   ],
   "tts": {
-    "engine": "edge",
-    "voice": "tr-TR-AhmetNeural",
-    "rate": "+6%",
-    "pitch": "-3Hz"
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
   },
   "palette": "nostalji",
-  "accent": "#F5A524"
+  "accent": "#F5A524",
+  "era": {
+    "setting": "Istanbul, autumn 1999, an old working-class neighborhood",
+    "people": "all background people wear authentic late-1990s Turkish clothing: men with thick mustaches in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets; older men with flat caps and prayer beads; women in long skirts and cardigans, some with headscarves; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  }
 }

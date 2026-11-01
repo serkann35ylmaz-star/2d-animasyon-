@@ -1,0 +1,11 @@
+[dramatic] Uyandın. Takvim 1999'u gösteriyor.
+[tense] Cebinde 2026'dan kalma bir telefon var.
+[dramatic] Birinci problem. Paran burada geçmiyor.
+Bir dolar, yarım milyon lira.
+[tense] 200 liralıkların burada sahte para.
+[tense] Telefonun yüzde dokuz şarjda.
+[dramatic] Ama bir bilgin var.
+[excited] Galatasaray, UEFA Kupası'nı alacak.
+Herkese anlatabilirsin.
+[whispers] Ya da susabilirsin.
+Sen olsan ne yapardın?
