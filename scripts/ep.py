@@ -200,7 +200,9 @@ def cmd_prompts(slug: str) -> None:
         has_char = s.get("character", True)
         parts = [s["prompt_en"] if s.get("prompt_en") else s["prompt"]]
         if has_char:
-            parts.append(style["character"])
+            # Kimlik (kafa, yüz, eller) sabit; kıyafet bölüme göre: sahne > bölüm > varsayılan
+            outfit = s.get("outfit") or ep.get("outfit") or style["default_outfit"]
+            parts.append(style["body"] + "; outfit in this image: " + outfit)
         parts.append(style["style"])
         if s["type"] == "title":
             parts.append("lots of empty dark space in the upper-middle for a big title")

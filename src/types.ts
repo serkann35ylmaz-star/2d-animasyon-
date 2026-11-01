@@ -161,6 +161,8 @@ export interface Series {
 
 export interface Episode {
   title: string;
+  /** Bu hikâyedeki kıyafet (İngilizce, görsel istemleri için). Karakterin kafası/yüzü/elleri sabittir. */
+  outfit?: string;
   /** Hedef video süresi (sn): 30, 45 ya da 60. Gerçek süre ±%12 dışına çıkarsa uyarı verilir. */
   targetDuration?: number;
   series: Series;

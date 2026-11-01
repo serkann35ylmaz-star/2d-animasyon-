@@ -2,6 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Easing, Img, interpolate, OffthreadVideo, useCurrentFrame, useVideoConfig} from 'remotion';
 import type {Motion} from '../types';
 import {Placeholder} from './Placeholder';
+import {Grade, GRADE_FILTER} from './Grade';
 
 interface Props {
   src: string | null; // çözümlenmiş URL ya da null (eksik görsel)
@@ -78,6 +79,7 @@ export const KenBurns: React.FC<Props> = ({src, video, motion = 'zoomIn', focus 
     objectFit: 'cover',
     transformOrigin: `${focus[0] * 100}% ${focus[1] * 100}%`,
     transform: `translate(${tx * 100}%, ${ty * 100}%) scale(${scale})`,
+    filter: src || video ? GRADE_FILTER : undefined,
   };
 
   return (
@@ -91,6 +93,7 @@ export const KenBurns: React.FC<Props> = ({src, video, motion = 'zoomIn', focus 
           <Placeholder label={label} />
         </div>
       )}
+      {src || video ? <Grade /> : null}
       {dim > 0 ? <AbsoluteFill style={{backgroundColor: `rgba(0,0,0,${dim})`}} /> : null}
     </AbsoluteFill>
   );
