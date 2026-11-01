@@ -1,0 +1,47 @@
+{
+  "title": "Demo — Bir Gecede Ünlü",
+  "series": {"name": "Seri Adı", "handle": "@kanaladi", "avatar": "brand/avatar.png"},
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "hud": [
+    {"key": "takipci", "label": "TAKİPÇİ", "format": "number"},
+    {"key": "kasa", "label": "KASA", "format": "money"},
+    {"key": "stres", "label": "STRES", "format": "percent", "accent": true}
+  ],
+  "scenes": [
+    {"type": "image", "id": "uyanis", "image": "img/s01.png", "motion": "zoomIn", "focus": [0.5, 0.4],
+     "text": "Bir sabah uyandın. Telefonun durmadan titriyor.",
+     "prompt": "Karakter otel yatağında uyanıyor, elinde parlayan telefon, karanlık oda, pembe neon pencere ışığı"},
+    {"type": "image", "id": "sok", "image": "img/s02.png", "motion": "push", "focus": [0.5, 0.35],
+     "text": "Bir gecede üç milyon takipçin olmuş.",
+     "prompt": "Karakterin şaşkın yüzü yakın plan, telefon ekranının ışığı yüzüne vuruyor"},
+    {"type": "title", "image": "img/s03.png", "kicker": "BÖLÜM 1 · İLK GÜN", "lines": ["BİR GECEDE", "*ÜNLÜ*", "OLDUN"], "duration": 1.8,
+     "prompt": "Gece, yağmurlu sokak, karakter arkası dönük yürüyor, neon tabelalar"},
+    {"type": "image", "id": "problem1", "image": "img/s04.png", "motion": "shake", "tag": "PROBLEM 1",
+     "hud": {"takipci": 3000000, "kasa": 0, "stres": 10},
+     "text": "Birinci problem. Kapının önünde kalabalık var.",
+     "prompt": "Karakter kapı deliğinden bakıyor, kapının arkasında telefonlu kalabalık gölgeleri"},
+    {"type": "info", "id": "mesaj", "text": "Saatte kırk sekiz bin mesaj geliyor.",
+     "info": {"layout": "big", "kicker": "PROBLEM 1 · BİLDİRİM", "heading": "Saatte gelen mesaj", "value": 48000, "format": "number", "caption": "Hepsini okumak = *13 saat*"}},
+    {"type": "info", "id": "grid", "text": "Her kare otuz bin kişi. Hepsi seni tanıyor.",
+     "info": {"layout": "grid", "kicker": "PROBLEM 1 · ÖLÇEK", "heading": "Her kare = *30.000* kişi", "cols": 10, "rows": 10, "unitShape": "box",
+              "caption": "{n} kişi seni tanıyor", "count": {"to": 3000000}, "result": "*100* stadyum"}},
+    {"type": "info", "id": "durum", "text": "Üçüncü gün. Kasada hâlâ sıfır lira var.",
+     "info": {"layout": "stats", "kicker": "3. GÜN · DURUM", "rows": [
+        {"label": "TAKİPÇİ", "value": 3400000, "format": "number"},
+        {"label": "KASA", "value": 0, "format": "money"},
+        {"label": "STRES", "value": 72, "format": "percent", "accent": true, "bar": true}],
+      "footer": "Gelen teklif: **12**"}},
+    {"type": "image", "id": "teklif", "image": "img/s08.png", "motion": "panLeft", "transition": "whip",
+     "hud": {"takipci": 3400000, "kasa": 0, "stres": 72},
+     "text": "Bir marka kapını çalıyor. İlk teklif masada.",
+     "prompt": "Karakter masada, önünde sözleşme ve kalem, karşısında takım elbiseli gölge"},
+    {"type": "bait", "image": "img/s09.png", "words": ["İMZALA", "REDDET"], "duration": 2.4, "focus": [0.5, 0.35],
+     "text": "Sen olsan ne yapardın?",
+     "prompt": "Karakter yakın plan, eli kameraya doğru 'dur' işareti, endişeli yüz, neon arka plan"},
+    {"type": "end", "kicker": "BİR GECEDE ÜNLÜ", "lines": ["2. BÖLÜM", "*YARIN*"],
+     "body": "Yorumlara **İMZALA** ya da **REDDET** yaz.\nÇoğunluk 2. bölümü yazar.", "cta": "TAKİP ET · KAÇIRMA", "duration": 2.6}
+  ]
+}

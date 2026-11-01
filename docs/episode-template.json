@@ -1,0 +1,23 @@
+{
+  "title": "Bölüm Başlığı",
+  "series": {"name": "Seri Adı", "handle": "@kanaladi", "avatar": "brand/avatar.png"},
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "hud": [
+    {"key": "a", "label": "DEĞER 1", "format": "money"},
+    {"key": "b", "label": "DEĞER 2", "format": "number"},
+    {"key": "risk", "label": "RİSK", "format": "percent", "accent": true}
+  ],
+  "scenes": [
+    {"type": "image", "image": "img/s01.png", "motion": "zoomIn", "text": "Kanca cümlesi: seni anında içine çeken durum.", "prompt": "Sahne açıklaması"},
+    {"type": "image", "image": "img/s02.png", "motion": "push", "text": "Bükülme: asıl zor kısım mı? Şimdi başlıyor.", "prompt": "Karakter yakın plan, endişeli"},
+    {"type": "title", "image": "img/s03.png", "kicker": "BÖLÜM 1 · ALT BAŞLIK", "lines": ["SERİ", "*SLOGANI*", "BURAYA"], "duration": 1.6, "prompt": "Atmosferik geniş plan"},
+    {"type": "image", "image": "img/s04.png", "motion": "shake", "tag": "PROBLEM 1", "hud": {"a": 0, "b": 0, "risk": 0}, "text": "Birinci problem. ...", "prompt": "..."},
+    {"type": "info", "text": "Gerçek hesap: ...", "info": {"layout": "big", "kicker": "PROBLEM 1 · HESAP", "heading": "Başlık", "value": 1000, "format": "number", "caption": "Sonuç = *vurgu*"}},
+    {"type": "image", "image": "img/s06.png", "motion": "panLeft", "text": "İkilem: Bunu yapabilirsin. Ya da şunu.", "prompt": "..."},
+    {"type": "bait", "image": "img/s07.png", "words": ["SEÇENEK1", "SEÇENEK2"], "duration": 2.4, "prompt": "Karakter yakın plan, eli kameraya"},
+    {"type": "end", "kicker": "SERİ SLOGANI", "lines": ["2. BÖLÜM", "*YARIN*"], "body": "Yorumlara **SEÇENEK1** ya da **SEÇENEK2** yaz.\nÇoğunluk 2. bölümü yazar.", "cta": "TAKİP ET · KAÇIRMA", "duration": 2.6}
+  ]
+}
