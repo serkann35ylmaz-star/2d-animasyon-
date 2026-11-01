@@ -77,7 +77,15 @@ def main() -> None:
         print("✓ Eksik görsel yok.")
         return
 
-    client = Client(SPACE, token=os.environ.get("HF_TOKEN"), verbose=False)
+    token = os.environ.get("HF_TOKEN")
+    if not token:
+        try:
+            from huggingface_hub import get_token  # ~/.cache/huggingface/token
+            token = get_token()
+        except Exception:
+            token = None
+    print("• Hugging Face hesabı ile (daha yüksek ücretsiz kota)" if token else "• Hesapsız (düşük kota)")
+    client = Client(SPACE, token=token, verbose=False)
     print(f"• {len(todo)} görsel üretilecek (ücretsiz, {SPACE}) · referans: {os.path.relpath(ref_path, ROOT)}")
     done = 0
     for s in todo:
