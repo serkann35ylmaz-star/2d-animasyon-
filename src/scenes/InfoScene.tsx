@@ -166,6 +166,9 @@ const Big: React.FC<{d: InfoBig}> = ({d}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const p = interpolate(frame, [6, 6 + fps * 1.1], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  // Uzun sayılar 860 px genişliğe sığsın
+  const len = `${d.prefix ?? ''}${formatValue(d.value, d.format ?? 'number')}${d.suffix ?? ''}`.length;
+  const bigSize = Math.min(170, Math.floor(1450 / Math.max(1, len)));
   return (
     <>
       <Kicker text={d.kicker} />
@@ -173,7 +176,7 @@ const Big: React.FC<{d: InfoBig}> = ({d}) => {
       <Heading text={d.heading} />
       <div style={{height: 40}} />
       <Appear delay={4}>
-        <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 170, letterSpacing: '-0.04em', color: C.pink, fontVariantNumeric: 'tabular-nums', textAlign: 'center', lineHeight: 1}}>
+        <div style={{fontFamily: FONT, fontWeight: 900, fontSize: bigSize, letterSpacing: '-0.04em', color: C.pink, fontVariantNumeric: 'tabular-nums', textAlign: 'center', lineHeight: 1, whiteSpace: 'nowrap'}}>
           {d.prefix}
           {formatValue(d.value * p, d.format ?? 'number')}
           {d.suffix}

@@ -1,6 +1,6 @@
 // Bölüm (episode) dosyasının şeması: public/episodes/<slug>/episode.json
 
-export type ValueFormat = 'money' | 'percent' | 'number' | 'kg' | 'raw';
+export type ValueFormat = 'money' | 'tl' | 'percent' | 'number' | 'kg' | 'raw';
 
 export type Motion =
   | 'zoomIn'

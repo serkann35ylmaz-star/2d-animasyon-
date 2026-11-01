@@ -14,6 +14,8 @@ export const formatValue = (v: number, format: ValueFormat = 'number'): string =
   switch (format) {
     case 'money':
       return `${groupThousands(v)} ₺`;
+    case 'tl': // eski Türk lirası (₺ simgesi 2012'den önce yoktu)
+      return `${groupThousands(v)} TL`;
     case 'percent':
       return `%${Math.round(v)}`;
     case 'kg':
