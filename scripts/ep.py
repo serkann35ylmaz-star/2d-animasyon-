@@ -6,6 +6,8 @@
   python3 scripts/ep.py prompts <slug>             Görsel istemlerini çıkarır (prompts.md)
   python3 scripts/ep.py fit <slug> <dosya> <hedef> Bir görseli 1080x1920'ye kırpar/ölçekler ve img/ içine koyar
   python3 scripts/ep.py check <slug>               Eksik görsel/ses kontrolü + süre tahmini
+  python3 scripts/ep.py voice <slug> <url|dosya>   Seslendirmeyi indirir, voice.mp3 yapar, kelime zamanlarını çıkarır
+  python3 scripts/ep.py image <slug> <url|dosya> <hedef>   Görseli indirir ve 1080x1920'ye oturtur
 """
 from __future__ import annotations
 
@@ -224,6 +226,34 @@ def cmd_fit(slug: str, src: str, target: str) -> None:
     print(f"✓ {os.path.relpath(dst, ROOT)}")
 
 
+def _fetch(src: str, suffix: str) -> str:
+    """URL ise indirir (geçici dosya), yerel dosyaysa yolunu döndürür."""
+    if not src.startswith("http"):
+        return src
+    import tempfile
+    fd, tmp = tempfile.mkstemp(suffix=suffix)
+    os.close(fd)
+    subprocess.run(["curl", "-sSfL", "--retry", "3", "-m", "180", "-o", tmp, src], check=True)
+    return tmp
+
+
+def cmd_voice(slug: str, src: str) -> None:
+    ep = load(slug)
+    d = ep_dir(slug)
+    voice = ep.get("voice") or "voice.mp3"
+    path = _fetch(src, ".audio")
+    dst = os.path.join(d, voice)
+    # 44.1 kHz stereo MP3; baştaki/sondaki sessizlik korunur (hizalama için önemli)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-ar", "44100", "-ac", "2", "-c:a", "libmp3lame", "-q:a", "2", dst], check=True)
+    print(f"✓ {os.path.relpath(dst, ROOT)}")
+    subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "align.py"), d], check=True)
+    duration_report(slug, load(slug))
+
+
+def cmd_image(slug: str, src: str, target: str) -> None:
+    cmd_fit(slug, _fetch(src, ".img"), target)
+
+
 def cmd_check(slug: str) -> None:
     ep = load(slug)
     d = ep_dir(slug)
@@ -264,6 +294,10 @@ def main() -> None:
         cmd_prompts(a[1])
     elif c == "fit" and len(a) >= 4:
         cmd_fit(a[1], a[2], a[3])
+    elif c == "voice" and len(a) >= 3:
+        cmd_voice(a[1], a[2])
+    elif c == "image" and len(a) >= 4:
+        cmd_image(a[1], a[2], a[3])
     elif c == "check" and len(a) >= 2:
         cmd_check(a[1])
     else:

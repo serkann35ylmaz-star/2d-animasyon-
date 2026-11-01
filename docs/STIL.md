@@ -47,7 +47,7 @@ Kurallar:
 
 ## 2. Görsel dil
 
-- **Karakter**: her sahnede aynı maskot. Yuvarlak beyaz kafa, basit siyah gözler, burunsuz, beyaz çizgi film eldivenleri,
+- **Karakter**: her sahnede aynı maskot. Yuvarlak beyaz kafa, basit siyah gözler, burunsuz, eldivensiz beyaz çizgi film elleri,
   sokak giyimi. (`docs/style-prompt.json` → `character`) Tutarlılık için ilk iyi görsel **referans görsel** olarak kullanılır.
 - **Çizim**: modern yetişkin animasyon dizisi; kalın temiz kontur, cel-shading, detaylı ve yaşanmış Türk mekânları
   (çay bardağı, eski otel, Tofaş tipi araba, yağmurlu sokak).
@@ -68,7 +68,7 @@ Altyazı 1–3 kelimelik parçalar halinde, ekranın ~%67'sinde (TikTok arayüz�
 
 ## 4. Ses
 
-- Türkçe erkek anlatıcı, sakin ama hızlı (≈ 3 kelime/sn), cümle aralarında kısa duraklama.
+- **ElevenLabs v4** (`eleven_v4`), ses: **Onur AGCNL** (`mCTNxePO8hqCg6KFnASN`) — izleyiciye "sen" diye hitap eden sıcak anlatıcı. Sakin ama hızlı (≈ 3 kelime/sn).
 - Altında düşük seviyede karanlık lo-fi müzik (konuşurken otomatik kısılır).
 - Efektler: başlık kartında darbe (`impact`), bilgi grafiğinde `whoosh` + para sayma (`cash`),
   HUD değişiminde `tick`, yorum tuzağında `pop`, kapanışta `ding`.

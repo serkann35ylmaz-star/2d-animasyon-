@@ -20,10 +20,10 @@ python3 scripts/ep.py new bolum1 "Bölüm Başlığı" --sure 45   # 1) 30/45/60
 #   episode.json'u düzenle: sahneler, metinler, HUD değerleri, bilgi grafikleri
 python3 scripts/ep.py prompts bolum1               # 2) görsel istemleri -> prompts.md
 #   görselleri üret, ardından her birini 1080x1920'ye oturt:
-python3 scripts/ep.py fit bolum1 ~/indir/a.png img/s01.png
+python3 scripts/ep.py image bolum1 <görsel-url> img/s01.png   # indir + 1080x1920'ye oturt
 python3 scripts/ep.py script bolum1                # 3) seslendirme metni -> voice-script.txt
-#   sesi üret (TTS) ve public/episodes/bolum1/voice.mp3 olarak koy
-python3 scripts/align.py public/episodes/bolum1    # 4) kelime kelime zamanlama -> timings.json
+#   ElevenLabs v4 (eleven_v4) ile seslendir — varsayılan ses: Onur AGCNL (mCTNxePO8hqCg6KFnASN)
+python3 scripts/ep.py voice bolum1 <ses-url>       # 4) indir + voice.mp3 + kelime kelime zamanlama
 python3 scripts/ep.py check bolum1                 # 5) eksik + süre/tempo kontrolü
 node scripts/render.mjs bolum1 --stills            # 6) storyboard -> out/bolum1-storyboard.jpg
 node scripts/render.mjs bolum1                     # 7) final -> out/bolum1.mp4
