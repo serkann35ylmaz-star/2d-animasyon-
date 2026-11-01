@@ -222,6 +222,7 @@ def main() -> None:
     ap.add_argument("--voice", help="ses dosyası (varsayılan: episode.json'daki 'voice')")
     ap.add_argument("--min-gap", type=float, default=0.08, help="duraklama sayılacak en kısa sessizlik (sn)")
     ap.add_argument("--rel-db", type=float, default=24.0, help="sessizlik eşiği: tepe seviyesinin kaç dB altı")
+    ap.add_argument("--segments", help="TTS servisinin verdiği cümle zamanları (JSON: [{text,start,end}]); varsa cümle sınırları buradan alınır")
     ap.add_argument("--debug", action="store_true")
     args = ap.parse_args()
 
@@ -235,10 +236,31 @@ def main() -> None:
 
     x = load_audio(vpath)
     intervals = speech_intervals(x, args.min_gap, args.rel_db)
-    words = align(tokens, intervals)
+    seg_path = args.segments or os.path.join(args.episode_dir, "segments.json")
+    method = "pause-dp+syllables"
+    if os.path.exists(seg_path):
+        # Cümle sınırları TTS'ten kesin olarak bilinir; her cümlenin içi ayrıca hizalanır
+        segs = json.load(open(seg_path, encoding="utf-8"))
+        segs = segs.get("segments", segs) if isinstance(segs, dict) else segs
+        words, k = [], 0
+        for sg in segs:
+            n = len(re.sub(r"<[^>]+>", "", sg["text"]).split())
+            toks = tokens[k : k + n]
+            k += n
+            a, b = float(sg["start"]), float(sg["end"])
+            inner = [(max(s0, a), min(e0, b)) for s0, e0 in intervals if e0 > a and s0 < b]
+            inner = [iv for iv in inner if iv[1] - iv[0] > 0.02] or [(a, b)]
+            words += align(toks, inner) if len(toks) > 1 else [{"w": toks[0], "s": round(a, 3), "e": round(b, 3)}]
+        if k != len(tokens):
+            print(f"⚠ Cümle zamanlarındaki kelime sayısı ({k}) senaryoyla ({len(tokens)}) uyuşmuyor — sessizlik yöntemine dönülüyor")
+            words = align(tokens, intervals)
+        else:
+            method = "tts-segments+pause-dp"
+    else:
+        words = align(tokens, intervals)
 
     out = os.path.join(args.episode_dir, ep.get("timings", "timings.json"))
-    json.dump({"words": words, "source": os.path.basename(vpath), "method": "pause-dp+syllables"}, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump({"words": words, "source": os.path.basename(vpath), "method": method}, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     dur = len(x) / SR
     print(f"✓ {len(words)} kelime hizalandı · {len(intervals)} konuşma parçası · ses {dur:.1f} sn -> {out}")
     if args.debug:

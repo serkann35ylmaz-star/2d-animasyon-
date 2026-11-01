@@ -6,7 +6,7 @@
   python3 scripts/ep.py prompts <slug>             Görsel istemlerini çıkarır (prompts.md)
   python3 scripts/ep.py fit <slug> <dosya> <hedef> Bir görseli 1080x1920'ye kırpar/ölçekler ve img/ içine koyar
   python3 scripts/ep.py check <slug>               Eksik görsel/ses kontrolü + süre tahmini
-  python3 scripts/ep.py voice <slug> <url|dosya>   Seslendirmeyi indirir, voice.mp3 yapar, kelime zamanlarını çıkarır
+  python3 scripts/ep.py voice <slug> <url|dosya> [cümle-zamanları.json]   Seslendirmeyi indirir, voice.mp3 yapar, kelime zamanlarını çıkarır
   python3 scripts/ep.py image <slug> <url|dosya> <hedef>   Görseli indirir ve 1080x1920'ye oturtur
 """
 from __future__ import annotations
@@ -239,7 +239,7 @@ def _fetch(src: str, suffix: str) -> str:
     return tmp
 
 
-def cmd_voice(slug: str, src: str) -> None:
+def cmd_voice(slug: str, src: str, segments: str | None = None) -> None:
     ep = load(slug)
     d = ep_dir(slug)
     voice = ep.get("voice") or "voice.mp3"
@@ -248,6 +248,12 @@ def cmd_voice(slug: str, src: str) -> None:
     # 44.1 kHz stereo MP3; baştaki/sondaki sessizlik korunur (hizalama için önemli)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-ar", "44100", "-ac", "2", "-c:a", "libmp3lame", "-q:a", "2", dst], check=True)
     print(f"✓ {os.path.relpath(dst, ROOT)}")
+    # TTS'in verdiği cümle zamanları (varsa) hizalamayı kesinleştirir; yoksa eski dosya silinir
+    seg_dst = os.path.join(d, "segments.json")
+    if segments:
+        shutil.copy(segments, seg_dst)
+    elif os.path.exists(seg_dst):
+        os.remove(seg_dst)
     subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "align.py"), d], check=True)
     duration_report(slug, load(slug))
 
@@ -297,7 +303,7 @@ def main() -> None:
     elif c == "fit" and len(a) >= 4:
         cmd_fit(a[1], a[2], a[3])
     elif c == "voice" and len(a) >= 3:
-        cmd_voice(a[1], a[2])
+        cmd_voice(a[1], a[2], a[3] if len(a) >= 4 else None)
     elif c == "image" and len(a) >= 4:
         cmd_image(a[1], a[2], a[3])
     elif c == "check" and len(a) >= 2:
