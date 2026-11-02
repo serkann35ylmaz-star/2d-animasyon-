@@ -288,8 +288,13 @@ def cmd_voice(slug: str, src: str, segments: str | None = None) -> None:
     seg_dst = os.path.join(d, "segments.json")
     if segments:
         shutil.copy(segments, seg_dst)
-    elif os.path.exists(seg_dst):
-        os.remove(seg_dst)
+    else:
+        if os.path.exists(seg_dst):
+            os.remove(seg_dst)
+        # Cümle zamanlarını sesten ölç (Whisper) — kaymayı önler; olmazsa sessizlik yöntemi kullanılır
+        r = subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "whisper_segments.py"), d])
+        if r.returncode != 0 and os.path.exists(seg_dst):
+            os.remove(seg_dst)
     subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "align.py"), d], check=True)
     duration_report(slug, load(slug))
 
