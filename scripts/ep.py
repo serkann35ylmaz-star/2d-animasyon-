@@ -240,6 +240,8 @@ def cmd_prompts(slug: str) -> None:
         parts.append("lighting and colors: " + style["palettes"].get(pal, style["palettes"]["neon"]))
         if era_text(ep):
             parts.append(era_text(ep))
+        if style.get("cast"):
+            parts.append(style["cast"])
         if s["type"] == "title":
             parts.append("lots of empty dark space in the upper-middle for a big title")
         else:
