@@ -20,4 +20,9 @@ Google Flow doğrudan kullanılamıyor (Google hesabına şifreyle giriş gerekt
 Flow'un kullandığı model (Nano Banana) yukarıdaki 2. ve 3. yollarla kullanılır.
 
 Üretilen görsel: `python3 scripts/ep.py image <bölüm> <url> img/sXX.png` ile 1080x1920'ye oturtulur.
-Kontrol: karakter aynı mı, eldiven yok mu, figüranlar döneme uygun mu, görselde anlamsız yazı var mı.
+Kontrol listesi (her görselde, tam boyutta bakılır):
+- Ana karakter aynı mı, eldiven yok mu?
+- Tüm figüranlar ana karakterle aynı tür mü (yuvarlak beyaz kafa, burunsuz)? Kadın/erkek net mi? Hiçbiri birbirine benzemiyor mu?
+- Görselde HİÇ yazı/rakam var mı? Tabela, neon, poster, ekran, plaka, kasa ekranı, kitap sırtı… Varsa düzelt
+  (tek istisna: sahnenin özellikle istediği takvim yılı). Anlamsız/uydurma kelime kesinlikle kalmaz.
+- Arka plan dolu ve döneme uygun mu?
