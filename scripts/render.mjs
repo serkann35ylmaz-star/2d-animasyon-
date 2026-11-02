@@ -7,7 +7,7 @@
 //   node scripts/render.mjs <slug> --frames=0-90   -> belirli kare aralığı
 import {bundle} from '@remotion/bundler';
 import {renderMedia, renderStill, selectComposition} from '@remotion/renderer';
-import {execFileSync} from 'node:child_process';
+import {execFileSync, spawnSync} from 'node:child_process';
 import {existsSync, mkdirSync, renameSync, rmSync} from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -92,6 +92,17 @@ await renderMedia({
 // Ses seviyesi: TikTok/Reels standardı -14 LUFS, tepe -1.5 dBTP (patlama/cızırtı olmaz)
 console.log('\n• Ses normalize ediliyor (-14 LUFS)…');
 const tmp = out.replace(/\.mp4$/, '.tmp.mp4');
-execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', out, '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-ar', '48000', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', tmp]);
+// İki geçiş: önce ölç, sonra ölçüme göre doğrusal ayarla (tek geçiş kısa videolarda -15/-16'da kalıyor)
+const LN = 'loudnorm=I=-14:TP=-1.5:LRA=11';
+const probe = spawnSync('ffmpeg', ['-hide_banner', '-nostats', '-i', out, '-af', `${LN}:print_format=json`, '-f', 'null', '-'], {encoding: 'utf8'});
+const m = (probe.stderr || '').match(/\{[\s\S]*?"input_i"[\s\S]*?\}/);
+let af = LN;
+if (m) {
+  const j = JSON.parse(m[0]);
+  af = `${LN}:measured_I=${j.input_i}:measured_TP=${j.input_tp}:measured_LRA=${j.input_lra}:measured_thresh=${j.input_thresh}:offset=${j.target_offset}:linear=true`;
+}
+// Sonda tepe sınırlayıcı: -2 dBFS üstünü yumuşakça keser (efekt darbelerinde cızırtı olmaz)
+af += ',alimiter=limit=0.79:level=false:attack=2:release=80';
+execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', out, '-c:v', 'copy', '-af', af, '-ar', '48000', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', tmp]);
 renameSync(tmp, out);
 console.log(`✓ Video: ${path.relative(ROOT, out)}`);
