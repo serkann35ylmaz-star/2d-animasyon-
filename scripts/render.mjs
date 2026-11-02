@@ -64,7 +64,9 @@ const draft = flag('draft');
 const frames = opt('frames')?.split('-').map(Number);
 const out = path.join(outDir, `${slug}${draft ? '-draft' : ''}.mp4`);
 let last = -1;
-await renderMedia({
+const audioOnly = flag('audio'); // sadece sesi yeniden üret + videoya ekle (görüntü aynı kalır)
+if (audioOnly && !existsSync(out)) throw new Error(`--audio için önce video gerekli: ${out}`);
+if (!audioOnly) await renderMedia({
   composition,
   serveUrl,
   codec: 'h264',
@@ -89,20 +91,30 @@ await renderMedia({
     }
   },
 });
-// Ses seviyesi: TikTok/Reels standardı -14 LUFS, tepe -1.5 dBTP (patlama/cızırtı olmaz)
-console.log('\n• Ses normalize ediliyor (-14 LUFS)…');
-const tmp = out.replace(/\.mp4$/, '.tmp.mp4');
-// İki geçiş: önce ölç, sonra ölçüme göre doğrusal ayarla (tek geçiş kısa videolarda -15/-16'da kalıyor)
-const LN = 'loudnorm=I=-14:TP=-1.5:LRA=11';
-const probe = spawnSync('ffmpeg', ['-hide_banner', '-nostats', '-i', out, '-af', `${LN}:print_format=json`, '-f', 'null', '-'], {encoding: 'utf8'});
-const m = (probe.stderr || '').match(/\{[\s\S]*?"input_i"[\s\S]*?\}/);
-let af = LN;
-if (m) {
-  const j = JSON.parse(m[0]);
-  af = `${LN}:measured_I=${j.input_i}:measured_TP=${j.input_tp}:measured_LRA=${j.input_lra}:measured_thresh=${j.input_thresh}:offset=${j.target_offset}:linear=true`;
+// Ses (mastering): TikTok/Reels standardı -14 LUFS, tepe ≤ -1,5 dBTP.
+// Ses kayıpsız WAV olarak ayrıca çıkarılır → yumuşak kompresör → kazanç → -2 dBFS sınırlayıcı.
+// Kazanç, hedefe oturana kadar ölçülerek ayarlanır; videoya tek seferde AAC olarak eklenir.
+// (Yalnız sınırlayıcıyla +5 dB vermek sesi bozuyor ve AAC sonrası tepeler +5 dB'ye fırlıyordu.)
+console.log('\n• Ses hazırlanıyor (-14 LUFS)…');
+const wav = out.replace(/\.mp4$/, '.master.wav');
+await renderMedia({composition, serveUrl, codec: 'wav', outputLocation: wav, inputProps, browserExecutable, chromiumOptions, frameRange: frames && frames.length === 2 ? [frames[0], frames[1]] : null});
+const COMP = 'acompressor=threshold=0.125:ratio=3:attack=5:release=120:knee=4';
+const LIMIT = 'alimiter=limit=0.794:level=false:attack=5:release=50';
+const chain = (g) => `${COMP},volume=${g.toFixed(2)}dB,${LIMIT}`;
+const lufs = (af) => {
+  const r = spawnSync('ffmpeg', ['-hide_banner', '-nostats', '-i', wav, '-af', `${af},ebur128`, '-f', 'null', '-'], {encoding: 'utf8'});
+  const all = [...(r.stderr || '').matchAll(/I:\s+(-?[\d.]+) LUFS/g)];
+  return all.length ? parseFloat(all[all.length - 1][1]) : NaN;
+};
+let gain = 0;
+for (let k = 0; k < 3; k++) {
+  const now = lufs(chain(gain));
+  if (!Number.isFinite(now)) break;
+  gain += -14 - now;
 }
-// Sonda tepe sınırlayıcı: -2 dBFS üstünü yumuşakça keser (efekt darbelerinde cızırtı olmaz)
-af += ',alimiter=limit=0.79:level=false:attack=2:release=80';
-execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', out, '-c:v', 'copy', '-af', af, '-ar', '48000', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', tmp]);
+const af = chain(gain);
+const tmp = out.replace(/\.mp4$/, '.tmp.mp4');
+execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', out, '-i', wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-af', af, '-ar', '48000', '-c:a', 'aac', '-b:a', '256k', '-movflags', '+faststart', tmp]);
 renameSync(tmp, out);
+if (!process.env.KEEP_WAV) rmSync(wav, {force: true});
 console.log(`✓ Video: ${path.relative(ROOT, out)}`);
