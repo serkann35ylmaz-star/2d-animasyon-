@@ -27,3 +27,6 @@ Kontrol listesi (her görselde, tam boyutta bakılır):
   doğru yazılmış, anlamlı, döneme uygun Türkçe (BAKKAL, KEBAP, TAKSİ, OTEL…). Anlamsız, uydurma, yanlış yazılmış
   ya da yarım kesilmiş kelime varsa görsel kabul edilmez, düzeltilir. Yazı yerine/yanında görsel de kullanılabilir.
 - Arka plan dolu ve döneme uygun mu?
+- Kenara yakın yazı/tabela var mı? Kamera hareketi (zoom/pan %4–17 kırpar) onu yarım bırakmasın:
+  `focus` ile o kenara sabitle (ör. sol tabela → `"focus": [0, 0.5]`) ya da `"motion": "none"` kullan.
+  Görselin kendisinde kenardan kesik kelime varsa (ör. "İSTANBU") kelimeyi temizle. Son kontrol: `render.mjs --stills`.
