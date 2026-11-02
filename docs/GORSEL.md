@@ -23,6 +23,7 @@ Flow'un kullandığı model (Nano Banana) yukarıdaki 2. ve 3. yollarla kullanı
 Kontrol listesi (her görselde, tam boyutta bakılır):
 - Ana karakter aynı mı, eldiven yok mu?
 - Tüm figüranlar ana karakterle aynı tür mü (yuvarlak beyaz kafa, burunsuz)? Kadın/erkek net mi? Hiçbiri birbirine benzemiyor mu?
-- Görselde HİÇ yazı/rakam var mı? Tabela, neon, poster, ekran, plaka, kasa ekranı, kitap sırtı… Varsa düzelt
-  (tek istisna: sahnenin özellikle istediği takvim yılı). Anlamsız/uydurma kelime kesinlikle kalmaz.
+- Yazılar anlaşılır mı? Tabela, neon, poster, ekran, plaka, kasa ekranı, kitap sırtı… Yazı olabilir ama yalnızca
+  doğru yazılmış, anlamlı, döneme uygun Türkçe (BAKKAL, KEBAP, TAKSİ, OTEL…). Anlamsız, uydurma, yanlış yazılmış
+  ya da yarım kesilmiş kelime varsa görsel kabul edilmez, düzeltilir. Yazı yerine/yanında görsel de kullanılabilir.
 - Arka plan dolu ve döneme uygun mu?

@@ -47,9 +47,9 @@ def build_prompt(scene: dict, ep: dict, style: dict) -> str:
     pal = scene.get("palette") or ep.get("palette") or "neon"
     light = style["palettes"].get(pal, style["palettes"]["neon"])
     if scene["type"] == "title":
-        tail = f" Lighting and colors: {light}. Leave the upper-middle area dark and empty for a large title. No text, no letters, no signs with words."
+        tail = f" Lighting and colors: {light}. Leave the upper-middle area dark and empty for a large title. Any text must be real, correctly spelled Turkish words that fit the scene; never gibberish or misspelled words."
     else:
-        tail = f" Lighting and colors: {light}. The background must be a fully detailed, recognizable environment from that place and period, never an empty black or plain background. No text, no letters, no signs with words."
+        tail = f" Lighting and colors: {light}. The background must be a fully detailed, recognizable environment from that place and period, never an empty black or plain background. Any text must be real, correctly spelled Turkish words that fit the scene; never gibberish or misspelled words."
     cast = (" " + style["cast"]) if style.get("cast") else ""
     return keep + "New scene: " + what + ". " + era_text(ep) + cast + tail
 
