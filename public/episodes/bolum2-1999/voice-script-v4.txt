@@ -1,6 +1,7 @@
 [dramatic] Kimseye söylemedin.
 [tense] Cebinde tek kuruş yok.
 [tense] Telefonun ölmek üzere.
+[tense] Şarj da edemezsin. Yu es bi si, iki bin on dörde kadar icat edilmeyecek.
 [calm] Bildiğin her şeyi bir deftere yazıyorsun.
 [dramatic] En önemlisi: Şubat 2001'de büyük kriz geliyor.
 [tense] Dolar iki yılda neredeyse üç katına çıkacak.

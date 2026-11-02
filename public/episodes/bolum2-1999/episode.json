@@ -102,6 +102,20 @@
       "prompt_en": "close-up of the character holding his modern smartphone showing a red low-battery warning, panicked face, sitting on a creaky bed in a small rented room with peeling wallpaper and a single bulb"
     },
     {
+      "type": "info",
+      "id": "usbc",
+      "tone": "tense",
+      "text": "Şarj da edemezsin. USB-C, 2014'e kadar icat edilmeyecek.",
+      "info": {
+        "layout": "big",
+        "kicker": "NEDEN ŞARJ EDEMİYORSUN?",
+        "heading": "Telefonun *USB-C* ile şarj oluyor",
+        "value": 2014,
+        "format": "raw",
+        "caption": "USB-C'nin *icat edildiği* yıl"
+      }
+    },
+    {
       "type": "image",
       "id": "defter",
       "image": "img/s05.png",
