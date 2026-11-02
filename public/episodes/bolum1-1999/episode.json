@@ -36,8 +36,8 @@
       "image": "img/s01.png",
       "motion": "zoomIn",
       "focus": [
-        0.5,
-        0.45
+        0.0,
+        0.5
       ],
       "text": "Uyandın. Takvim 1999'u gösteriyor.",
       "prompt": "Karakter 90'lar Türk evinde yatakta doğruluyor; duvarda 1999 takvimi, tüplü televizyon, dantel örtü, sabah ışığı ve pencereden pembe neon",
@@ -110,7 +110,7 @@
       "type": "image",
       "id": "bakkal",
       "image": "img/s07.png",
-      "motion": "panLeft",
+      "motion": "zoomIn",
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -120,7 +120,11 @@
       "prompt": "Bakkal tezgâhı, karakter modern banknot uzatıyor, bıyıklı bakkal şüpheyle bakıyor",
       "prompt_en": "a 1990s Turkish corner shop counter with glass jars of candy and cigarette racks, the character holding out a modern banknote, a mustached shopkeeper squinting at it suspiciously",
       "tone": "tense",
-      "palette": "kahve"
+      "palette": "kahve",
+      "focus": [
+        0.0,
+        0.5
+      ]
     },
     {
       "type": "image",
@@ -221,7 +225,8 @@
       "text": "Sen olsan ne yapardın?",
       "prompt": "Karakter yakın plan, eli kameraya doğru, endişeli yüz, neon arka plan",
       "prompt_en": "close-up of the character holding his open hand toward the camera, worried face, blurred pink neon background",
-      "palette": "neon"
+      "palette": "neon",
+      "motion": "none"
     },
     {
       "type": "end",

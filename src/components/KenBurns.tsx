@@ -70,6 +70,9 @@ export const KenBurns: React.FC<Props> = ({src, video, motion = 'zoomIn', focus 
       ty = (Math.cos(t * 31) * 0.6 + Math.sin(t * 17.7) * 0.4) * 0.006 * k;
       break;
     }
+    case 'none': // kenarlar kırpılmaz (tabela/yazı kesilmesin)
+      scale = 1;
+      break;
     case 'still':
       scale = 1.03 + 0.012 * p;
       break;

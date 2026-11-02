@@ -11,7 +11,8 @@ export type Motion =
   | 'panDown'
   | 'push' // hızlı içeri itme (gerilim)
   | 'shake' // hafif kamera titremesi
-  | 'still';
+  | 'still'
+  | 'none'; // hiç kırpma yok — kenarlarında yazı/tabela olan görseller için
 
 export type SfxName =
   | 'whoosh'
