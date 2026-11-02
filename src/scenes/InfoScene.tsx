@@ -285,13 +285,16 @@ export const InfoScene: React.FC<{info: InfoBody}> = ({info}) => {
       />
       <div
         style={{
+          // TikTok güvenli alanında (üst menü 200 px, alt açıklama 1600 px+) dikeyde ortalı
           position: 'absolute',
-          top: 300,
+          top: 200,
+          bottom: 320,
           left: 110,
           right: 110,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
         {body}
