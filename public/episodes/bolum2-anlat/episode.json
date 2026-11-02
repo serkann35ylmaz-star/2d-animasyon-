@@ -1,0 +1,296 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 2: Deli Dediler",
+  "outfit": "(he comes from 2026, so modern streetwear) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, chunky red-and-white high-top sneakers",
+  "targetDuration": 45,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Istanbul, late September 1999, an old working-class neighborhood coffeehouse (kahvehane) and its street",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "GEÇERLİ NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "sarj",
+      "label": "ŞARJ",
+      "format": "percent",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "image",
+      "id": "anlattin",
+      "image": "img/s01.png",
+      "motion": "panRight",
+      "palette": "kahve",
+      "tone": "dramatic",
+      "text": "Herkese anlattın.",
+      "prompt": "(1. bölüm s12) Kahvehanede telefon havada, herkes ona bakıyor"
+    },
+    {
+      "type": "image",
+      "id": "uefa",
+      "image": "img/s02.png",
+      "motion": "push",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "palette": "tehlike",
+      "tone": "excited",
+      "text": "Galatasaray, UEFA Kupası'nı alacak.",
+      "prompt": "(1. bölüm s09) Kendinden emin sinsi gülüş"
+    },
+    {
+      "type": "image",
+      "id": "kahkaha",
+      "image": "img/s03.png",
+      "motion": "shake",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Kahvehane kahkahaya boğuldu.",
+      "prompt": "Kahvehanedeki herkes kahkahadan yıkılıyor",
+      "prompt_en": "inside a 1999 Turkish coffeehouse, the regulars burst out laughing at the main character: a chubby bald man with a handlebar mustache slapping the table, an old man with a flat cap wiping tears, a thin young man with side-parted hair pointing at him, a man with a skullcap holding his belly, tea glasses rattling on the tables, backgammon boards; the main character in the center looks calm and unbothered Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female."
+    },
+    {
+      "type": "info",
+      "id": "sampiyonlar",
+      "tone": "tense",
+      "text": "Çünkü Galatasaray UEFA'da bile değil.",
+      "info": {
+        "layout": "list",
+        "kicker": "EYLÜL 1999",
+        "heading": "Galatasaray şu an nerede?",
+        "items": [
+          {
+            "text": "Şampiyonlar Ligi · H Grubu",
+            "state": "ok"
+          },
+          {
+            "text": "Rakipler: Chelsea, Milan, Hertha",
+            "state": "ok"
+          },
+          {
+            "text": "UEFA Kupası · *Yok*",
+            "state": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "id": "biliyorsun",
+      "image": "img/s05.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "palette": "neon",
+      "tone": "whisper",
+      "text": "Ama sen biliyorsun: UEFA'ya düşecekler.",
+      "prompt": "Yakın plan, tek kaş havada, sinsi gülüş; arkada gülen kalabalık bulanık",
+      "prompt_en": "close-up of the main character with one eyebrow raised and a sly knowing smirk, looking straight at the camera, behind him the blurred warm interior of the 1999 coffeehouse with laughing regulars, a CRT TV showing a football match Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female."
+    },
+    {
+      "type": "title",
+      "image": "img/s06.png",
+      "kicker": "BÖLÜM 2 · DELİ DEDİLER",
+      "lines": [
+        "GELECEĞİ",
+        "*BİLEN*",
+        "ADAM"
+      ],
+      "duration": 1.9,
+      "palette": "neon",
+      "prompt": "(2. bölüm s03) Galata Köprüsü gece"
+    },
+    {
+      "type": "image",
+      "id": "sarjbitti",
+      "image": "img/s07.png",
+      "motion": "push",
+      "tag": "PROBLEM 1",
+      "palette": "gerilim",
+      "tone": "tense",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 9
+      },
+      "text": "Kanıt için telefonu çıkardın.",
+      "prompt": "Masadaki modern telefon kararıyor, etrafındaki adamlar eğilmiş bakıyor",
+      "prompt_en": "on a wooden coffeehouse table with tulip tea glasses, the main character holds out his modern smartphone whose screen is going black with a tiny empty battery icon, his face frozen in panic; three different regulars lean in curiously (a man with glasses and white mustache, a curly-haired young man, a broad man with a flat cap) Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female."
+    },
+    {
+      "type": "image",
+      "id": "karardi",
+      "image": "img/s07.png",
+      "motion": "shake",
+      "palette": "gerilim",
+      "tone": "tense",
+      "transition": "flash",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 0
+      },
+      "text": "Tam ekran açılırken… şarj bitti."
+    },
+    {
+      "type": "info",
+      "id": "usbc",
+      "tone": "tense",
+      "text": "Şarj da edemezsin. USB-C henüz icat edilmedi.",
+      "info": {
+        "layout": "big",
+        "kicker": "NEDEN ŞARJ EDEMİYORSUN?",
+        "heading": "Telefonun *USB-C* ile şarj oluyor",
+        "value": 2014,
+        "format": "raw",
+        "caption": "USB-C'nin *icat edildiği* yıl",
+        "from": 1999
+      }
+    },
+    {
+      "type": "image",
+      "id": "kahveci",
+      "image": "img/s09.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.6,
+        0.4
+      ],
+      "palette": "kahve",
+      "tone": "neutral",
+      "text": "Kahveci güldü: \"Madem eminsin, iddiaya girelim.\"",
+      "prompt": "Önlüklü kahveci tezgâhta sırıtıyor, ölü telefonu işaret ediyor",
+      "prompt_en": "the coffeehouse owner (a stocky middle-aged man with a thick black mustache, rolled-up sleeves and a white apron, a towel over his shoulder) leaning on the counter with a big teasing grin, pointing at the dead smartphone on the counter, a samovar-style tea kettle and stacked tea glasses behind him, the main character on the other side of the counter Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female."
+    },
+    {
+      "type": "info",
+      "id": "iddaa",
+      "tone": "tense",
+      "text": "Ama 1999'da iddaa yok.",
+      "info": {
+        "layout": "big",
+        "kicker": "1999'DA KUPON YOK",
+        "heading": "Türkiye'de yasal *iddaa*",
+        "value": 2004,
+        "from": 1999,
+        "format": "raw",
+        "caption": "*İlk kuponların* oynandığı yıl"
+      }
+    },
+    {
+      "type": "image",
+      "id": "olutelefon",
+      "image": "img/s09.png",
+      "motion": "panLeft",
+      "palette": "kahve",
+      "tone": "sad",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 0
+      },
+      "text": "Cebinde para yok. Elinde ölü bir telefon."
+    },
+    {
+      "type": "image",
+      "id": "necmi",
+      "image": "img/s12.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Ama köşedeki masada biri gülmüyordu.",
+      "prompt": "Köşe masada takım elbiseli, ince bıyıklı, altın yüzüklü adam; sigara dumanı",
+      "prompt_en": "in the dark back corner of the coffeehouse a lone man is not laughing: a slim man in a shiny dark 1990s double-breasted suit with wide lapels, slicked-back black hair, a thin pencil mustache, a gold ring and a gold chain, cigarette smoke curling up, cold calculating eyes staring at the main character, he slides a small white business card across the table; dim red lamp light Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female."
+    },
+    {
+      "type": "image",
+      "id": "teklif",
+      "image": "img/s12.png",
+      "motion": "push",
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Kaçak bahisçi Necmi: \"Bire elli veririm.\""
+    },
+    {
+      "type": "image",
+      "id": "ikiyol",
+      "image": "img/s14.png",
+      "motion": "zoomOut",
+      "palette": "gunbatimi",
+      "tone": "dramatic",
+      "text": "Kahveciyle dostça iddia… ya da Necmi'yle büyük para.",
+      "prompt": "İkiye bölünmüş görüntü: sıcak kahvehane / karanlık arka oda",
+      "prompt_en": "a split composition divided vertically down the middle: on the left the warm, cozy coffeehouse counter with the grinning mustached coffeehouse owner in his apron offering a handshake; on the right a dark smoky back room with the slim man in the shiny suit and gold ring fanning a thick stack of 1990s Turkish lira banknotes; the main character stands in the center at the dividing line, looking torn between the two Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female."
+    },
+    {
+      "type": "bait",
+      "image": "img/s15.png",
+      "words": [
+        "KAHVECİ",
+        "NECMİ"
+      ],
+      "duration": 2.4,
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "palette": "neon",
+      "tone": "question",
+      "motion": "none",
+      "text": "Sen olsan ne yapardın?",
+      "prompt": "Karakter yakın plan, düşünceli, elinde kartvizit",
+      "prompt_en": "close-up of the main character holding a small blank white business card between two fingers, thinking hard with a worried expression, behind him the night street outside the coffeehouse with warm windows and a yellow taxi, keep all signs and objects away from the edges Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female."
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "3. BÖLÜM",
+        "*YARIN*"
+      ],
+      "body": "Yorumlara **KAHVECİ** ya da **NECMİ** yaz.\nÇoğunluk 3. bölümü yazar.",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.0
+    }
+  ]
+}

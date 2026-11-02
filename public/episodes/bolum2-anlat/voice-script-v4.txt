@@ -1,0 +1,15 @@
+[dramatic] Herkese anlattın.
+[excited] Galatasaray, UEFA Kupası'nı alacak.
+[excited] Kahvehane kahkahaya boğuldu.
+[tense] Çünkü Galatasaray UEFA'da bile değil.
+[whispers] Ama sen biliyorsun: UEFA'ya düşecekler.
+[tense] Kanıt için telefonu çıkardın.
+[tense] Tam ekran açılırken… şarj bitti.
+[tense] Şarj da edemezsin. Yu es bi si henüz icat edilmedi.
+Kahveci güldü: "Madem eminsin, iddiaya girelim."
+[tense] Ama bin dokuz yüz doksan dokuzda iddaa yok.
+[sad] Cebinde para yok. Elinde ölü bir telefon.
+[whispers] Ama köşedeki masada biri gülmüyordu.
+[whispers] Kaçak bahisçi Necmi: "Bire elli veririm."
+[dramatic] Kahveciyle dostça iddia… ya da Necmi'yle büyük para.
+[curious] Sen olsan ne yapardın?
