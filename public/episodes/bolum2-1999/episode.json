@@ -112,7 +112,8 @@
         "heading": "Telefonun *USB-C* ile şarj oluyor",
         "value": 2014,
         "format": "raw",
-        "caption": "USB-C'nin *icat edildiği* yıl"
+        "caption": "USB-C'nin *icat edildiği* yıl",
+        "from": 1999
       }
     },
     {

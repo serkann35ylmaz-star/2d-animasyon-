@@ -112,6 +112,8 @@ export interface InfoBig {
   kicker?: string;
   heading?: string;
   value: number;
+  /** sayaç bu değerden başlar (varsayılan 0), ör. yıl için 1999 */
+  from?: number;
   format?: ValueFormat;
   prefix?: string;
   suffix?: string;

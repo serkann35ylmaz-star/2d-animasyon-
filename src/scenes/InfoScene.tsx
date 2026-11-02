@@ -178,7 +178,7 @@ const Big: React.FC<{d: InfoBig}> = ({d}) => {
       <Appear delay={4}>
         <div style={{fontFamily: FONT, fontWeight: 900, fontSize: bigSize, letterSpacing: '-0.04em', color: C.pink, fontVariantNumeric: 'tabular-nums', textAlign: 'center', lineHeight: 1, whiteSpace: 'nowrap'}}>
           {d.prefix}
-          {formatValue(d.value * p, d.format ?? 'number')}
+          {formatValue((d.from ?? 0) + (d.value - (d.from ?? 0)) * p, d.format ?? 'number')}
           {d.suffix}
         </div>
       </Appear>
