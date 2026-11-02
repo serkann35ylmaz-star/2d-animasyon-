@@ -63,7 +63,7 @@
       "type": "image",
       "id": "metelik",
       "image": "img/s02.png",
-      "motion": "panRight",
+      "motion": "none",
       "palette": "nostalji",
       "tone": "tense",
       "text": "Cebinde tek kuruş yok.",
@@ -279,7 +279,8 @@
       "tone": "question",
       "text": "Sen olsan ne yapardın?",
       "prompt": "Karakter yakın plan, eli kameraya, endişeli; arkada gece sokağı",
-      "prompt_en": "close-up of the character with one open bare white hand raised toward the camera, worried face, behind him a detailed 1999 Istanbul night street with a lit corner shop and a yellow taxi"
+      "prompt_en": "close-up of the character with one open bare white hand raised toward the camera, worried face, behind him a detailed 1999 Istanbul night street with a lit corner shop and a yellow taxi",
+      "motion": "none"
     },
     {
       "type": "end",
