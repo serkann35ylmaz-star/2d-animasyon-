@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bölüm yardımcı aracı.
 
-  python3 scripts/ep.py new <slug> "<Başlık>" [--sure 30|45|60]   Hedef süreye göre bölüm iskeleti
+  python3 scripts/ep.py new <slug> "<Başlık>" [--sure 30|45|60|75]   Hedef süreye göre bölüm iskeleti (varsayılan 75)
   python3 scripts/ep.py script <slug>              Seslendirme metnini çıkarır (voice-script.txt)
   python3 scripts/ep.py prompts <slug>             Görsel istemlerini çıkarır (prompts.md)
   python3 scripts/ep.py fit <slug> <dosya> <hedef> Bir görseli 1080x1920'ye kırpar/ölçekler ve img/ içine koyar
@@ -143,9 +143,12 @@ def _beats(sure: int) -> list[dict]:
         n_img += 1
         body += problem(3, f"s{n_img:02d}", f"s{n_img + 1:02d}", {"a": 0, "b": 25, "risk": 55}, comp)
         n_img += 2
+        if sure >= 75:
+            body += [_img(f"s{n_img:02d}", "zoomIn", "Ama kimse sana söylemedi ki…", "İKİNCİ ARA KANCA (~%70): yeni bir sır ya da tehdit.", "Karakter şüpheyle etrafına bakıyor, gölgeli ışık", transition="whip")]
+            n_img += 1
         body += [_img(f"s{n_img:02d}", "push", "Ve tam o sırada kapı çalıyor.", "SON DARBE (~%80): beklenmedik gelişme.", "Kapıda gölge, gerilim", transition="flash")]
         n_img += 1
-    gun = {30: "3", 45: "5", 60: "7"}[sure]
+    gun = {30: "3", 45: "5", 60: "7", 75: "8"}[sure]
     body += [{"type": "info", "id": "durum", "text": f"{gun}. gün. Durumun özeti.", "note": "DURUM PANOSU.", "info": {"layout": "stats", "kicker": f"{gun}. GÜN · DURUM", "rows": [{"label": "DEĞER 1", "value": 1000000, "format": "money"}, {"label": "DEĞER 2", "value": 25, "format": "number"}, {"label": "RİSK", "value": 55, "format": "percent", "accent": True, "bar": True}], "footer": "Not: **vurgu**"}}]
     body += [_img(f"s{n_img:02d}", "zoomIn", "Birinci seçeneği söyle.", "İKİLEM A.", "Karakter birinci seçeneği düşünüyor", hud={"risk": 55})]
     body += [_img(f"s{n_img + 1:02d}", "panRight", "Ya da ikinci seçeneği.", "İKİLEM B.", "Karakter ikinci seçeneğe bakıyor", hud={"risk": 55})]
@@ -157,9 +160,9 @@ def _beats(sure: int) -> list[dict]:
     return intro + body + outro
 
 
-def cmd_new(slug: str, title: str, sure: int = 45) -> None:
-    if sure not in (30, 45, 60):
-        sys.exit("--sure 30, 45 ya da 60 olmalı")
+def cmd_new(slug: str, title: str, sure: int = 75) -> None:
+    if sure not in (30, 45, 60, 75):
+        sys.exit("--sure 30, 45, 60 ya da 75 olmalı")
     d = ep_dir(slug)
     if os.path.exists(d):
         sys.exit(f"Zaten var: {d}")
@@ -337,7 +340,7 @@ def main() -> None:
         sys.exit(__doc__)
     c = a[0]
     if c == "new" and len(a) >= 3:
-        sure = int(a[a.index("--sure") + 1]) if "--sure" in a else 45
+        sure = int(a[a.index("--sure") + 1]) if "--sure" in a else 75  # seri standardı: 75 sn
         cmd_new(a[1], a[2], sure)
     elif c == "script" and len(a) >= 2:
         cmd_script(a[1])

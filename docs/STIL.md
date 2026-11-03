@@ -18,25 +18,27 @@ kamera hareketi, kelime kelime altyazı, Türkçe erkek anlatıcı, bilgi grafik
 | 19–20 sn | **Yorum tuzağı**: tek kelime | SAKLA / HARCA | `bait` |
 | 20–21 sn | **Kapanış kartı** | "2. BÖLÜM YARIN" + takip butonu | `end` |
 
-## 1b. Hedef süreler: 30 / 45 / 60 sn
+## 1b. Hedef süreler: 30 / 45 / 60 / 75 sn
 
-Referans 21 sn; bizim videolarımız **30, 45 ya da 60 sn**. Uzadıkça izleyiciyi tutmak için
+**Seri standardı (Geleceği Bilen Adam): her bölüm 75 sn.** (≈ 1.400 ElevenLabs kredisi / bölüm; anlatım ≈ 2,25 kelime/sn)
+
+Referans 21 sn; bizim videolarımız **30, 45, 60 ya da 75 sn**. Uzadıkça izleyiciyi tutmak için
 yapıya **ek problemler, ara kancalar ve zaman atlamaları** eklenir. Tempo değişmez: çekim başına 1,5–2,5 sn.
 
-| | **30 sn** | **45 sn** | **60 sn** |
-|---|---|---|---|
-| Kelime (anlatım) | ~50–70 | ~80–105 | ~110–140 |
-| Çekim sayısı | 12–16 | 16–24 | 22–32 |
-| Problem sayısı | 1 | 2 | 3 |
-| Ara kanca | — | ~%45'te ("Ama asıl sorun bu değil.") | ~%35 ve ~%65'te |
-| Zaman atlaması | durum panosunda ("3. GÜN") | durum panosunda ("5. GÜN") | ayrı sahne + pano ("7. GÜN") |
-| Son darbe (ters köşe) | — | isteğe bağlı | ~%80'de ("Ve tam o sırada kapı çalıyor.") |
+| | **30 sn** | **45 sn** | **60 sn** | **75 sn** (standart) |
+|---|---|---|---|---|
+| Kelime (anlatım) | ~50–70 | ~80–105 | ~110–140 | ~150–165 |
+| Çekim sayısı | 12–16 | 16–24 | 22–32 | 28–36 |
+| Problem sayısı | 1 | 2 | 3 | 3 |
+| Ara kanca | — | ~%45'te ("Ama asıl sorun bu değil.") | ~%35 ve ~%65'te | ~%35, ~%55 ve ~%70'te |
+| Zaman atlaması | durum panosunda ("3. GÜN") | durum panosunda ("5. GÜN") | ayrı sahne + pano ("7. GÜN") | ayrı sahne + pano |
+| Son darbe (ters köşe) | — | isteğe bağlı | ~%80'de ("Ve tam o sırada kapı çalıyor.") | ~%80'de |
 
 **60 sn akışı:** Kanca → Durum → Bükülme → Başlık kartı → Problem 1 (+birim, +ölçek grafiği, +sonuç) →
 Ara kanca → Problem 2 (+hesap, +sonuç) → Zaman atlaması → Problem 3 (+kıyas, +sonuç) → Son darbe →
 Durum panosu → İkilem A → İkilem B → Yorum tuzağı → Kapanış.
 
-`python3 scripts/ep.py new <slug> "<Başlık>" --sure 30|45|60` bu iskeleti hazır kurar.
+`python3 scripts/ep.py new <slug> "<Başlık>" [--sure 30|45|60|75]` bu iskeleti hazır kurar (varsayılan 75).
 `ep.py check` süreyi hedefle karşılaştırır ("≈ 7 kelime çıkar" gibi) ve 4 sn'yi geçen çekimleri uyarır.
 
 Kurallar:
