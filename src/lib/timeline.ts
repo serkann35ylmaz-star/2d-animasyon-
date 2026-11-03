@@ -44,14 +44,14 @@ export const estimateTimings = (episode: Episode): Timings => {
   return {words};
 };
 
-// Sahne geçişlerinde 'vızz' sesi (whoosh / riser) kullanılmaz — kullanıcı isteği. Gerekirse sahneye elle sfx eklenir.
 const defaultSfx = (scene: Scene, hudChanged: boolean, tagChanged: boolean): SfxCue[] => {
   const out: SfxCue[] = [];
   switch (scene.type) {
     case 'title':
-      out.push({name: 'impact', at: 0, volume: 0.9});
+      out.push({name: 'impact', at: 0, volume: 0.9}, {name: 'whoosh', at: 0, volume: 0.5});
       break;
     case 'info':
+      out.push({name: 'whoosh', at: 0, volume: 0.45});
       if (scene.info.layout === 'grid') out.push({name: 'cash', at: 0.25, volume: 0.5});
       if (scene.info.layout === 'grid' && scene.info.result) out.push({name: 'impact', at: -1, volume: 0.7});
       break;
@@ -59,10 +59,12 @@ const defaultSfx = (scene: Scene, hudChanged: boolean, tagChanged: boolean): Sfx
       out.push({name: 'pop', at: 0.25, volume: 0.8});
       break;
     case 'end':
-      out.push({name: 'ding', at: 0.5, volume: 0.6});
+      out.push({name: 'whoosh', at: 0, volume: 0.5}, {name: 'ding', at: 0.5, volume: 0.6});
       break;
     case 'image':
       if (scene.transition === 'flash') out.push({name: 'impact', at: 0, volume: 0.6});
+      if (scene.transition === 'whip') out.push({name: 'whoosh', at: 0, volume: 0.6});
+      // 'riser' (yükselen vızz sesi) kullanılmaz — kullanıcı isteği
       break;
   }
   if (hudChanged) out.push({name: 'tick', at: 0.08, volume: 0.6});
