@@ -1,0 +1,692 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 2: Sessiz Plan",
+  "outfit": "(he comes from 2026, so modern streetwear) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, chunky red-and-white high-top sneakers",
+  "targetDuration": 120,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Istanbul, late September 1999, an old working-class neighborhood",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "GEÇERLİ NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "sarj",
+      "label": "ŞARJ",
+      "format": "percent",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "info",
+      "id": "karar",
+      "tone": "dramatic",
+      "text": "Yorumlarda karar çıktı: Susacaksın.",
+      "info": {
+        "layout": "list",
+        "kicker": "1. BÖLÜMDE SİZ KARAR VERDİNİZ",
+        "heading": "Yorumların kararı: *SUS*",
+        "items": [
+          {
+            "text": "Anlat",
+            "state": "bad"
+          },
+          {
+            "text": "*Sus* · çoğunluğun seçimi",
+            "state": "ok"
+          },
+          {
+            "text": "Bonus: *bahis* önerisi",
+            "state": "ok"
+          }
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "id": "sustun",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "palette": "soguk",
+      "tone": "dramatic",
+      "text": "Kimseye söylemedin."
+    },
+    {
+      "type": "image",
+      "id": "metelik",
+      "image": "img/s02.png",
+      "motion": "none",
+      "palette": "nostalji",
+      "tone": "tense",
+      "text": "Cebinde tek kuruş yok."
+    },
+    {
+      "type": "image",
+      "id": "kagit",
+      "image": "img/s02b.png",
+      "motion": "zoomIn",
+      "tone": "sad",
+      "text": "Cüzdanındaki paralar burada sadece renkli kâğıt.",
+      "palette": "gerilim"
+    },
+    {
+      "type": "title",
+      "image": "img/s03.png",
+      "kicker": "BÖLÜM 2 · SESSİZ PLAN",
+      "lines": [
+        "GELECEĞİ",
+        "*BİLEN*",
+        "ADAM"
+      ],
+      "duration": 1.9,
+      "palette": "neon"
+    },
+    {
+      "type": "image",
+      "id": "sarj",
+      "image": "img/s04.png",
+      "motion": "shake",
+      "tag": "PROBLEM 1",
+      "palette": "gerilim",
+      "tone": "tense",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 9
+      },
+      "text": "Telefonun ölmek üzere."
+    },
+    {
+      "type": "info",
+      "id": "usbc",
+      "tone": "tense",
+      "text": "Şarj da edemezsin. USB-C, 2014'e kadar icat edilmeyecek.",
+      "info": {
+        "layout": "big",
+        "kicker": "NEDEN ŞARJ EDEMİYORSUN?",
+        "heading": "Telefonun *USB-C* ile şarj oluyor",
+        "value": 2014,
+        "from": 1999,
+        "format": "raw",
+        "caption": "USB-C'nin *icat edildiği* yıl"
+      }
+    },
+    {
+      "type": "image",
+      "id": "defter",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "palette": "kahve",
+      "tone": "calm",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 3
+      },
+      "text": "Bildiğin her şeyi bir deftere yazıyorsun."
+    },
+    {
+      "type": "image",
+      "id": "notlar",
+      "image": "img/s06.png",
+      "motion": "push",
+      "tone": "calm",
+      "text": "Maç skorları, tarihler, dolar kuru.",
+      "palette": "kahve",
+      "focus": [
+        0.45,
+        0.6
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 3
+      }
+    },
+    {
+      "type": "image",
+      "id": "karardi",
+      "image": "img/s07.png",
+      "motion": "push",
+      "palette": "soguk",
+      "tone": "whisper",
+      "transition": "flash",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 0
+      },
+      "text": "Ekran karardı. Geriye defter kaldı."
+    },
+    {
+      "type": "image",
+      "id": "aklinda",
+      "image": "img/s08.png",
+      "motion": "zoomIn",
+      "tone": "sad",
+      "text": "Artık ne internet var, ne harita.",
+      "palette": "soguk",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 0
+      }
+    },
+    {
+      "type": "image",
+      "id": "aklinda2",
+      "image": "img/s08.png",
+      "motion": "push",
+      "tone": "whisper",
+      "text": "Sadece aklındakiler.",
+      "palette": "soguk",
+      "focus": [
+        0.5,
+        0.35
+      ]
+    },
+    {
+      "type": "info",
+      "id": "tarih",
+      "tone": "dramatic",
+      "text": "Defterin ilk sayfasında tek bir tarih var: 17 Mayıs 2000.",
+      "info": {
+        "layout": "list",
+        "kicker": "DEFTER · SAYFA 1",
+        "heading": "UEFA Kupası finali",
+        "items": [
+          {
+            "text": "17 Mayıs 2000 · Kopenhag",
+            "state": "ok"
+          },
+          {
+            "text": "Galatasaray – Arsenal",
+            "state": "ok"
+          },
+          {
+            "text": "Penaltılar: *4-1*",
+            "state": "ok"
+          }
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "id": "servet",
+      "image": "img/s09.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "palette": "neon",
+      "tone": "whisper",
+      "text": "Bu bilgi, doğru yere yatırılırsa bir servet."
+    },
+    {
+      "type": "image",
+      "id": "kimse",
+      "image": "img/s09.png",
+      "motion": "push",
+      "tone": "whisper",
+      "text": "Ve bunu dünyada senden başka kimse bilmiyor.",
+      "palette": "neon",
+      "focus": [
+        0.5,
+        0.35
+      ]
+    },
+    {
+      "type": "info",
+      "id": "iddaa",
+      "tag": "PROBLEM 2",
+      "tone": "tense",
+      "text": "Ama bir sorun var. 1999'da iddaa yok.",
+      "info": {
+        "layout": "big",
+        "kicker": "1999'DA KUPON YOK",
+        "heading": "Türkiye'de ilk *iddaa* kuponu",
+        "value": 2004,
+        "from": 1999,
+        "format": "raw",
+        "caption": "Yasal bahis *beş yıl* sonra gelecek"
+      }
+    },
+    {
+      "type": "info",
+      "id": "toto",
+      "tone": "neutral",
+      "text": "Spor Toto var, ama tek maça oynanmıyor.",
+      "info": {
+        "layout": "list",
+        "kicker": "EYLÜL 1999",
+        "heading": "Yasal tek seçenek: Spor Toto",
+        "items": [
+          {
+            "text": "Spor Toto var",
+            "state": "ok"
+          },
+          {
+            "text": "Tek maça *oynanmaz*",
+            "state": "bad"
+          },
+          {
+            "text": "Avrupa kupası *yok*",
+            "state": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "id": "fisilti",
+      "image": "img/s12.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "palette": "kahve",
+      "tone": "whisper",
+      "text": "Kahvehanede fısıltıyla bir isim dolaşıyor.",
+      "prompt_en": "inside a warm 1999 Istanbul coffeehouse, the stocky coffeehouse owner (thick black mustache, white apron, towel over his shoulder) leans over the counter and whispers into the main character's ear, secretly pointing with his thumb toward a dark back corner where a man in a suit sits in smoke; tulip tea glasses, copper tea kettle. Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female. Any text must be correctly spelled Turkish; no gibberish."
+    },
+    {
+      "type": "image",
+      "id": "necmi",
+      "image": "img/s13.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Kaçak bahisçi Necmi. Her şeye oran veriyor."
+    },
+    {
+      "type": "image",
+      "id": "necmimasa",
+      "image": "img/s12.png",
+      "motion": "panRight",
+      "tone": "whisper",
+      "text": "Masası hep aynı köşede. Önünde kalın bir defter.",
+      "palette": "kahve",
+      "focus": [
+        0.7,
+        0.4
+      ]
+    },
+    {
+      "type": "info",
+      "id": "sampiyonlar",
+      "tone": "tense",
+      "text": "Necmi güldü. Galatasaray UEFA'da bile değil.",
+      "info": {
+        "layout": "list",
+        "kicker": "EYLÜL 1999",
+        "heading": "Galatasaray şu an nerede?",
+        "items": [
+          {
+            "text": "Şampiyonlar Ligi · H Grubu",
+            "state": "ok"
+          },
+          {
+            "text": "Rakipler: Chelsea, Milan, Hertha",
+            "state": "ok"
+          },
+          {
+            "text": "UEFA Kupası · *Yok*",
+            "state": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "id": "biliyorsun",
+      "image": "img/s15.png",
+      "motion": "push",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Ama sen biliyorsun."
+    },
+    {
+      "type": "image",
+      "id": "dusecekler",
+      "image": "img/s15.png",
+      "motion": "zoomIn",
+      "tone": "whisper",
+      "text": "Gruptan üçüncü çıkıp UEFA'ya düşecekler.",
+      "palette": "tehlike",
+      "focus": [
+        0.5,
+        0.3
+      ]
+    },
+    {
+      "type": "image",
+      "id": "kartvizit",
+      "image": "img/s16.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "palette": "neon",
+      "tone": "tense",
+      "text": "\"Bire yüz veririm,\" dedi Necmi."
+    },
+    {
+      "type": "image",
+      "id": "getir",
+      "image": "img/s16.png",
+      "motion": "push",
+      "tone": "tense",
+      "text": "\"Yeter ki parayı getir.\"",
+      "palette": "neon",
+      "focus": [
+        0.5,
+        0.55
+      ]
+    },
+    {
+      "type": "image",
+      "id": "ayakkabi",
+      "image": "img/s17.png",
+      "motion": "panRight",
+      "palette": "gunduz",
+      "tone": "neutral",
+      "tag": "PROBLEM 3",
+      "text": "Satabileceğin tek şey üstündekiler.",
+      "prompt_en": "a busy 1999 Tahtakale market street in Istanbul in daylight: a shoe stall owner (the same cartoon species: plump man with a grey mustache, knitted vest, flat cap) holds up the main character's chunky red-and-white high-top sneakers in awe, turning them in his hands; the main character stands in his socks next to the stall; piles of old 1990s shoes, cardboard boxes, hanging bags, other shoppers. Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female. Any text must be correctly spelled Turkish; no gibberish."
+    },
+    {
+      "type": "image",
+      "id": "ayakkabi2",
+      "image": "img/s17.png",
+      "motion": "zoomIn",
+      "tone": "neutral",
+      "text": "2026'dan kalma ayakkabıların.",
+      "palette": "gunduz",
+      "focus": [
+        0.45,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "pazarlik",
+      "image": "img/s17.png",
+      "motion": "push",
+      "tone": "excited",
+      "text": "Esnaf öyle bir taban hiç görmemişti.",
+      "palette": "gunduz",
+      "focus": [
+        0.4,
+        0.5
+      ]
+    },
+    {
+      "type": "info",
+      "id": "ellimilyon",
+      "tone": "excited",
+      "hud": {
+        "yil": 1999,
+        "nakit": 50000000,
+        "sarj": 0
+      },
+      "text": "Elli milyon lira verdi.",
+      "info": {
+        "layout": "big",
+        "kicker": "AYAKKABININ FİYATI",
+        "heading": "Cebine giren para",
+        "value": 50000000,
+        "format": "tl",
+        "caption": "O gün yaklaşık *110 dolar*"
+      }
+    },
+    {
+      "type": "image",
+      "id": "sifir",
+      "image": "img/s19.png",
+      "motion": "zoomIn",
+      "tone": "excited",
+      "text": "Hayatında hiç bu kadar çok sıfır görmemiştin.",
+      "palette": "gunbatimi",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 50000000,
+        "sarj": 0
+      }
+    },
+    {
+      "type": "image",
+      "id": "terlik",
+      "image": "img/s19.png",
+      "motion": "panLeft",
+      "palette": "gunbatimi",
+      "tone": "calm",
+      "hud": {
+        "yil": 1999,
+        "nakit": 50000000,
+        "sarj": 0
+      },
+      "text": "Terliklerle döndün. Cebinde elli milyon.",
+      "prompt_en": "funny scene: the main character walking home along a 1999 Istanbul neighborhood street at sunset wearing cheap blue plastic slippers instead of sneakers, still in his mustard beanie and navy bomber jacket, one hand proudly patting a bulging pocket with banknotes; neighbors look at his slippers, laundry lines, old apartment buildings. Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female. Any text must be correctly spelled Turkish; no gibberish."
+    },
+    {
+      "type": "info",
+      "id": "kur",
+      "tone": "neutral",
+      "hud": {
+        "yil": 1999,
+        "nakit": 50000000,
+        "sarj": 0
+      },
+      "text": "Bugün bir dolar, yaklaşık dört yüz elli bin lira.",
+      "info": {
+        "layout": "compare",
+        "kicker": "1 DOLAR KAÇ LİRA?",
+        "heading": "Bildiğin kur",
+        "items": [
+          {
+            "label": "Eylül 1999",
+            "value": 450000,
+            "format": "tl"
+          },
+          {
+            "label": "2001 sonu",
+            "value": 1440000,
+            "format": "tl",
+            "accent": true
+          }
+        ],
+        "caption": "Dolar *üç katına* çıkacak"
+      }
+    },
+    {
+      "type": "info",
+      "id": "risk",
+      "tone": "tense",
+      "text": "Kaçak bahiste kazanırsan, paranı alacağının garantisi yok.",
+      "info": {
+        "layout": "list",
+        "kicker": "KAÇAK BAHİS",
+        "heading": "Kazanırsan ne olur?",
+        "items": [
+          {
+            "text": "Oran: *bire yüz*",
+            "state": "ok"
+          },
+          {
+            "text": "Sözleşme yok",
+            "state": "bad"
+          },
+          {
+            "text": "Polis basarsa *hepsi gider*",
+            "state": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "type": "info",
+      "id": "kiyas",
+      "tone": "dramatic",
+      "text": "Necmi'ye yatırırsan beş milyar. Dolara çevirirsen, Kara Çarşamba'da üç katı.",
+      "info": {
+        "layout": "compare",
+        "kicker": "50 MİLYON NE OLUR?",
+        "heading": "İki yol",
+        "items": [
+          {
+            "label": "Necmi · bire yüz",
+            "value": 5000000000,
+            "format": "tl",
+            "accent": true
+          },
+          {
+            "label": "Dolar · 2001 krizi",
+            "value": 150000000,
+            "format": "tl"
+          }
+        ],
+        "caption": "Biri *kaçak*, diğeri *yasal*"
+      }
+    },
+    {
+      "type": "image",
+      "id": "hayat",
+      "image": "img/s21.png",
+      "motion": "zoomIn",
+      "tone": "dramatic",
+      "text": "Beş milyar. Hayatını değiştirecek bir para.",
+      "palette": "gunbatimi",
+      "focus": [
+        0.3,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "ikiyol",
+      "image": "img/s21.png",
+      "motion": "zoomOut",
+      "palette": "gunbatimi",
+      "tone": "dramatic",
+      "text": "Biri kaçak ve yüz kat. Diğeri yasal ve güvenli.",
+      "prompt_en": "a split composition divided vertically down the middle: left half a dark smoky back room with the slim bookie in a shiny dark suit, pencil mustache and gold ring fanning a thick stack of 1990s Turkish lira banknotes under red light; right half a bright 1999 currency exchange office counter with a friendly clerk (glasses, tie) and stacks of US dollar bills under warm light, a sign reading exactly 'DÖVİZ'; the main character in blue plastic slippers stands exactly on the dividing line holding his banknotes, torn between the two. Every other person is the same round-white-headed cartoon species as the main character (no nose, no ears, bare white hands), each one clearly different; men clearly male, women clearly female. Any text must be correctly spelled Turkish; no gibberish."
+    },
+    {
+      "type": "image",
+      "id": "sekizay",
+      "image": "img/s21.png",
+      "motion": "panRight",
+      "tone": "tense",
+      "text": "Ve finale tam sekiz ay var.",
+      "palette": "gunbatimi",
+      "focus": [
+        0.7,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "unuttun",
+      "image": "img/s13.png",
+      "motion": "push",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Ama bir şeyi unuttun."
+    },
+    {
+      "type": "image",
+      "id": "kolay",
+      "image": "img/s13.png",
+      "motion": "zoomIn",
+      "tone": "whisper",
+      "text": "Necmi neden bu kadar kolay kabul etti?",
+      "palette": "tehlike",
+      "focus": [
+        0.5,
+        0.3
+      ]
+    },
+    {
+      "type": "bait",
+      "image": "img/s23.png",
+      "words": [
+        "NECMİ",
+        "DOLAR"
+      ],
+      "duration": 2.4,
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "palette": "neon",
+      "tone": "question",
+      "motion": "none",
+      "text": "Sen olsan parayı nereye koyardın?"
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "3. BÖLÜM",
+        "*YARIN*"
+      ],
+      "body": "Yorumlara **NECMİ** ya da **DOLAR** yaz.\nÇoğunluk 3. bölümü yazar.",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.0
+    }
+  ]
+}

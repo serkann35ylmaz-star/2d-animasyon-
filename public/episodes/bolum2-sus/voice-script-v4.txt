@@ -1,0 +1,39 @@
+[dramatic] Yorumlarda karar çıktı: Susacaksın.
+[dramatic] Kimseye söylemedin.
+[tense] Cebinde tek kuruş yok.
+[sad] Cüzdanındaki paralar burada sadece renkli kâğıt.
+[tense] Telefonun ölmek üzere.
+[tense] Şarj da edemezsin. Yu es bi si, iki bin on dörde kadar icat edilmeyecek.
+[calm] Bildiğin her şeyi bir deftere yazıyorsun.
+[calm] Maç skorları, tarihler, dolar kuru.
+[whispers] Ekran karardı. Geriye defter kaldı.
+[sad] Artık ne internet var, ne harita.
+[whispers] Sadece aklındakiler.
+[dramatic] Defterin ilk sayfasında tek bir tarih var: on yedi Mayıs iki bin.
+[whispers] Bu bilgi, doğru yere yatırılırsa bir servet.
+[whispers] Ve bunu dünyada senden başka kimse bilmiyor.
+[tense] Ama bir sorun var. bin dokuz yüz doksan dokuzda iddaa yok.
+Spor Toto var, ama tek maça oynanmıyor.
+[whispers] Kahvehanede fısıltıyla bir isim dolaşıyor.
+[whispers] Kaçak bahisçi Necmi. Her şeye oran veriyor.
+[whispers] Masası hep aynı köşede. Önünde kalın bir defter.
+[tense] Necmi güldü. Galatasaray UEFA'da bile değil.
+[whispers] Ama sen biliyorsun.
+[whispers] Gruptan üçüncü çıkıp UEFA'ya düşecekler.
+[tense] "Bire yüz veririm," dedi Necmi.
+[tense] "Yeter ki parayı getir."
+Satabileceğin tek şey üstündekiler.
+İki bin yirmi altıdan kalma ayakkabıların.
+[excited] Esnaf öyle bir taban hiç görmemişti.
+[excited] Elli milyon lira verdi.
+[excited] Hayatında hiç bu kadar çok sıfır görmemiştin.
+[calm] Terliklerle döndün. Cebinde elli milyon.
+Bugün bir dolar, yaklaşık dört yüz elli bin lira.
+[tense] Kaçak bahiste kazanırsan, paranı alacağının garantisi yok.
+[dramatic] Necmi'ye yatırırsan beş milyar. Dolara çevirirsen, Kara Çarşamba'da üç katı.
+[dramatic] Beş milyar. Hayatını değiştirecek bir para.
+[dramatic] Biri kaçak ve yüz kat. Diğeri yasal ve güvenli.
+[tense] Ve finale tam sekiz ay var.
+[whispers] Ama bir şeyi unuttun.
+[whispers] Necmi neden bu kadar kolay kabul etti?
+[curious] Sen olsan parayı nereye koyardın?
