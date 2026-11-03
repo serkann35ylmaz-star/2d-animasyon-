@@ -74,6 +74,7 @@ if (!audioOnly) await renderMedia({
   inputProps,
   browserExecutable,
   chromiumOptions,
+  timeoutInMilliseconds: 120000, // tek karede takılma tüm render'ı düşürmesin
   crf: draft ? 28 : 18,
   pixelFormat: 'yuv420p',
   audioCodec: 'aac',
@@ -97,7 +98,16 @@ if (!audioOnly) await renderMedia({
 // (Yalnız sınırlayıcıyla +5 dB vermek sesi bozuyor ve AAC sonrası tepeler +5 dB'ye fırlıyordu.)
 console.log('\n• Ses hazırlanıyor (-14 LUFS)…');
 const wav = out.replace(/\.mp4$/, '.master.wav');
-await renderMedia({composition, serveUrl, codec: 'wav', outputLocation: wav, inputProps, browserExecutable, chromiumOptions, frameRange: frames && frames.length === 2 ? [frames[0], frames[1]] : null});
+// Tek bir karede tarayıcı takılırsa (28 sn varsayılan) tüm iş düşmesin: uzun bekleme + 2 deneme
+for (let attempt = 1; ; attempt++) {
+  try {
+    await renderMedia({composition, serveUrl, codec: 'wav', outputLocation: wav, inputProps, browserExecutable, chromiumOptions, timeoutInMilliseconds: 120000, frameRange: frames && frames.length === 2 ? [frames[0], frames[1]] : null});
+    break;
+  } catch (e) {
+    if (attempt >= 2) throw e;
+    console.warn(`  ⚠ Ses adımı takıldı, yeniden deneniyor: ${e.message.split('\n')[0]}`);
+  }
+}
 const COMP = 'acompressor=threshold=0.125:ratio=3:attack=5:release=120:knee=4';
 const LIMIT = 'alimiter=limit=0.794:level=false:attack=5:release=50';
 const chain = (g) => `${COMP},volume=${g.toFixed(2)}dB,${LIMIT}`;
