@@ -29,7 +29,12 @@ python3 scripts/ep.py check bolum1                 # 5) eksik + süre/tempo kont
 node scripts/render.mjs bolum1 --stills            # 6) storyboard -> out/bolum1-storyboard.jpg
 node scripts/render.mjs bolum1                     # 7) final -> out/bolum1.mp4
 ```
-Videolar **30, 45 ya da 60 sn** hedeflenir (`targetDuration`). Süre sesten otomatik hesaplanır;
+> **RENDER KURALI (zorunlu):** Final render (4 çekirdekli bulut makinesinde 75 sn ≈ 30–35 dk, 100 sn ≈ 45 dk)
+> arka planda **her zaman 2 saatlik süre sınırıyla** başlatılır (`timeout: 7200000`). Varsayılan 30 dk sınırı
+> render'ı yarıda keser ve kareler en sonda birleştiği için iş sıfırdan başlar. Render'ı başlatan komutta
+> `pkill -f …` kullanılmaz (komut kendini öldürür). Kullanıcıya süre tahmini verilirken gerçek ilerlemeye bakılır.
+
+Videolar **30, 45, 60 ya da 75 sn** hedeflenir (`targetDuration`); seri standardı **75 sn**. Süre sesten otomatik hesaplanır;
 hedefin ±%12 dışına çıkarsa render ve `check` uyarır. Ayrıntı: `docs/STIL.md` → "Hedef süreler".
 
 Görseller ya da ses henüz yoksa da render alınır: yer tutucu görseller ve tahmini zamanlama kullanılır.
