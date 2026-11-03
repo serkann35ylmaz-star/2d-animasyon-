@@ -63,7 +63,8 @@ def main() -> None:
     series = ep.get("series", {})
     m = re.search(r"Bölüm\s*(\d+)", ep.get("title", ""))
     num = m.group(1) if m else "?"
-    show = ep.get("title", "").split("—")[0].strip().upper() or series.get("name", "").upper()
+    tr_up = lambda t: t.replace("i", "İ").replace("ı", "I").upper()  # Türkçe büyük harf (i -> İ)
+    show = tr_up(ep.get("title", "").split("—")[0].strip()) or tr_up(series.get("name", ""))
 
     img = Image.open(os.path.join(d, args.image)).convert("RGB")
     s = max(W / img.width, H / img.height)

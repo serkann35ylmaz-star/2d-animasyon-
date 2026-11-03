@@ -41,16 +41,42 @@ def main() -> None:
         sys.exit("✗ Whisper hiç kelime bulamadı")
 
     # Her sahnenin ilk kelimesini sırayla bul (ilk 4 harf yeterli: "Şarj" ~ "Şarjda")
+    # Whisper sayıları rakamla yazabilir ("Elli" -> "50"); sayı kelimesi rakamla da eşleşir.
+    NUM = {"bir": "1", "iki": "2", "üç": "3", "dört": "4", "beş": "5", "altı": "6", "yedi": "7", "sekiz": "8",
+           "dokuz": "9", "on": "1", "yirmi": "2", "otuz": "3", "kırk": "4", "elli": "5", "altmış": "6",
+           "yetmiş": "7", "seksen": "8", "doksan": "9", "yüz": "1", "bin": "1"}
+
+    def hit(word: str, a: str, full: str) -> bool:
+        w = norm(word)
+        return w.startswith(a) or (full in NUM and w[:1].isdigit() and w.startswith(NUM[full]))
+
     idx, j = [], 0
     for line in lines:
-        a = norm(line.split()[0])[:4]
+        toks = line.split()
+        full = norm(toks[0])
+        a = full[:4]
         k = j
-        while k < len(words) and not norm(words[k]["w"]).startswith(a):
+        while k < len(words) and not hit(words[k]["w"], a, full):
             k += 1
+        if k >= len(words) and len(toks) > 1:
+            # İlk kelime bulunamazsa ikinci kelimeyle (yakın pencerede) dene
+            b, full2 = norm(toks[1])[:4], norm(toks[1])
+            k = j + 1
+            while k < min(len(words), j + 40) and not hit(words[k]["w"], b, full2):
+                k += 1
+            k = k - 1 if k < min(len(words), j + 40) else len(words)
         if k >= len(words):
             sys.exit(f"✗ Sahne başı seste bulunamadı: «{line}» — segments.json yazılmadı (sessizlik yöntemi kullanılacak)")
         idx.append(k)
-        j = k + 1
+        # Sonraki cümle bu cümlenin içinden başlayamaz ("beş milyar … Beş milyar."): kelimelerinin ~yarısını atla
+        # Ardışık sayı kelimeleri ("dört yüz elli bin") Whisper'da tek rakam olabilir: tek kelime say
+        n_exp, prev_num = 0, False
+        for t in toks:
+            is_num = norm(t) in NUM or norm(t)[:1].isdigit()
+            if not (is_num and prev_num):
+                n_exp += 1
+            prev_num = is_num
+        j = k + max(1, n_exp - 1)
 
     out = []
     for n, line in enumerate(lines):
@@ -63,7 +89,10 @@ def main() -> None:
     gaps = [(p[1], q[0]) for p, q in zip(iv, iv[1:])]
     for n in range(len(out) - 1):
         mid = (out[n]["end"] + out[n + 1]["start"]) / 2
-        near = [g for g in gaps if abs((g[0] + g[1]) / 2 - mid) < 0.6]
+        last_s = words[idx[n + 1] - 1]["s"]  # bu cümlenin son kelimesinin başı
+        next_e = words[idx[n + 1]]["e"]  # sonraki cümlenin ilk kelimesinin sonu
+        # Sessizlik, cümlenin son kelimesiyle sonrakinin ilk kelimesi arasında olmalı (kelime kesilmesin)
+        near = [g for g in gaps if abs((g[0] + g[1]) / 2 - mid) < 0.6 and g[0] >= last_s and g[1] <= next_e]
         if near:
             g = min(near, key=lambda g: abs((g[0] + g[1]) / 2 - mid))
             out[n]["end"], out[n + 1]["start"] = round(g[0], 3), round(g[1], 3)

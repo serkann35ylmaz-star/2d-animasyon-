@@ -3,7 +3,7 @@ import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConf
 import {Rich} from '../components/Rich';
 import {Unit} from '../components/Unit';
 import {formatValue} from '../lib/text';
-import {C, FONT, MONO} from '../theme';
+import {C, FONT, MONO, accentA} from '../theme';
 import type {InfoBig, InfoBody, InfoCompare, InfoGrid, InfoList, InfoStats, InfoUnit} from '../types';
 
 const useIn = (delay = 0) => {
@@ -31,7 +31,7 @@ const Kicker: React.FC<{text?: string}> = ({text}) =>
 const Heading: React.FC<{text?: string; delay?: number; size?: number}> = ({text, delay = 3, size = 50}) =>
   text ? (
     <Appear delay={delay}>
-      <div style={{fontFamily: FONT, fontWeight: 800, fontSize: size, color: C.ink, textAlign: 'center', lineHeight: 1.15}}>
+      <div style={{fontFamily: FONT, fontWeight: 800, fontSize: size, color: C.infoInk, textAlign: 'center', lineHeight: 1.15}}>
         <Rich text={text} />
       </div>
     </Appear>
@@ -86,7 +86,7 @@ const Grid: React.FC<{d: InfoGrid}> = ({d}) => {
       <div style={{height: 40}} />
       {caption ? (
         <Appear delay={8}>
-          <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 46, color: C.ink, textAlign: 'center', lineHeight: 1.2, fontVariantNumeric: 'tabular-nums'}}>
+          <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 46, color: C.infoInk, textAlign: 'center', lineHeight: 1.2, fontVariantNumeric: 'tabular-nums'}}>
             <Rich text={caption} />
           </div>
         </Appear>
@@ -99,7 +99,7 @@ const Grid: React.FC<{d: InfoGrid}> = ({d}) => {
             fontWeight: 900,
             fontSize: d.result.replace(/\*/g, '').length <= 7 ? 150 : 108,
             letterSpacing: '-0.03em',
-            color: C.ink,
+            color: C.infoInk,
             whiteSpace: 'nowrap',
             textAlign: 'center',
             opacity: resultP,
@@ -137,7 +137,7 @@ const Stats: React.FC<{d: InfoStats}> = ({d}) => {
                 fontWeight: 900,
                 fontSize: 84,
                 letterSpacing: '-0.02em',
-                color: r.accent ? C.pink : C.ink,
+                color: r.accent ? C.pink : C.infoInk,
                 fontVariantNumeric: 'tabular-nums',
               }}
             >
@@ -145,7 +145,7 @@ const Stats: React.FC<{d: InfoStats}> = ({d}) => {
             </div>
             {r.bar ? (
               <div style={{height: 10, background: C.paperLine, borderRadius: 5, marginTop: 10, overflow: 'hidden'}}>
-                <div style={{height: '100%', width: `${(r.value / max) * 100 * p}%`, background: r.accent ? C.pink : C.ink, borderRadius: 5}} />
+                <div style={{height: '100%', width: `${(r.value / max) * 100 * p}%`, background: r.accent ? C.pink : C.infoInk, borderRadius: 5}} />
               </div>
             ) : null}
           </Appear>
@@ -153,7 +153,7 @@ const Stats: React.FC<{d: InfoStats}> = ({d}) => {
       })}
       {d.footer ? (
         <Appear delay={5 + d.rows.length * 7 + 4}>
-          <div style={{fontFamily: FONT, fontWeight: 600, fontSize: 36, color: '#55504a', textAlign: 'center', marginTop: 20}}>
+          <div style={{fontFamily: FONT, fontWeight: 600, fontSize: 36, color: C.infoSub, textAlign: 'center', marginTop: 20}}>
             <Rich text={d.footer} />
           </div>
         </Appear>
@@ -203,9 +203,9 @@ const Compare: React.FC<{d: InfoCompare}> = ({d}) => {
         const p = interpolate(frame, [delay, delay + fps * 0.9], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
         return (
           <Appear key={i} delay={delay} style={{marginBottom: 36}}>
-            <div style={{display: 'flex', justifyContent: 'space-between', fontFamily: FONT, fontWeight: 700, fontSize: 36, color: C.ink, marginBottom: 10}}>
+            <div style={{display: 'flex', justifyContent: 'space-between', fontFamily: FONT, fontWeight: 700, fontSize: 36, color: C.infoInk, marginBottom: 10}}>
               <span>{it.label}</span>
-              <span style={{fontWeight: 900, color: it.accent ? C.pink : C.ink, fontVariantNumeric: 'tabular-nums'}}>{formatValue(it.value * p, it.format ?? 'number')}</span>
+              <span style={{fontWeight: 900, color: it.accent ? C.pink : C.infoInk, fontVariantNumeric: 'tabular-nums'}}>{formatValue(it.value * p, it.format ?? 'number')}</span>
             </div>
             <div style={{height: 34, background: C.paperLine, borderRadius: 10, overflow: 'hidden'}}>
               <div style={{height: '100%', width: `${(it.value / max) * 100 * p}%`, background: it.accent ? C.pink : C.note, border: `3px solid ${C.noteEdge}`, boxSizing: 'border-box', borderRadius: 10}} />
@@ -232,9 +232,9 @@ const List: React.FC<{d: InfoList}> = ({d}) => (
             height: 64,
             flex: '0 0 64px',
             borderRadius: 14,
-            background: it.state === 'bad' ? C.pink : it.state === 'ok' ? C.ink : 'transparent',
-            border: `4px solid ${it.state === 'bad' ? C.pink : C.ink}`,
-            color: '#fff',
+            background: it.state === 'bad' ? C.pink : it.state === 'ok' ? C.infoInk : 'transparent',
+            border: `4px solid ${it.state === 'bad' ? C.pink : C.infoInk}`,
+            color: it.state === 'ok' ? C.night : '#fff',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -245,7 +245,7 @@ const List: React.FC<{d: InfoList}> = ({d}) => (
         >
           {it.state === 'bad' ? '✕' : it.state === 'ok' ? '✓' : ''}
         </div>
-        <div style={{fontFamily: FONT, fontWeight: 700, fontSize: 44, color: C.ink, lineHeight: 1.2}}>
+        <div style={{fontFamily: FONT, fontWeight: 700, fontSize: 44, color: C.infoInk, lineHeight: 1.2}}>
           <Rich text={it.text} />
         </div>
       </Appear>
@@ -279,25 +279,40 @@ export const InfoScene: React.FC<{info: InfoBody}> = ({info}) => {
     <AbsoluteFill style={{backgroundColor: C.paper}}>
       <AbsoluteFill
         style={{
-          background:
-            'radial-gradient(120% 60% at 50% 0%, rgba(255,255,255,0.45), transparent 60%), radial-gradient(100% 50% at 50% 100%, rgba(0,0,0,0.05), transparent 70%)',
+          background: `radial-gradient(90% 45% at 50% 8%, ${accentA(0.22)}, transparent 70%), radial-gradient(80% 40% at 15% 100%, rgba(124,58,237,0.20), transparent 70%), radial-gradient(70% 35% at 95% 85%, rgba(232,37,127,0.12), transparent 70%)`,
         }}
       />
+      <AbsoluteFill style={{background: 'radial-gradient(120% 80% at 50% 50%, transparent 55%, rgba(0,0,0,0.55) 100%)'}} />
       <div
         style={{
           // TikTok güvenli alanında (üst menü 200 px, alt açıklama 1600 px+) dikeyde ortalı
           position: 'absolute',
           top: 200,
           bottom: 320,
-          left: 110,
-          right: 110,
+          left: 70,
+          right: 70,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
         }}
       >
-        {body}
+        <div
+          style={{
+            width: '100%',
+            boxSizing: 'border-box',
+            padding: '64px 40px',
+            borderRadius: 40,
+            background: 'linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03))',
+            border: '1.5px solid rgba(255,255,255,0.10)',
+            boxShadow: `0 30px 80px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.08), 0 0 0 1px ${accentA(0.06)}`,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          {body}
+        </div>
       </div>
     </AbsoluteFill>
   );

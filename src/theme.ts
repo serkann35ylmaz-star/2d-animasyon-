@@ -5,9 +5,11 @@ export const C = {
   pink: '#E8257F', // vurgu (İZ, YARIN, %35, 200 ₺)
   pinkDeep: '#B5135F',
   ink: '#1C1A19', // açık zemin üstü koyu yazı
-  paper: '#E9E4D8', // bilgi grafiği zemini (bej)
-  paperLine: '#D6CFBF',
-  mute: '#8E887C', // mono küçük başlıklar
+  paper: '#120F16', // bilgi grafiği zemini (gece; beyaz zemin yok)
+  paperLine: 'rgba(255,255,255,0.14)',
+  mute: '#A49DB0', // mono küçük başlıklar
+  infoInk: '#F6F1E8', // bilgi kartı ana yazı (koyu zemin üstü)
+  infoSub: '#CFC8BC', // bilgi kartı alt yazı
   note: '#C6A4EA', // banknot moru
   noteEdge: '#2A2235',
   night: '#141213', // kapanış kartı zemini
