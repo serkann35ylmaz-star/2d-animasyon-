@@ -104,7 +104,10 @@ def main() -> None:
     for s in todo:
         t = time.time()
         try:
-            res = client.predict(handle_file(ref_path), build_prompt(s, ep, style), 0, True, 2.5, args.steps, api_name="/infer")
+            # Sahneye özel referans ("ref": "img/..") varsa onu kullan (ör. aynı mekânın eski görseli)
+            r = s.get("ref")
+            rp = (r if os.path.isabs(r) else os.path.join(d, r)) if r else ref_path
+            res = client.predict(handle_file(rp), build_prompt(s, ep, style), 0, True, 2.5, args.steps, api_name="/infer")
         except Exception as e:  # kota dolması vb.
             print(f"✗ {s['image']}: {str(e)[:300]}")
             print("  Ücretsiz kota dolmuş olabilir; biraz sonra aynı komutu tekrar çalıştırın (kaldığı yerden devam eder).")

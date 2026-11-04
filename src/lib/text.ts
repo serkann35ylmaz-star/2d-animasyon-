@@ -16,6 +16,8 @@ export const formatValue = (v: number, format: ValueFormat = 'number'): string =
       return `${groupThousands(v)} ₺`;
     case 'tl': // eski Türk lirası (₺ simgesi 2012'den önce yoktu)
       return `${groupThousands(v)} TL`;
+    case 'usd':
+      return `${groupThousands(v)} $`;
     case 'percent':
       return `%${Math.round(v)}`;
     case 'kg':

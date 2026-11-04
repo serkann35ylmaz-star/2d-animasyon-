@@ -1,0 +1,527 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 3: Yastık Altı",
+  "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+  "targetDuration": 75,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Istanbul, late September 1999, an old working-class neighborhood",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "dolar",
+      "label": "DOLAR",
+      "format": "usd",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "info",
+      "id": "karar",
+      "tone": "dramatic",
+      "text": "Yorumlar konuştu: Dolar.",
+      "info": {
+        "layout": "list",
+        "kicker": "2. BÖLÜMDE SİZ KARAR VERDİNİZ",
+        "heading": "Yorumların kararı: *DOLAR*",
+        "items": [
+          {
+            "text": "*Dolar* · açık ara çoğunluk",
+            "state": "ok"
+          },
+          {
+            "text": "Necmi · *güvenilmez*",
+            "state": "bad"
+          },
+          {
+            "text": "En çok beğenilen fikir: *Bitcoin*",
+            "state": "ok"
+          }
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "id": "donmedin",
+      "image": "img/s01.png",
+      "motion": "zoomOut",
+      "palette": "tehlike",
+      "tone": "calm",
+      "hud": {
+        "yil": 1999,
+        "nakit": 50000000,
+        "dolar": 0
+      },
+      "text": "Necmi'nin masasına hiç dönmedin."
+    },
+    {
+      "type": "title",
+      "image": "img/s02.png",
+      "kicker": "BÖLÜM 3 · YASTIK ALTI",
+      "lines": [
+        "GELECEĞİ",
+        "*BİLEN*",
+        "ADAM"
+      ],
+      "duration": 1.9,
+      "palette": "neon"
+    },
+    {
+      "type": "image",
+      "id": "doviz",
+      "image": "img/s03.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "calm",
+      "hud": {
+        "yil": 1999,
+        "nakit": 50000000,
+        "dolar": 0
+      },
+      "text": "Ertesi sabah döviz bürosundasın.",
+      "ref": "../bolum2-sus/img/s21.png",
+      "prompt_en": "Redraw this as ONE single full scene (no split screen): the inside of a bright, clean 1999 Istanbul currency exchange office in daylight. A friendly clerk of the same cartoon species (round glasses, short side-parted hair, white shirt and tie) stands behind a wooden counter with a glass partition and hands a small stack of green US dollar bills to the main character, who stands at the counter in cheap bright blue plastic slippers, holding out his 1990s Turkish lira banknotes. On the wall behind the clerk a big sign reads exactly 'DÖVİZ' and a small board with country flags. Calm, hopeful mood"
+    },
+    {
+      "type": "info",
+      "id": "yuzonbir",
+      "tone": "excited",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "50 milyon lira, 111 dolar etti.",
+      "info": {
+        "layout": "big",
+        "kicker": "DÖVİZ BÜROSU · EYLÜL 1999",
+        "heading": "Ayakkabının parası",
+        "value": 111,
+        "from": 0,
+        "format": "usd",
+        "caption": "1 dolar ≈ *450.000 TL*"
+      }
+    },
+    {
+      "type": "image",
+      "id": "avuc",
+      "image": "img/s03.png",
+      "motion": "push",
+      "palette": "gunduz",
+      "tone": "sad",
+      "focus": [
+        0.55,
+        0.55
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Ayakkabılarının parası, bir avuç yeşil kâğıt."
+    },
+    {
+      "type": "image",
+      "id": "azgorunuyor",
+      "image": "img/s04.png",
+      "motion": "panLeft",
+      "palette": "gunbatimi",
+      "tone": "whisper",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Az görünüyor. Ama sen biliyorsun."
+    },
+    {
+      "type": "info",
+      "id": "karacarsamba",
+      "tone": "dramatic",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Kara Çarşamba'da, Şubat 2001'de, bu dolar katlanacak.",
+      "info": {
+        "layout": "compare",
+        "kicker": "KARA ÇARŞAMBA · 21 ŞUBAT 2001",
+        "heading": "111 doların lira karşılığı",
+        "items": [
+          {
+            "label": "Eylül 1999",
+            "value": 50000000,
+            "format": "tl"
+          },
+          {
+            "label": "2001 sonu",
+            "value": 159840000,
+            "format": "tl",
+            "accent": true
+          }
+        ],
+        "caption": "Paran *üç katına* çıkacak"
+      }
+    },
+    {
+      "type": "image",
+      "id": "asilplan",
+      "image": "img/s05.png",
+      "motion": "push",
+      "palette": "kahve",
+      "tone": "tense",
+      "focus": [
+        0.45,
+        0.6
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Ama asıl plan bu değil."
+    },
+    {
+      "type": "image",
+      "id": "yenisatir",
+      "image": "img/s05.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "whisper",
+      "focus": [
+        0.6,
+        0.7
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Defterine yeni bir satır yazıyorsun: 3 Ocak 2009."
+    },
+    {
+      "type": "info",
+      "id": "bitcoin",
+      "tone": "dramatic",
+      "text": "Bitcoin. Dünyanın ilk kripto parası.",
+      "info": {
+        "layout": "big",
+        "kicker": "DEFTER · YENİ SATIR",
+        "heading": "*Bitcoin* doğuyor",
+        "value": 2009,
+        "from": 1999,
+        "format": "raw",
+        "caption": "1999'dan tam *10 yıl* sonra"
+      }
+    },
+    {
+      "type": "info",
+      "id": "pizza",
+      "tone": "excited",
+      "text": "Mayıs 2010'da biri, 10.000 Bitcoin'le iki pizza alacak.",
+      "info": {
+        "layout": "list",
+        "kicker": "22 MAYIS 2010",
+        "heading": "Tarihin en pahalı pizzası",
+        "items": [
+          {
+            "text": "*10.000 Bitcoin* = 2 pizza",
+            "state": "ok"
+          },
+          {
+            "text": "1 Bitcoin · neredeyse *bedava*",
+            "state": "ok"
+          },
+          {
+            "text": "Bugün değeri: *yüz milyonlarca dolar*",
+            "state": "ok"
+          }
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "id": "binlerce",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "palette": "neon",
+      "tone": "whisper",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Senin 111 dolarınla binlerce Bitcoin alabilirsin."
+    },
+    {
+      "type": "info",
+      "id": "onyil",
+      "tag": "PROBLEM",
+      "tone": "tense",
+      "text": "Tek sorun: on yıl beklemek.",
+      "info": {
+        "layout": "big",
+        "kicker": "TEK SORUN",
+        "heading": "Bitcoin'e kalan süre",
+        "value": 10,
+        "from": 0,
+        "format": "raw",
+        "caption": "*Yıl* beklemek zorundasın"
+      }
+    },
+    {
+      "type": "image",
+      "id": "saklamak",
+      "image": "img/s06.png",
+      "motion": "push",
+      "palette": "neon",
+      "tone": "tense",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Ve bu dolarları on yıl boyunca saklamak."
+    },
+    {
+      "type": "info",
+      "id": "banka",
+      "tone": "tense",
+      "text": "Bankaya da yatıramazsın. Kimliğin 2026'dan.",
+      "info": {
+        "layout": "list",
+        "kicker": "BANKA · EYLÜL 1999",
+        "heading": "Hesap açmak için ne lazım?",
+        "items": [
+          {
+            "text": "Nüfus cüzdanı",
+            "state": "ok"
+          },
+          {
+            "text": "Senin kimliğin: *2026 tarihli*",
+            "state": "bad"
+          },
+          {
+            "text": "Banka hesabı · *açılamaz*",
+            "state": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "id": "yastik",
+      "image": "img/s07.png",
+      "motion": "zoomIn",
+      "palette": "soguk",
+      "tone": "calm",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Dolarları yastığının altına saklıyorsun.",
+      "ref": "../bolum1-1999/img/s01.png",
+      "prompt_en": "Same bedroom at night, lit only by a small bedside lamp and the pink neon outside the window. The main character, now wearing cheap bright blue plastic slippers instead of sneakers, kneels on the bed and carefully slides a thin stack of green US dollar bills under the white pillow, glancing nervously over his shoulder at the door. Quiet, secretive mood"
+    },
+    {
+      "type": "image",
+      "id": "hergece",
+      "image": "img/s07.png",
+      "motion": "push",
+      "palette": "soguk",
+      "tone": "whisper",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "On yıl. Her gece aynı yastık."
+    },
+    {
+      "type": "image",
+      "id": "kapi",
+      "image": "img/s08.png",
+      "motion": "shake",
+      "transition": "flash",
+      "palette": "tehlike",
+      "tone": "tense",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "O gece kapı çalıyor.",
+      "ref": "../bolum2-sus/img/s02b.png",
+      "prompt_en": "Same apartment stairwell, but late at night: the green fluorescent tube flickers dimly. The apartment door is half open. In the doorway stands Necmi the illegal bookie: the same round-white-headed cartoon species, slim, slicked-back shiny black hair, thin pencil mustache, shiny black suit, white shirt open at the collar, gold chain, gold ring, holding a thick black notebook under his arm, with a sly knowing smile and a cigarette. The main character, in cheap bright blue plastic slippers instead of sneakers, holds the door handle from the inside and stares at him in shock. Tense thriller mood, deep shadows"
+    },
+    {
+      "type": "image",
+      "id": "necmikapida",
+      "image": "img/s08.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "whisper",
+      "focus": [
+        0.6,
+        0.4
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Kapıda Necmi var."
+    },
+    {
+      "type": "image",
+      "id": "takip",
+      "image": "img/s08.png",
+      "motion": "panRight",
+      "palette": "tehlike",
+      "tone": "whisper",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Seni kahvehaneden beri takip ediyormuş."
+    },
+    {
+      "type": "image",
+      "id": "getirmedin",
+      "image": "img/s09.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "tense",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "text": "\"Parayı getirmedin,\" dedi.",
+      "ref": "../bolum2-sus/img/s13.png",
+      "prompt_en": "Close-up of Necmi the illegal bookie: the same round-white-headed cartoon species, slim, slicked-back shiny black hair, thin pencil mustache, shiny black suit, white shirt open at the collar, gold chain, gold ring, now standing in a dark apartment doorway at night instead of the coffeehouse, leaning slightly toward the camera, a thick black notebook open in one hand, cigarette smoke curling, eyes narrowed with a sly, knowing, menacing half-smile. Dim green stairwell light behind him. Keep the same character design exactly"
+    },
+    {
+      "type": "image",
+      "id": "nereden",
+      "image": "img/s09.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "tense",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "text": "\"Galatasaray'ı nereden biliyorsun?\""
+    },
+    {
+      "type": "image",
+      "id": "anladi",
+      "image": "img/s08.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "whisper",
+      "focus": [
+        0.35,
+        0.45
+      ],
+      "text": "Necmi senin bir şey bildiğini anladı."
+    },
+    {
+      "type": "image",
+      "id": "sir",
+      "image": "img/s09.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "dramatic",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "text": "Ve o, bu sırrı istiyor."
+    },
+    {
+      "type": "bait",
+      "image": "img/s10.png",
+      "words": [
+        "ANLAŞ",
+        "KAÇ"
+      ],
+      "duration": 2.4,
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "palette": "neon",
+      "tone": "question",
+      "motion": "none",
+      "text": "Sen olsan ne yapardın?"
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "4. BÖLÜM",
+        "*YARIN*"
+      ],
+      "body": "Yorumlara **ANLAŞ** ya da **KAÇ** yaz.\nÇoğunluk 4. bölümü yazar.",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.0
+    }
+  ]
+}
