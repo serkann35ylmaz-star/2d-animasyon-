@@ -46,9 +46,14 @@ def main() -> None:
            "dokuz": "9", "on": "1", "yirmi": "2", "otuz": "3", "kırk": "4", "elli": "5", "altmış": "6",
            "yetmiş": "7", "seksen": "8", "doksan": "9", "yüz": "1", "bin": "1"}
 
+    from difflib import SequenceMatcher
+
     def hit(word: str, a: str, full: str) -> bool:
         w = norm(word)
-        return w.startswith(a) or (full in NUM and w[:1].isdigit() and w.startswith(NUM[full]))
+        if w.startswith(a) or (full in NUM and w[:1].isdigit() and w.startswith(NUM[full])):
+            return True
+        # Whisper bazen bir harfi yanlış duyar ("Necmi'nin" -> "Necbinin"): benzer yazılışı da kabul et
+        return len(full) >= 5 and SequenceMatcher(None, w, full).ratio() >= 0.75
 
     idx, j = [], 0
     for line in lines:

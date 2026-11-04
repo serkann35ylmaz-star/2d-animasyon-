@@ -286,6 +286,10 @@ def cmd_voice(slug: str, src: str, segments: str | None = None) -> None:
     voice = ep.get("voice") or "voice.mp3"
     path = _fetch(src, ".audio")
     dst = os.path.join(d, voice)
+    if os.path.abspath(path) == os.path.abspath(dst):  # kaynak = hedef ise ffmpeg dosyayı bozar: önce kopyala
+        tmp = dst + ".kaynak"
+        shutil.copy(path, tmp)
+        path = tmp
     # 44.1 kHz stereo MP3; baştaki/sondaki sessizlik korunur (hizalama için önemli)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-ar", "44100", "-ac", "2", "-c:a", "libmp3lame", "-q:a", "2", dst], check=True)
     print(f"✓ {os.path.relpath(dst, ROOT)}")

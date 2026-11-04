@@ -67,7 +67,8 @@
             "state": "ok"
           }
         ]
-      }
+      },
+      "hold": 1.02
     },
     {
       "type": "image",
@@ -81,7 +82,8 @@
         "nakit": 50000000,
         "dolar": 0
       },
-      "text": "Necmi'nin masasına hiç dönmedin."
+      "text": "Necmi'nin masasına hiç dönmedin.",
+      "hold": 0.37
     },
     {
       "type": "title",
@@ -112,8 +114,9 @@
       "prompt_en": "Redraw this as ONE single full scene (no split screen): the inside of a bright, clean 1999 Istanbul currency exchange office in daylight. A friendly clerk of the same cartoon species (round glasses, short side-parted hair, white shirt and tie) stands behind a wooden counter with a glass partition and hands a small stack of green US dollar bills to the main character, who stands at the counter in cheap bright blue plastic slippers, holding out his 1990s Turkish lira banknotes. On the wall behind the clerk a big sign reads exactly 'DÖVİZ' and a small board with country flags. Calm, hopeful mood",
       "focus": [
         1,
-        0.35
-      ]
+        0
+      ],
+      "hold": 0.37
     },
     {
       "type": "info",
@@ -133,7 +136,8 @@
         "from": 0,
         "format": "usd",
         "caption": "1 dolar ≈ *450.000 TL*"
-      }
+      },
+      "hold": 1.02
     },
     {
       "type": "image",
@@ -144,14 +148,15 @@
       "tone": "sad",
       "focus": [
         1,
-        0.5
+        0
       ],
       "hud": {
         "yil": 1999,
         "nakit": 0,
         "dolar": 111
       },
-      "text": "Ayakkabılarının parası, bir avuç yeşil kâğıt."
+      "text": "Ayakkabılarının parası, bir avuç yeşil kâğıt.",
+      "hold": 0.37
     },
     {
       "type": "image",
@@ -169,7 +174,8 @@
         "nakit": 0,
         "dolar": 111
       },
-      "text": "Az görünüyor. Ama sen biliyorsun."
+      "text": "Az görünüyor. Ama sen biliyorsun.",
+      "hold": 0.37
     },
     {
       "type": "info",
@@ -199,7 +205,8 @@
           }
         ],
         "caption": "Paran *üç katına* çıkacak"
-      }
+      },
+      "hold": 1.02
     },
     {
       "type": "image",
@@ -217,7 +224,8 @@
         "nakit": 0,
         "dolar": 111
       },
-      "text": "Ama asıl plan bu değil."
+      "text": "Ama asıl plan bu değil.",
+      "hold": 0.37
     },
     {
       "type": "image",
@@ -235,7 +243,8 @@
         "nakit": 0,
         "dolar": 111
       },
-      "text": "Defterine yeni bir satır yazıyorsun: 3 Ocak 2009."
+      "text": "Defterine yeni bir satır yazıyorsun: 3 Ocak 2009.",
+      "hold": 0.37
     },
     {
       "type": "info",
@@ -250,7 +259,8 @@
         "from": 1999,
         "format": "raw",
         "caption": "1999'dan tam *10 yıl* sonra"
-      }
+      },
+      "hold": 1.02
     },
     {
       "type": "info",
@@ -275,7 +285,8 @@
             "state": "ok"
           }
         ]
-      }
+      },
+      "hold": 1.02
     },
     {
       "type": "image",
@@ -293,7 +304,8 @@
         "nakit": 0,
         "dolar": 111
       },
-      "text": "Senin 111 dolarınla binlerce Bitcoin alabilirsin."
+      "text": "Senin 111 dolarınla binlerce Bitcoin alabilirsin.",
+      "hold": 0.37
     },
     {
       "type": "info",
@@ -309,7 +321,8 @@
         "from": 0,
         "format": "raw",
         "caption": "*Yıl* beklemek zorundasın"
-      }
+      },
+      "hold": 1.02
     },
     {
       "type": "image",
@@ -327,7 +340,8 @@
         "nakit": 0,
         "dolar": 111
       },
-      "text": "Ve bu dolarları on yıl boyunca saklamak."
+      "text": "Ve bu dolarları on yıl boyunca saklamak.",
+      "hold": 0.37
     },
     {
       "type": "info",
@@ -352,7 +366,8 @@
             "state": "bad"
           }
         ]
-      }
+      },
+      "hold": 1.02
     },
     {
       "type": "image",
@@ -372,7 +387,8 @@
       },
       "text": "Dolarları yastığının altına saklıyorsun.",
       "ref": "../bolum1-1999/img/s01.png",
-      "prompt_en": "Same bedroom at night, lit only by a small bedside lamp and the pink neon outside the window. The main character, now wearing cheap bright blue plastic slippers instead of sneakers, kneels on the bed and carefully slides a thin stack of green US dollar bills under the white pillow, glancing nervously over his shoulder at the door. Quiet, secretive mood"
+      "prompt_en": "Same bedroom at night, lit only by a small bedside lamp and the pink neon outside the window. The main character, now wearing cheap bright blue plastic slippers instead of sneakers, kneels on the bed and carefully slides a thin stack of green US dollar bills under the white pillow, glancing nervously over his shoulder at the door. Quiet, secretive mood",
+      "hold": 0.37
     },
     {
       "type": "image",
@@ -390,7 +406,8 @@
         "nakit": 0,
         "dolar": 111
       },
-      "text": "On yıl. Her gece aynı yastık."
+      "text": "On yıl. Her gece aynı yastık.",
+      "hold": 0.37
     },
     {
       "type": "image",
@@ -407,7 +424,8 @@
       },
       "text": "O gece kapı çalıyor.",
       "ref": "../bolum2-sus/img/s02b.png",
-      "prompt_en": "Same apartment stairwell, but late at night: the green fluorescent tube flickers dimly. The apartment door is half open. In the doorway stands Necmi the illegal bookie: the same round-white-headed cartoon species, slim, slicked-back shiny black hair, thin pencil mustache, shiny black suit, white shirt open at the collar, gold chain, gold ring, holding a thick black notebook under his arm, with a sly knowing smile and a cigarette. The main character, in cheap bright blue plastic slippers instead of sneakers, holds the door handle from the inside and stares at him in shock. Tense thriller mood, deep shadows"
+      "prompt_en": "Same apartment stairwell, but late at night: the green fluorescent tube flickers dimly. The apartment door is half open. In the doorway stands Necmi the illegal bookie: the same round-white-headed cartoon species, slim, slicked-back shiny black hair, thin pencil mustache, shiny black suit, white shirt open at the collar, gold chain, gold ring, holding a thick black notebook under his arm, with a sly knowing smile and a cigarette. The main character, in cheap bright blue plastic slippers instead of sneakers, holds the door handle from the inside and stares at him in shock. Tense thriller mood, deep shadows",
+      "hold": 0.37
     },
     {
       "type": "image",
@@ -425,7 +443,8 @@
         "nakit": 0,
         "dolar": 111
       },
-      "text": "Kapıda Necmi var."
+      "text": "Kapıda Necmi var.",
+      "hold": 0.37
     },
     {
       "type": "image",
@@ -443,7 +462,8 @@
         "nakit": 0,
         "dolar": 111
       },
-      "text": "Seni kahvehaneden beri takip ediyormuş."
+      "text": "Seni kahvehaneden beri takip ediyormuş.",
+      "hold": 0.37
     },
     {
       "type": "image",
@@ -458,7 +478,8 @@
       ],
       "text": "\"Parayı getirmedin,\" dedi.",
       "ref": "../bolum2-sus/img/s13.png",
-      "prompt_en": "Close-up of Necmi the illegal bookie: the same round-white-headed cartoon species, slim, slicked-back shiny black hair, thin pencil mustache, shiny black suit, white shirt open at the collar, gold chain, gold ring, now standing in a dark apartment doorway at night instead of the coffeehouse, leaning slightly toward the camera, a thick black notebook open in one hand, cigarette smoke curling, eyes narrowed with a sly, knowing, menacing half-smile. Dim green stairwell light behind him. Keep the same character design exactly"
+      "prompt_en": "Close-up of Necmi the illegal bookie: the same round-white-headed cartoon species, slim, slicked-back shiny black hair, thin pencil mustache, shiny black suit, white shirt open at the collar, gold chain, gold ring, now standing in a dark apartment doorway at night instead of the coffeehouse, leaning slightly toward the camera, a thick black notebook open in one hand, cigarette smoke curling, eyes narrowed with a sly, knowing, menacing half-smile. Dim green stairwell light behind him. Keep the same character design exactly",
+      "hold": 0.37
     },
     {
       "type": "image",
@@ -471,7 +492,8 @@
         0.5,
         0.35
       ],
-      "text": "\"Galatasaray'ı nereden biliyorsun?\""
+      "text": "\"Galatasaray'ı nereden biliyorsun?\"",
+      "hold": 0.37
     },
     {
       "type": "image",
@@ -484,7 +506,8 @@
         0.3,
         0.4
       ],
-      "text": "Necmi senin bir şey bildiğini anladı."
+      "text": "Necmi senin bir şey bildiğini anladı.",
+      "hold": 0.37
     },
     {
       "type": "image",
@@ -497,7 +520,8 @@
         0.5,
         0.45
       ],
-      "text": "Ve o, bu sırrı istiyor."
+      "text": "Ve o, bu sırrı istiyor.",
+      "hold": 0.37
     },
     {
       "type": "bait",
@@ -506,7 +530,7 @@
         "ANLAŞ",
         "KAÇ"
       ],
-      "duration": 2.4,
+      "duration": 3.0,
       "focus": [
         0.5,
         0.35
@@ -525,7 +549,7 @@
       ],
       "body": "Yorumlara **ANLAŞ** ya da **KAÇ** yaz.\nÇoğunluk 4. bölümü yazar.",
       "cta": "TAKİP ET · KAÇIRMA",
-      "duration": 3.0
+      "duration": 3.4
     }
   ]
 }
