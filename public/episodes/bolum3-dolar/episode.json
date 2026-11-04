@@ -109,7 +109,11 @@
       },
       "text": "Ertesi sabah döviz bürosundasın.",
       "ref": "../bolum2-sus/img/s21.png",
-      "prompt_en": "Redraw this as ONE single full scene (no split screen): the inside of a bright, clean 1999 Istanbul currency exchange office in daylight. A friendly clerk of the same cartoon species (round glasses, short side-parted hair, white shirt and tie) stands behind a wooden counter with a glass partition and hands a small stack of green US dollar bills to the main character, who stands at the counter in cheap bright blue plastic slippers, holding out his 1990s Turkish lira banknotes. On the wall behind the clerk a big sign reads exactly 'DÖVİZ' and a small board with country flags. Calm, hopeful mood"
+      "prompt_en": "Redraw this as ONE single full scene (no split screen): the inside of a bright, clean 1999 Istanbul currency exchange office in daylight. A friendly clerk of the same cartoon species (round glasses, short side-parted hair, white shirt and tie) stands behind a wooden counter with a glass partition and hands a small stack of green US dollar bills to the main character, who stands at the counter in cheap bright blue plastic slippers, holding out his 1990s Turkish lira banknotes. On the wall behind the clerk a big sign reads exactly 'DÖVİZ' and a small board with country flags. Calm, hopeful mood",
+      "focus": [
+        1,
+        0.35
+      ]
     },
     {
       "type": "info",
@@ -139,8 +143,8 @@
       "palette": "gunduz",
       "tone": "sad",
       "focus": [
-        0.55,
-        0.55
+        1,
+        0.5
       ],
       "hud": {
         "yil": 1999,
@@ -413,8 +417,8 @@
       "palette": "tehlike",
       "tone": "whisper",
       "focus": [
-        0.6,
-        0.4
+        0.3,
+        0.35
       ],
       "hud": {
         "yil": 1999,
@@ -427,11 +431,11 @@
       "type": "image",
       "id": "takip",
       "image": "img/s08.png",
-      "motion": "panRight",
+      "motion": "panLeft",
       "palette": "tehlike",
       "tone": "whisper",
       "focus": [
-        0.5,
+        0.4,
         0.45
       ],
       "hud": {
@@ -477,8 +481,8 @@
       "palette": "tehlike",
       "tone": "whisper",
       "focus": [
-        0.35,
-        0.45
+        0.3,
+        0.4
       ],
       "text": "Necmi senin bir şey bildiğini anladı."
     },
