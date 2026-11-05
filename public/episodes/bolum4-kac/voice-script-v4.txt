@@ -1,0 +1,20 @@
+[dramatic] Yorumlar konuştu: Kaç. Kazanan yorum, İz Ferhat'tan.
+[tense] Necmi kapıda, cevap bekliyor.
+[whispers] "Yarın kahvehanede anlatırım," dedin.
+[tense] Necmi gülümsedi. "Yarın," dedi. "Kaçma."
+[tense] Kapı kapanır kapanmaz, yastığın altındaki dolarları aldın.
+[whispers] Defterini de.
+[dramatic] Gece yarısı, terliklerle sokağa fırladın.
+[whispers] Her köşede Necmi'nin adamlarını gördüğünü sandın.
+[tense] Tek bir yer aklına geldi: Esenler Otogarı.
+[tense] Ama bir sorun var. Cebinde tek lira yok.
+[calm] Ama bin dokuz yüz doksan dokuzda dolar her yerde geçiyor.
+[excited] Muavin doları görünce gözleri parladı: "Yirmi dolar, abi."
+[sad] Bir bilet, yirmi dolar. Geriye doksan bir dolar kaldı.
+[calm] Cam kenarına oturdun. Gözlerin kapanıyor.
+[whispers] Otobüste herkes uyuyordu. Herkes değil.
+[tense] Ama arka koltuktan bir ses geldi.
+[whispers] Kalın, siyah bir defterin sayfaları çevriliyordu.
+[dramatic] Necmi'nin defterinin aynısı.
+[tense] Otobüs yola çıktı. İlk mola, iki saat sonra.
+[curious] Sen olsan ne yapardın?
