@@ -48,7 +48,7 @@
       "type": "info",
       "id": "kazanan",
       "tone": "dramatic",
-      "hold": 1.2,
+      "hold": 1.6,
       "text": "Yorumlar konuştu: Kaç. Kazanan yorum, izferhatt'tan.",
       "info": {
         "layout": "comment",
@@ -71,7 +71,7 @@
       ],
       "palette": "tehlike",
       "tone": "tense",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -102,7 +102,7 @@
       ],
       "palette": "tehlike",
       "tone": "whisper",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -121,7 +121,7 @@
       ],
       "palette": "tehlike",
       "tone": "tense",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -140,7 +140,7 @@
       ],
       "palette": "soguk",
       "tone": "tense",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -159,7 +159,7 @@
       ],
       "palette": "soguk",
       "tone": "whisper",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -175,14 +175,18 @@
       "transition": "flash",
       "palette": "soguk",
       "tone": "dramatic",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
         "dolar": 111
       },
       "text": "Gece yarısı, terliklerle sokağa fırladın.",
-      "prompt_en": "Night, rain, a 1999 Istanbul back street: the main character runs toward the camera in cheap bright blue plastic slippers, clutching a thick black notebook and a few green US dollar bills, looking back over his shoulder in panic. Old apartment buildings, closed metal shop shutters, a yellow 1990s taxi, wet cobblestones reflecting a single street lamp. A closed corner shop sign reads exactly 'BAKKAL'. No other text"
+      "prompt_en": "Night, rain, a 1999 Istanbul back street: the main character runs toward the camera in cheap bright blue plastic slippers, clutching a thick black notebook and a few green US dollar bills, looking back over his shoulder in panic. Old apartment buildings, closed metal shop shutters, a yellow 1990s taxi, wet cobblestones reflecting a single street lamp. A closed corner shop sign reads exactly 'BAKKAL'. No other text",
+      "focus": [
+        1,
+        0.12
+      ]
     },
     {
       "type": "image",
@@ -190,12 +194,12 @@
       "image": "img/s04.png",
       "motion": "zoomIn",
       "focus": [
-        0.5,
-        0.4
+        1,
+        0.12
       ],
       "palette": "soguk",
       "tone": "whisper",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -210,7 +214,7 @@
       "motion": "zoomIn",
       "palette": "neon",
       "tone": "tense",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -224,7 +228,7 @@
       "id": "sorun",
       "tag": "PROBLEM",
       "tone": "tense",
-      "hold": 1.02,
+      "hold": 1.45,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -255,7 +259,7 @@
       "type": "info",
       "id": "enflasyon",
       "tone": "calm",
-      "hold": 1.02,
+      "hold": 1.45,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -286,14 +290,14 @@
       "type": "image",
       "id": "muavin",
       "image": "img/s05.png",
-      "motion": "push",
+      "motion": "zoomOut",
       "focus": [
-        0.55,
-        0.55
+        0.6,
+        0.2
       ],
       "palette": "neon",
       "tone": "excited",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -305,7 +309,7 @@
       "type": "info",
       "id": "kalan",
       "tone": "sad",
-      "hold": 1.02,
+      "hold": 1.45,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -333,7 +337,7 @@
       ],
       "palette": "soguk",
       "tone": "calm",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -353,7 +357,7 @@
       ],
       "palette": "soguk",
       "tone": "whisper",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -372,7 +376,7 @@
       ],
       "palette": "soguk",
       "tone": "tense",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -391,7 +395,7 @@
       ],
       "palette": "soguk",
       "tone": "whisper",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -411,7 +415,7 @@
       ],
       "palette": "tehlike",
       "tone": "dramatic",
-      "hold": 0.37,
+      "hold": 0.6,
       "text": "Necmi'nin defterinin aynısı."
     },
     {
@@ -425,7 +429,7 @@
       ],
       "palette": "soguk",
       "tone": "tense",
-      "hold": 0.37,
+      "hold": 0.6,
       "hud": {
         "yil": 1999,
         "nakit": 0,
@@ -440,7 +444,7 @@
         "İN",
         "KAL"
       ],
-      "duration": 3.0,
+      "duration": 3.4,
       "focus": [
         0.5,
         0.4
