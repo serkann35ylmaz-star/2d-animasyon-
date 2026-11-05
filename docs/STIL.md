@@ -123,3 +123,5 @@ Oy sayısı yazılmaz (kanal sahibi isteği).
 
 Her yeni bölüm teslim edilirken kanal sahibine, bir önceki bölümün altına sabitlenecek yorum ve açıklamanın
 en üstüne eklenecek satır da verilir (hangi seçeneğin kazandığı ve hikâyenin kaçıncı bölümde sürdüğü yazılır).
+Kanal sahibinin şablonu (aynen kullanılır, yalnız bölüm numarası değişir):
+"Bu bölümün oylaması kapandı, karar verildi! Hikâye şu an N. bölümde devam ediyor. Oyunu son bölüme ver, profilimdeki en yeni videoya git 👈"
