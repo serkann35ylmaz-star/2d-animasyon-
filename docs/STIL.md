@@ -111,3 +111,9 @@ Altyazı 1–3 kelimelik parçalar halinde, ekranın ~%67'sinde (TikTok arayüz�
 - Üst 0–180 px: TikTok üst menüsü → HUD 200 px'ten başlar.
 - Sağ 960+ px, 1000–1600 px arası: beğeni/yorum butonları → altyazı yatayda 90–990 px.
 - Alt 1600+ px: kullanıcı adı/açıklama → önemli hiçbir şey koyma.
+
+## Kazanan yorum kartı (her bölümün başı)
+
+Bölümün başında, kanalın **sabitlediği** izleyici yorumu gösterilir (en çok beğenilen değil):
+`{"type":"info","info":{"layout":"comment","kicker":"N. BÖLÜMÜN KAZANAN YORUMU","badge":"KAZANAN YORUM","user":"kullaniciadi","text":"…","likes":12,"caption":"Yorumların kararı: *SEÇİM* · X oy"}}`
+Küfür/hakaret içeren yorum videoya yazılmaz; kanal sahibine sorulur (başka yorum sabitlemesi ya da yıldızlı sansür).
