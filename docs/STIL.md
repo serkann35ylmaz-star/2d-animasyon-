@@ -115,5 +115,6 @@ Altyazı 1–3 kelimelik parçalar halinde, ekranın ~%67'sinde (TikTok arayüz�
 ## Kazanan yorum kartı (her bölümün başı)
 
 Bölümün başında, kanalın **sabitlediği** izleyici yorumu gösterilir (en çok beğenilen değil):
-`{"type":"info","info":{"layout":"comment","kicker":"N. BÖLÜMÜN KAZANAN YORUMU","badge":"KAZANAN YORUM","user":"kullaniciadi","text":"…","likes":12,"caption":"Yorumların kararı: *SEÇİM* · X oy"}}`
+`{"type":"info","info":{"layout":"comment","kicker":"N. BÖLÜMÜN KAZANAN YORUMU","badge":"KAZANAN YORUM","user":"kullaniciadi","text":"…","likes":12,"caption":"Yorumların kararı: *SEÇİM*"}}`
 Küfür/hakaret içeren yorum videoya yazılmaz; kanal sahibine sorulur (başka yorum sabitlemesi ya da yıldızlı sansür).
+Oy sayısı yazılmaz (kanal sahibi isteği).
