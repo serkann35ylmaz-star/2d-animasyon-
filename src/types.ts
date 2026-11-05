@@ -134,7 +134,18 @@ export interface InfoList {
   items: {text: string; state?: 'ok' | 'bad' | 'neutral'}[];
 }
 
-export type InfoBody = InfoUnit | InfoGrid | InfoStats | InfoBig | InfoCompare | InfoList;
+/** Bölüm başında gösterilen kazanan (sabitlenen) izleyici yorumu */
+export interface InfoComment {
+  layout: 'comment';
+  kicker?: string;
+  user: string; // kullanıcı adı (@ olmadan)
+  text: string; // yorum metni (küfür/hakaret içermemeli)
+  likes?: number;
+  badge?: string; // ör. "KAZANAN YORUM"
+  caption?: string; // kartın altındaki satır, *vurgu* destekli
+}
+
+export type InfoBody = InfoUnit | InfoGrid | InfoStats | InfoBig | InfoCompare | InfoList | InfoComment;
 
 export interface InfoScene extends SceneBase {
   type: 'info';

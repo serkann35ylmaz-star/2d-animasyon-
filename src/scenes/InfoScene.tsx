@@ -4,7 +4,7 @@ import {Rich} from '../components/Rich';
 import {Unit} from '../components/Unit';
 import {formatValue} from '../lib/text';
 import {C, FONT, MONO, accentA} from '../theme';
-import type {InfoBig, InfoBody, InfoCompare, InfoGrid, InfoList, InfoStats, InfoUnit} from '../types';
+import type {InfoBig, InfoBody, InfoComment, InfoCompare, InfoGrid, InfoList, InfoStats, InfoUnit} from '../types';
 
 const useIn = (delay = 0) => {
   const frame = useCurrentFrame();
@@ -253,6 +253,68 @@ const List: React.FC<{d: InfoList}> = ({d}) => (
   </div>
 );
 
+const Heart: React.FC<{size: number; color: string}> = ({size, color}) => (
+  <svg width={size} height={size} viewBox="0 0 24 24">
+    <path d="M12 21s-7.5-4.6-10-9.3C.4 8.6 2.2 4.5 6.1 4.5c2.3 0 3.9 1.3 4.9 2.8 1-1.5 2.6-2.8 4.9-2.8 3.9 0 5.7 4.1 4.1 7.2C19.5 16.4 12 21 12 21z" fill={color} />
+  </svg>
+);
+
+/** Instagram yorumuna benzeyen kazanan yorum kartı */
+const Comment1: React.FC<{d: InfoComment}> = ({d}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const pop = spring({frame: frame - 6, fps, config: {damping: 12, stiffness: 160, mass: 0.7}});
+  const likes = Math.round(interpolate(frame, [14, 40], [0, d.likes ?? 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)}));
+  const initial = (d.user.replace(/^[^a-zA-Z0-9]+/, '')[0] ?? '?').toUpperCase();
+  return (
+    <div style={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <Kicker text={d.kicker} />
+      <div style={{height: 34}} />
+      <div
+        style={{
+          width: '100%',
+          boxSizing: 'border-box',
+          background: '#1E1D22',
+          border: `2px solid ${accentA(0.55)}`,
+          borderRadius: 30,
+          padding: '34px 34px 30px',
+          transform: `scale(${interpolate(pop, [0, 1], [0.85, 1])})`,
+          opacity: pop,
+          boxShadow: `0 0 60px ${accentA(0.25)}`,
+        }}
+      >
+        {d.badge ? (
+          <div style={{display: 'inline-block', background: C.pink, color: C.night, fontFamily: FONT, fontWeight: 900, fontSize: 26, letterSpacing: '0.06em', padding: '8px 18px', borderRadius: 12, marginBottom: 24}}>
+            {d.badge}
+          </div>
+        ) : null}
+        <div style={{display: 'flex', gap: 24, alignItems: 'flex-start'}}>
+          <div style={{width: 92, height: 92, flex: '0 0 92px', borderRadius: '50%', background: `linear-gradient(135deg, ${C.pink}, #7C3AED)`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontWeight: 900, fontSize: 46, color: '#fff'}}>
+            {initial}
+          </div>
+          <div style={{flex: 1, minWidth: 0}}>
+            <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 36, color: C.infoInk, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap'}}>{d.user}</div>
+            <div style={{fontFamily: FONT, fontWeight: 600, fontSize: 44, color: C.infoInk, lineHeight: 1.25, marginTop: 10}}>{d.text}</div>
+          </div>
+          {d.likes ? (
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, paddingTop: 30}}>
+              <Heart size={46} color="#FF3B5C" />
+              <div style={{fontFamily: FONT, fontWeight: 700, fontSize: 28, color: C.infoSub, fontVariantNumeric: 'tabular-nums'}}>{likes}</div>
+            </div>
+          ) : null}
+        </div>
+      </div>
+      {d.caption ? (
+        <Appear delay={18}>
+          <div style={{fontFamily: FONT, fontWeight: 700, fontSize: 40, color: C.infoSub, textAlign: 'center', marginTop: 36}}>
+            <Rich text={d.caption} />
+          </div>
+        </Appear>
+      ) : null}
+    </div>
+  );
+};
+
 export const InfoScene: React.FC<{info: InfoBody}> = ({info}) => {
   let body: React.ReactNode;
   switch (info.layout) {
@@ -273,6 +335,9 @@ export const InfoScene: React.FC<{info: InfoBody}> = ({info}) => {
       break;
     case 'list':
       body = <List d={info} />;
+      break;
+    case 'comment':
+      body = <Comment1 d={info} />;
       break;
   }
   return (
