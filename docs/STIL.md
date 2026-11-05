@@ -118,3 +118,8 @@ Bölümün başında, kanalın **sabitlediği** izleyici yorumu gösterilir (en 
 `{"type":"info","info":{"layout":"comment","kicker":"N. BÖLÜMÜN KAZANAN YORUMU","badge":"KAZANAN YORUM","user":"kullaniciadi","text":"…","likes":12,"caption":"Yorumların kararı: *SEÇİM*"}}`
 Küfür/hakaret içeren yorum videoya yazılmaz; kanal sahibine sorulur (başka yorum sabitlemesi ya da yıldızlı sansür).
 Oy sayısı yazılmaz (kanal sahibi isteği).
+
+## Teslim kuralı: önceki bölüme "oylama kapandı" metni
+
+Her yeni bölüm teslim edilirken kanal sahibine, bir önceki bölümün altına sabitlenecek yorum ve açıklamanın
+en üstüne eklenecek satır da verilir (hangi seçeneğin kazandığı ve hikâyenin kaçıncı bölümde sürdüğü yazılır).
