@@ -48,7 +48,7 @@
       "type": "info",
       "id": "kazanan",
       "tone": "dramatic",
-      "hold": 1.6,
+      "hold": 1.9,
       "text": "Yorumlar konuştu: Kal. Kazanan yorum, fuat.bmyc'den.",
       "info": {
         "layout": "comment",
@@ -73,7 +73,7 @@
         "dolar": 91
       },
       "text": "İlk mola. Herkes otobüsten indi.",
-      "hold": 0.6
+      "hold": 0.85
     },
     {
       "type": "title",
@@ -100,7 +100,7 @@
         "dolar": 91
       },
       "text": "Sen kaldın.",
-      "hold": 0.6
+      "hold": 0.85
     },
     {
       "type": "image",
@@ -115,7 +115,7 @@
         "dolar": 91
       },
       "text": "Defterli adam da indi. Sonra geri döndü.",
-      "hold": 0.6
+      "hold": 0.85
     },
     {
       "type": "image",
@@ -130,7 +130,7 @@
         "dolar": 91
       },
       "text": "Otobüste sadece ikiniz vardınız.",
-      "hold": 0.6
+      "hold": 0.85
     },
     {
       "type": "image",
@@ -145,7 +145,11 @@
         "dolar": 91
       },
       "text": "Yanına oturdu. Defterini açık bırakıp çay almaya indi.",
-      "hold": 0.6
+      "hold": 0.85,
+      "focus": [
+        0,
+        0.45
+      ]
     },
     {
       "type": "image",
@@ -160,7 +164,11 @@
         "dolar": 91
       },
       "text": "Tuzak mıydı, bilmiyordun. Ama baktın.",
-      "hold": 0.6
+      "hold": 0.85,
+      "focus": [
+        0,
+        0.45
+      ]
     },
     {
       "type": "image",
@@ -175,7 +183,11 @@
         "dolar": 91
       },
       "text": "Necmi'nin borçlular listesi.",
-      "hold": 0.6
+      "hold": 0.85,
+      "focus": [
+        0,
+        0.45
+      ]
     },
     {
       "type": "image",
@@ -191,7 +203,11 @@
         "dolar": 91
       },
       "text": "Ve bir isimde kalbin durdu. Babanın adı.",
-      "hold": 0.6
+      "hold": 0.85,
+      "focus": [
+        0,
+        0.45
+      ]
     },
     {
       "type": "info",
@@ -212,7 +228,7 @@
         "format": "tl",
         "caption": "Son ödeme: *17 Mayıs 2000*"
       },
-      "hold": 1.45
+      "hold": 1.75
     },
     {
       "type": "image",
@@ -227,7 +243,11 @@
         "dolar": 91
       },
       "text": "O zaman hatırladın.",
-      "hold": 0.6
+      "hold": 0.85,
+      "focus": [
+        0.4,
+        0.6
+      ]
     },
     {
       "type": "image",
@@ -242,7 +262,11 @@
         "dolar": 91
       },
       "text": "2000 baharında evinizi kaybettiniz. Sen 7 yaşındaydın.",
-      "hold": 0.6
+      "hold": 0.85,
+      "focus": [
+        0.4,
+        0.6
+      ]
     },
     {
       "type": "image",
@@ -257,7 +281,11 @@
         "dolar": 91
       },
       "text": "Baban sebebini hiç söylemedi. Sebep buymuş.",
-      "hold": 0.6
+      "hold": 0.85,
+      "focus": [
+        0.4,
+        0.6
+      ]
     },
     {
       "type": "info",
@@ -288,7 +316,7 @@
         ],
         "caption": "*Kuruşu kuruşuna* aynı"
       },
-      "hold": 1.45
+      "hold": 1.75
     },
     {
       "type": "info",
@@ -309,7 +337,7 @@
         "format": "usd",
         "caption": "Cebinde: *91 dolar*"
       },
-      "hold": 1.45
+      "hold": 1.75
     },
     {
       "type": "image",
@@ -324,7 +352,11 @@
         "dolar": 91
       },
       "text": "Adam geri döndü. Yüzüne uzun uzun baktı.",
-      "hold": 0.6
+      "hold": 0.85,
+      "focus": [
+        0.5,
+        0.3
+      ]
     },
     {
       "type": "image",
@@ -339,7 +371,11 @@
         "dolar": 91
       },
       "text": "\"Sen bana birini hatırlatıyorsun,\" dedi.",
-      "hold": 0.6
+      "hold": 0.85,
+      "focus": [
+        0.5,
+        0.3
+      ]
     },
     {
       "type": "image",
@@ -355,7 +391,11 @@
         "dolar": 91
       },
       "text": "\"Necmi'nin bir borçlusuna tıpatıp benziyorsun.\"",
-      "hold": 0.6
+      "hold": 0.85,
+      "focus": [
+        0.5,
+        0.3
+      ]
     },
     {
       "type": "image",
@@ -370,7 +410,7 @@
         "dolar": 91
       },
       "text": "Otobüs kalkmak üzere.",
-      "hold": 0.6
+      "hold": 0.85
     },
     {
       "type": "bait",
@@ -379,7 +419,7 @@
         "DÖN",
         "DEVAM"
       ],
-      "duration": 3.2,
+      "duration": 3.6,
       "palette": "tehlike",
       "tone": "question",
       "motion": "none",
