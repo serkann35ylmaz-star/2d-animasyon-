@@ -130,3 +130,10 @@ Kanal sahibinin şablonu (aynen kullanılır, yalnız bölüm numarası değişi
 
 Final videoda ani sıçrama taraması yapılır (efekt vuruşlarında cızırtı olmasın). Efekt seviyeleri
 `src/lib/timeline.ts` içinde düşük tutulur; anlatım sessiz geldiği için master yaklaşık +10 dB yükseltir.
+
+## Seri kuralı: her bölümde güçleriyle para kazansın
+
+Kahraman her bölümde geleceği bildiği için bir şekilde para kazanır (iddia, borsa, kur, eşya vb.) ve ekranda sayaç
+(HUD "dolar" / "nakit") güncellenir. Hedef: babanın borcu **11.000 dolar**, son tarih **17 Mayıs 2000**.
+Kaçak/yasa dışı bahis anlatılmaz; iki kişi arasındaki iddia ve yasal yatırım (döviz, borsa) tercih edilir.
+Her açıklamaya "Bu bir kurgudur; yatırım tavsiyesi değildir." satırı eklenir.
