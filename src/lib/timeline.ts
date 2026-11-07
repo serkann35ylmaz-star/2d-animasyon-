@@ -44,31 +44,33 @@ export const estimateTimings = (episode: Episode): Timings => {
   return {words};
 };
 
+// Efekt seviyeleri düşük tutulur: anlatım sessiz (~-25 LUFS) olduğu için master +10 dB yükseltir;
+// yüksek efekt vuruşları sınırlayıcıda cızırtı yapıyordu (5. bölüm).
 const defaultSfx = (scene: Scene, hudChanged: boolean, tagChanged: boolean): SfxCue[] => {
   const out: SfxCue[] = [];
   switch (scene.type) {
     case 'title':
-      out.push({name: 'impact', at: 0, volume: 0.9}, {name: 'whoosh', at: 0, volume: 0.5});
+      out.push({name: 'impact', at: 0, volume: 0.45}, {name: 'whoosh', at: 0, volume: 0.5});
       break;
     case 'info':
-      out.push({name: 'whoosh', at: 0, volume: 0.45});
-      if (scene.info.layout === 'grid') out.push({name: 'cash', at: 0.25, volume: 0.5});
-      if (scene.info.layout === 'grid' && scene.info.result) out.push({name: 'impact', at: -1, volume: 0.7});
+      out.push({name: 'whoosh', at: 0, volume: 0.3});
+      if (scene.info.layout === 'grid') out.push({name: 'cash', at: 0.25, volume: 0.3});
+      if (scene.info.layout === 'grid' && scene.info.result) out.push({name: 'impact', at: -1, volume: 0.35});
       break;
     case 'bait':
-      out.push({name: 'pop', at: 0.25, volume: 0.8});
+      out.push({name: 'pop', at: 0.25, volume: 0.35});
       break;
     case 'end':
-      out.push({name: 'whoosh', at: 0, volume: 0.5}, {name: 'ding', at: 0.5, volume: 0.6});
+      out.push({name: 'whoosh', at: 0, volume: 0.3}, {name: 'ding', at: 0.5, volume: 0.35});
       break;
     case 'image':
-      if (scene.transition === 'flash') out.push({name: 'impact', at: 0, volume: 0.6});
-      if (scene.transition === 'whip') out.push({name: 'whoosh', at: 0, volume: 0.6});
+      if (scene.transition === 'flash') out.push({name: 'impact', at: 0, volume: 0.3});
+      if (scene.transition === 'whip') out.push({name: 'whoosh', at: 0, volume: 0.35});
       // 'riser' (yükselen vızz sesi) kullanılmaz — kullanıcı isteği
       break;
   }
-  if (hudChanged) out.push({name: 'tick', at: 0.08, volume: 0.6});
-  if (tagChanged) out.push({name: 'pop', at: 0.05, volume: 0.5});
+  if (hudChanged) out.push({name: 'tick', at: 0.08, volume: 0.35});
+  if (tagChanged) out.push({name: 'pop', at: 0.05, volume: 0.3});
   return out;
 };
 
