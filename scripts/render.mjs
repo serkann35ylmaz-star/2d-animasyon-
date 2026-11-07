@@ -110,7 +110,7 @@ for (let attempt = 1; ; attempt++) {
 }
 const COMP = 'acompressor=threshold=0.125:ratio=3:attack=5:release=120:knee=4';
 // attack = ileriye bakış süresi; uzun release, vuruşlarda 'çıtırtı' (hızlı kazanç dalgalanması) yapmaz
-const LIMIT = 'alimiter=limit=0.794:level=false:attack=8:release=150:asc=1';
+const LIMIT = 'alimiter=limit=0.708:level=false:attack=5:release=100'; // -3 dBFS tavan; AAC sonrası gerçek tepe ≤ -1,5 dBTP
 const chain = (g) => `${COMP},volume=${g.toFixed(2)}dB,${LIMIT}`;
 const lufs = (af) => {
   const r = spawnSync('ffmpeg', ['-hide_banner', '-nostats', '-i', wav, '-af', `${af},ebur128`, '-f', 'null', '-'], {encoding: 'utf8'});
