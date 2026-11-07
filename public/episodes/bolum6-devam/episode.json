@@ -58,7 +58,7 @@
         "likes": 25,
         "caption": "Yorumların kararı: *DEVAM*"
       },
-      "hold": 1.6
+      "hold": 1.2
     },
     {
       "type": "image",
@@ -74,10 +74,10 @@
         "dolar": 91
       },
       "focus": [
-        0.5,
-        0.55
+        0.02,
+        0.6
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "title",
@@ -105,10 +105,10 @@
         "dolar": 91
       },
       "focus": [
-        0.4,
-        0.7
+        0.02,
+        0.6
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "image",
@@ -124,10 +124,10 @@
         "dolar": 91
       },
       "focus": [
-        0.45,
-        0.7
+        0.02,
+        0.6
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "info",
@@ -158,7 +158,7 @@
           }
         ]
       },
-      "hold": 1.6
+      "hold": 1.2
     },
     {
       "type": "info",
@@ -179,7 +179,7 @@
         "format": "usd",
         "caption": "Cebinde: *91 dolar*"
       },
-      "hold": 1.6
+      "hold": 1.2
     },
     {
       "type": "image",
@@ -198,13 +198,13 @@
         0.6,
         0.2
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "image",
       "id": "kahve",
       "image": "img/s03.png",
-      "motion": "zoomIn",
+      "motion": "none",
       "palette": "kahve",
       "tone": "calm",
       "text": "Kahvehanede herkes aynı şeyi konuşuyordu.",
@@ -217,7 +217,7 @@
         0.5,
         0.4
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "image",
@@ -234,9 +234,9 @@
       },
       "focus": [
         0.7,
-        0.5
+        0.08
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "image",
@@ -253,9 +253,9 @@
       },
       "focus": [
         0.25,
-        0.45
+        0.08
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "image",
@@ -272,9 +272,9 @@
       },
       "focus": [
         0.5,
-        0.35
+        0.08
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "image",
@@ -291,9 +291,9 @@
       },
       "focus": [
         0.5,
-        0.5
+        0.08
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "image",
@@ -310,9 +310,9 @@
       },
       "focus": [
         0.3,
-        0.45
+        0.08
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "info",
@@ -343,7 +343,7 @@
           }
         ]
       },
-      "hold": 1.6
+      "hold": 1.2
     },
     {
       "type": "image",
@@ -362,7 +362,7 @@
         0.5,
         0.45
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "image",
@@ -382,7 +382,7 @@
         0.4
       ],
       "transition": "flash",
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "info",
@@ -413,7 +413,7 @@
           }
         ]
       },
-      "hold": 1.6
+      "hold": 1.2
     },
     {
       "type": "image",
@@ -432,7 +432,7 @@
         0.5,
         0.55
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "info",
@@ -453,7 +453,7 @@
         "format": "usd",
         "caption": "Hedef: *11.000 dolar*"
       },
-      "hold": 1.6
+      "hold": 1.2
     },
     {
       "type": "image",
@@ -469,11 +469,11 @@
         "dolar": 1091
       },
       "focus": [
-        0.5,
+        0.25,
         0.4
       ],
       "transition": "flash",
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "image",
@@ -489,10 +489,10 @@
         "dolar": 1091
       },
       "focus": [
-        0.4,
-        0.35
+        0.25,
+        0.4
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "image",
@@ -508,10 +508,10 @@
         "dolar": 1091
       },
       "focus": [
-        0.5,
-        0.3
+        0.25,
+        0.4
       ],
-      "hold": 0.7
+      "hold": 0.5
     },
     {
       "type": "bait",
@@ -520,7 +520,7 @@
         "İTİRAF",
         "YALAN"
       ],
-      "duration": 3.6,
+      "duration": 3.2,
       "palette": "tehlike",
       "tone": "question",
       "motion": "none",
