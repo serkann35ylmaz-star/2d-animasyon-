@@ -137,3 +137,9 @@ Kahraman her bölümde geleceği bildiği için bir şekilde para kazanır (iddi
 (HUD "dolar" / "nakit") güncellenir. Hedef: babanın borcu **11.000 dolar**, son tarih **17 Mayıs 2000**.
 Kaçak/yasa dışı bahis anlatılmaz; iki kişi arasındaki iddia ve yasal yatırım (döviz, borsa) tercih edilir.
 Her açıklamaya "Bu bir kurgudur; yatırım tavsiyesi değildir." satırı eklenir.
+
+## Açıklama kuralı: hashtag yok, anahtar kelime var
+
+Instagram/TikTok açıklamalarının sonunda hashtag (#) kullanılmaz; yerine "Anahtar kelimeler: …" satırı yazılır
+(animasyon hikaye, zaman yolculuğu, yıl/şehir, olayın adı, nostalji, kanal adı). Açıklama metni de doğal cümlelerle
+bu kelimeleri içerir (arama/SEO için).
