@@ -1,0 +1,23 @@
+[dramatic] Yorumlar konuştu: Devam. Kazanan yorum, Efe'den.
+[tense] Gece otobüsü. Adam yanında uyuyordu.
+[whispers] Babanın adını silmeye çalıştın. Mürekkep çıkmadı.
+[tense] Sayfayı yırtıp cebine koydun.
+[dramatic] Ama sayfanın arkasında yazıyordu: Senet Necmi'nin kasasında. Teminat: ev tapusu.
+[dramatic] Borcu silmek yetmez, ödemek gerek. Hedef: on bir bin dolar.
+[calm] Sabah İzmir'e vardın. Adam uyanmadan otobüsten sıvıştın.
+[calm] Kahvehanede herkes aynı şeyi konuşuyordu.
+[excited] Galatasaray, Chelsea'yi ezecek.
+[excited] Kalın altın zincirli bir kuyumcu en yüksek sesle bağırıyordu: "Galatasaray evinde yenilmez!"
+[whispers] Sen sakince söyledin: Chelsea beş atacak.
+[excited] Kahve kahkahaya boğuldu.
+[tense] Kuyumcu elini uzattı: "Beş atarsa sana bin dolar. Atmazsa doksan bir dolar benim."
+[tense] El sıkıştınız.
+[tense] Üç hafta sonra, yirmi Ekim: bütün kahve televizyonun başındaydı.
+[dramatic] Bir gol. İki. Üç. Dört. Beş.
+[dramatic] Galatasaray evinde sıfır beş yenildi. Bu gerçek bir maç.
+[excited] Kuyumcu bin doları masaya bıraktı.
+[excited] Cebinde bin doksan bir dolar. Hedefe daha çok var.
+[tense] Kapıdan çıkarken biri yolunu kesti.
+[whispers] Otobüsteki defterli adam.
+[dramatic] "Beş gol, ha? Sayfa nerede?"
+[curious] Sen olsan ne yapardın?

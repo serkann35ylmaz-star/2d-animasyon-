@@ -1,0 +1,541 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 6: Beş Gol",
+  "targetDuration": 90,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Izmir, Turkey, autumn 1999, a busy neighborhood coffeehouse",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "dolar",
+      "label": "DOLAR",
+      "format": "usd",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "info",
+      "id": "kazanan",
+      "tone": "dramatic",
+      "text": "Yorumlar konuştu: Devam. Kazanan yorum, Efe'den.",
+      "info": {
+        "layout": "comment",
+        "kicker": "5. BÖLÜMÜN KAZANAN YORUMU",
+        "badge": "KAZANAN YORUM",
+        "user": "efe_xxl_35",
+        "text": "Devam et, Necmi'den korkan Necmi gibi olsun",
+        "likes": 25,
+        "caption": "Yorumların kararı: *DEVAM*"
+      },
+      "hold": 1.6
+    },
+    {
+      "type": "image",
+      "id": "gece",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "palette": "soguk",
+      "tone": "tense",
+      "text": "Gece otobüsü. Adam yanında uyuyordu.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "title",
+      "image": "img/t01.png",
+      "kicker": "BÖLÜM 6 · BEŞ GOL",
+      "lines": [
+        "GELECEĞİ",
+        "*BİLEN*",
+        "ADAM"
+      ],
+      "duration": 1.9,
+      "palette": "neon"
+    },
+    {
+      "type": "image",
+      "id": "sil",
+      "image": "img/s01.png",
+      "motion": "push",
+      "palette": "soguk",
+      "tone": "whisper",
+      "text": "Babanın adını silmeye çalıştın. Mürekkep çıkmadı.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.4,
+        0.7
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "image",
+      "id": "yirt",
+      "image": "img/s01.png",
+      "motion": "shake",
+      "palette": "soguk",
+      "tone": "tense",
+      "text": "Sayfayı yırtıp cebine koydun.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.45,
+        0.7
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "info",
+      "id": "senet",
+      "tone": "dramatic",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "text": "Ama sayfanın arkasında yazıyordu: Senet Necmi'nin kasasında. Teminat: ev tapusu.",
+      "info": {
+        "layout": "list",
+        "kicker": "SAYFANIN ARKASI",
+        "heading": "Yırtmak çözüm değil",
+        "items": [
+          {
+            "text": "Senet *Necmi'nin kasasında*",
+            "state": "bad"
+          },
+          {
+            "text": "Teminat: *ev tapusu*",
+            "state": "bad"
+          },
+          {
+            "text": "Silmek yetmez, *ödemek* gerek",
+            "state": "ok"
+          }
+        ]
+      },
+      "hold": 1.6
+    },
+    {
+      "type": "info",
+      "id": "hedef",
+      "tone": "dramatic",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "text": "Borcu silmek yetmez, ödemek gerek. Hedef: 11.000 dolar.",
+      "info": {
+        "layout": "big",
+        "kicker": "BABANIN BORCU · SON TARİH 17 MAYIS 2000",
+        "heading": "Ödenecek borç",
+        "value": 11000,
+        "from": 91,
+        "format": "usd",
+        "caption": "Cebinde: *91 dolar*"
+      },
+      "hold": 1.6
+    },
+    {
+      "type": "image",
+      "id": "izmir",
+      "image": "img/s02.png",
+      "motion": "zoomOut",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "Sabah İzmir'e vardın. Adam uyanmadan otobüsten sıvıştın.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.6,
+        0.2
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "image",
+      "id": "kahve",
+      "image": "img/s03.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "calm",
+      "text": "Kahvehanede herkes aynı şeyi konuşuyordu.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "image",
+      "id": "ezecek",
+      "image": "img/s03.png",
+      "motion": "panRight",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Galatasaray, Chelsea'yi ezecek.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.7,
+        0.5
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "image",
+      "id": "kuyumcu",
+      "image": "img/s03.png",
+      "motion": "push",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Kalın altın zincirli bir kuyumcu en yüksek sesle bağırıyordu: Galatasaray evinde yenilmez!",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.25,
+        0.45
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "image",
+      "id": "beseatacak",
+      "image": "img/s03.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "whisper",
+      "text": "Sen sakince söyledin: Chelsea beş atacak.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "image",
+      "id": "kahkaha",
+      "image": "img/s03.png",
+      "motion": "shake",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Kahve kahkahaya boğuldu.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "image",
+      "id": "iddia",
+      "image": "img/s03.png",
+      "motion": "push",
+      "palette": "kahve",
+      "tone": "tense",
+      "text": "Kuyumcu elini uzattı: Beş atarsa sana bin dolar. Atmazsa doksan bir dolar benim.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.3,
+        0.45
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "info",
+      "id": "kart",
+      "tone": "tense",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "text": "El sıkıştınız.",
+      "info": {
+        "layout": "list",
+        "kicker": "İKİ KİŞİ ARASINDA BİR İDDİA",
+        "heading": "Chelsea 5 gol atarsa",
+        "items": [
+          {
+            "text": "Atarsa: *+1.000 dolar*",
+            "state": "ok"
+          },
+          {
+            "text": "Atmazsa: *−91 dolar*",
+            "state": "bad"
+          },
+          {
+            "text": "Maç: *20 Ekim 1999*",
+            "state": "ok"
+          }
+        ]
+      },
+      "hold": 1.6
+    },
+    {
+      "type": "image",
+      "id": "televizyon",
+      "image": "img/s04.png",
+      "motion": "zoomIn",
+      "palette": "gerilim",
+      "tone": "tense",
+      "text": "Üç hafta sonra, 20 Ekim: bütün kahve televizyonun başındaydı.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "image",
+      "id": "goller",
+      "image": "img/s04.png",
+      "motion": "shake",
+      "palette": "gerilim",
+      "tone": "dramatic",
+      "text": "Bir gol. İki. Üç. Dört. Beş.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "transition": "flash",
+      "hold": 0.7
+    },
+    {
+      "type": "info",
+      "id": "mac",
+      "tone": "dramatic",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "text": "Galatasaray evinde sıfır beş yenildi. Bu gerçek bir maç.",
+      "info": {
+        "layout": "list",
+        "kicker": "GERÇEK MAÇ · ŞAMPİYONLAR LİGİ",
+        "heading": "20 Ekim 1999 · Ali Sami Yen",
+        "items": [
+          {
+            "text": "Galatasaray *0 – 5* Chelsea",
+            "state": "ok"
+          },
+          {
+            "text": "Chelsea *beş* gol attı",
+            "state": "ok"
+          },
+          {
+            "text": "Kuyumcu *bahsi kaybetti*",
+            "state": "ok"
+          }
+        ]
+      },
+      "hold": 1.6
+    },
+    {
+      "type": "image",
+      "id": "para",
+      "image": "img/s05.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "excited",
+      "text": "Kuyumcu bin doları masaya bıraktı.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 1091
+      },
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "info",
+      "id": "kazanc",
+      "tone": "excited",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 1091
+      },
+      "text": "Cebinde bin doksan bir dolar. Hedefe daha çok var.",
+      "info": {
+        "layout": "big",
+        "kicker": "İLK KAZANÇ",
+        "heading": "Cebindeki para",
+        "value": 1091,
+        "from": 91,
+        "format": "usd",
+        "caption": "Hedef: *11.000 dolar*"
+      },
+      "hold": 1.6
+    },
+    {
+      "type": "image",
+      "id": "kapi",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "tense",
+      "text": "Kapıdan çıkarken biri yolunu kesti.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 1091
+      },
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "transition": "flash",
+      "hold": 0.7
+    },
+    {
+      "type": "image",
+      "id": "adam",
+      "image": "img/s06.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Otobüsteki defterli adam.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 1091
+      },
+      "focus": [
+        0.4,
+        0.35
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "image",
+      "id": "sayfa",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "dramatic",
+      "text": "Beş gol, ha? Sayfa nerede?",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 1091
+      },
+      "focus": [
+        0.5,
+        0.3
+      ],
+      "hold": 0.7
+    },
+    {
+      "type": "bait",
+      "image": "img/s06.png",
+      "words": [
+        "İTİRAF",
+        "YALAN"
+      ],
+      "duration": 3.6,
+      "palette": "tehlike",
+      "tone": "question",
+      "motion": "none",
+      "text": "Sen olsan ne yapardın?"
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "7. BÖLÜM",
+        "*YARIN*"
+      ],
+      "body": "Yorumlara **İTİRAF** ya da **YALAN** yaz.\nSabitlenen yorum videoya girer!",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.4
+    }
+  ]
+}
