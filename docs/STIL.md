@@ -125,3 +125,8 @@ Her yeni bölüm teslim edilirken kanal sahibine, bir önceki bölümün altına
 en üstüne eklenecek satır da verilir (hangi seçeneğin kazandığı ve hikâyenin kaçıncı bölümde sürdüğü yazılır).
 Kanal sahibinin şablonu (aynen kullanılır, yalnız bölüm numarası değişir):
 "Bu bölümün oylaması kapandı, karar verildi! Hikâye şu an N. bölümde devam ediyor. Oyunu son bölüme ver, profilimdeki en yeni videoya git 👈"
+
+## Ses kontrolü (her bölümde, teslimden önce)
+
+Final videoda ani sıçrama taraması yapılır (efekt vuruşlarında cızırtı olmasın). Efekt seviyeleri
+`src/lib/timeline.ts` içinde düşük tutulur; anlatım sessiz geldiği için master yaklaşık +10 dB yükseltir.
