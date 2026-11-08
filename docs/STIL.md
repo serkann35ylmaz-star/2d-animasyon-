@@ -163,3 +163,9 @@ Para kazanma yolları yasal ya da gri alan/yasa dışı olabilir (sahte kimlik, 
 yöntem anlatılmaz, adım adım talimat verilmez, sonuçları (takip eden müfettiş vb.) gösterilir, ton çizgi film kalır.
 Soygun/şiddet sahneleri gösterilmez. Açıklamada "Bu bir kurgudur; yasa dışı davranışları özendirmez." satırı kalır.
 Necmi hikâyeden çıkar; finali ileriki bölümlerde yapılır (defter geri dönecek, kanca olarak bırakılır).
+
+## Güncelleme 4 (kanal sahibi isteği): güç fantezisi, gerilim dizisi değil
+
+Hikâye psikolojik gerilim değil; izleyici kahramanın bildiklerini kullanıp her şeyi elde etmesini ister (para, ün, başarı).
+Kural: kadro küçük kalır (kahraman + kuyumcu ortak + kahvehane ahalisi); her bölümde yeni düşman/takipçi/tehdit eklenmez.
+Gerekirse zaman atlanır (ör. 17 Mayıs 2000 UEFA Kupası finali: Galatasaray–Arsenal 0-0, penaltılar 4-1). Ton eğlenceli ve rahat.
