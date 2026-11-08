@@ -169,3 +169,9 @@ Necmi hikâyeden çıkar; finali ileriki bölümlerde yapılır (defter geri dö
 Hikâye psikolojik gerilim değil; izleyici kahramanın bildiklerini kullanıp her şeyi elde etmesini ister (para, ün, başarı).
 Kural: kadro küçük kalır (kahraman + kuyumcu ortak + kahvehane ahalisi); her bölümde yeni düşman/takipçi/tehdit eklenmez.
 Gerekirse zaman atlanır (ör. 17 Mayıs 2000 UEFA Kupası finali: Galatasaray–Arsenal 0-0, penaltılar 4-1). Ton eğlenceli ve rahat.
+
+## Çalışma kuralı: her bölümde "10/10 fikirleri" onaya sunulur
+
+Her bölüm önerisiyle birlikte kanca, geri dönüş (callback), ses, görsel, ödül anı, yorum tuzağı ve paylaşım için
+kendi iyileştirme fikirlerimi de yazarım; kanal sahibi onaylamadan üretime başlamam.
+Kahramanın engelleri pasif biçimde (rakip kendiliğinden gidiyor gibi) çözülmez; kahraman bildikleriyle üstün gelir.
