@@ -156,3 +156,10 @@ Her bölümde kahraman bildiklerini **yasal yoldan** (borsa, döviz, değerli k�
 para kazanır; uzun vadeli hedef **milyar dolar**. Necmi hikâyeden çıkar (7. bölümde yalanı inanılır, gider). Soygun, dolandırıcılık,
 kaçak bahis ve şiddet yok. Her bilgi kartındaki tarih/rakam doğrulanır; kahramanın kazancı "kurgu" etiketiyle gösterilir.
 Kimliği 2026'dan olduğu için hesapları güvendiği biri (kuyumcu ortağı) üzerinden açılır.
+
+## Güncelleme 3 (kanal sahibi isteği): gri alan / yasa dışı hamleler hikâye düzeyinde serbest, Necmi dursun
+
+Para kazanma yolları yasal ya da gri alan/yasa dışı olabilir (sahte kimlik, karaborsa vb.), ama **yalnızca hikâye düzeyinde**:
+yöntem anlatılmaz, adım adım talimat verilmez, sonuçları (takip eden müfettiş vb.) gösterilir, ton çizgi film kalır.
+Soygun/şiddet sahneleri gösterilmez. Açıklamada "Bu bir kurgudur; yasa dışı davranışları özendirmez." satırı kalır.
+Necmi hikâyeden çıkar; finali ileriki bölümlerde yapılır (defter geri dönecek, kanca olarak bırakılır).
