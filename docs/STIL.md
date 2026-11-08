@@ -140,9 +140,9 @@ Her açıklamaya "Bu bir kurgudur; yatırım tavsiyesi değildir." satırı ekle
 
 ## Açıklama kuralı: hashtag yok, anahtar kelime var
 
-Instagram/TikTok açıklamalarının sonunda hashtag (#) kullanılmaz; yerine "Anahtar kelimeler: …" satırı yazılır
-(animasyon hikaye, zaman yolculuğu, yıl/şehir, olayın adı, nostalji, kanal adı). Açıklama metni de doğal cümlelerle
-bu kelimeleri içerir (arama/SEO için).
+Anahtar kelimeler etiketsiz, doğal bir cümle olarak "kurgudur" satırının üstüne yazılır ("Anahtar kelimeler:" başlığı YOK):
+zaman yolculuğu, interaktif animasyon hikaye, yıl/şehir, olayın adı, 90'ların nostaljisi. Hashtag yalnız kanal sahibi isterse,
+en sona 5 adet popüler etiket olarak eklenir.
 
 ## Güncelleme (kanal sahibi isteği): para/Necmi odağı bitti
 
