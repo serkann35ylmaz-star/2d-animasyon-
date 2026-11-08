@@ -1,0 +1,47 @@
+# Geleceği Bilen Adam — Bölüm formatı (8. bölümden itibaren, "Kerkenez formülü")
+
+Bu dosya STIL.md'deki eski kuralların üstündedir; çakışırsa bu geçerlidir.
+
+## Kahraman ve kadro
+- Kahraman: **Selim** (2026'dan 1999'a düştü). Anlatım **birinci tekil şahıs** (Selim konuşur).
+- **Cemil** (kahvehaneden, hiçbir şeye inanmayan, panik arkadaş). Selim sakin, Cemil panik.
+- Her bölümde tekrar eden slogan: Selim "**Ben biliyorum.**" — Cemil "**Yapma Selim!**"
+- Necmi ve borç arka planda sürebilir; bölümü anlamak için gerekli olmaz.
+- Selim, Cemil, Necmi için sabit karakter görselleri her üretimde referans verilir.
+
+## Her bölümün kalıbı
+1. **0–3 sn sabit açılış (başlık kartı YOK):** "Ben Selim. 2026'dan 1999'a düştüm. Ne olacağını biliyorum. Kasa: X dolar."
+   Kazanan yorum ve bölüm başlığı bu sahnenin üstünde **küçük yazı** olarak.
+2. **Gövde:** gerçek tarih + gerçek olay + Selim'in hamlesi (+ Cemil'in "Yapma Selim!"i). Tarih/skor/rakam yayından önce doğrulanır.
+3. **Son saniye:** KASA sonucu / sürpriz en sonda. Oylama yapılır, sonucu bir sonraki bölümde çıkar.
+4. **Kalıcı KASA sayacı:** her bölüm aynı köşede, aynı grafikle biter: "💰 KASA: X $ → HEDEF: 1 MİLYAR $".
+- Süre 60–90 sn. Her gün aynı saatte 1 bölüm.
+
+## Yol haritası
+| Bölüm | Olay (gerçek) | Hamle | Son merak |
+|---|---|---|---|
+| 8 Kara Çarşamba | 21 Şubat 2001 krizi | DOLAR kazanırsa kasa katlanır; BORSA kazanırsa krizden önce satar | Necmi, Selim'in hazırlığını fark eder |
+| 9 11. Saniye | 2002 Dünya Kupası, Hakan Şükür'ün Kore'ye golü | "İlk dakikada gol olacak" iddiası, Cemil inanmaz | Kahvehanede biri Selim'i fotoğraflar |
+| 10 İstanbul Mucizesi | 2005 Şampiyonlar Ligi finali, Liverpool 0-3'ten döner | Devre arasında Liverpool'a oynar | Bahisçiler Selim'i aramaya başlar |
+| 11 Cebindeki Gelecek | 2007, iPhone tanıtılır | Herkesin güldüğü şirkete para koyar | 2026 telefonu bulunur, biri açmaya çalışıyor |
+| 12 Pizza Günü | 2009–2010 Bitcoin, 10.000 BTC'ye pizza | 3. bölümdeki defter satırı işe yarar | Necmi döner: "Defterin bende." |
+
+## Açıklama şablonu
+```
+Geleceği Bilen Adam | N. Bölüm: Başlık 💸
+<tarih>… <tek cümle merak> 😳
+💰 KASA: ??? $
+Sence ne yapmalı? Yorumlara A ya da B yaz 👇
+🔔 Yarın aynı saatte N+1. bölüm.
+<anahtar kelimeleri içeren tek doğal cümle — "Anahtar kelimeler:" başlığı yok>
+Bu bir kurgudur; yatırım tavsiyesi değildir.
+```
+Etiketler (platform başına en fazla 5):
+- Instagram: #keşfet #nostalji #hikaye #animasyon #galatasaray
+- TikTok: #keşfet #fyp #nostalji #hikaye #yapayzeka
+- YouTube Shorts: #shorts #nostalji #hikaye #animasyon #türkiye
+
+## Teslim kontrol listesi (kanal sahibine)
+- Paylaşım ayarları: yapay zekâ etiketi AÇIK, otomatik altyazı AÇIK, Facebook'ta paylaş KAPALI.
+- Deneme Reels ile paylaş; hikâyede anket çıkartması (A/B); ilk saatte yorumlara cevap, en iyi yorumu sabitle.
+- Önceki bölüme "oylama kapandı" yorumu.
