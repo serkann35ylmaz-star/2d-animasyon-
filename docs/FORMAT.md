@@ -45,3 +45,8 @@ Etiketler (platform başına en fazla 5):
 - Paylaşım ayarları: yapay zekâ etiketi AÇIK, otomatik altyazı AÇIK, Facebook'ta paylaş KAPALI.
 - Deneme Reels ile paylaş; hikâyede anket çıkartması (A/B); ilk saatte yorumlara cevap, en iyi yorumu sabitle.
 - Önceki bölüme "oylama kapandı" yorumu.
+
+## ChatPlace otomasyonları (bot: Hikâye Yorumda, @hikayeyorumda)
+- **Oylama otomasyonu:** en yeni bölüm Reels'ine bağlı, yorumda oylama kelimeleri geçince 5 farklı herkese açık cevaptan biri + DM ("Oyun sayıldı ✅ … 18.00'de").
+- **Oylama kapandı otomasyonu:** önceki bölümlerin hepsine bağlı, her yoruma 3 farklı "oylama kapandı" cevabından biri + son bölüm linkli DM.
+- Her yeni bölüm yayınlanınca: oylama otomasyonunu yeni Reels'e ve yeni kelimelere taşı, bir önceki bölümü "kapandı" listesine ekle, metinlerdeki bölüm numarası/linki güncelle. Yayın saati: 18.00.
