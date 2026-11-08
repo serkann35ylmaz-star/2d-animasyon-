@@ -175,3 +175,17 @@ Gerekirse zaman atlanır (ör. 17 Mayıs 2000 UEFA Kupası finali: Galatasaray�
 Her bölüm önerisiyle birlikte kanca, geri dönüş (callback), ses, görsel, ödül anı, yorum tuzağı ve paylaşım için
 kendi iyileştirme fikirlerimi de yazarım; kanal sahibi onaylamadan üretime başlamam.
 Kahramanın engelleri pasif biçimde (rakip kendiliğinden gidiyor gibi) çözülmez; kahraman bildikleriyle üstün gelir.
+
+## ZORUNLU yapı (8. bölümden itibaren, kanal sahibi kuralı)
+
+Video:
+1. **0–1,5 sn:** Bölüm numarası / başlık kartı YOK. Şok edici tek görüntü + tek cümle (ör. "Babamın borcunu 1999'da ben kapattım.").
+2. **1,5–3 sn:** Serinin tek cümlelik özeti, her bölüm tek başına anlaşılsın: "2026'dan 1999'a düştüm ve her maçın skorunu biliyorum."
+3. **3. saniyeden sonra:** Kazanan yorum küçük bir yazı/şerit olarak (tam ekran kart değil).
+4. **Son:** Cevapsız biter. Karar anı gösterilir, sonucu gösterilmez; seçim (A/B) ile kapanır.
+
+Teslimde kanal sahibine hatırlatılacak kontrol listesi:
+- İlk saatte yorumlara cevap ver, en iyi yorumu sabitle.
+- Hikâyede paylaş + anket çıkartması (seçim A/B), oylama orada da sürsün.
+- "Deneme Reels" (trial) ile paylaş: önce takip etmeyenlere gösterilir, tutarsa profile düşer.
+- Paylaşım ayarları: yapay zekâ etiketi AÇIK, otomatik altyazı AÇIK, Facebook'ta paylaş KAPALI.
