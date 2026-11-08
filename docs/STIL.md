@@ -143,3 +143,9 @@ Her açıklamaya "Bu bir kurgudur; yatırım tavsiyesi değildir." satırı ekle
 Instagram/TikTok açıklamalarının sonunda hashtag (#) kullanılmaz; yerine "Anahtar kelimeler: …" satırı yazılır
 (animasyon hikaye, zaman yolculuğu, yıl/şehir, olayın adı, nostalji, kanal adı). Açıklama metni de doğal cümlelerle
 bu kelimeleri içerir (arama/SEO için).
+
+## Güncelleme (kanal sahibi isteği): para/Necmi odağı bitti
+
+"Her bölümde para kazansın" kuralı **durduruldu**. İzleyici yorumları para kazanma, soygun ve şiddete kaydığı için hikâye
+Necmi ve para odağından çıkarılır; yorumlardan yalnızca gizem/duygu/zaman yolculuğu fikirleri hikâyeye alınır.
+Şiddet, soygun ve küfür içeren yorumlar hikâyeye girmez.
