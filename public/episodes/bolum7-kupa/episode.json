@@ -1,0 +1,584 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 7: Kupa Gecesi",
+  "targetDuration": 90,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Izmir, Turkey, from October 1999 to 17 May 2000",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "dolar",
+      "label": "DOLAR",
+      "format": "usd",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "image",
+      "id": "kanca",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "palette": "gerilim",
+      "tone": "dramatic",
+      "text": "17 Mayıs 2000. Son penaltı.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0,
+          "volume": 0.5
+        }
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "kanca2",
+      "image": "img/s01.png",
+      "motion": "push",
+      "palette": "gerilim",
+      "tone": "whisper",
+      "text": "Bu gece dokuz kişiyle iddiaya girdin.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "info",
+      "id": "kazanan",
+      "tone": "dramatic",
+      "text": "Yorumlar konuştu: Yalan. Kazanan yorum, Ömer'den.",
+      "info": {
+        "layout": "comment",
+        "kicker": "6. BÖLÜMÜN KAZANAN YORUMU",
+        "badge": "KAZANAN YORUM",
+        "user": "omer.bll197",
+        "text": "Yalan söyle",
+        "likes": 44,
+        "caption": "Yorumların kararı: *YALAN*"
+      },
+      "hold": 1.2
+    },
+    {
+      "type": "title",
+      "image": "img/t01.png",
+      "kicker": "BÖLÜM 7 · KUPA GECESİ",
+      "lines": [
+        "GELECEĞİ",
+        "*BİLEN*",
+        "ADAM"
+      ],
+      "duration": 1.8,
+      "palette": "neon"
+    },
+    {
+      "type": "image",
+      "id": "once",
+      "image": "img/s02.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "tense",
+      "text": "Yedi ay önce. Adam sayfayı soruyordu.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 1091
+      },
+      "focus": [
+        0.25,
+        0.4
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "selim",
+      "image": "img/s02.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Gözünü kırpmadın: Ne sayfası? Ben Selim.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 1091
+      },
+      "focus": [
+        0.2,
+        0.45
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "teklif",
+      "image": "img/s03.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "Gülümsedin: Seninle iddiaya girelim.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 1091
+      },
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "kupa",
+      "image": "img/s03.png",
+      "motion": "push",
+      "palette": "gunduz",
+      "tone": "tense",
+      "text": "Galatasaray bu sezon Avrupa'da kupa alacak. Kaybedersen beni unutursun.",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 1091
+      },
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "info",
+      "id": "borsa",
+      "tone": "calm",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 1091
+      },
+      "text": "Paranı borsaya koydun. O yıl borsa yüzde 485 yükseldi.",
+      "info": {
+        "layout": "big",
+        "kicker": "İMKB-100 · 1999 · GERÇEK",
+        "heading": "Borsanın yıllık yükselişi",
+        "value": 485,
+        "from": 0,
+        "format": "percent",
+        "caption": "Dolar bazında *%242* · dünyada 1 numara"
+      },
+      "hold": 1.2
+    },
+    {
+      "type": "info",
+      "id": "aylar",
+      "tone": "excited",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "text": "Aylar geçti. Cebindeki para üç bin dolar oldu.",
+      "info": {
+        "layout": "big",
+        "kicker": "EKİM 1999 → MAYIS 2000 · KURGU",
+        "heading": "Cebindeki para",
+        "value": 3000,
+        "from": 1091,
+        "format": "usd",
+        "caption": "Hedef: *11.000 dolar*"
+      },
+      "hold": 1.2
+    },
+    {
+      "type": "image",
+      "id": "defter",
+      "image": "img/s04.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "dramatic",
+      "text": "Ve o gün geldi. Defterin ilk sayfasındaki tarih.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "tiklim",
+      "image": "img/s01.png",
+      "motion": "zoomOut",
+      "palette": "gerilim",
+      "tone": "excited",
+      "text": "Kahvehane tıklım tıklım. Herkes Arsenal diyordu.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "focus": [
+        0.5,
+        0.3
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "oran",
+      "image": "img/s01.png",
+      "motion": "panRight",
+      "palette": "gerilim",
+      "tone": "tense",
+      "text": "Dokuz kişi bire üç verdi. Kapıdaki adam da masadaydı.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "focus": [
+        0.6,
+        0.45
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "golyok",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "palette": "gerilim",
+      "tone": "tense",
+      "text": "Doksan dakika, gol yok. Uzatmalar, gol yok.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "focus": [
+        0.5,
+        0.25
+      ],
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0,
+          "volume": 0.6
+        }
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "penalti",
+      "image": "img/s01.png",
+      "motion": "push",
+      "palette": "gerilim",
+      "tone": "whisper",
+      "text": "Penaltılar. Kuyumcu terliyordu. Sen çayını yudumladın.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "focus": [
+        0.4,
+        0.55
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "info",
+      "id": "skor",
+      "tone": "tense",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "text": "Galatasaray dört atışta dört gol attı.",
+      "info": {
+        "layout": "list",
+        "kicker": "PENALTILAR",
+        "heading": "Galatasaray – Arsenal",
+        "items": [
+          {
+            "text": "Galatasaray: *4/4* gol",
+            "state": "ok"
+          },
+          {
+            "text": "Arsenal: *2* penaltı kaçırdı",
+            "state": "bad"
+          },
+          {
+            "text": "Skor: *4–1*",
+            "state": "ok"
+          }
+        ]
+      },
+      "hold": 1.2
+    },
+    {
+      "type": "image",
+      "id": "gol",
+      "image": "img/s05.png",
+      "motion": "shake",
+      "palette": "neon",
+      "tone": "excited",
+      "text": "Ve son vuruş… Gol! Kupa Galatasaray'ın!",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "transition": "flash",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "sfx": [
+        {
+          "name": "crowd",
+          "at": 0,
+          "volume": 0.55
+        }
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "info",
+      "id": "gercek",
+      "tone": "dramatic",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 3000
+      },
+      "text": "Türkiye'nin ilk Avrupa kupası. Bu gerçek bir final.",
+      "info": {
+        "layout": "list",
+        "kicker": "GERÇEK FİNAL · UEFA KUPASI",
+        "heading": "17 Mayıs 2000 · Kopenhag",
+        "items": [
+          {
+            "text": "Galatasaray *0–0* Arsenal",
+            "state": "ok"
+          },
+          {
+            "text": "Penaltılar: *4–1*",
+            "state": "ok"
+          },
+          {
+            "text": "Türkiye'nin *ilk* Avrupa kupası",
+            "state": "ok"
+          }
+        ]
+      },
+      "hold": 1.2
+    },
+    {
+      "type": "image",
+      "id": "masa",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Dokuz kişi parayı masaya bıraktı.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "sfx": [
+        {
+          "name": "cash",
+          "at": 0.2,
+          "volume": 0.35
+        }
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "gitti",
+      "image": "img/s06.png",
+      "motion": "panLeft",
+      "palette": "kahve",
+      "tone": "calm",
+      "text": "Kapıdaki adam da ödedi ve sessizce gitti.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "focus": [
+        0.3,
+        0.4
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "info",
+      "id": "hedef",
+      "tone": "excited",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "text": "On iki bin dolar. Babanın borcunu geçtin.",
+      "info": {
+        "layout": "big",
+        "kicker": "HEDEF 11.000 $ · GEÇİLDİ ✓",
+        "heading": "Cebindeki para",
+        "value": 12000,
+        "from": 3000,
+        "format": "usd",
+        "caption": "Yeni hedef: *1 milyar dolar*"
+      },
+      "hold": 1.2
+    },
+    {
+      "type": "image",
+      "id": "sokak",
+      "image": "img/s07.png",
+      "motion": "zoomIn",
+      "palette": "neon",
+      "tone": "excited",
+      "text": "Bütün şehir sokaktaydı. Kuyumcu seni omzuna aldı.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "sfx": [
+        {
+          "name": "crowd",
+          "at": 0,
+          "volume": 0.35
+        }
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "milyarder",
+      "image": "img/s07.png",
+      "motion": "push",
+      "palette": "neon",
+      "tone": "excited",
+      "text": "Milyarder oldun! Lira olarak. Hedef: bir milyar dolar.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "focus": [
+        0.5,
+        0.3
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "image",
+      "id": "kimatti",
+      "image": "img/s07.png",
+      "motion": "zoomOut",
+      "palette": "neon",
+      "tone": "question",
+      "text": "Son penaltıyı kim attı? Yorumlara yaz.",
+      "hud": {
+        "yil": 2000,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "hold": 0.5
+    },
+    {
+      "type": "bait",
+      "image": "img/s06.png",
+      "words": [
+        "BORSA",
+        "DOLAR"
+      ],
+      "duration": 3.2,
+      "palette": "kahve",
+      "tone": "question",
+      "motion": "none",
+      "text": "Parayı nereye koyarsın?"
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "8. BÖLÜM",
+        "*YARIN*"
+      ],
+      "body": "Yorumlara **BORSA** ya da **DOLAR** yaz.\nSon penaltıyı atanı da yaz!",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.2
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+[dramatic] On yedi Mayıs iki bin. Son penaltı.
+[whispers] Bu gece dokuz kişiyle iddiaya girdin.
+[dramatic] Yorumlar konuştu: Yalan. Kazanan yorum, Ömer'den.
+[tense] Yedi ay önce. Adam sayfayı soruyordu.
+[whispers] Gözünü kırpmadın: "Ne sayfası? Ben Selim."
+[calm] Gülümsedin: "Seninle iddiaya girelim."
+[tense] "Galatasaray bu sezon Avrupa'da kupa alacak. Kaybedersen beni unutursun."
+[calm] Paranı borsaya koydun. O yıl borsa yüzde dört yüz seksen beş yükseldi.
+[excited] Aylar geçti. Cebindeki para üç bin dolar oldu.
+[dramatic] Ve o gün geldi. Defterin ilk sayfasındaki tarih.
+[excited] Kahvehane tıklım tıklım. Herkes Arsenal diyordu.
+[tense] Dokuz kişi bire üç verdi. Kapıdaki adam da masadaydı.
+[tense] Doksan dakika, gol yok. Uzatmalar, gol yok.
+[whispers] Penaltılar. Kuyumcu terliyordu. Sen çayını yudumladın.
+[tense] Galatasaray dört atışta dört gol attı.
+[excited] Ve son vuruş… Gol! Kupa Galatasaray'ın!
+[dramatic] Türkiye'nin ilk Avrupa kupası. Bu gerçek bir final.
+[excited] Dokuz kişi parayı masaya bıraktı.
+[calm] Kapıdaki adam da ödedi ve sessizce gitti.
+[excited] On iki bin dolar. Babanın borcunu geçtin.
+[excited] Bütün şehir sokaktaydı. Kuyumcu seni omzuna aldı.
+[excited] "Milyarder oldun!" Lira olarak. Hedef: bir milyar dolar.
+[curious] Son penaltıyı kim attı? Yorumlara yaz.
+[curious] Parayı nereye koyarsın?
