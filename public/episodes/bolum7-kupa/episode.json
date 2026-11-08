@@ -68,7 +68,7 @@
           "volume": 0.5
         }
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -87,7 +87,7 @@
         0.5,
         0.4
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "info",
@@ -103,7 +103,7 @@
         "likes": 44,
         "caption": "Yorumların kararı: *YALAN*"
       },
-      "hold": 1.2
+      "hold": 1.1
     },
     {
       "type": "title",
@@ -134,7 +134,7 @@
         0.25,
         0.4
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -153,7 +153,7 @@
         0.2,
         0.45
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -172,7 +172,7 @@
         0.5,
         0.4
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -191,7 +191,7 @@
         0.5,
         0.45
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "info",
@@ -212,7 +212,7 @@
         "format": "percent",
         "caption": "Dolar bazında *%242* · dünyada 1 numara"
       },
-      "hold": 1.2
+      "hold": 1.1
     },
     {
       "type": "info",
@@ -233,7 +233,7 @@
         "format": "usd",
         "caption": "Hedef: *11.000 dolar*"
       },
-      "hold": 1.2
+      "hold": 1.1
     },
     {
       "type": "image",
@@ -252,7 +252,7 @@
         0.5,
         0.6
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -271,7 +271,7 @@
         0.5,
         0.3
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -290,7 +290,7 @@
         0.6,
         0.45
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -316,7 +316,7 @@
           "volume": 0.6
         }
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -335,7 +335,7 @@
         0.4,
         0.55
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "info",
@@ -366,7 +366,7 @@
           }
         ]
       },
-      "hold": 1.2
+      "hold": 1.1
     },
     {
       "type": "image",
@@ -393,7 +393,7 @@
           "volume": 0.55
         }
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "info",
@@ -424,7 +424,7 @@
           }
         ]
       },
-      "hold": 1.2
+      "hold": 1.1
     },
     {
       "type": "image",
@@ -450,7 +450,7 @@
           "volume": 0.35
         }
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -469,7 +469,7 @@
         0.3,
         0.4
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "info",
@@ -490,7 +490,7 @@
         "format": "usd",
         "caption": "Yeni hedef: *1 milyar dolar*"
       },
-      "hold": 1.2
+      "hold": 1.1
     },
     {
       "type": "image",
@@ -516,7 +516,7 @@
           "volume": 0.35
         }
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -535,7 +535,7 @@
         0.5,
         0.3
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "image",
@@ -554,7 +554,7 @@
         0.5,
         0.5
       ],
-      "hold": 0.5
+      "hold": 0.42
     },
     {
       "type": "bait",
