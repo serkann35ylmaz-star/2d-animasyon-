@@ -149,3 +149,10 @@ bu kelimeleri içerir (arama/SEO için).
 "Her bölümde para kazansın" kuralı **durduruldu**. İzleyici yorumları para kazanma, soygun ve şiddete kaydığı için hikâye
 Necmi ve para odağından çıkarılır; yorumlardan yalnızca gizem/duygu/zaman yolculuğu fikirleri hikâyeye alınır.
 Şiddet, soygun ve küfür içeren yorumlar hikâyeye girmez.
+
+## Güncelleme 2 (kanal sahibi isteği): para kazanma kuralı geri geldi, Necmi çıkıyor
+
+Her bölümde kahraman bildiklerini **yasal yoldan** (borsa, döviz, değerli kâğıt/varlık, doğru zamanda alım-satım) kullanıp
+para kazanır; uzun vadeli hedef **milyar dolar**. Necmi hikâyeden çıkar (7. bölümde yalanı inanılır, gider). Soygun, dolandırıcılık,
+kaçak bahis ve şiddet yok. Her bilgi kartındaki tarih/rakam doğrulanır; kahramanın kazancı "kurgu" etiketiyle gösterilir.
+Kimliği 2026'dan olduğu için hesapları güvendiği biri (kuyumcu ortağı) üzerinden açılır.
