@@ -1,0 +1,409 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 8: Kara Çarşamba",
+  "targetDuration": 80,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Istanbul, Turkey, 20–22 February 2001, during the financial crisis",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "dolar",
+      "label": "DOLAR",
+      "format": "usd",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "image",
+      "id": "acilis",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "palette": "gerilim",
+      "tone": "dramatic",
+      "text": "Ben Selim. 2026'dan 1999'a düştüm. Ne olacağını biliyorum. Kasa: 12.000 dolar.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "note": {
+        "kicker": "8. BÖLÜM · KARA ÇARŞAMBA",
+        "user": "goktugks3nn_",
+        "text": "Borsaya koy, borç tarihi yaklaşınca çek",
+        "likes": 46,
+        "from": 2.6
+      },
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0,
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "id": "tarih",
+      "image": "img/s02.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "tense",
+      "text": "20 Şubat 2001. Herkes borsa diyordu.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "cemil",
+      "image": "img/s02.png",
+      "motion": "push",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Cemil gazeteyi masaya vurdu: Bütün paramı borsaya bastım Selim!",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 0.45,
+      "focus": [
+        0.6,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "biliyorum",
+      "image": "img/s03.png",
+      "motion": "zoomIn",
+      "palette": "soguk",
+      "tone": "calm",
+      "text": "Ben sadece gülümsedim. Ben biliyorum.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "defter",
+      "image": "img/s03.png",
+      "motion": "push",
+      "palette": "soguk",
+      "tone": "whisper",
+      "text": "Defterime çoktan yazmıştım: yarın Kara Çarşamba.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "cevir",
+      "image": "img/s04.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "tense",
+      "text": "Bütün dolarlarımı liraya çevirdim.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "yapma",
+      "image": "img/s04.png",
+      "motion": "shake",
+      "palette": "gunduz",
+      "tone": "excited",
+      "text": "Cemil kolumu tuttu: Yapma Selim! Herkes dolar alırken sen satıyorsun!",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 0.45,
+      "focus": [
+        0.4,
+        0.4
+      ]
+    },
+    {
+      "type": "info",
+      "id": "faiz",
+      "tone": "dramatic",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 1.1,
+      "text": "21 Şubat, Kara Çarşamba. Gecelik faiz yüzde 7500'e çıktı.",
+      "info": {
+        "layout": "big",
+        "kicker": "21 ŞUBAT 2001 · GERÇEK",
+        "heading": "Gecelik faiz",
+        "value": 7500,
+        "from": 0,
+        "format": "percent",
+        "caption": "Türkiye tarihinin *rekoru*"
+      }
+    },
+    {
+      "type": "image",
+      "id": "banka",
+      "image": "img/s05.png",
+      "motion": "zoomIn",
+      "palette": "soguk",
+      "tone": "excited",
+      "text": "Paramı bir geceliğine bankaya yatırdım. Bir gecede yüzde yirmi.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "sabah",
+      "image": "img/s06.png",
+      "motion": "shake",
+      "palette": "gerilim",
+      "tone": "tense",
+      "text": "Ertesi sabah kur serbest bırakıldı.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 0.45,
+      "transition": "flash",
+      "focus": [
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "type": "info",
+      "id": "kur",
+      "tone": "dramatic",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 12000
+      },
+      "hold": 1.1,
+      "text": "Dolar bir günde 675 binden bir milyona fırladı.",
+      "info": {
+        "layout": "compare",
+        "kicker": "22 ŞUBAT 2001 · GERÇEK",
+        "heading": "1 dolar kaç lira?",
+        "items": [
+          {
+            "label": "Sabah",
+            "value": 675000,
+            "format": "tl"
+          },
+          {
+            "label": "Akşam",
+            "value": 1000000,
+            "format": "tl",
+            "accent": true
+          }
+        ],
+        "caption": "Lira bir günde *üçte bir* değer kaybetti"
+      }
+    },
+    {
+      "type": "image",
+      "id": "donmustum",
+      "image": "img/s06.png",
+      "motion": "push",
+      "palette": "gerilim",
+      "tone": "calm",
+      "text": "Ama ben sabahın ilk saatinde, kur fırlamadan dolara dönmüştüm.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.45,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "erimis",
+      "image": "img/s07.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "sad",
+      "text": "Cemil'in borsadaki parası erimişti.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "nereden",
+      "image": "img/s07.png",
+      "motion": "push",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Selim, nereden bildin?",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.35
+      ]
+    },
+    {
+      "type": "image",
+      "id": "kirmizi",
+      "image": "img/s08.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Borsada her şey yerlerdeydi. Herkes satıyordu.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "karar",
+      "image": "img/s08.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "dramatic",
+      "text": "Tam o an kararımı verdim.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "type": "bait",
+      "image": "img/s08.png",
+      "words": [
+        "AL",
+        "BEKLE"
+      ],
+      "duration": 3.0,
+      "palette": "tehlike",
+      "tone": "question",
+      "motion": "none",
+      "text": "Herkes satarken ben alayım mı, bekleyeyim mi?"
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "9. BÖLÜM",
+        "*YARIN 18.00*"
+      ],
+      "body": "Yorumlara **AL** ya da **BEKLE** yaz.\nSabitlenen yorum videoya girer!",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.6,
+      "kasa": {
+        "value": 14600,
+        "from": 12000
+      }
+    }
+  ]
+}
