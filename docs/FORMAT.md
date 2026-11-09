@@ -52,3 +52,8 @@ Etiketler (platform başına en fazla 5):
 - **Oylama otomasyonu:** en yeni bölüm Reels'ine bağlı, yorumda oylama kelimeleri geçince 5 farklı herkese açık cevaptan biri + DM ("Oyun sayıldı ✅ … 18.00'de").
 - **Oylama kapandı otomasyonu:** önceki bölümlerin hepsine bağlı, her yoruma 3 farklı "oylama kapandı" cevabından biri + son bölüm linkli DM.
 - Her yeni bölüm yayınlanınca: oylama otomasyonunu yeni Reels'e ve yeni kelimelere taşı, bir önceki bölümü "kapandı" listesine ekle, metinlerdeki bölüm numarası/linki güncelle. Yayın saati: 18.00.
+
+### ChatPlace durumu (8. bölüm yayında)
+- Aktif oy otomasyonu: `01a1bfd6-3f5a-70ef-8121-dfbdddd8516b` (8. bölüm Reels, anahtar: al / bekle).
+- Aktif "oylama kapandı": `01a1bfd6-b356-712d-94d3-301100fc28b8` (1–7. bölümler, 8. bölüm linki).
+- Yeni bölümde: eski ikisini duraklat (aynı tetik iki otomasyonda olamaz), sonra yenilerini kur.
