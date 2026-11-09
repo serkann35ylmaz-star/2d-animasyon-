@@ -64,7 +64,7 @@ export const NoteStrip: React.FC<{kicker?: string; user?: string; text?: string;
 };
 
 /** Kalıcı KASA şeridi: her bölümün sonunda aynı yerde, aynı grafikle. */
-export const KasaStrip: React.FC<{value: number; from?: number; target?: string; mystery?: boolean}> = ({value, from, target = '1 MİLYAR $', mystery}) => {
+export const KasaStrip: React.FC<{value: number; from?: number; target?: string; mystery?: boolean; top?: number}> = ({value, from, target = '1 MİLYAR $', mystery, top = 1130}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const p = spring({frame, fps, config: {damping: 15, stiffness: 150}});
@@ -75,7 +75,7 @@ export const KasaStrip: React.FC<{value: number; from?: number; target?: string;
         position: 'absolute',
         left: 40,
         right: 40,
-        top: 1130,
+        top,
         transform: `translateY(${interpolate(p, [0, 1], [40, 0])}px)`,
         opacity: p,
         display: 'flex',

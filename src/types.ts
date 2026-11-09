@@ -65,7 +65,7 @@ interface SceneBase {
   /** Küçük üst şerit: bölüm adı + kazanan yorum (ör. 3. saniyeden sonra belirir) */
   note?: {kicker?: string; user?: string; text?: string; likes?: number; from?: number};
   /** Kalıcı KASA şeridi (her bölüm sonunda aynı yerde): "💰 KASA: X $ → HEDEF: 1 MİLYAR $" */
-  kasa?: {value: number; from?: number; target?: string; mystery?: boolean};
+  kasa?: {value: number; from?: number; target?: string; mystery?: boolean; top?: number};
 }
 
 export interface ImageScene extends SceneBase {

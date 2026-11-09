@@ -1,6 +1,6 @@
 {
   "title": "Geleceği Bilen Adam — Bölüm 8: Kara Çarşamba",
-  "targetDuration": 80,
+  "targetDuration": 60,
   "series": {
     "name": "Hikâye Yorumda",
     "handle": "@hikayeyorumda",
@@ -402,7 +402,8 @@
       "duration": 3.6,
       "kasa": {
         "value": 14600,
-        "from": 12000
+        "from": 12000,
+        "top": 1420
       }
     }
   ]
