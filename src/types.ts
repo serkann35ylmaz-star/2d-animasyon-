@@ -62,6 +62,10 @@ interface SceneBase {
   tone?: string;
   /** Görsel üretimi için istem (render'da kullanılmaz, scripts/prompts ile dışa aktarılır) */
   prompt?: string;
+  /** Küçük üst şerit: bölüm adı + kazanan yorum (ör. 3. saniyeden sonra belirir) */
+  note?: {kicker?: string; user?: string; text?: string; likes?: number; from?: number};
+  /** Kalıcı KASA şeridi (her bölüm sonunda aynı yerde): "💰 KASA: X $ → HEDEF: 1 MİLYAR $" */
+  kasa?: {value: number; from?: number; target?: string; mystery?: boolean};
 }
 
 export interface ImageScene extends SceneBase {

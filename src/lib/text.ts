@@ -3,7 +3,7 @@ import type {ValueFormat} from '../types';
 /** Seslendirme metnini kelimelere böler. scripts/align.py ile AYNI kural: boşluklara göre. */
 export const tokenize = (text: string): string[] => text.split(/\s+/).filter(Boolean);
 
-const groupThousands = (n: number): string => {
+export const groupThousands = (n: number): string => {
   const neg = n < 0;
   const s = Math.round(Math.abs(n)).toString();
   const out = s.replace(/\B(?=(\d{3})+(?!\d))/g, '.');

@@ -7,6 +7,7 @@ import {stripMarkup} from './lib/text';
 import {BaitCard, EndCard, TitleCard} from './scenes/CardScenes';
 import {InfoScene} from './scenes/InfoScene';
 import {KenBurns} from './components/KenBurns';
+import {KasaStrip, NoteStrip} from './components/Strips';
 import {loadFonts, setAccent} from './theme';
 import type {Episode as EpisodeT} from './types';
 
@@ -100,6 +101,8 @@ const SceneView: React.FC<{bs: BuiltScene; ep: EpisodeT; assets: Record<string, 
       ) : scene.tag && (scene.type === 'image' || scene.type === 'bait') ? (
         <Hud defs={[]} values={{}} prev={null} tag={scene.tag} />
       ) : null}
+      {scene.note ? <NoteStrip {...scene.note} /> : null}
+      {scene.kasa ? <KasaStrip {...scene.kasa} /> : null}
       {showCaptions && bs.words.length ? <Captions words={bs.words} /> : null}
       <Transition kind={scene.transition} />
       {voice && bs.audio ? (
