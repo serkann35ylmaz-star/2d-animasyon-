@@ -1,0 +1,404 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 9: 11. Saniye",
+  "targetDuration": 85,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Istanbul, Turkey, spring 2001 and 29 June 2002 (World Cup third-place match day)",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "dolar",
+      "label": "DOLAR",
+      "format": "usd",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "image",
+      "id": "acilis",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "palette": "gerilim",
+      "tone": "dramatic",
+      "text": "Ben Selim. 2026'dan 1999'a düştüm. Ne olacağını biliyorum. Kasa: 14.600 dolar.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "note": {
+        "kicker": "9. BÖLÜM · 11. SANİYE",
+        "user": "miracjuzey6",
+        "text": "Al",
+        "likes": 23,
+        "from": 2.6
+      },
+      "sfx": [
+        {
+          "name": "heartbeat",
+          "at": 0,
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "id": "alim",
+      "image": "img/s02.png",
+      "motion": "push",
+      "palette": "gerilim",
+      "tone": "calm",
+      "text": "Herkes satarken ben aldım. Borsa dibe vurmuştu, ben dipten topladım.",
+      "hud": {
+        "yil": 2001,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "haziran",
+      "image": "img/s03.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "tense",
+      "text": "Aradan bir buçuk yıl geçti. Haziran 2002. Kahvehane tıklım tıklım doluydu.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "kupa",
+      "image": "img/s03.png",
+      "motion": "push",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Dünya Kupası! Türkiye, üçüncülük maçında Güney Kore'yle oynuyordu.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.3
+      ]
+    },
+    {
+      "type": "image",
+      "id": "defter",
+      "image": "img/s03.png",
+      "motion": "zoomIn",
+      "palette": "soguk",
+      "tone": "whisper",
+      "text": "Defterime çoktan yazmıştım: maç başlar başlamaz gol var.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.55,
+        0.55
+      ]
+    },
+    {
+      "type": "image",
+      "id": "iddia",
+      "image": "img/s04.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "Kahveciye döndüm: İlk 15 saniyede gol olacak. Beş bin dolarım var.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "yapma",
+      "image": "img/s05.png",
+      "motion": "shake",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Cemil kolumu tuttu: Yapma Selim! On beş saniyede gol mü olur? Dünya Kupası bu!",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.4,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "biliyorum",
+      "image": "img/s04.png",
+      "motion": "push",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "Ben sadece gülümsedim. Ben biliyorum.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "bahis",
+      "image": "img/s05.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "tense",
+      "text": "Kahveci güldü, bire iki oran verdi. Cemil saatini masaya koydu: Gol olursa saatim senin!",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.6
+      ]
+    },
+    {
+      "type": "image",
+      "id": "dudu",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "dramatic",
+      "text": "Hakem düdüğü çaldı.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "say",
+      "image": "img/s06.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Bir. İki. Üç. Dört. Beş.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "gol",
+      "image": "img/s07.png",
+      "motion": "shake",
+      "palette": "gerilim",
+      "tone": "excited",
+      "text": "Hakan Şükür! Gol! Daha on bir saniye geçmemişti!",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "transition": "flash",
+      "sfx": [
+        {
+          "name": "impact",
+          "at": 0.05
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "id": "sure",
+      "tone": "dramatic",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 1.1,
+      "text": "29 Haziran 2002. Dünya Kupası tarihinin en hızlı golü. 10,8 saniye.",
+      "info": {
+        "layout": "big",
+        "kicker": "29 HAZİRAN 2002 · GERÇEK",
+        "heading": "Gol süresi",
+        "value": 10.8,
+        "from": 0,
+        "format": "sn",
+        "caption": "Dünya Kupası tarihinin *en hızlı golü*"
+      }
+    },
+    {
+      "type": "image",
+      "id": "cildirdi",
+      "image": "img/s07.png",
+      "motion": "push",
+      "palette": "gerilim",
+      "tone": "excited",
+      "text": "Kahvehane çıldırdı. Cemil'in ağzı açık kaldı, saatini bana uzattı.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 14600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.4,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "kazanc",
+      "image": "img/s07.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "Beş bin dolarım, on bin dolar daha getirdi. Kasa: 24.600 dolar.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 24600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.7,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "fotograf",
+      "image": "img/s08.png",
+      "motion": "zoomIn",
+      "palette": "gerilim",
+      "tone": "whisper",
+      "text": "Ama köşedeki bir adam bana bakıyordu. Cebinden küçük bir fotoğraf makinesi çıkardı.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 24600
+      },
+      "hold": 0.45,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "type": "bait",
+      "image": "img/s08.png",
+      "words": [
+        "DOLAR",
+        "ALTIN"
+      ],
+      "duration": 3.0,
+      "palette": "gerilim",
+      "tone": "question",
+      "motion": "none",
+      "text": "Kazancı ne yapayım? Dolar mı, altın mı?"
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "10. BÖLÜM",
+        "*YARIN 18.00*"
+      ],
+      "body": "Yorumlara **DOLAR** ya da **ALTIN** yaz.\nSabitlenen yorum videoya girer!",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.6,
+      "kasa": {
+        "value": 24600,
+        "from": 14600,
+        "top": 1420
+      }
+    }
+  ]
+}

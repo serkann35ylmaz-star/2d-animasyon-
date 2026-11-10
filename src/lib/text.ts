@@ -22,6 +22,8 @@ export const formatValue = (v: number, format: ValueFormat = 'number'): string =
       return `%${Math.round(v)}`;
     case 'kg':
       return `${groupThousands(v)} kg`;
+    case 'sn':
+      return `${v.toFixed(1).replace('.', ',')} sn`;
     case 'raw':
       return String(Math.round(v));
     default:
