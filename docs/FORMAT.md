@@ -43,6 +43,13 @@ Etiketler (platform başına en fazla 5):
 - TikTok: #keşfet #fyp #nostalji #hikaye #yapayzeka
 - YouTube Shorts: #shorts #nostalji #hikaye #animasyon #türkiye
 
+## Teslimde HER ZAMAN verilecekler (kullanıcı kuralı)
+Her bölüm teslim edilirken sohbet mesajında, istenmeden, şunlar da hazır verilir (dosya + yapıştırmaya hazır metin):
+1. **Açıklama** (şablona uygun, `yayin/gelecegi-bilen-adam-bolum-N-aciklama.txt`).
+2. **Platform başına 5 hashtag** (Instagram / TikTok / Shorts ayrı satırlar).
+3. **İlk yorum önerileri** (3–5 seçenek: oylamayı başlatan, merak uyandıran, Cemil esprili, bilgi sorusu; biri "önerim" diye işaretlenir).
+4. Önceki bölüm için "oylama kapandı" yorumu ve teslim kontrol listesi.
+
 ## Teslim kontrol listesi (kanal sahibine)
 - Paylaşım ayarları: yapay zekâ etiketi AÇIK, otomatik altyazı AÇIK, Facebook'ta paylaş KAPALI.
 - Deneme Reels ile paylaş; hikâyede anket çıkartması (A/B); ilk saatte yorumlara cevap, en iyi yorumu sabitle.
