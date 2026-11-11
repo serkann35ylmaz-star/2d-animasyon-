@@ -60,7 +60,17 @@ Her bölüm teslim edilirken sohbet mesajında, istenmeden, şunlar da hazır ve
 - **Oylama kapandı otomasyonu:** önceki bölümlerin hepsine bağlı, her yoruma 3 farklı "oylama kapandı" cevabından biri + son bölüm linkli DM.
 - Her yeni bölüm yayınlanınca: oylama otomasyonunu yeni Reels'e ve yeni kelimelere taşı, bir önceki bölümü "kapandı" listesine ekle, metinlerdeki bölüm numarası/linki güncelle. Yayın saati: 18.00.
 
-### ChatPlace durumu (8. bölüm yayında)
-- Aktif oy otomasyonu: `01a1bfd6-3f5a-70ef-8121-dfbdddd8516b` (8. bölüm Reels, anahtar: al / bekle).
-- Aktif "oylama kapandı": `01a1bfd6-b356-712d-94d3-301100fc28b8` (1–7. bölümler, 8. bölüm linki).
-- Yeni bölümde: eski ikisini duraklat (aynı tetik iki otomasyonda olamaz), sonra yenilerini kur.
+### ChatPlace kuralı (kullanıcı kalıcı onayı)
+Kullanıcı, her bölümde ChatPlace otomasyonlarının (oylama + "oylama kapandı", herkese açık cevap + DM) **sormadan, otomatik** kurulmasını onayladı. Bölüm Instagram'a yüklenince (kullanıcı haber verir ya da `automations_triggers_list_instagram_media` listesinde yeni Reels görününce) hemen yap ve sonucu bildir.
+
+### ChatPlace durumu (9. bölüm yayında)
+- Aktif oy otomasyonu: `01a1c8ee-22d7-718e-95f2-59a3e287c6c6` (9. bölüm Reels, anahtar: dolar / altın).
+- Aktif "oylama kapandı": `01a1c5e2-c822-70f5-a1cd-fa99be625e1e` (1–8. bölümler, 9. bölüm linki).
+- Diğer tüm otomasyonlar duraklatılmış eski kayıtlardır.
+
+### ChatPlace tuzakları (yaşandı)
+- `quick_setup` aynı otomasyonda **"altın" ve "altin" gibi ı/i çiftlerini aynı kelime sayar** ve "post and keyword already used" hatası verir. Tek biçim ver (örn. yalnız "altın"); eşleşme büyük/küçük ve ı/i duyarsız çalışıyor olmalı.
+- Toplu kurulum hata verirse: önce geçici bir kelimeyle (örn. `zzoylama`) doğru metinlerle kur, sonra `automations_triggers_set` ile gerçek kelimelere çevir.
+- `triggers_set` çağrısında **`mediaIds` mutlaka verilmeli**; verilmezse otomasyon tüm gönderilere bağlanır. Gönderi "artık yok" derse önce `automations_triggers_list_instagram_media` ile listeyi yenile.
+- Aynı kelime iki otomasyonda (duraklatılmış olsa bile) çakışır: yeni bölümde eskilerini duraklat, gerekirse eski kelimelerini daralt.
+- Canlı hesapta deneme otomasyonu açma; açılırsa işi bitince sil.
