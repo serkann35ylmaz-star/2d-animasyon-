@@ -63,10 +63,10 @@ Her bölüm teslim edilirken sohbet mesajında, istenmeden, şunlar da hazır ve
 ### ChatPlace kuralı (kullanıcı kalıcı onayı)
 Kullanıcı, her bölümde ChatPlace otomasyonlarının (oylama + "oylama kapandı", herkese açık cevap + DM) **sormadan, otomatik** kurulmasını onayladı. Bölüm Instagram'a yüklenince (kullanıcı haber verir ya da `automations_triggers_list_instagram_media` listesinde yeni Reels görününce) hemen yap ve sonucu bildir.
 
-### ChatPlace durumu (9. bölüm yayında)
-- Aktif oy otomasyonu: `01a1c8ee-22d7-718e-95f2-59a3e287c6c6` (9. bölüm Reels, anahtar: dolar / altın).
-- Aktif "oylama kapandı": `01a1c5e2-c822-70f5-a1cd-fa99be625e1e` (1–8. bölümler, 9. bölüm linki).
-- Diğer tüm otomasyonlar duraklatılmış eski kayıtlardır.
+### ChatPlace durumu (10. bölüm yayında)
+- Aktif cevap/oylama otomasyonu: `01a1caf2-7468-70ea-a121-0cdca6bc9e62` (10. bölüm Reels `DfmpaiCoITw`, HER yoruma 5 cevaptan biri + DM; açık uçlu "kulüp adı").
+- Aktif "oylama kapandı": `01a1caf2-a1c3-70b6-a305-b56d8c8ed465` (1–9. bölümler, 10. bölüm linki).
+- Diğer tüm otomasyonlar duraklatılmış eski kayıtlardır. Yeni bölümde bu ikisini duraklat, yenilerini kur.
 
 ### ChatPlace tuzakları (yaşandı)
 - `quick_setup` aynı otomasyonda **"altın" ve "altin" gibi ı/i çiftlerini aynı kelime sayar** ve "post and keyword already used" hatası verir. Tek biçim ver (örn. yalnız "altın"); eşleşme büyük/küçük ve ı/i duyarsız çalışıyor olmalı.
