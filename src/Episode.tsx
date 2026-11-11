@@ -7,7 +7,7 @@ import {stripMarkup} from './lib/text';
 import {BaitCard, EndCard, TitleCard} from './scenes/CardScenes';
 import {InfoScene} from './scenes/InfoScene';
 import {KenBurns} from './components/KenBurns';
-import {KasaStrip, NoteStrip} from './components/Strips';
+import {KasaStrip, NoteStrip, KadroStrip} from './components/Strips';
 import {loadFonts, setAccent} from './theme';
 import type {Episode as EpisodeT} from './types';
 
@@ -103,6 +103,7 @@ const SceneView: React.FC<{bs: BuiltScene; ep: EpisodeT; assets: Record<string, 
       ) : null}
       {scene.note ? <NoteStrip {...scene.note} /> : null}
       {scene.kasa ? <KasaStrip {...scene.kasa} /> : null}
+      {scene.kadro ? <KadroStrip {...scene.kadro} /> : null}
       {showCaptions && bs.words.length ? <Captions words={bs.words} /> : null}
       <Transition kind={scene.transition} />
       {voice && bs.audio ? (

@@ -104,3 +104,49 @@ export const KasaStrip: React.FC<{value: number; from?: number; target?: string;
     </div>
   );
 };
+
+/** KADRO sayacı: hayalimizdeki takıma kaç oyuncu katıldı (⚽ KADRO: 0/2). */
+export const KadroStrip: React.FC<{filled: number; total?: number; top?: number}> = ({filled, total = 2, top = 1010}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const p = spring({frame, fps, config: {damping: 15, stiffness: 150}});
+  const slots = Array.from({length: total}, (_, i) => i < filled);
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        left: 40,
+        right: 40,
+        top,
+        transform: `translateY(${interpolate(p, [0, 1], [40, 0])}px)`,
+        opacity: p,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: 18,
+        background: 'linear-gradient(180deg, rgba(10,18,14,0.92), rgba(8,12,10,0.92))',
+        border: '3px solid #3DDC84',
+        borderRadius: 24,
+        padding: '14px 22px',
+        boxShadow: '0 0 40px rgba(61,220,132,0.30), 0 14px 40px rgba(0,0,0,0.5)',
+        fontFamily: FONT,
+        fontWeight: 900,
+        whiteSpace: 'nowrap',
+      }}
+    >
+      <span style={{fontSize: 40}}>⚽</span>
+      <span style={{fontSize: 36, color: '#fff', letterSpacing: '0.02em'}}>KADRO:</span>
+      <span style={{fontSize: 48, color: '#3DDC84', fontVariantNumeric: 'tabular-nums'}}>
+        {filled}/{total}
+      </span>
+      <span style={{display: 'flex', gap: 10}}>
+        {slots.map((on, i) => (
+          <span
+            key={i}
+            style={{width: 34, height: 34, borderRadius: '50%', border: '3px solid #3DDC84', background: on ? '#3DDC84' : 'transparent'}}
+          />
+        ))}
+      </span>
+    </div>
+  );
+};

@@ -1,0 +1,26 @@
+[dramatic] Ben Selim. İki bin yirmi altıdan bin dokuz yüz doksan dokuza düştüm. Ne olacağını biliyorum. Kasa: yirmi milyon yüz yetmiş beş bin dolar.
+[excited] Cemil bavulu görünce bayıldı. Ayılınca ilk sözü: "Bavul çok ağır abi!"
+[calm] Nasıl mı? Geri sarıyorum.
+[tense] Birinci hamle: altın. Irak'ta savaş kokusu vardı, herkes korkuyordu. Ben sığınağı seçtim.
+[shouting] Cemil kuyumcuda neredeyse ağlayacaktı: "Altın mı? Anneannem gibi mi yapıyoruz?"
+[calm] Yirmi dört bin altı yüz dolar, yirmi dokuz bin beş yüze çıktı. Selim'in kuralı: herkes korkarken sığınağı ara.
+[excited] İkinci hamle: bankalar. Kara Çarşamba'da ezilen bankalar iki bin üçte ayağa kalkıyordu.
+[shouting] Cemil kolumu çekti: "Batan bankaya para mı atılır Selim?"
+[calm] Ben güldüm. Yirmi dokuz bin, seksen bine çıktı. Kural: herkes dipten kaçarken, ben dibe bakarım.
+[tense] Üçüncü hamle: Amazon. Herkes "internet işi bitti" diyordu. Ama bu şirket ilk kârını yazmıştı.
+[shouting] Cemil bilgisayara baktı: "Kitap satan site mi? Ben kitabı kitapçıdan alırım!"
+[excited] Seksen bin, yüz yetmiş beş bine çıktı. Kural: herkes alay ederken, rakamlara bak.
+[whispers] O sırada köşedeki fotoğrafçı hâlâ bizi izliyordu.
+[dramatic] Şapkasını çıkardı. Kuyumcu!
+[shouting] Cemil çığlık attı: "Sen miydin?!"
+[calm] Kuyumcu hesapları görünce elini uzattı: "Yarı yarıya ortak olalım. Yirmi milyon dolar."
+[whispers] Parayı görünce bir an sustum.
+[dramatic] "Çocukluk hayalimi gerçekleştirmek istiyorum. Madem geleceği biliyorum, Messi ve Ronaldo'yu aynı takımda istiyorum."
+[shouting] Cemil: "Selim, o hayal değil, sinema!"
+[calm] Ben biliyorum.
+[tense] Nisan iki bin üç. Lizbon. İlk durak: Sporting'in Alvalade tesisleri.
+[shouting] Cemil çevirmen oldu: "Ben Portekizce bilmem abi, sadece obrigado biliyorum!"
+[tense] Kulüp yöneticisi ciddiydi: "Fiyat on iki milyon sterlin. Ama bir de başka biri soruyor."
+[whispers] Sahada yirmi sekiz numaralı ince bir genç top sürüyordu. Ben sadece izledim.
+[dramatic] Defterimi açtım. Bir sayfada küçük bir çocuk, elinde top, mavi bordo forma. Sıra ona.
+[curious] Kulübümüzün adı ne olsun? Yorumlara yaz.
