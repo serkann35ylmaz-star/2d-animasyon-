@@ -1,6 +1,6 @@
 {
   "title": "Geleceği Bilen Adam — Bölüm 10: Büyük Plan",
-  "targetDuration": 150,
+  "targetDuration": 135,
   "series": {
     "name": "Hikâye Yorumda",
     "handle": "@hikayeyorumda",
@@ -403,7 +403,7 @@
       "motion": "zoomIn",
       "palette": "kahve",
       "tone": "dramatic",
-      "text": "Çocukluk hayalimi gerçekleştirmek istiyorum. Madem geleceği biliyorum, Messi ve Ronaldo'yu aynı takımda istiyorum.",
+      "text": "Çocukluk hayalimi gerçekleştirmek istiyorum. Madem geleceği biliyorum: Ronaldo ve Messi'yi aynı takımda istiyorum.",
       "hud": {
         "yil": 2003,
         "nakit": 0,
@@ -427,7 +427,7 @@
       "motion": "shake",
       "palette": "kahve",
       "tone": "excited",
-      "text": "Cemil: Selim, o hayal değil, sinema!",
+      "text": "Cemil: Kim bunlar abi? Biri 18, öbürü 16 yaşında! Bırak çocukları!",
       "hud": {
         "yil": 2003,
         "nakit": 0,
@@ -451,7 +451,7 @@
       "motion": "zoomIn",
       "palette": "kahve",
       "tone": "calm",
-      "text": "Ben biliyorum.",
+      "text": "Bugün kimse tanımıyor. Yirmi yıl sonra bütün dünya konuşacak. Ben biliyorum.",
       "hud": {
         "yil": 2003,
         "nakit": 0,
@@ -584,18 +584,13 @@
         "11. BÖLÜM",
         "*YARIN 18.00*"
       ],
-      "body": "Kulübümüzün adı ne olsun?\\nYorumlara yaz, en iyisi seçilir!",
+      "body": "Kulübümüzün adı ne olsun?\nYorumlara yaz, en iyisi seçilir!\n⚽ KADRO: **0/2**",
       "cta": "TAKİP ET · KAÇIRMA",
       "duration": 3.6,
       "kasa": {
         "value": 20175000,
         "from": 20175000,
         "top": 1420
-      },
-      "kadro": {
-        "filled": 0,
-        "total": 2,
-        "top": 1280
       }
     }
   ]

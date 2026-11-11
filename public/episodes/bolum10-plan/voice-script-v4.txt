@@ -15,9 +15,9 @@
 [shouting] Cemil çığlık attı: "Sen miydin?!"
 [calm] Kuyumcu hesapları görünce elini uzattı: "Yarı yarıya ortak olalım. Yirmi milyon dolar."
 [whispers] Parayı görünce bir an sustum.
-[dramatic] "Çocukluk hayalimi gerçekleştirmek istiyorum. Madem geleceği biliyorum, Messi ve Ronaldo'yu aynı takımda istiyorum."
-[shouting] Cemil: "Selim, o hayal değil, sinema!"
-[calm] Ben biliyorum.
+[dramatic] "Çocukluk hayalimi gerçekleştirmek istiyorum. Madem geleceği biliyorum: Ronaldo ve Messi'yi aynı takımda istiyorum."
+[shouting] Cemil: "Kim bunlar abi? Biri on sekiz, öbürü on altı yaşında! Bırak çocukları!"
+[calm] Bugün kimse tanımıyor. Yirmi yıl sonra bütün dünya konuşacak. Ben biliyorum.
 [tense] Nisan iki bin üç. Lizbon. İlk durak: Sporting'in Alvalade tesisleri.
 [shouting] Cemil çevirmen oldu: "Ben Portekizce bilmem abi, sadece obrigado biliyorum!"
 [tense] Kulüp yöneticisi ciddiydi: "Fiyat on iki milyon sterlin. Ama bir de başka biri soruyor."

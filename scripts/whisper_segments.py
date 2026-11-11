@@ -53,7 +53,7 @@ def main() -> None:
         if w.startswith(a) or (full in NUM and w[:1].isdigit() and w.startswith(NUM[full])):
             return True
         # Whisper bazen bir harfi yanlış duyar ("Necmi'nin" -> "Necbinin"): benzer yazılışı da kabul et
-        return len(full) >= 5 and SequenceMatcher(None, w, full).ratio() >= 0.75
+        return len(full) >= 5 and SequenceMatcher(None, w, full).ratio() >= 0.72
 
     idx, j = [], 0
     for line in lines:
