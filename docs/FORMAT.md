@@ -74,3 +74,8 @@ Kullanıcı, her bölümde ChatPlace otomasyonlarının (oylama + "oylama kapand
 - `triggers_set` çağrısında **`mediaIds` mutlaka verilmeli**; verilmezse otomasyon tüm gönderilere bağlanır. Gönderi "artık yok" derse önce `automations_triggers_list_instagram_media` ile listeyi yenile.
 - Aynı kelime iki otomasyonda (duraklatılmış olsa bile) çakışır: yeni bölümde eskilerini duraklat, gerekirse eski kelimelerini daralt.
 - Canlı hesapta deneme otomasyonu açma; açılırsa işi bitince sil.
+
+### DM linkleri Instagram içinde açılsın (kullanıcı isteği)
+- "Profile git" butonu `https://www.instagram.com/_u/hikayeyorumda` biçiminde (normal profil adresi yerine `_u` hilesi uygulamayı açar). Her yeni oylama otomasyonunda bu adres kullanılır.
+- Reels linki butonu normal `instagram.com/reel/...` adresi; ChatPlace araçlarıyla "Instagram medya" (yerel paylaşım) mesajı kurulamıyor. Kullanıcı ChatPlace panelinde "Instagram media" mesajı ekleyerek Reels'i DM içinde gösterebilir.
+- `instagram://` gibi şema adresleri DM butonunda denenmedi, mesajı bozabileceği için kullanılmıyor.
