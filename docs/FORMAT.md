@@ -86,3 +86,8 @@ Kullanıcı, her bölümde ChatPlace otomasyonlarının (oylama + "oylama kapand
 - Çözüm (render.mjs): adeclick → yavaş kompresör → kazanç → asoftclip(0.6) → güvenlik limiter'ı. Ölçüm: yeni çıtırtı olayı 26 → 2.
 - Her teslimde zorunlu: `KEEP_WAV=1 node scripts/render.mjs <slug>` sonra `python3 scripts/ses_kontrol.py out/<slug>.mp4 out/<slug>.master.wav` → "TEMİZ ✓" çıkmadan video gönderilmez.
 - `--audio` bayrağı: görüntüyü baştan çizmeden yalnız sesi yeniden üretip videoya ekler (düzeltme için hızlı yol).
+
+### ChatPlace durumu (11. bölüm yayında)
+- Aktif cevap otomasyonu: `01a1cfc8-a1fd-72cc-bf9b-f0d3630be4c4` (11. bölüm Reels `DfpBBcZoXIC`, HER yoruma 5 cevaptan biri + DM, "Profile git" = `instagram.com/_u/hikayeyorumda`).
+- Aktif "oylama kapandı": `01a1cfc8-b764-7305-954b-7ce82b6b7988` (1–10. bölümler, 11. bölüm linki).
+- Diğer tüm otomasyonlar duraklatılmış eski kayıtlardır.
