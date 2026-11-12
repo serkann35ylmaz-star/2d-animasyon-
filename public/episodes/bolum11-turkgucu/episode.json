@@ -1,0 +1,539 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 11: Alvalade'de Bir Çocuk",
+  "targetDuration": 117,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Lisbon, April to August 2003: a small second-division club, the opening night of a new stadium, a transfer negotiation",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "dolar",
+      "label": "DOLAR",
+      "format": "usd",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "image",
+      "id": "acilis",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "palette": "gerilim",
+      "tone": "dramatic",
+      "text": "Ben Selim. 2026'dan 1999'a düştüm. Ne olacağını biliyorum. Kasa: 20.175.000 dolar.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "note": {
+        "kicker": "11. BÖLÜM · TÜRK GÜCÜ SK",
+        "user": "ibrahimugurlutr",
+        "text": "Türk Gücü SK",
+        "likes": 15,
+        "from": 2.6
+      }
+    },
+    {
+      "type": "image",
+      "id": "forma",
+      "image": "img/s01.png",
+      "motion": "push",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Cemil formaya baktı: Abi, yazı sığmadı. Bu kulüp adı mı, trafik levhası mı?",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "isim",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "Ben biliyorum. İzleyicilerin seçtiği isim: Türk Gücü.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.6,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "kulup",
+      "image": "img/s02.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "tense",
+      "text": "Nisan'dan Temmuz'a kadar Portekiz'de küçük, borçlu bir ikinci lig kulübünü satın aldık.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "obrigado",
+      "image": "img/s02.png",
+      "motion": "shake",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Cemil çevirmendi. Herkese tek cümle söylüyordu: Obrigado!",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.4,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "kasa1",
+      "image": "img/s02.png",
+      "motion": "push",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "Kasa 18.975.000 dolara düştü. Ama bir kulübümüz vardı.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "kasa": {
+        "value": 18975000,
+        "from": 20175000,
+        "top": 1130
+      }
+    },
+    {
+      "type": "image",
+      "id": "alvalade",
+      "image": "img/s03.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "dramatic",
+      "text": "6 Ağustos 2003. Lizbon. Sporting'in yeni stadı, Alvalade, ilk kez açılıyordu. Rakip: Manchester United.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "transition": "flash"
+    },
+    {
+      "type": "image",
+      "id": "yirmisekiz",
+      "image": "img/s03.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Sahada 28 numaralı genç, topu bırakmıyordu.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.6
+      ]
+    },
+    {
+      "type": "image",
+      "id": "teklif",
+      "image": "img/s04.png",
+      "motion": "zoomIn",
+      "palette": "gerilim",
+      "tone": "tense",
+      "text": "Biri kulağıma eğildi: United'ın teklifi var. 12 saat içinde cevap istiyorlar.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.7,
+        0.3
+      ]
+    },
+    {
+      "type": "image",
+      "id": "iyiymis",
+      "image": "img/s05.png",
+      "motion": "push",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Cemil bana baktı: Selim... bu çocuk gerçekten iyiymiş.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "kural",
+      "image": "img/s05.png",
+      "motion": "zoomIn",
+      "palette": "soguk",
+      "tone": "calm",
+      "text": "Selim'in kuralı: herkes alkışlarken değil, kapı açıkken gir.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.6,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "masa",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "palette": "soguk",
+      "tone": "tense",
+      "text": "Ertesi sabah masada üç taraf vardı: biz, United'ın temsilcisi, Sporting yöneticisi.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "ingiliz",
+      "image": "img/s06.png",
+      "motion": "push",
+      "palette": "soguk",
+      "tone": "dramatic",
+      "text": "İngiliz temsilci: 12 milyon sterlin. Bitti.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.8,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "belge",
+      "image": "img/s07.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "Ben belgeyi masaya koydum: 9 milyon sterlin artı gelecekteki satıştan pay.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.6
+      ]
+    },
+    {
+      "type": "image",
+      "id": "yonetici",
+      "image": "img/s07.png",
+      "motion": "shake",
+      "palette": "gunduz",
+      "tone": "excited",
+      "text": "Yönetici güldü: Pay mı? Neden pay?",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.8,
+        0.35
+      ]
+    },
+    {
+      "type": "image",
+      "id": "pahali",
+      "image": "img/s07.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "Ben sadece gülümsedim: Çünkü bu çocuk bir gün çok pahalı olacak.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "sacma",
+      "image": "img/s06.png",
+      "motion": "shake",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Cemil: Abi bu saçmalık!",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.2,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "bil",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "palette": "soguk",
+      "tone": "calm",
+      "text": "Ben biliyorum.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "tanisma",
+      "image": "img/s08.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Genç oyuncuyla tanıştık. 18 yaşındaydı, utangaçtı. Türk Gücü mü? Ben İngiltere'yi bekliyordum.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.6,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "onceBiz",
+      "image": "img/s08.png",
+      "motion": "push",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "Sen önce bizimle başla, dedim.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 18975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "imza",
+      "image": "img/s09.png",
+      "motion": "shake",
+      "palette": "gunduz",
+      "tone": "dramatic",
+      "text": "İmza atıldı. Kasa: 4.975.000 dolar. Kadro: bir.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 4975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "kasa": {
+        "value": 4975000,
+        "from": 18975000,
+        "top": 330
+      },
+      "kadro": {
+        "filled": 1,
+        "total": 2,
+        "top": 215
+      }
+    },
+    {
+      "type": "info",
+      "id": "sayfa",
+      "tone": "whisper",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 4975000
+      },
+      "hold": 1.0,
+      "text": "Defterimi açtım. Sayfa 11. 2009. 94 milyon avro.",
+      "info": {
+        "layout": "big",
+        "kicker": "DEFTERDEKİ SAYFA 11 · 2009",
+        "heading": "Ronaldo'nun bedeli",
+        "value": 94,
+        "from": 0,
+        "format": "number",
+        "caption": "milyon € · tarihin *dünya rekoru*"
+      }
+    },
+    {
+      "type": "image",
+      "id": "barselona",
+      "image": "img/s10.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "tense",
+      "text": "Ama bir sonraki sayfada küçük, mavi bordo formalı bir çocuk vardı. Barselona. 16 yaşında.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 4975000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.55
+      ]
+    },
+    {
+      "type": "bait",
+      "image": "img/s10.png",
+      "words": [
+        "MESSİ",
+        "TEKLİF"
+      ],
+      "duration": 3.0,
+      "palette": "tehlike",
+      "tone": "question",
+      "motion": "none",
+      "text": "Messi'yi ikna etmek için ne teklif etmeliyiz? Yorumlara yaz."
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "12. BÖLÜM",
+        "*YARIN 18.00*"
+      ],
+      "body": "Messi'yi ikna etmek için\nne teklif etmeliyiz? Yorumlara yaz!\n⚽ KADRO: **1/2**",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.6,
+      "kasa": {
+        "value": 4975000,
+        "from": 4975000,
+        "top": 1420
+      }
+    }
+  ]
+}
