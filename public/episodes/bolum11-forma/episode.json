@@ -1,0 +1,86 @@
+{
+  "title": "Bölüm 11 — Cemil giriş satırı (CapCut için düzeltme klibi)",
+  "targetDuration": 7,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Lisbon, April to August 2003: a small second-division club, the opening night of a new stadium, a transfer negotiation",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "dolar",
+      "label": "DOLAR",
+      "format": "usd",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "image",
+      "id": "forma",
+      "image": "img/s01.png",
+      "motion": "push",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Cemil formaya baktı: Abi, Türkiye Gücü daha iyi olmaz mıydı?",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.3,
+      "focus": [
+        0.3,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "selim_cevap",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "calm",
+      "text": "Saçmalama Cemil. Türkiye Türklerindir.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.3,
+      "focus": [
+        0.6,
+        0.5
+      ]
+    }
+  ]
+}
