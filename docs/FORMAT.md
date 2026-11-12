@@ -79,3 +79,10 @@ Kullanıcı, her bölümde ChatPlace otomasyonlarının (oylama + "oylama kapand
 - "Profile git" butonu `https://www.instagram.com/_u/hikayeyorumda` biçiminde (normal profil adresi yerine `_u` hilesi uygulamayı açar). Her yeni oylama otomasyonunda bu adres kullanılır.
 - Reels linki butonu normal `instagram.com/reel/...` adresi; ChatPlace araçlarıyla "Instagram medya" (yerel paylaşım) mesajı kurulamıyor. Kullanıcı ChatPlace panelinde "Instagram media" mesajı ekleyerek Reels'i DM içinde gösterebilir.
 - `instagram://` gibi şema adresleri DM butonunda denenmedi, mesajı bozabileceği için kullanılmıyor.
+
+### SES / ÇITIRTI KURALI (kullanıcı şikâyeti: "ufak tefek cızırtılar", defalarca)
+- Taşma sayısı ve tepe ölçümü çıtırtıyı YAKALAMAZ; yalnız bunlara bakıp "temiz" deme.
+- Neden: ham karışım çok kısık (~-31 LUFS) → +12/+16 dB kazanç + 5 ms ataklı limiter, TTS/efekt mikro tıklamalarını duyulur yapıyordu.
+- Çözüm (render.mjs): adeclick → yavaş kompresör → kazanç → asoftclip(0.6) → güvenlik limiter'ı. Ölçüm: yeni çıtırtı olayı 26 → 2.
+- Her teslimde zorunlu: `KEEP_WAV=1 node scripts/render.mjs <slug>` sonra `python3 scripts/ses_kontrol.py out/<slug>.mp4 out/<slug>.master.wav` → "TEMİZ ✓" çıkmadan video gönderilmez.
+- `--audio` bayrağı: görüntüyü baştan çizmeden yalnız sesi yeniden üretip videoya ekler (düzeltme için hızlı yol).
