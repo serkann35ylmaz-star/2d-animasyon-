@@ -9,7 +9,7 @@ Bu dosya STIL.md'deki eski kuralların üstündedir; çakışırsa bu geçerlidi
 - Necmi ve borç arka planda sürebilir; bölümü anlamak için gerekli olmaz.
 - Selim, Cemil, Necmi için sabit karakter görselleri her üretimde referans verilir.
 - **Herkes aynı tür:** Selim, Cemil, figüranlar dahil herkesin kafası beyaz yuvarlak top; burun YOK, kulak YOK, sakal/ten rengi YOK. Kadın-erkek saç, başörtüsü ve kıyafetle ayrılır.
-- Canva referansları: Selim `MAHZ8wxM2RM`, Cemil `MAHaaZmO6v8` (siyah saç perçemi, ekose gömlek, haki parka, tespih). Mekân referansı (eski kahvehane vb.) insan yüzlü figüran içeriyorsa kullanılmaz; istemde "SPECIES RULE" cümlesi şart.
+- Canva referansları: Selim `MAHZ8wxM2RM`, Cemil `MAHaaZmO6v8`, **Ronaldo** `MAHashcQng8` (beyaz yuvarlak kafa, burunsuz; jöleli yukarı dikilmiş saç perçemi, altın sarısı uçlar, ince kaşlar, hafif kare çene hissi, yeşil-beyaz çizgili 28 numaralı forma, logo yok) (siyah saç perçemi, ekose gömlek, haki parka, tespih). Mekân referansı (eski kahvehane vb.) insan yüzlü figüran içeriyorsa kullanılmaz; istemde "SPECIES RULE" cümlesi şart.
 
 ## Her bölümün kalıbı
 1. **0–3 sn sabit açılış (başlık kartı YOK):** "Ben Selim. 2026'dan 1999'a düştüm. Ne olacağını biliyorum. Kasa: X dolar."
