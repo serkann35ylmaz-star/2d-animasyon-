@@ -128,25 +128,6 @@
   },
   {
    "type": "image",
-   "id": "tarhana",
-   "image": "img/s03.png",
-   "motion": "push",
-   "palette": "nostalji",
-   "tone": "calm",
-   "text": "Bir de Maraş tarhanası ve Maraş dondurması ekledim. Jorge güldü.",
-   "hud": {
-    "yil": 2003,
-    "nakit": 0,
-    "dolar": 4975000
-   },
-   "hold": 0.4,
-   "focus": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "type": "image",
    "id": "jorge",
    "image": "img/s02.png",
    "motion": "zoomIn",
@@ -254,12 +235,50 @@
   },
   {
    "type": "image",
-   "id": "sezon",
+   "id": "forma",
    "image": "img/s06.png",
    "motion": "push",
    "palette": "gunduz",
    "tone": "calm",
-   "text": "Sezon başladı. Ronaldo gol atıyor, Messi pas veriyor. Her hafta aynı sahne.",
+   "text": "İlk antrenmanda Cemil formaları dağıttı. Herkese yanlış numara verdi, para sayarken şaşırdı.",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "ilkmac",
+   "image": "img/s06.png",
+   "motion": "shake",
+   "palette": "gunduz",
+   "tone": "dramatic",
+   "text": "İlk maç: Ronaldo üç gol attı, Messi üç asist yaptı. Skor altı sıfır.",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "seri",
+   "image": "img/s06.png",
+   "motion": "zoomIn",
+   "palette": "gunduz",
+   "tone": "calm",
+   "text": "İkinci maç, üçüncü maç, onuncu maç… Rakip kaleci sonunda kaleyi bırakıp kaçtı.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -272,11 +291,32 @@
    ]
   },
   {
+   "type": "info",
+   "id": "yari",
+   "tone": "whisper",
+   "hud": {
+    "yil": 2004,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 1.0,
+   "text": "Sezonun yarısında Ronaldo on dokuz golde, Messi on beş asistte.",
+   "info": {
+    "layout": "big",
+    "kicker": "SEZONUN YARISI · KURGU",
+    "heading": "Altın ikili",
+    "value": 19,
+    "from": 0,
+    "format": "number",
+    "caption": "gol · *15 asist*"
+   }
+  },
+  {
    "type": "image",
    "id": "kral",
    "image": "img/s07.png",
    "motion": "zoomIn",
-   "palette": "nostalji",
+   "palette": "gunduz",
    "tone": "calm",
    "text": "Sezon sonu: Ronaldo otuz bir golle gol kralı. Messi yirmi iki asistle asist kralı.",
    "hud": {
@@ -292,35 +332,16 @@
   },
   {
    "type": "image",
-   "id": "lig",
-   "image": "img/s06.png",
-   "motion": "shake",
-   "palette": "nostalji",
-   "tone": "calm",
-   "text": "Türk Gücü ikinci ligden birinci lige çıktı.",
-   "hud": {
-    "yil": 2004,
-    "nakit": 0,
-    "dolar": 3725000
-   },
-   "hold": 0.4,
-   "focus": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "type": "image",
-   "id": "forma",
+   "id": "gelir",
    "image": "img/s08.png",
    "motion": "push",
-   "palette": "nostalji",
+   "palette": "gunduz",
    "tone": "calm",
-   "text": "Forma satışları patladı. Cemil para saymaktan parmağını yaktı.",
+   "text": "Bilet ve forma satışları patladı. Cemil kasada parmağını yaktı. Kasa: 9.400.000 dolar.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
-    "dolar": 12400000
+    "dolar": 9400000
    },
    "hold": 0.4,
    "focus": [
@@ -328,51 +349,8 @@
     0.5
    ],
    "kasa": {
-    "value": 12400000,
+    "value": 9400000,
     "from": 3725000,
-    "top": 330
-   }
-  },
-  {
-   "type": "image",
-   "id": "sampiyon",
-   "image": "img/s09.png",
-   "motion": "zoomIn",
-   "palette": "nostalji",
-   "tone": "calm",
-   "text": "İkinci sezonda Türk Gücü şampiyon oldu. Portekiz'de kupayı biz kaldırdık.",
-   "hud": {
-    "yil": 2005,
-    "nakit": 0,
-    "dolar": 12400000
-   },
-   "hold": 0.4,
-   "focus": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "type": "image",
-   "id": "kasa",
-   "image": "img/s09.png",
-   "motion": "push",
-   "palette": "nostalji",
-   "tone": "calm",
-   "text": "Kasa: kırk bir milyon dolar. Hedef hâlâ bir milyar.",
-   "hud": {
-    "yil": 2005,
-    "nakit": 0,
-    "dolar": 41000000
-   },
-   "hold": 0.4,
-   "focus": [
-    0.5,
-    0.5
-   ],
-   "kasa": {
-    "value": 41000000,
-    "from": 12400000,
     "top": 330
    }
   },
@@ -383,11 +361,11 @@
    "motion": "zoomIn",
    "palette": "tehlike",
    "tone": "tense",
-   "text": "Defterimi açtım. Yeni sayfada tek bir kelime vardı: Şampiyonlar Ligi.",
+   "text": "Defterimi açtım. Yeni sayfada tek bir kelime vardı: Avrupa.",
    "hud": {
-    "yil": 2005,
+    "yil": 2004,
     "nakit": 0,
-    "dolar": 41000000
+    "dolar": 9400000
    },
    "hold": 0.4,
    "focus": [
@@ -406,7 +384,7 @@
    "palette": "tehlike",
    "tone": "question",
    "motion": "none",
-   "text": "Kulübü Şampiyonlar Ligi'ne taşımak için sıradaki hamle ne olsun? Yorumlara yaz."
+   "text": "Takımı Avrupa'ya çıkarmak için sıradaki hamle ne olsun? Yorumlara yaz."
   },
   {
    "type": "end",
@@ -415,12 +393,12 @@
     "13. BÖLÜM",
     "*YARIN 18.00*"
    ],
-   "body": "Şampiyonlar Ligi için sıradaki\nhamle ne olsun? Yorumlara yaz!\n⚽ KADRO: **2/2** ✅",
+   "body": "Takımı Avrupa'ya çıkarmak için\nsıradaki hamle ne olsun? Yorumlara yaz!\n⚽ KADRO: **2/2** ✅",
    "cta": "TAKİP ET · KAÇIRMA",
    "duration": 3.6,
    "kasa": {
-    "value": 41000000,
-    "from": 41000000,
+    "value": 9400000,
+    "from": 9400000,
     "top": 1420
    }
   }
