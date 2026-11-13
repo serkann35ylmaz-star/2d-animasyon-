@@ -1,6 +1,6 @@
 {
  "title": "Geleceği Bilen Adam — Bölüm 12: Altın İkili",
- "targetDuration": 100,
+ "targetDuration": 75,
  "series": {
   "name": "Hikâye Yorumda",
   "handle": "@hikayeyorumda",
@@ -76,7 +76,7 @@
    "motion": "push",
    "palette": "nostalji",
    "tone": "calm",
-   "text": "Barselona. Kasım 2003. Messi'nin babası Jorge ile yemekteydik.",
+   "text": "Barselona. Messi'nin babası Jorge ile yemekteydik.",
    "hud": {
     "yil": 2003,
     "nakit": 0,
@@ -114,7 +114,7 @@
    "motion": "shake",
    "palette": "nostalji",
    "tone": "calm",
-   "text": "Aylık bir buçuk milyon avro, gol başı yirmi beş bin! Cemil kasayı hesapladı: Abi biz iflas ederiz!",
+   "text": "Cemil kasayı hesapladı: Abi biz iflas ederiz!",
    "hud": {
     "yil": 2003,
     "nakit": 0,
@@ -133,7 +133,7 @@
    "motion": "zoomIn",
    "palette": "nostalji",
    "tone": "calm",
-   "text": "Ama başını salladı: Oğlum parayla gelmez.",
+   "text": "Jorge: Oğlum parayla gelmez.",
    "hud": {
     "yil": 2003,
     "nakit": 0,
@@ -152,7 +152,7 @@
    "motion": "push",
    "palette": "nostalji",
    "tone": "calm",
-   "text": "Ben bir şart ekledim: Barça'ya geri dönüş maddesi. İstediği an dönebilir.",
+   "text": "Ben bir şart ekledim: Barça'ya geri dönüş maddesi.",
    "hud": {
     "yil": 2003,
     "nakit": 0,
@@ -222,7 +222,7 @@
     "dolar": 3725000
    },
    "hold": 1.0,
-   "text": "16 Kasım 2003'te Messi, 16 yaşında Barcelona'nın A takımında ilk kez sahaya çıktı.",
+   "text": "Messi, Kasım 2003'te 16 yaşında Barcelona A takımında ilk maçına çıkmıştı.",
    "info": {
     "layout": "big",
     "kicker": "BİLİYOR MUYDUN · 2003",
@@ -240,7 +240,7 @@
    "motion": "shake",
    "palette": "gunduz",
    "tone": "dramatic",
-   "text": "İlk maç: Ronaldo üç gol attı, Messi üç asist yaptı. Skor altı sıfır.",
+   "text": "İlk maç: Ronaldo üç gol, Messi üç asist. Altı sıfır.",
    "hud": {
     "yil": 2003,
     "nakit": 0,
@@ -259,7 +259,7 @@
    "motion": "zoomIn",
    "palette": "gunduz",
    "tone": "calm",
-   "text": "İkinci maç, üçüncü maç, onuncu maç… Rakip kaleci sonunda kaleyi bırakıp kaçtı.",
+   "text": "Onuncu maçta rakip kaleci kaleyi bırakıp kaçtı.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -272,34 +272,13 @@
    ]
   },
   {
-   "type": "info",
-   "id": "yari",
-   "tone": "whisper",
-   "hud": {
-    "yil": 2004,
-    "nakit": 0,
-    "dolar": 3725000
-   },
-   "hold": 1.0,
-   "text": "Sezonun yarısında Ronaldo on dokuz golde, Messi on beş asistte.",
-   "info": {
-    "layout": "big",
-    "kicker": "SEZONUN YARISI · KURGU",
-    "heading": "Altın ikili",
-    "value": 19,
-    "from": 0,
-    "format": "number",
-    "caption": "gol · *15 asist*"
-   }
-  },
-  {
    "type": "image",
    "id": "kral",
    "image": "img/s07.png",
    "motion": "zoomIn",
    "palette": "gunduz",
    "tone": "calm",
-   "text": "Sezon sonu: Ronaldo otuz bir golle gol kralı. Messi yirmi iki asistle asist kralı.",
+   "text": "Sezon sonu: Ronaldo otuz bir golle gol kralı, Messi yirmi iki asistle asist kralı.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -318,7 +297,7 @@
    "motion": "push",
    "palette": "gunduz",
    "tone": "calm",
-   "text": "Takım uçuyordu. Kulübü Cemil'e bıraktım: Kasanın anahtarı sende. Cemil: Abi bırakma beni!",
+   "text": "Takım uçuyordu. Kulübü Cemil'e bıraktım. Cemil: Abi bırakma beni! Kasa: dokuz milyon dört yüz bin dolar.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -342,7 +321,7 @@
    "motion": "zoomIn",
    "palette": "tehlike",
    "tone": "tense",
-   "text": "Defterimi açtım. Yeni sayfa: 14 Şubat 2005. Bir alan adı: youtube dot com. Henüz kimse almamıştı.",
+   "text": "Defterimde yeni sayfa: 14 Şubat 2005. youtube dot com. Henüz kimse almamıştı.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -364,8 +343,7 @@
    "duration": 3.0,
    "palette": "tehlike",
    "tone": "question",
-   "motion": "none",
-   "text": "Henüz kimse almamıştı."
+   "motion": "none"
   },
   {
    "type": "end",
