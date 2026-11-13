@@ -1,6 +1,6 @@
 {
  "title": "Geleceği Bilen Adam — Bölüm 12: Altın İkili",
- "targetDuration": 75,
+ "targetDuration": 60,
  "series": {
   "name": "Hikâye Yorumda",
   "handle": "@hikayeyorumda",
@@ -322,5 +322,7 @@
     "top": 1420
    }
   }
- ]
+ ],
+ "voice": "voice.mp3",
+ "timings": "timings.json"
 }
