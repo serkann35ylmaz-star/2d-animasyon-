@@ -342,7 +342,7 @@
    "motion": "zoomIn",
    "palette": "tehlike",
    "tone": "tense",
-   "text": "Defterimde yeni sayfa açıldı. Bu sefer mesele para değildi. Bildiğim gelecek, çok daha büyük bir şeye yarayabilirdi.",
+   "text": "Defterimi açtım. Yeni sayfa: 14 Şubat 2005. Bir alan adı: youtube dot com. Henüz kimse almamıştı.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -358,14 +358,14 @@
    "type": "bait",
    "image": "img/s10.png",
    "words": [
-    "SIRADAKİ",
-    "BİLGİ"
+    "14 ŞUBAT",
+    "2005"
    ],
    "duration": 3.0,
    "palette": "tehlike",
    "tone": "question",
    "motion": "none",
-   "text": "Selim geleceği bilen adam olarak sıradaki bölümde ne yapsın? Yorumlara yaz."
+   "text": "Henüz kimse almamıştı."
   },
   {
    "type": "end",
@@ -374,7 +374,7 @@
     "13. BÖLÜM",
     "*YARIN 18.00*"
    ],
-   "body": "Selim bildiği geleceği\nnerede kullansın? Yorumlara yaz!\n⚽ KADRO: **2/2** ✅",
+   "body": "Henüz kimse almamıştı…\n⚽ KADRO: **2/2** ✅",
    "cta": "TAKİP ET · KAÇIRMA",
    "duration": 3.6,
    "kasa": {
