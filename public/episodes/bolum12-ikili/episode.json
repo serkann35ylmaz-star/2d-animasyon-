@@ -259,7 +259,7 @@
    "motion": "zoomIn",
    "palette": "gunduz",
    "tone": "calm",
-   "text": "Onuncu maçta rakip kaleci kaleyi bırakıp kaçtı.",
+   "text": "İlk maç altı sıfır. Sonra bir sezon boyunca kimse bu ikiliyi durduramadı.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -278,7 +278,7 @@
    "motion": "zoomIn",
    "palette": "gunduz",
    "tone": "calm",
-   "text": "Sezon sonu: Ronaldo otuz bir golle gol kralı, Messi yirmi iki asistle asist kralı.",
+   "text": "Lig bizdi. Ronaldo gol kralı, Messi asist kralı oldu. Vitrin yetmedi, Cemil raf aldı.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -297,7 +297,7 @@
    "motion": "push",
    "palette": "gunduz",
    "tone": "calm",
-   "text": "Takım uçuyordu. Kulübü Cemil'e bıraktım. Cemil: Abi bırakma beni! Kasa: dokuz milyon dört yüz bin dolar.",
+   "text": "Kulübü Cemil'e emanet ettim: Sen benim yardımcımsın, sadece kasayı koru. Cemil: Abi ben ne yapayım?",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -321,7 +321,7 @@
    "motion": "zoomIn",
    "palette": "tehlike",
    "tone": "tense",
-   "text": "Takım artık Cemil'deydi. Defterimi kapattım. Artık sadece para değil, yaşamak istiyordum.",
+   "text": "Defterimin ilk sayfasına tek kelime yazdım: İLK. Tarihte ilk olanları, ilk gören bendim.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -337,8 +337,8 @@
    "type": "bait",
    "image": "img/s10.png",
    "words": [
-    "LÜKS",
-    "HAYAT"
+    "İLK",
+    "DURAK"
    ],
    "duration": 3.0,
    "palette": "tehlike",
@@ -352,7 +352,7 @@
     "13. BÖLÜM",
     "*YARIN 18.00*"
    ],
-   "body": "Yarın: Selim parayı harcıyor…\n⚽ KADRO: **2/2** ✅",
+   "body": "Yarın: tarihin ilklerinden biri…\n⚽ KADRO: **2/2** ✅",
    "cta": "TAKİP ET · KAÇIRMA",
    "duration": 3.6,
    "kasa": {
