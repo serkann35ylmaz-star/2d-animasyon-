@@ -210,7 +210,8 @@
     "filled": 2,
     "total": 2,
     "top": 215
-   }
+   },
+   "showHud": false
   },
   {
    "type": "info",
