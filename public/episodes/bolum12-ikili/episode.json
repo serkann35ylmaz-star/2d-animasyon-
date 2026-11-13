@@ -1,6 +1,6 @@
 {
  "title": "Geleceği Bilen Adam — Bölüm 12: Altın İkili",
- "targetDuration": 60,
+ "targetDuration": 85,
  "series": {
   "name": "Hikâye Yorumda",
   "handle": "@hikayeyorumda",
@@ -213,6 +213,27 @@
    }
   },
   {
+   "type": "info",
+   "id": "debut",
+   "tone": "whisper",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 1.0,
+   "text": "Messi, Kasım iki bin üçte, on altı yaşında Barcelona'nın A takımında ilk maçına çıkmıştı.",
+   "info": {
+    "layout": "big",
+    "kicker": "BİLİYOR MUYDUN · 2003",
+    "heading": "Messi'nin ilk A takım maçı",
+    "value": 16,
+    "from": 0,
+    "format": "number",
+    "caption": "yaşında · *Porto'ya karşı*"
+   }
+  },
+  {
    "type": "image",
    "id": "ilkmac",
    "image": "img/s06.png",
@@ -233,12 +254,50 @@
   },
   {
    "type": "image",
+   "id": "seri",
+   "image": "img/s06.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "calm",
+   "text": "Onuncu maçta rakip kaleci, kaleyi bırakıp kaçtı.",
+   "hud": {
+    "yil": 2004,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
    "id": "kral",
    "image": "img/s07.png",
    "motion": "zoomIn",
    "palette": "gunduz",
    "tone": "calm",
    "text": "Lig bizdi. Ronaldo gol kralı, Messi asist kralı.",
+   "hud": {
+    "yil": 2004,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "raf",
+   "image": "img/s07.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "calm",
+   "text": "Vitrin yetmedi, Cemil raf aldı.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -276,12 +335,50 @@
   },
   {
    "type": "image",
+   "id": "rapor",
+   "image": "img/s04.png",
+   "motion": "shake",
+   "palette": "kahve",
+   "tone": "calm",
+   "text": "Cemil telefonda bağırdı: Abi stadyum doldu, biletler bitti! Ben sakince cevap verdim: Güzel.",
+   "hud": {
+    "yil": 2004,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
    "id": "internet",
    "image": "img/s11.png",
    "motion": "zoomIn",
    "palette": "nostalji",
    "tone": "whisper",
    "text": "On dört Şubat iki bin beş. Bir internet kafede tek bir alan adı yazdım: YouTube dot com. On dolar. Henüz kimse almamıştı.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "tarih",
+   "image": "img/s11.png",
+   "motion": "push",
+   "palette": "nostalji",
+   "tone": "whisper",
+   "text": "O gün kimse bilmiyordu: bu alan adı bir gün dünyanın en büyük video sitesi olacaktı.",
    "hud": {
     "yil": 2005,
     "nakit": 0,
