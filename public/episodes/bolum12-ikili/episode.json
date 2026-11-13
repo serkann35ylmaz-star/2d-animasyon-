@@ -213,55 +213,15 @@
    }
   },
   {
-   "type": "info",
-   "id": "debut",
-   "tone": "whisper",
-   "hud": {
-    "yil": 2003,
-    "nakit": 0,
-    "dolar": 3725000
-   },
-   "hold": 1.0,
-   "text": "Messi, Kasım 2003'te 16 yaşında Barcelona A takımında ilk maçına çıkmıştı.",
-   "info": {
-    "layout": "big",
-    "kicker": "BİLİYOR MUYDUN · 2003",
-    "heading": "Messi'nin ilk A takım maçı",
-    "value": 16,
-    "from": 0,
-    "format": "number",
-    "caption": "yaşında · *Porto'ya karşı*"
-   }
-  },
-  {
    "type": "image",
    "id": "ilkmac",
    "image": "img/s06.png",
    "motion": "shake",
    "palette": "gunduz",
    "tone": "dramatic",
-   "text": "İlk maç: Ronaldo üç gol, Messi üç asist. Altı sıfır.",
+   "text": "İlk maç altı sıfır. O sezon kimse bu ikiliyi durduramadı.",
    "hud": {
     "yil": 2003,
-    "nakit": 0,
-    "dolar": 3725000
-   },
-   "hold": 0.4,
-   "focus": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "type": "image",
-   "id": "seri",
-   "image": "img/s06.png",
-   "motion": "zoomIn",
-   "palette": "gunduz",
-   "tone": "calm",
-   "text": "İlk maç altı sıfır. Sonra bir sezon boyunca kimse bu ikiliyi durduramadı.",
-   "hud": {
-    "yil": 2004,
     "nakit": 0,
     "dolar": 3725000
    },
@@ -278,7 +238,7 @@
    "motion": "zoomIn",
    "palette": "gunduz",
    "tone": "calm",
-   "text": "Lig bizdi. Ronaldo gol kralı, Messi asist kralı oldu. Vitrin yetmedi, Cemil raf aldı.",
+   "text": "Lig bizdi. Ronaldo gol kralı, Messi asist kralı.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -297,7 +257,7 @@
    "motion": "push",
    "palette": "gunduz",
    "tone": "calm",
-   "text": "Kulübü Cemil'e emanet ettim: Sen benim yardımcımsın, sadece kasayı koru. Cemil: Abi ben ne yapayım?",
+   "text": "Kulübü Cemil'e emanet ettim: Sen yardımcımsın, kasayı koru.",
    "hud": {
     "yil": 2004,
     "nakit": 0,
@@ -316,14 +276,14 @@
   },
   {
    "type": "image",
-   "id": "sayfa",
-   "image": "img/s10.png",
+   "id": "internet",
+   "image": "img/s11.png",
    "motion": "zoomIn",
-   "palette": "tehlike",
-   "tone": "tense",
-   "text": "Defterimin ilk sayfasına tek kelime yazdım: İLK. Tarihte ilk olanları, ilk gören bendim.",
+   "palette": "nostalji",
+   "tone": "whisper",
+   "text": "On dört Şubat 2005. Bir internet kafede tek bir alan adı yazdım: youtube dot com. On dolar. Henüz kimse almamıştı.",
    "hud": {
-    "yil": 2004,
+    "yil": 2005,
     "nakit": 0,
     "dolar": 9400000
    },
@@ -335,15 +295,16 @@
   },
   {
    "type": "bait",
-   "image": "img/s10.png",
+   "image": "img/s11.png",
    "words": [
-    "İLK",
-    "DURAK"
+    "BU ALAN ADI",
+    "NE OLSUN?"
    ],
    "duration": 3.0,
    "palette": "tehlike",
    "tone": "question",
-   "motion": "none"
+   "motion": "none",
+   "text": "Bu alan adıyla ne yapmalıyım? Yorumlara yaz."
   },
   {
    "type": "end",
@@ -352,7 +313,7 @@
     "13. BÖLÜM",
     "*YARIN 18.00*"
    ],
-   "body": "Yarın: tarihin ilklerinden biri…\n⚽ KADRO: **2/2** ✅",
+   "body": "Bu alan adıyla ne yapmalıyım?\nYorumlara yaz!\n⚽ KADRO: **2/2** ✅",
    "cta": "TAKİP ET · KAÇIRMA",
    "duration": 3.6,
    "kasa": {
