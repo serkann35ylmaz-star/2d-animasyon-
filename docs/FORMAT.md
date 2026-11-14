@@ -97,3 +97,9 @@ Kullanıcı, her bölümde ChatPlace otomasyonlarının (oylama + "oylama kapand
 - DM otomasyonu `01a1cfc8-a1fd-72cc-bf9b-f0d3630be4c4` her bölümde yeniden kullanılır: `triggers_set` ile yeni bölümün medyasına bağlanır, ilk mesaj metni güncellenir.
 - "Kapandı" otomasyonu `01a1cfc8-b764-7305-954b-7ce82b6b7988`: eski bölümlerin tümü (1–11), buton "12. bölümü izle" → yeni Reels linki. Her bölümde bir önceki bölümün medyası eklenir, iki mesaj ve buton güncellenir.
 - Herkese açık cevap kuralı `01a1cfe3-e4a9-71b2-b98f-162c4308b32d` (tüm videolar, 4 cevap): her yeni bölümde bölüm numaraları güncellenir. Video paylaşılır paylaşılmaz kontrol edilir, kullanıcı haber vermeden.
+
+## Altyazıda sayı kuralı (14 Kasım, kanal sahibi kuralı)
+Altyazıda tarih, yıl, saat, skor ve rakamlar **sayıyla** yazılır (2026, 1999, 9.400.000, 21 Mayıs, 3-0, 200 lira).
+Seslendirme metni ElevenLabs için yazıyla kalır (doğru okunsun diye); ses hizalandıktan sonra
+`timings.json` içindeki kelimeler birleştirilip sayıya çevrilir (sözcük zamanları korunur; bkz. bölüm 13).
+"Bir/İki" gibi sıradan sözcükler (bir telefon, ikinciyiz) olduğu gibi kalır.
