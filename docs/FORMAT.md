@@ -103,3 +103,9 @@ Altyazıda tarih, yıl, saat, skor ve rakamlar **sayıyla** yazılır (2026, 199
 Seslendirme metni ElevenLabs için yazıyla kalır (doğru okunsun diye); ses hizalandıktan sonra
 `timings.json` içindeki kelimeler birleştirilip sayıya çevrilir (sözcük zamanları korunur; bkz. bölüm 13).
 "Bir/İki" gibi sıradan sözcükler (bir telefon, ikinciyiz) olduğu gibi kalır.
+
+### ChatPlace durumu — 13. bölüm (14 Kasım)
+- 13. bölüm Reels `DfunTExIkeO`, medya `01a1dadb-17d2-7336-b47e-fe52f7d082b5`.
+- DM otomasyonu `01a1cfc8-a1fd-72cc-bf9b-f0d3630be4c4` → yalnızca 13. bölüme bağlı. "Kapandı" otomasyonu `01a1cfc8-b764-7305-954b-7ce82b6b7988` → 1–12. bölüm; buton "13. bölümü izle".
+- Herkese açık cevap kuralı `01a1cfe3-e4a9-71b2-b98f-162c4308b32d`: `comments_update` kuralı **Paused**'a düşürüyor → her güncellemeden sonra `comments_change_status active` çağrılmalı.
+- Kural medya seçemiyor, TÜM gönderilerde çalışır (REHBER çekiliş gönderisi `DfuIqh_ozmC` dahil).
