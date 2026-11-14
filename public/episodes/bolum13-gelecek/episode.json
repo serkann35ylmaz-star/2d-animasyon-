@@ -1,0 +1,387 @@
+{
+ "title": "Geleceği Bilen Adam — Bölüm 13: Ben Gelecekten Geldim",
+ "targetDuration": 95,
+ "series": {
+  "name": "Hikâye Yorumda",
+  "handle": "@hikayeyorumda",
+  "avatar": "brand/profil.png"
+ },
+ "fps": 30,
+ "music": "music/dark-pulse.wav",
+ "musicVolume": 0.2,
+ "palette": "nostalji",
+ "accent": "#F5A524",
+ "tts": {
+  "engine": "elevenlabs",
+  "model": "eleven_v4",
+  "voice_id": "mCTNxePO8hqCg6KFnASN",
+  "voice_name": "Onur AGCNL"
+ },
+ "era": {
+  "setting": "Istanbul, February to May 2005: an internet cafe, a small rented room with a camcorder, a coffeehouse with a CRT television",
+  "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+  "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+  "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+ },
+ "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+ "hud": [
+  {
+   "key": "yil",
+   "label": "YIL",
+   "format": "raw"
+  },
+  {
+   "key": "nakit",
+   "label": "NAKİT",
+   "format": "tl"
+  },
+  {
+   "key": "dolar",
+   "label": "DOLAR",
+   "format": "usd",
+   "accent": true
+  }
+ ],
+ "scenes": [
+  {
+   "type": "image",
+   "id": "acilis",
+   "image": "img/s01.png",
+   "motion": "zoomIn",
+   "palette": "gerilim",
+   "tone": "dramatic",
+   "text": "Ben Selim. İki bin yirmi altıdan bin dokuz yüz doksan dokuza düştüm. Ne olacağını biliyorum. Kasa: dokuz milyon dört yüz bin dolar.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "note": {
+    "kicker": "13. BÖLÜM · BEN GELECEKTEN GELDİM",
+    "user": "komutanguendouzi6_",
+    "text": "YouTube'a \"Ben gelecekten geldim\" videosu çek",
+    "likes": 15,
+    "from": 2.6
+   }
+  },
+  {
+   "type": "image",
+   "id": "bos",
+   "image": "img/s01.png",
+   "motion": "push",
+   "palette": "nostalji",
+   "tone": "calm",
+   "text": "Şubat iki bin beş. YouTube dot com artık benimdi. Site bomboştu. Tek bir video bile yoktu.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "kamera",
+   "image": "img/s02.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "dramatic",
+   "text": "Kamerayı açtım ve tarihin ilk videosunu çektim: Ben gelecekten geldim.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "tahmin",
+   "image": "img/s03.png",
+   "motion": "push",
+   "palette": "neon",
+   "tone": "calm",
+   "text": "Yirmi yıl sonra herkesin cebinde dokunmatik bir telefon olacak. Arabalar şarjla gidecek. Ödevleri yapay zekâ yapacak.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "gunluk",
+   "image": "img/s04.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "calm",
+   "text": "İnsanlar yemeğini yemeden önce fotoğrafını çekecek. Kendi fotoğrafını çekmenin bir adı olacak. Ve bir kahve iki yüz lira olacak.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "kameraman",
+   "image": "img/s02.png",
+   "motion": "shake",
+   "palette": "nostalji",
+   "tone": "calm",
+   "text": "Kameraman güldü: Abi son söylediğine kimse inanmaz.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "uc",
+   "image": "img/s05.png",
+   "motion": "push",
+   "palette": "soguk",
+   "tone": "calm",
+   "text": "Video üç kere izlendi. İkisi bendim. Tek yorum: Bu adam deli.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "cemil",
+   "image": "img/s06.png",
+   "motion": "shake",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Telefon çaldı. Cemil: Abi, defterindeki listeden üç çocuk aldım. Kalede Neuer, orta sahada Modriç, kanatta Ribéry. Hiçbirini tanımıyorum ama ucuza geldiler! Ligde ikinciyiz, seneye Avrupa'ya gidiyoruz.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "liste",
+   "image": "img/s06.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "calm",
+   "text": "Güzel, dedim. Listede daha çok isim var. Cemil: Abi kasa dayanmaz!",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "bil",
+   "image": "img/s05.png",
+   "motion": "zoomIn",
+   "palette": "soguk",
+   "tone": "calm",
+   "text": "Ben biliyorum.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "iki",
+   "image": "img/s05.png",
+   "motion": "push",
+   "palette": "soguk",
+   "tone": "whisper",
+   "text": "Videonun sonuna iki yakın tahmin eklemiştim. Bir: yirmi bir Mayıs'ta Eurovision'u Yunanistan kazanacak. İki: yirmi beş Mayıs'ta İstanbul'da Liverpool, üç sıfırdan dönüp kupayı alacak.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "eurovision",
+   "image": "img/s07.png",
+   "motion": "zoomIn",
+   "palette": "kahve",
+   "tone": "calm",
+   "text": "Yirmi bir Mayıs. Yunanistan kazandı. İzlenme üçten üç yüze çıktı. Yorum: Tesadüf.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "istanbul",
+   "image": "img/s08.png",
+   "motion": "shake",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Yirmi beş Mayıs. Devre: Milan üç, Liverpool sıfır. İkinci yarıda altı dakikada üç gol geldi. Kupa Liverpool'un.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "milyon",
+   "image": "img/s09.png",
+   "motion": "zoomIn",
+   "palette": "sabah",
+   "tone": "excited",
+   "text": "Sabah video iki milyon kere izlenmişti. Yorumlar değişmişti: Bu adam kim?",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "defter",
+   "image": "img/s10.png",
+   "motion": "push",
+   "palette": "nostalji",
+   "tone": "whisper",
+   "text": "Defterimi açtım. Sıradaki sayfa: iki bin yedi. Tuşsuz bir telefon.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "kapi",
+   "image": "img/s11.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "tense",
+   "text": "Ama kapımda gazeteciler vardı.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "bait",
+   "image": "img/s11.png",
+   "words": [
+    "ORTAYA ÇIK",
+    "YA DA SAKLAN"
+   ],
+   "duration": 3.0,
+   "palette": "tehlike",
+   "tone": "question",
+   "motion": "none",
+   "text": "Ortaya çıkmalı mıyım, saklanmalı mıyım? Yorumlara yaz."
+  },
+  {
+   "type": "end",
+   "kicker": "GELECEĞİ BİLEN ADAM",
+   "lines": [
+    "14. BÖLÜM",
+    "*YARIN 18.00*"
+   ],
+   "body": "Ortaya çıkmalı mıyım,\nsaklanmalı mıyım? Yorumlara yaz!\n⚽ Türk Gücü: ligde **2.**",
+   "cta": "TAKİP ET · KAÇIRMA",
+   "duration": 3.6,
+   "kasa": {
+    "value": 9400000,
+    "from": 9400000,
+    "top": 1420
+   }
+  }
+ ]
+}
