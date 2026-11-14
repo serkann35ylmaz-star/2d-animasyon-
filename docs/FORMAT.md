@@ -91,3 +91,9 @@ Kullanıcı, her bölümde ChatPlace otomasyonlarının (oylama + "oylama kapand
 - Aktif cevap otomasyonu: `01a1cfc8-a1fd-72cc-bf9b-f0d3630be4c4` (11. bölüm Reels `DfpBBcZoXIC`, HER yoruma 5 cevaptan biri + DM, "Profile git" = `instagram.com/_u/hikayeyorumda`).
 - Aktif "oylama kapandı": `01a1cfc8-b764-7305-954b-7ce82b6b7988` (1–10. bölümler, 11. bölüm linki).
 - Diğer tüm otomasyonlar duraklatılmış eski kayıtlardır.
+
+### ChatPlace durumu — 12. bölüm (14 Kasım)
+- 12. bölüm Reels `DfrzeEXI9_A`, medya `01a1d9bc-6707-7265-bccf-ea746f62bf33`.
+- DM otomasyonu `01a1cfc8-a1fd-72cc-bf9b-f0d3630be4c4` her bölümde yeniden kullanılır: `triggers_set` ile yeni bölümün medyasına bağlanır, ilk mesaj metni güncellenir.
+- "Kapandı" otomasyonu `01a1cfc8-b764-7305-954b-7ce82b6b7988`: eski bölümlerin tümü (1–11), buton "12. bölümü izle" → yeni Reels linki. Her bölümde bir önceki bölümün medyası eklenir, iki mesaj ve buton güncellenir.
+- Herkese açık cevap kuralı `01a1cfe3-e4a9-71b2-b98f-162c4308b32d` (tüm videolar, 4 cevap): her yeni bölümde bölüm numaraları güncellenir. Video paylaşılır paylaşılmaz kontrol edilir, kullanıcı haber vermeden.
