@@ -113,3 +113,9 @@ Seslendirme metni (`text`) ElevenLabs için yazıyla kalır (doğru okunsun diye
 ## Render notu (15 Kasım)
 `render.mjs` sesi artık AAC **320k** ile paketler (256k çıtırtıyı artırıyordu: 13. bölümde 7 olay, 320k ile 3).
 Ham `master.wav`'ı elle remux etme: zincirden geçmemiştir, ses -22 LUFS çıkar.
+
+### ChatPlace durumu — 14. bölüm (15 Kasım)
+- 14. bölüm Reels `Dfw34DPIaHk`, medya `01a1df5f-7082-7289-8dc7-6f7f665e3abb`.
+- DM otomasyonu → yalnızca 14. bölüme bağlı. "Kapandı" otomasyonu → 1–13. bölüm; buton "14. bölümü izle".
+- Herkese açık cevap kuralı güncellendi (14./15. bölüm). Bu sefer `comments_update` sonrası "Active" kaldı; yine de her güncellemeden sonra `comments_get` ile durum doğrulanır.
+- Yeni videonun medya listesine düşmesi 5–10 dk sürebilir (`syncStatus: pending`); beklerken paylaşımın Reels olduğundan emin ol.
