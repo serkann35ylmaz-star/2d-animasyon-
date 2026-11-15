@@ -9,7 +9,7 @@ Yan fikirler: mehmetmirac0179 "kamerada sadece bir tahmin yaptım de" (5), komut
 4. Gazeteci: Sen gerçekten gelecekten mi geldin? Ben: Hayır. Ben sadece bir tahmin yaptım.
 5. Gazeteci: Yarınki tahmin ne? Ben: Ocak 2007. Tuşsuz bir telefon tanıtılacak. Tek ekran, tek düğme.
 6. Salon güldü. Biri: Tuşsuz telefon mu olurmuş!
-7. (Cemil arıyor) Cemil: Abi, televizyonda seni gördüm! Hâlâ kasayı koruyorum. Listeden iki oyuncu daha aldım: Kaleye Neuer geldi, ligde ikinciyiz, Avrupa'ya gidiyoruz. Abi bu adamların maaşı kasayı yer!
+7. (Cemil arıyor) Cemil: Abi, televizyonda seni gördüm! Hâlâ kasayı koruyorum. Kalede Neuer, ortada Modriç zaten bizimdi. Şimdi listeden iki isim daha aldım: Savunmaya Ramos, forvete Lewandowski. Ligde ilk üçteyiz, Avrupa'ya gidiyoruz. Abi bu adamların maaşı kasayı yer!
 8. Güzel, dedim. Kasa yorulmasın, daha çok isim var.
 9. 9 Ocak 2007. Sahnede bir adam elinde tuşsuz bir telefon tutuyordu.
 10. Salon sustu. Gazeteciler bana döndü: Bu adam kim?
@@ -17,4 +17,4 @@ Yan fikirler: mehmetmirac0179 "kamerada sadece bir tahmin yaptım de" (5), komut
 12. Sabaha kadar kuyruktaydım. İlk satın alan ben olacaktım.
 13. Soru: Bu telefonla ne yapmalıyım? Yorumlara yaz.
 
-Notlar: tarihler yayından önce doğrulanacak (9 Ocak 2007 tanıtım, 29 Haziran 2007 satış). Altyazı sayıyla (docs/FORMAT.md). Her figür beyaz yuvarlak kafalı, kulaksız, kaşlı oval gözlü; kalabalıktaki herkes birbirinden farklı.
+Notlar: Neuer, Modriç, Ribéry 13. bölümde zaten geldi: tekrar anılmaz, yalnızca ek isimler gelir. Ramos ve Lewandowski'nin 2006'daki kulüp/yaş durumu yayından önce doğrulanacak; tarihler de doğrulanacak (9 Ocak 2007 tanıtım, 29 Haziran 2007 satış). Altyazı sayıyla (docs/FORMAT.md). Her figür beyaz yuvarlak kafalı, kulaksız, kaşlı oval gözlü; kalabalıktaki herkes birbirinden farklı.
