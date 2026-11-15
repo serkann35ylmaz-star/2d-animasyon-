@@ -68,7 +68,8 @@
     "likes": 31,
     "from": 2.6,
     "avatar": "avatar.png"
-   }
+   },
+   "caption": "Canlı yayına 10 saniye var. Ben Selim. 2026'dan 1999'a düştüm. Ne olacağını biliyorum. Kasa: 9.400.000 dolar."
   },
   {
    "type": "image",
@@ -106,7 +107,8 @@
    "focus": [
     0.5,
     0.5
-   ]
+   ],
+   "caption": "3 tahmin yazdım. Noter mühürledi. 9 Temmuz 2006, 9 Ocak 2007, 29 Haziran 2007."
   },
   {
    "type": "image",
@@ -144,7 +146,8 @@
    "focus": [
     0.5,
     0.5
-   ]
+   ],
+   "caption": "9 Temmuz 2006, Berlin. Dünya Kupası finali, 1-1. Uzatmanın 110. dakikası. Şimdi bir kafa atılacak."
   },
   {
    "type": "image",
@@ -174,9 +177,9 @@
    "tone": "excited",
    "text": "Google, YouTube'u almak istedi. Ben sitedeki payımı sattım: kırk bir milyon dolar. Cemil: Abi kasada elli milyon var, nereye saklayacağım!",
    "hud": {
-    "yil": 50400000,
+    "yil": 2006,
     "nakit": 0,
-    "dolar": 9400000
+    "dolar": 50400000
    },
    "hold": 0.4,
    "focus": [
@@ -187,7 +190,8 @@
     "value": 50400000,
     "from": 9400000,
     "top": 330
-   }
+   },
+   "caption": "Google, YouTube'u almak istedi. Ben sitedeki payımı sattım: 41 milyon dolar. Cemil: Abi kasada 50 milyon var, nereye saklayacağım!"
   },
   {
    "type": "image",
@@ -206,7 +210,8 @@
    "focus": [
     0.5,
     0.5
-   ]
+   ],
+   "caption": "9 Ocak 2007: tuşsuz telefon. 29 Haziran: kuyrukta ilk ben. 3 tahmin de tuttu."
   },
   {
    "type": "image",

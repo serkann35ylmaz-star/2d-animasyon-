@@ -128,7 +128,7 @@ for (let k = 0; k < 3; k++) {
 }
 const af = chain(gain);
 const tmp = out.replace(/\.mp4$/, '.tmp.mp4');
-execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', out, '-i', wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-af', af, '-ar', '48000', '-c:a', 'aac', '-b:a', '256k', '-movflags', '+faststart', tmp]);
+execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', out, '-i', wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-af', af, '-ar', '48000', '-c:a', 'aac', '-b:a', '320k', '-movflags', '+faststart', tmp]);
 renameSync(tmp, out);
 if (!process.env.KEEP_WAV) rmSync(wav, {force: true});
 console.log(`✓ Video: ${path.relative(ROOT, out)}`);

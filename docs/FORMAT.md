@@ -100,8 +100,8 @@ Kullanıcı, her bölümde ChatPlace otomasyonlarının (oylama + "oylama kapand
 
 ## Altyazıda sayı kuralı (14 Kasım, kanal sahibi kuralı)
 Altyazıda tarih, yıl, saat, skor ve rakamlar **sayıyla** yazılır (2026, 1999, 9.400.000, 21 Mayıs, 3-0, 200 lira).
-Seslendirme metni ElevenLabs için yazıyla kalır (doğru okunsun diye); ses hizalandıktan sonra
-`timings.json` içindeki kelimeler birleştirilip sayıya çevrilir (sözcük zamanları korunur; bkz. bölüm 13).
+Seslendirme metni (`text`) ElevenLabs için yazıyla kalır (doğru okunsun diye). Ekrandaki altyazı sahnedeki
+**`caption`** alanından gelir (rakamlı; kelime sayısı farklı olabilir, zamanlar orantılı eşlenir). `timings.json`'a ELLE DOKUNMA.
 "Bir/İki" gibi sıradan sözcükler (bir telefon, ikinciyiz) olduğu gibi kalır.
 
 ### ChatPlace durumu — 13. bölüm (14 Kasım)
@@ -109,3 +109,7 @@ Seslendirme metni ElevenLabs için yazıyla kalır (doğru okunsun diye); ses hi
 - DM otomasyonu `01a1cfc8-a1fd-72cc-bf9b-f0d3630be4c4` → yalnızca 13. bölüme bağlı. "Kapandı" otomasyonu `01a1cfc8-b764-7305-954b-7ce82b6b7988` → 1–12. bölüm; buton "13. bölümü izle".
 - Herkese açık cevap kuralı `01a1cfe3-e4a9-71b2-b98f-162c4308b32d`: `comments_update` kuralı **Paused**'a düşürüyor → her güncellemeden sonra `comments_change_status active` çağrılmalı.
 - Kural medya seçemiyor, TÜM gönderilerde çalışır (REHBER çekiliş gönderisi `DfuIqh_ozmC` dahil).
+
+## Render notu (15 Kasım)
+`render.mjs` sesi artık AAC **320k** ile paketler (256k çıtırtıyı artırıyordu: 13. bölümde 7 olay, 320k ile 3).
+Ham `master.wav`'ı elle remux etme: zincirden geçmemiştir, ses -22 LUFS çıkar.

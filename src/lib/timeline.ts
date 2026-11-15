@@ -107,7 +107,19 @@ export const buildTimeline = (episode: Episode, timings: Timings | null): Timeli
         lastAudioEnd = end;
         audio = {start, end};
         // Ekranda görünen kelime = senaryodaki yazım (noktalama dahil)
-        words = slice.map((w, i) => ({w: tokens[i] ?? w.w, s: w.s - start, e: w.e - start}));
+        if (scene.caption) {
+          // Altyazı metni (rakamlı) seslendirmeden farklı kelime sayısında olabilir: kelimeleri orantılı eşle
+          const cap = tokenize(scene.caption);
+          const n = slice.length;
+          const m = cap.length;
+          words = cap.map((t, i) => {
+            const j0 = Math.min(n - 1, Math.floor((i * n) / m));
+            const j1 = Math.max(j0, Math.min(n - 1, Math.ceil(((i + 1) * n) / m) - 1));
+            return {w: t, s: slice[j0].s - start, e: slice[j1].e - start};
+          });
+        } else {
+          words = slice.map((w, i) => ({w: tokens[i] ?? w.w, s: w.s - start, e: w.e - start}));
+        }
         const spoken = end - start + (scene.hold ?? DEFAULT_HOLD);
         seconds = Math.max(spoken, scene.duration ?? 0);
       }
