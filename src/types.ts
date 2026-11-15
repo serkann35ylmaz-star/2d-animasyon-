@@ -63,7 +63,7 @@ interface SceneBase {
   /** Görsel üretimi için istem (render'da kullanılmaz, scripts/prompts ile dışa aktarılır) */
   prompt?: string;
   /** Küçük üst şerit: bölüm adı + kazanan yorum (ör. 3. saniyeden sonra belirir) */
-  note?: {kicker?: string; user?: string; text?: string; likes?: number; from?: number};
+  note?: {kicker?: string; user?: string; text?: string; likes?: number; from?: number; avatar?: string};
   /** Kalıcı KASA şeridi (her bölüm sonunda aynı yerde): "💰 KASA: X $ → HEDEF: 1 MİLYAR $" */
   kadro?: {filled: number; total?: number; top?: number};
   kasa?: {value: number; from?: number; target?: string; mystery?: boolean; top?: number};

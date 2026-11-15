@@ -1,10 +1,11 @@
 import React from 'react';
-import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {Easing, Img, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {C, FONT, MONO, accentA} from '../theme';
 import {groupThousands} from '../lib/text';
 
 /** Üstte küçük şerit: bölüm adı + kazanan yorum. Tam ekran kart yerine. */
-export const NoteStrip: React.FC<{kicker?: string; user?: string; text?: string; likes?: number; from?: number}> = ({
+export const NoteStrip: React.FC<{kicker?: string; user?: string; text?: string; likes?: number; from?: number; avatar?: string}> = ({
+  avatar,
   kicker,
   user,
   text,
@@ -49,8 +50,8 @@ export const NoteStrip: React.FC<{kicker?: string; user?: string; text?: string;
             boxShadow: '0 10px 30px rgba(0,0,0,0.4)',
           }}
         >
-          <div style={{width: 46, height: 46, flex: '0 0 46px', borderRadius: '50%', background: `linear-gradient(135deg, ${C.pink}, #7C3AED)`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontWeight: 900, fontSize: 24, color: '#fff'}}>
-            {(user.replace(/^[^a-zA-Z0-9]+/, '')[0] ?? '?').toUpperCase()}
+          <div style={{width: 46, height: 46, flex: '0 0 46px', borderRadius: '50%', overflow: 'hidden', background: `linear-gradient(135deg, ${C.pink}, #7C3AED)`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontWeight: 900, fontSize: 24, color: '#fff'}}>
+            {avatar ? <Img src={avatar} style={{width: '100%', height: '100%', objectFit: 'cover'}} /> : (user.replace(/^[^a-zA-Z0-9]+/, '')[0] ?? '?').toUpperCase()}
           </div>
           <div style={{minWidth: 0}}>
             <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 22, color: C.pink}}>KAZANAN YORUM · {user}</div>

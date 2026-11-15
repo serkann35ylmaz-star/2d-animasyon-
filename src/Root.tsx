@@ -46,6 +46,7 @@ const calculateMetadata: CalculateMetadataFunction<EpisodeProps> = async ({props
       add(s.video);
     }
     if (s.type === 'title' || s.type === 'bait') add(s.image);
+    add(s.note?.avatar);
   }
   const assets: Record<string, string | null> = {};
   await Promise.all([...paths].map(async (p) => (assets[p] = await resolveAsset(slug, p))));

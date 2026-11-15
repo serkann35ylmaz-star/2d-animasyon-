@@ -101,7 +101,7 @@ const SceneView: React.FC<{bs: BuiltScene; ep: EpisodeT; assets: Record<string, 
       ) : scene.tag && (scene.type === 'image' || scene.type === 'bait') ? (
         <Hud defs={[]} values={{}} prev={null} tag={scene.tag} />
       ) : null}
-      {scene.note ? <NoteStrip {...scene.note} /> : null}
+      {scene.note ? <NoteStrip {...scene.note} avatar={a(scene.note.avatar) ?? undefined} /> : null}
       {scene.kasa ? <KasaStrip {...scene.kasa} /> : null}
       {scene.kadro ? <KadroStrip {...scene.kadro} /> : null}
       {showCaptions && bs.words.length ? <Captions words={bs.words} /> : null}
