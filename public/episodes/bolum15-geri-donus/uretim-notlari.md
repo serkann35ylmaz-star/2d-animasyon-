@@ -9,3 +9,4 @@ Doğrulama: Koller 34', Plašil 62', Arda 75', Nihat 87' (Čech hatası) ve 89' 
 Hazır ek: s06 = MAHbElBkg14 (tribün el ele).
 Hazır ek: s05 = MAHbEswbZIc (Arda golü). Kalan: s07, s08, s09, s10.
 Hazır ek: s07 = MAHbEh7V7hw (Nihat 87'). Kalan: s08, s09, s10. Ses: ElevenLabs 'Free generations busy' ~50 dk.
+Hazır ek: s08 = MAHbEoPRFWI (Nihat 89'). Kalan: s09, s10.
