@@ -13,7 +13,7 @@ Duygu çekirdeği: "Herkes bitti dediğinde bırakmamak." Duygu taşıyıcısı:
 6. 80' TRİBÜN TEK YÜREK: kalabalık el ele, yabancılar omuz omuza; Cemil bayrak sallar, para dertlerini unutur. Selim: "Bir ülkenin tamamı bırakmayı reddediyor."
 7. 87' NİHAT, 2-2: tribün yer değiştirir, Cemil şapkasını havaya fırlatır.
 8. 89' NİHAT, 3-2 (Çekya kalecisi topu kaçırır): tribün patlar, çocuk Selim'in boynuna atlar. Selim gülümseyip gözyaşını siler: "Bunu hiç unutmayacağım."
-9. 90' DÜDÜK + SÖZ: çocuk mühürlü kâğıdı açar; altında Selim'in yeni yazısı: "Bırakmayana." Çocuk bayrağı Selim'e uzatır: "Sen getirdin şansı." Selim: "Hayır. Sen kaldırdın."
+9. 90' DÜDÜK + SÖZ: çocuk mühürlü kâğıdı açar; altında Selim'in yeni yazısı: "Skoru sen yazdın." (64'teki "Skor yazılmaz. Yaşanır." cümlesinin cevabı) Çocuk bayrağı Selim'e uzatır: "Sen getirdin şansı." Selim: "Hayır. Sen kaldırdın."
 10. RAPOR + FİNAL: Cemil defterden okur: sol bek Roberto Carlos geldi (bedava, maaşı değil), kadro 8/11; forma sponsoru 3 milyon dolar, kasa 50.400.000 -> 53.400.000 dolar. Tribünde şapkalı adam mühürlü zarf gösterir, kalabalıkta kaybolur. Kart: KADRO 8/11, kasa 53.400.000 dolar. Soru: Beşinci kâğıda hangi tarihi yazardın?
 
 KADRO (4-3-3): DOLU 8: Neuer, Ramos, Modriç, Messi, Ribéry, Ronaldo, Lewandowski, Roberto Carlos (sol bek). BOŞ 3: sağ bek, ikinci stoper, ön libero.
