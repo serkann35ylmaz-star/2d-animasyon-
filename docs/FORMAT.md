@@ -119,3 +119,10 @@ Ham `master.wav`'ı elle remux etme: zincirden geçmemiştir, ses -22 LUFS çık
 - DM otomasyonu → yalnızca 14. bölüme bağlı. "Kapandı" otomasyonu → 1–13. bölüm; buton "14. bölümü izle".
 - Herkese açık cevap kuralı güncellendi (14./15. bölüm). Bu sefer `comments_update` sonrası "Active" kaldı; yine de her güncellemeden sonra `comments_get` ile durum doğrulanır.
 - Yeni videonun medya listesine düşmesi 5–10 dk sürebilir (`syncStatus: pending`); beklerken paylaşımın Reels olduğundan emin ol.
+
+### ChatPlace durumu — 15. bölüm (16 Kasım) — BEKLEMEDE
+Kullanıcı "Videoyu paylaştım" dedi; ChatPlace araçları **403 Forbidden** verdi (bots_list dahil, bağlantı/yetki sorunu). Kurulum yapılamadı. Bağlantı düzelince (claude.ai/customize/connectors → ChatPlace, sonra yeni oturum) sırayla:
+1. `automations_triggers_list_instagram_media` (bot `01a1bc61-85b6-70e8-9cb9-9bade6c01835`) → 15. bölüm Reels'ini bul (syncStatus pending olabilir).
+2. DM otomasyonu `01a1cfc8-a1fd-72cc-bf9b-f0d3630be4c4` → `triggers_set` yalnızca yeni medya; ilk mesaj (`01a1cfc8-a68d-729e-b666-a1261da8405f`): "Fikrin için teşekkürler 🗓️ Beşinci kâğıdın sırrı yarınki bölümde, 18.00'de 16. bölüm yayında. Kaçırma, profilden takip et 🔔".
+3. "Kapandı" otomasyonu `01a1cfc8-b764-7305-954b-7ce82b6b7988` → 1–14. bölüm medyaları; mesajlar `01a1cfc8-b923-71b8-b413-6c419d358092` ("Hikâye şu an 15. bölümde devam ediyor…") ve `01a1cfc8-b947-7171-ad18-2c834ceade30` ("15. Bölüm: Bırakmayan 🚩 Beşinci kâğıda hangi tarihi yazardın?…"); buton `01a1cfc8-b948-7342-b984-5bf5dd1661d7` "15. bölümü izle" → yeni Reels linki.
+4. Herkese açık cevap kuralı `01a1cfe3-e4a9-71b2-b98f-162c4308b32d`: cevaplardaki "14. bölüm / 15. bölüm yarın" → "15. bölüm / 16. bölüm yarın"; sonra `comments_get` ile Active doğrula.
