@@ -1,0 +1,278 @@
+{
+ "series": {
+  "name": "Hikâye Yorumda",
+  "handle": "@hikayeyorumda",
+  "avatar": "brand/profil.png"
+ },
+ "fps": 30,
+ "music": "music/dark-pulse.wav",
+ "musicVolume": 0.2,
+ "palette": "nostalji",
+ "accent": "#F5A524",
+ "tts": {
+  "engine": "elevenlabs",
+  "model": "eleven_v4",
+  "voice_id": "mCTNxePO8hqCg6KFnASN",
+  "voice_name": "Onur AGCNL"
+ },
+ "title": "Geleceği Bilen Adam — Bölüm 15: Bırakmayan",
+ "targetDuration": 100,
+ "era": {
+  "setting": "a packed Swiss football stadium stand at night during the Euro 2008 match Turkey vs Czech Republic",
+  "people": "all people are the same round-white-headed cartoon species as the main character (no realistic humans), red-and-white Turkish fans with flags, scarves, drums",
+  "details": "night floodlights, red-and-white flags, drums, scarves, no readable text",
+  "exception": "the main character is a time traveler from 2026 so only he keeps his modern outfit"
+ },
+ "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+ "hud": [
+  {
+   "key": "dk",
+   "label": "DAKİKA",
+   "format": "raw"
+  },
+  {
+   "key": "dolar",
+   "label": "DOLAR",
+   "format": "usd",
+   "accent": true
+  }
+ ],
+ "voice": "voice.mp3",
+ "timings": "timings.json",
+ "scenes": [
+  {
+   "type": "image",
+   "id": "acilis",
+   "image": "img/s01.png",
+   "motion": "zoomIn",
+   "palette": "soguk",
+   "tone": "dramatic",
+   "text": "Altmış ikinci dakika. Türkiye sıfır, Çekya iki. Tribün sustu. Bir çocuk bayrağını yere bıraktı. Ben Selim. Dördüncü kâğıda bu geceyi yazdım. Herkes bitti diyor.",
+   "hud": {
+    "dk": 62,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "62. dakika. Türkiye 0, Çekya 2. Tribün sustu. Bir çocuk bayrağını yere bıraktı. Ben Selim. Dördüncü kâğıda bu geceyi yazdım. Herkes bitti diyor.",
+   "note": {
+    "kicker": "15. BÖLÜM · BIRAKMAYAN",
+    "user": "eupturan",
+    "text": "15 Haziran 2008, Türkiye–Çekya 3-2. 2-0 geriden gelip kazandı",
+    "likes": 24,
+    "from": 2.6
+   }
+  },
+  {
+   "type": "image",
+   "id": "cemil",
+   "image": "img/s02.png",
+   "motion": "shake",
+   "palette": "tehlike",
+   "tone": "tense",
+   "text": "Cemil: Abi uçak, otel, iki bilet! Kazansaydık bari! Kâğıdı gösterdim: on beş Haziran iki bin sekiz, Türkiye Çekya. Cemil: Skoru yazmamışsın! Ben: Skor yazılmaz. Yaşanır.",
+   "hud": {
+    "dk": 64,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "Cemil: Abi uçak, otel, iki bilet! Kazansaydık bari! Kâğıdı gösterdim: 15 Haziran 2008, Türkiye Çekya. Cemil: Skoru yazmamışsın! Ben: Skor yazılmaz. Yaşanır."
+  },
+  {
+   "type": "image",
+   "id": "cocuk",
+   "image": "img/s03.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "whisper",
+   "text": "Çocuğun yanına çömeldim. Bayrağı kaldır. Bitmedi. Çocuk: Nereden biliyorsun abi? Ben: Bilmiyorum. Ama sen kaldırırsan ben de inanırım.",
+   "hud": {
+    "dk": 67,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "soz",
+   "image": "img/s04.png",
+   "motion": "push",
+   "palette": "nostalji",
+   "tone": "whisper",
+   "text": "Kâğıdı ona verdim. Düdüğe kadar açma. İki bin yirmi altıda insanlar bırakmayı çok çabuk öğrendi. Burada henüz öğrenmemişler.",
+   "hud": {
+    "dk": 70,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "Kâğıdı ona verdim. Düdüğe kadar açma. 2026'da insanlar bırakmayı çok çabuk öğrendi. Burada henüz öğrenmemişler."
+  },
+  {
+   "type": "image",
+   "id": "arda",
+   "image": "img/s05.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "excited",
+   "text": "Yetmiş beşinci dakika. Arda Turan! Bir, iki! Davul başladı. Çocuk bayrağı kaldırdı.",
+   "hud": {
+    "dk": 75,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "75. dakika. Arda Turan! 1-2! Davul başladı. Çocuk bayrağı kaldırdı."
+  },
+  {
+   "type": "image",
+   "id": "tribun",
+   "image": "img/s06.png",
+   "motion": "push",
+   "palette": "gunbatimi",
+   "tone": "dramatic",
+   "text": "Tribün el ele tuttu. Bir ülkenin tamamı bırakmayı reddediyordu.",
+   "hud": {
+    "dk": 80,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "nihat87",
+   "image": "img/s07.png",
+   "motion": "shake",
+   "palette": "tehlike",
+   "tone": "excited",
+   "text": "Seksen yedinci dakika. Kaleci topu elinden kaçırdı. Nihat! İki, iki! Cemil şapkasını fırlattı.",
+   "hud": {
+    "dk": 87,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "87. dakika. Kaleci topu elinden kaçırdı. Nihat! 2-2! Cemil şapkasını fırlattı."
+  },
+  {
+   "type": "image",
+   "id": "nihat89",
+   "image": "img/s08.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "excited",
+   "text": "Seksen dokuz. Nihat uzaktan vurdu. Üç, iki! Çocuk boynuma atladı. Bunu hiç unutmayacağım.",
+   "hud": {
+    "dk": 89,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "89. dakika. Nihat uzaktan vurdu. 3-2! Çocuk boynuma atladı. Bunu hiç unutmayacağım."
+  },
+  {
+   "type": "image",
+   "id": "kagit",
+   "image": "img/s09.png",
+   "motion": "zoomIn",
+   "palette": "gunbatimi",
+   "tone": "dramatic",
+   "text": "Düdük çaldı. Çocuk kâğıdı açtı. Altında yazıyordu: Skoru sen yazdın. Çocuk: Sen getirdin şansı. Ben: Hayır. Sen kaldırdın.",
+   "hud": {
+    "dk": 90,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "rapor",
+   "image": "img/s10.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Cemil defterden okudu: Sol bek Roberto Carlos geldi, bedava ama maaşı değil! Forma sponsoru üç milyon dolar verdi. Kasa elli üç milyon dört yüz bin.",
+   "hud": {
+    "dk": 90,
+    "dolar": 53400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "Cemil defterden okudu: Sol bek Roberto Carlos geldi, bedava ama maaşı değil! Forma sponsoru 3 milyon dolar verdi. Kasa 53.400.000.",
+   "kadro": {
+    "filled": 8,
+    "total": 11,
+    "top": 215
+   },
+   "kasa": {
+    "value": 53400000,
+    "from": 50400000,
+    "top": 330
+   }
+  },
+  {
+   "type": "bait",
+   "image": "img/s10.png",
+   "words": [
+    "5. KÂĞIT",
+    "HANGİ TARİH?",
+    "BOŞ MEVKİ?"
+   ],
+   "duration": 3.0,
+   "palette": "tehlike",
+   "tone": "question",
+   "motion": "none",
+   "text": "Beşinci kâğıda hangi tarihi yazardın? Bir de kadroda sağ bek, ikinci stoper ve ön libero boş. Sence kimi alalım? Yorumlara yaz."
+  },
+  {
+   "type": "end",
+   "kicker": "GELECEĞİ BİLEN ADAM",
+   "lines": [
+    "16. BÖLÜM",
+    "*YARIN 18.00*"
+   ],
+   "body": "Beşinci kâğıda hangi tarihi\nyazardın? Kadroya kimi alalım?\n⚽ KADRO: **8/11**",
+   "cta": "TAKİP ET · KAÇIRMA",
+   "duration": 3.6,
+   "kasa": {
+    "value": 53400000,
+    "from": 53400000,
+    "top": 1420
+   }
+  }
+ ]
+}
