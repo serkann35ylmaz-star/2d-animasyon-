@@ -12,3 +12,4 @@ Hazır ek: s07 = MAHbEh7V7hw (Nihat 87'). Kalan: s08, s09, s10. Ses: ElevenLabs 
 Hazır ek: s08 = MAHbEoPRFWI (Nihat 89'). Kalan: s09, s10.
 s01–s08 görselleri Canva sayfa 32–39'a yerleştirildi, 1080x1920 img/s01–s08.png olarak indirildi. Kalan: s09, s10 (Canva), ses (ElevenLabs).
 Hazır ek: s09 = MAHbEkBi9io (çocuk boynunda, kâğıt SKORU SEN YAZDIN). Kalan: s10 (Canva sayfa 40-41'e s09+s10 yerleştirip export), ses.
+s09 (MAHbE9hxHjQ) ve s10 (MAHbE-b0W24) yeni Canva hesabında (tasarım DAHbE57lwL4) üretildi; eski hesap/tasarım artık erişilemez. img/s01–s10 hazır.
