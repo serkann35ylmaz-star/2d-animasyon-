@@ -11,3 +11,4 @@ Hazır ek: s05 = MAHbEswbZIc (Arda golü). Kalan: s07, s08, s09, s10.
 Hazır ek: s07 = MAHbEh7V7hw (Nihat 87'). Kalan: s08, s09, s10. Ses: ElevenLabs 'Free generations busy' ~50 dk.
 Hazır ek: s08 = MAHbEoPRFWI (Nihat 89'). Kalan: s09, s10.
 s01–s08 görselleri Canva sayfa 32–39'a yerleştirildi, 1080x1920 img/s01–s08.png olarak indirildi. Kalan: s09, s10 (Canva), ses (ElevenLabs).
+Hazır ek: s09 = MAHbEkBi9io (çocuk boynunda, kâğıt SKORU SEN YAZDIN). Kalan: s10 (Canva sayfa 40-41'e s09+s10 yerleştirip export), ses.
