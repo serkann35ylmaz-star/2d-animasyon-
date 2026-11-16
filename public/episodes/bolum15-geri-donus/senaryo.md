@@ -14,10 +14,10 @@ Duygu çekirdeği: "Herkes bitti dediğinde bırakmamak." Duygu taşıyıcısı:
 7. 87' NİHAT, 2-2: tribün yer değiştirir, Cemil şapkasını havaya fırlatır.
 8. 89' NİHAT, 3-2 (Çekya kalecisi topu kaçırır): tribün patlar, çocuk Selim'in boynuna atlar. Selim gülümseyip gözyaşını siler: "Bunu hiç unutmayacağım."
 9. 90' DÜDÜK + SÖZ: çocuk mühürlü kâğıdı açar; altında Selim'in yeni yazısı: "Skoru sen yazdın." (64'teki "Skor yazılmaz. Yaşanır." cümlesinin cevabı) Çocuk bayrağı Selim'e uzatır: "Sen getirdin şansı." Selim: "Hayır. Sen kaldırdın."
-10. RAPOR + FİNAL: Cemil defterden okur: sol bek Roberto Carlos geldi (bedava, maaşı değil), kadro 8/11; forma sponsoru 3 milyon dolar, kasa 50.400.000 -> 53.400.000 dolar. Tribünde şapkalı adam mühürlü zarf gösterir, kalabalıkta kaybolur. Kart: KADRO 8/11, kasa 53.400.000 dolar. Soru: Beşinci kâğıda hangi tarihi yazardın?
+10. RAPOR + FİNAL: Cemil defterden okur: sol bek Roberto Carlos geldi (bedava, maaşı değil), kadro 8/11; forma sponsoru 3 milyon dolar, kasa 50.400.000 -> 53.400.000 dolar. Tribünde şapkalı adam mühürlü zarf gösterir, kalabalıkta kaybolur. Bitiş kartı iki soru sorar: (1) Beşinci kâğıda hangi tarihi yazardın? (2) Kadroda boş kalan 3 mevki için (sağ bek, ikinci stoper, ön libero) hangi oyuncuyu önerirsin? Kart: KADRO 8/11, kasa 53.400.000 dolar. Seslendirme: "Beşinci kâğıda hangi tarihi yazardın? Bir de kadroda sağ bek, ikinci stoper ve ön libero boş. Sence kimi alalım? Yorumlara yaz."
 
 KADRO (4-3-3): DOLU 8: Neuer, Ramos, Modriç, Messi, Ribéry, Ronaldo, Lewandowski, Roberto Carlos (sol bek). BOŞ 3: sağ bek, ikinci stoper, ön libero.
-Yorum (kanal sahibi atacak): "Kadroda 3 mevki kaldı: sağ bek, ikinci stoper, ön libero. Sence kimi alalım? 👇"
+Bölüm sonu artık hem tarih hem kadro sorusunu içerir; kanal sahibinin atacağı ayrı kadro yorumu yine hazırlanır: "Kadroda 3 mevki kaldı: sağ bek, ikinci stoper, ön libero. Sence kimi alalım? 👇"
 
 Doğrulanacak: Çekya golleri (Koller 34', Plašil 62'), Arda 75', Nihat 87' ve 89', kaleci hatası, Stade de Genève, Roberto Carlos Temmuz 2007 bedelsiz geçiş.
 Notlar: Beyaz yuvarlak kafa, kulaksız, burunsuz, kaşlı oval göz; kalabalık tekil kişilik. Siyaset/kulüp rekabeti yok. Bu bir kurgudur; yatırım tavsiyesi değildir.
