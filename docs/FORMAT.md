@@ -120,9 +120,10 @@ Ham `master.wav`'ı elle remux etme: zincirden geçmemiştir, ses -22 LUFS çık
 - Herkese açık cevap kuralı güncellendi (14./15. bölüm). Bu sefer `comments_update` sonrası "Active" kaldı; yine de her güncellemeden sonra `comments_get` ile durum doğrulanır.
 - Yeni videonun medya listesine düşmesi 5–10 dk sürebilir (`syncStatus: pending`); beklerken paylaşımın Reels olduğundan emin ol.
 
-### ChatPlace durumu — 15. bölüm (16 Kasım) — BEKLEMEDE
-Kullanıcı "Videoyu paylaştım" dedi; ChatPlace araçları **403 Forbidden** verdi (bots_list dahil, bağlantı/yetki sorunu). Kurulum yapılamadı. Bağlantı düzelince (claude.ai/customize/connectors → ChatPlace, sonra yeni oturum) sırayla:
-1. `automations_triggers_list_instagram_media` (bot `01a1bc61-85b6-70e8-9cb9-9bade6c01835`) → 15. bölüm Reels'ini bul (syncStatus pending olabilir).
-2. DM otomasyonu `01a1cfc8-a1fd-72cc-bf9b-f0d3630be4c4` → `triggers_set` yalnızca yeni medya; ilk mesaj (`01a1cfc8-a68d-729e-b666-a1261da8405f`): "Fikrin için teşekkürler 🗓️ Beşinci kâğıdın sırrı yarınki bölümde, 18.00'de 16. bölüm yayında. Kaçırma, profilden takip et 🔔".
-3. "Kapandı" otomasyonu `01a1cfc8-b764-7305-954b-7ce82b6b7988` → 1–14. bölüm medyaları; mesajlar `01a1cfc8-b923-71b8-b413-6c419d358092` ("Hikâye şu an 15. bölümde devam ediyor…") ve `01a1cfc8-b947-7171-ad18-2c834ceade30` ("15. Bölüm: Bırakmayan 🚩 Beşinci kâğıda hangi tarihi yazardın?…"); buton `01a1cfc8-b948-7342-b984-5bf5dd1661d7` "15. bölümü izle" → yeni Reels linki.
-4. Herkese açık cevap kuralı `01a1cfe3-e4a9-71b2-b98f-162c4308b32d`: cevaplardaki "14. bölüm / 15. bölüm yarın" → "15. bölüm / 16. bölüm yarın"; sonra `comments_get` ile Active doğrula.
+### ChatPlace durumu — 15. bölüm (16 Kasım)
+- **Yeni bağlantı = yeni bot kimliği:** `01a1e3fc-7ad7-73b9-a089-928b9919722b` (@hikayeyorumda); araçlar artık `mcp__Chat__*`. Otomasyon/mesaj/buton kimlikleri aynı kaldı. Yeni bağlantıda tüm otomasyonlar **Disabled** geliyor: gönderiye bağlayınca `automations_change_status active` şart.
+- 15. bölüm Reels `Dfzh-T1IsQd`, medya `01a1e4c2-8560-723a-b47d-314fd90b7a29`. Medya listesi yeni bağlantıda ~10 dk senkron bekler (`historyComplete`).
+- DM otomasyonu `01a1cfc8-a1fd-72cc-bf9b-f0d3630be4c4` → yalnızca 15. bölüm, Active. "Kapandı" otomasyonu `01a1cfc8-b764-7305-954b-7ce82b6b7988` → 1–14. bölüm, Active; buton "15. bölümü izle" → `https://www.instagram.com/reel/Dfzh-T1IsQd/`.
+- Herkese açık cevap kuralı `01a1cfe3-e4a9-71b2-b98f-162c4308b32d` 15./16. bölüm cevaplarıyla Active.
+- Instagram linkindeki `?xtok=` parametresi kopyalanmaz; yalnızca `/reel/<kod>/`.
+- Yeni Canva hesabı: eski tasarım `DAHayobNHA0` ve referanslar artık erişilemez; karakter referansı yeni hesaba `img/s02.png` yüklenerek verildi (`MAHbEz7sTuE`), tasarım `DAHbE57lwL4`. Canva üretimi art arda ~2 görselden sonra "soğuma" verir.
