@@ -7,3 +7,4 @@ Forma: Türkiye kırmızı-beyaz (küçük beyaz ay-yıldız), Çekya beyaz-mavi
 Gol anı ses zamanları: voice-script.txt. Ses: ElevenLabs flow rmZL2SB8AU1QCJfwVACM (meşgul; send_later tetikleyici kuruldu).
 Doğrulama: Koller 34', Plašil 62', Arda 75', Nihat 87' (Čech hatası) ve 89' (uzaktan), Roberto Carlos bedelsiz Fenerbahçe 2007 (UEFA, Dawn, Irish Times). Forma renkleri maç günü doğrulanamadı.
 Hazır ek: s06 = MAHbElBkg14 (tribün el ele).
+Hazır ek: s05 = MAHbEswbZIc (Arda golü). Kalan: s07, s08, s09, s10.
