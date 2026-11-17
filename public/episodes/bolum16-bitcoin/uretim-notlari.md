@@ -11,3 +11,4 @@ SES: ElevenLabs 5/5 deneme başarısız ('Free generations busy'); kullanıcıya
 Hazır ek: s07 MAHbKs47uwM (9 Ocak bilgisayar), s08 MAHbKl5S9XA (pizza). Kalan: s09 şapkalı adam + zarf + 2026 saati, s10 final (Selim yeni ayakkabılar + Cemil + kadro tamam).
 Ses geldi (kullanıcı ürettirdi): 74,5 sn, hizalama temiz (182 kelime). episode.json hazır, süre 80,4 sn. Kalan: s09, s10 görselleri, export img/s01–s10, render.
 Oyuncu görselleri yenilendi (kullanıcı: gerçek hallerine benzet): s03 MAHbK0v9Mo4 (Piqué/Busquets/Alves), s05 MAHbKy_uh-g (Ronaldo/Messi), s10 MAHbKzDYXDQ (11 oyuncu: Neuer, Ramos, Piqué, Lewandowski, Ribéry, Alves, Busquets, Modrić, Ronaldo, Messi, Roberto Carlos). Oyuncu görsellerinde saç/sakal/boy/yapı belirtilmeli.
+Kulak kuralı: s03 ve s05 kulaksız (MAHbLaZA5tg, MAHbLRjzzdU). s10 (MAHbLaQ_xk4) 11 oyuncu: birkaç küçük kulak izi kaldı. Üretimde 'kafa yumurta/top şeklinde, saç yanlara sarılır, kulak yok' ifadesi kullan.
