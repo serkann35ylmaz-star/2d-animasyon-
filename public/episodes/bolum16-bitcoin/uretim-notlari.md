@@ -9,3 +9,4 @@ Kazanan yorum: birvarm1s_biryokmus (8 beğeni); avatar.png kullanıcı ekran gö
 Hazır ek: s05 MAHbKmNUmoU (Ballon d'Or), s06 MAHbKu42U2M (3 Ocak 2009 gece, Bitcoin). Kalan görseller: s07 (9 Ocak bilgisayar çalışıyor, ekranda yalnız kod), s08 (pizza), s09 (şapkalı adam + zarf + 2026 akıllı saati), s10 (final).
 SES: ElevenLabs 5/5 deneme başarısız ('Free generations busy'); kullanıcıya voice-script.txt gönderildi, kullanıcı üretip mp3 atacak. mp3 gelince: voice-raw.mp3 olarak koy, episode.json yaz, ep.py voice bolum16-bitcoin, render (KEEP_WAV=1), ses_kontrol, avatar.png hazır (birvarm1s_biryokmus).
 Hazır ek: s07 MAHbKs47uwM (9 Ocak bilgisayar), s08 MAHbKl5S9XA (pizza). Kalan: s09 şapkalı adam + zarf + 2026 saati, s10 final (Selim yeni ayakkabılar + Cemil + kadro tamam).
+Ses geldi (kullanıcı ürettirdi): 74,5 sn, hizalama temiz (182 kelime). episode.json hazır, süre 80,4 sn. Kalan: s09, s10 görselleri, export img/s01–s10, render.
