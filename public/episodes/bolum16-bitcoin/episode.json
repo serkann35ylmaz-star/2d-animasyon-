@@ -115,7 +115,8 @@
     "filled": 11,
     "total": 11,
     "top": 215
-   }
+   },
+   "showHud": false
   },
   {
    "type": "image",
