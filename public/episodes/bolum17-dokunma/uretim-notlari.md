@@ -1,1 +1,2 @@
 Kazanan yorum sahibi: mehmetmirac0179 (8 beğeni), avatar.png kullanıcı ekran görüntüsünden kırpıldı.
+Doğrulandı: Instagram 6 Ekim 2010; WC 2010 final 11 Temmuz Johannesburg 1-0 Iniesta 116'; Messi Ballon d'Or 1 Aralık 2009, 10 Ocak 2011, 9 Ocak 2012, 7 Ocak 2013; BTC >1.000 $ 27 Kasım 2013. Hafızadan (kaynak çıkmadı): Baumgartner 14 Ekim 2012 ~39 km, Marmaray 29 Ekim 2013, 2014 final 13 Temmuz Almanya 1-0 (Götze 113'). Ses metni: voice-script.txt (fısıltı etiketi yok).
