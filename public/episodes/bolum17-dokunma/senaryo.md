@@ -1,4 +1,4 @@
-# 17. Bölüm: "Ben Biliyorum A.Ş." (~190 sn, UZUN BÖLÜM) — SENARYO TASLAĞI v3
+# 17. Bölüm: "Ben Biliyorum A.Ş." (~190 sn, UZUN BÖLÜM) — SENARYO TASLAĞI v4
 
 Kazanan yorum: mehmetmirac0179 (8) "2014 Messi'nin dünya kupası finalinde kupayı son anda kaçırması". Avatar hazır (avatar.png).
 Kullanıcı yönü: 2009'dan 2014'e bağla; geleceği bildiğimiz için PARA KATLA, LÜKS HAYAT, ŞİRKET kur; heyecan; uzun bölüm sorun değil; 10/10 fikirler.
@@ -25,3 +25,12 @@ Zincir (HUD: YIL 2009 -> 2014, DOLAR, BTC):
 
 Not: 15 sahne ~190 sn; istenirse ikiye bölünür (17. bölüm: 2009–2012 Instagram satışı, 18. bölüm: 2012–2014 Rio).
 Doğrulanacak: Tesla IPO 29 Haziran 2010; Facebook–Instagram 9 Nisan 2012 (1 milyar $); Facebook–WhatsApp 19 Şubat 2014 (19 milyar $); Instagram 6 Ekim 2010; WC 2010 final (doğrulandı); Messi Ballon d'Or tarihleri (doğrulandı); Baumgartner 14 Ekim 2012; Marmaray 29 Ekim 2013; BTC 1.000 $ 27 Kasım 2013 (doğrulandı); 2014 final 13 Temmuz.
+
+## v4 EK 10/10 FİKİRLER
+A) ZAMAN SAPMASI SAYACI (HUD, 3. gösterge): her büyük hamle (Tesla, Instagram, WhatsApp...) geleceği biraz değiştirir: sapma %0,1 -> %4 -> %19 -> %61 (2014'te). Şapkalı adam: "Sapma %100 olursa 13 Temmuz'da Messi kupayı kaçırmayabilir... ya da sen olmayabilirsin." Gerilim ve final sorusunun ağırlığı.
+B) SELİM'İN MAVİ TERLİKLERİ: eski plastik terlikler yalının duvarında camlı çerçevede: "Her şey bununla başladı." (Ayakkabı yorumunun ve ilk bölümlerin geri çağrısı.)
+C) ÇOCUKLUK EVİ: 2000'de kaybedilen çocukluk evini geri satın alır (ep5 kanonu; baba/telefon yok, sadece ev): kapıda anahtar, duygusal an, sıcak renk.
+D) YAT ADI: Cemil yata "YAPMA SELİM" adını verir; Selim: "Yat durmaz, gider."
+E) RAKİP ŞİRKET: şapkalı adamın "GELECEK A.Ş." tabelası karşı binada; her 'ilk'te Selim 1 - Adam 0 skorbord (kısa, komik).
+F) CEMİL'İN KASA DEFTERİ: Cemil CFO; her hamlede "Abi bu kadar sıfırı nereye yazacağım!" espri; sıfırlar duvarı taşar.
+Bölme önerisi: 17. bölüm (2009–Nisan 2012, Instagram satışı, sapma %19, yalı ve yat) + 18. bölüm (2012–2014, WhatsApp, 1 milyar $, Rio, sapma %61). Her biri ~95 sn, iki soru.
