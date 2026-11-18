@@ -39,6 +39,9 @@ def main() -> None:
     words = [{"w": w.word.strip(), "s": w.start, "e": w.end} for s in segs for w in s.words]
     if not words:
         sys.exit("✗ Whisper hiç kelime bulamadı")
+    # Ham Whisper kelime zamanları: align.py bunlarla sahne içi kelimeleri gerçek konumlarına oturtur (ses-metin senkronu)
+    json.dump([{"w": w["w"], "s": round(w["s"], 3), "e": round(w["e"], 3)} for w in words],
+              open(os.path.join(d, "whisper_words.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 
     # Her sahnenin ilk kelimesini sırayla bul (ilk 4 harf yeterli: "Şarj" ~ "Şarjda")
     # Whisper sayıları rakamla yazabilir ("Elli" -> "50"); sayı kelimesi rakamla da eşleşir.

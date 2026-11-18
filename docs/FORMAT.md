@@ -127,3 +127,8 @@ Ham `master.wav`'ı elle remux etme: zincirden geçmemiştir, ses -22 LUFS çık
 - Herkese açık cevap kuralı `01a1cfe3-e4a9-71b2-b98f-162c4308b32d` 15./16. bölüm cevaplarıyla Active.
 - Instagram linkindeki `?xtok=` parametresi kopyalanmaz; yalnızca `/reel/<kod>/`.
 - Yeni Canva hesabı: eski tasarım `DAHayobNHA0` ve referanslar artık erişilemez; karakter referansı yeni hesaba `img/s02.png` yüklenerek verildi (`MAHbEz7sTuE`), tasarım `DAHbE57lwL4`. Canva üretimi art arda ~2 görselden sonra "soğuma" verir.
+
+## Ses–metin senkronu (17. bölüm sonrası)
+- `ep.py voice` artık Whisper'ın kelime zamanlarını `whisper_words.json` olarak kaydeder; `align.py` senaryo kelimelerini bu zamanlara oturtur (`method: …+whisper-words`, eşleşme oranı çıktıda yazar, %60 altıysa eski sessizlik tahmini kullanılır). Eski yöntemde kelimelerin ~%10'u 0,3 sn'den fazla (en kötü 1,1 sn) kayıyordu.
+- Rakamlı altyazı (`caption`) seslendirmeye çapa kelimelerle eşlenir (`mapCaption`, src/lib/timeline.ts): "2009" yalnızca "iki bin dokuz"un süresini kapsar. Eski orantılı eşleme sahne boyunca kaydırıyordu.
+- Kontrol: `ep.py voice` çıktısında "Kelimeler Whisper zamanlarına oturtuldu (eşleşme %9x)" satırını gör; düşükse seslendirme metni senaryodan sapmış demektir.

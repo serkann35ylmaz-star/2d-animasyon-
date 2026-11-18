@@ -74,6 +74,52 @@ const defaultSfx = (scene: Scene, hudChanged: boolean, tagChanged: boolean): Sfx
   return out;
 };
 
+const capKey = (w: string): string =>
+  w.replace(/İ/g, 'i').replace(/I/g, 'ı').toLocaleLowerCase('tr').replace(/[^0-9a-zçğıöşüâîû]/g, '');
+
+/** Altyazı kelimesi i -> seslendirme kelime aralığı [j0, j1] (LCS çapaları + aradaki boşlukların paylaştırılması) */
+export const mapCaption = (cap: string[], spoken: string[]): Array<[number, number]> => {
+  const m = cap.length;
+  const n = spoken.length;
+  if (n === 0) return cap.map(() => [0, 0]);
+  const a = cap.map(capKey);
+  const b = spoken.map(capKey);
+  // LCS tablosu
+  const L: number[][] = Array.from({length: m + 1}, () => new Array(n + 1).fill(0));
+  for (let i = m - 1; i >= 0; i--)
+    for (let j = n - 1; j >= 0; j--)
+      L[i][j] = a[i] && a[i] === b[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const pairs: Array<[number, number]> = [];
+  for (let i = 0, j = 0; i < m && j < n; ) {
+    if (a[i] && a[i] === b[j]) {
+      pairs.push([i, j]);
+      i++;
+      j++;
+    } else if (L[i + 1][j] >= L[i][j + 1]) i++;
+    else j++;
+  }
+  const out: Array<[number, number]> = new Array(m);
+  const bounds: Array<[number, number]> = [[-1, -1], ...pairs, [m, n]];
+  for (let k = 0; k < bounds.length - 1; k++) {
+    const [ci, sj] = bounds[k];
+    const [ci2, sj2] = bounds[k + 1];
+    if (ci >= 0 && ci < m) out[ci] = [sj, sj];
+    const cn = ci2 - ci - 1; // aradaki altyazı kelimeleri
+    const sn = sj2 - sj - 1; // aradaki sesli kelimeler
+    for (let q = 0; q < cn; q++) {
+      if (sn <= 0) {
+        const at = Math.min(n - 1, Math.max(0, sj));
+        out[ci + 1 + q] = [at, at];
+      } else {
+        const j0 = sj + 1 + Math.floor((q * sn) / cn);
+        const j1 = Math.max(j0, sj + Math.ceil(((q + 1) * sn) / cn));
+        out[ci + 1 + q] = [Math.min(n - 1, j0), Math.min(n - 1, j1)];
+      }
+    }
+  }
+  return out;
+};
+
 export const buildTimeline = (episode: Episode, timings: Timings | null): Timeline => {
   const fps = episode.fps ?? 30;
   const warnings: string[] = [];
@@ -108,13 +154,13 @@ export const buildTimeline = (episode: Episode, timings: Timings | null): Timeli
         audio = {start, end};
         // Ekranda görünen kelime = senaryodaki yazım (noktalama dahil)
         if (scene.caption) {
-          // Altyazı metni (rakamlı) seslendirmeden farklı kelime sayısında olabilir: kelimeleri orantılı eşle
+          // Altyazı metni (rakamlı) seslendirmeden farklı kelime sayısında olabilir ("2009" = "iki bin dokuz").
+          // Aynı kelimeler çapa olarak eşlenir; aradaki rakamlar yalnızca kendi boşluğundaki sesli kelimeleri kapsar
+          // (eski orantılı eşleme sahne boyunca kaymaya yol açıyordu).
           const cap = tokenize(scene.caption);
-          const n = slice.length;
-          const m = cap.length;
+          const map = mapCaption(cap, tokens.slice(0, slice.length));
           words = cap.map((t, i) => {
-            const j0 = Math.min(n - 1, Math.floor((i * n) / m));
-            const j1 = Math.max(j0, Math.min(n - 1, Math.ceil(((i + 1) * n) / m) - 1));
+            const [j0, j1] = map[i];
             return {w: t, s: slice[j0].s - start, e: slice[j1].e - start};
           });
         } else {

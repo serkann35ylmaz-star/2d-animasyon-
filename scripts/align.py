@@ -216,6 +216,75 @@ def align(tokens: list[str], intervals: list[tuple[float, float]]) -> list[dict]
     return words
 
 
+# ---- Whisper kelime zamanlarıyla iyileştirme (ses-metin senkronu) ----
+def _key(word: str) -> str:
+    w = word.replace("İ", "i").replace("I", "ı").lower().replace("i̇", "i")
+    return re.sub(r"[^0-9a-zçğıöşüâîû]", "", w)
+
+
+def _expand(word: str) -> list[str]:
+    """Whisper'ın rakamla yazdığı kelimeyi Türkçe okunuşuna açar: "2014'te" -> iki bin on dörtte"""
+    w = word.replace("%", " yüzde ")
+    w = re.sub(r"(\d)[.,](?=\d{3}\b)", r"\1", w)
+    w = re.sub(r"\d+", lambda m: " " + num_tr(int(m.group())) + "", w)
+    parts = [_key(x) for x in w.split()]
+    return [x for x in parts if x] or [_key(word)]
+
+
+def refine_with_whisper(words: list[dict], wpath: str) -> tuple[list[dict], float]:
+    ww = json.load(open(wpath, encoding="utf-8"))
+    sub = []  # (anahtar, s, e) — açılmış Whisper kelimeleri
+    for w in ww:
+        parts = _expand(w["w"])
+        syl = [max(1, len(VOWELS.findall(x))) for x in parts]
+        tot, t = sum(syl), float(w["s"])
+        span = max(0.05, float(w["e"]) - float(w["s"]))
+        for x, k in zip(parts, syl):
+            d = span * k / tot
+            sub.append((x, t, t + d))
+            t += d
+    from difflib import SequenceMatcher
+    a = [_key(w["w"]) for w in words]
+    b = [x[0] for x in sub]
+    anchor: dict[int, tuple[float, float]] = {}
+    for blk in SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks():
+        for o in range(blk.size):
+            anchor[blk.a + o] = (sub[blk.b + o][1], sub[blk.b + o][2])
+    ratio = len(anchor) / max(1, len(words))
+    if ratio < 0.6:
+        return words, ratio
+    out = [dict(w) for w in words]
+    for i, (s0, e0) in anchor.items():
+        out[i]["s"], out[i]["e"] = round(s0, 3), round(max(e0, s0 + 0.05), 3)
+    # Eşleşmeyen kelimeler: komşu çapalar arasındaki boşluğa hece sayısıyla dağıt
+    i, n = 0, len(out)
+    while i < n:
+        if i in anchor:
+            i += 1
+            continue
+        j = i
+        while j < n and j not in anchor:
+            j += 1
+        lo = out[i - 1]["e"] if i > 0 else min(words[i]["s"], out[j]["s"] if j < n else words[i]["s"])
+        hi = out[j]["s"] if j < n else max(words[j - 1]["e"], lo + 0.2 * (j - i))
+        if hi <= lo:
+            hi = lo + 0.05 * (j - i)
+        syl = [syllables(out[k]["w"]) for k in range(i, j)]
+        tot, t = sum(syl), lo
+        for k, sy in zip(range(i, j), syl):
+            d = (hi - lo) * sy / tot
+            out[k]["s"], out[k]["e"] = round(t, 3), round(max(t + d, t + 0.05), 3)
+            t += d
+        i = j
+    # Monotonluk güvencesi
+    for k in range(1, n):
+        if out[k]["s"] < out[k - 1]["s"]:
+            out[k]["s"] = out[k - 1]["s"]
+        if out[k]["e"] < out[k]["s"] + 0.05:
+            out[k]["e"] = round(out[k]["s"] + 0.05, 3)
+    return out, ratio
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("episode_dir")
@@ -258,6 +327,15 @@ def main() -> None:
             method = "tts-segments+pause-dp"
     else:
         words = align(tokens, intervals)
+
+    wpath = os.path.join(args.episode_dir, "whisper_words.json")
+    if os.path.exists(wpath):
+        words, ratio = refine_with_whisper(words, wpath)
+        if ratio >= 0.6:
+            method += "+whisper-words"
+            print(f"✓ Kelimeler Whisper zamanlarına oturtuldu (eşleşme %{ratio * 100:.0f})")
+        else:
+            print(f"⚠ Whisper eşleşmesi düşük (%{ratio * 100:.0f}) — sessizlik tahmini kullanıldı")
 
     out = os.path.join(args.episode_dir, ep.get("timings", "timings.json"))
     json.dump({"words": words, "source": os.path.basename(vpath), "method": method}, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
