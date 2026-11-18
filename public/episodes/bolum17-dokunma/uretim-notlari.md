@@ -9,3 +9,9 @@ Görsel: s01 MAHbPnCHuRQ (zarf). s02, s03 üretimde.
 Görsel: s02 MAHbPiflSZI (ofis), s03 MAHbPnBRCQo (bilgisayarlar + Cemil sargılı).
 Görsel: s04 MAHbPtNQhAk (pizza + GELECEK A.Ş.), s05 MAHbPtwJwVg (halka arz).
 AYAKKABI: Selim 16. bölümden beri kırmızı-beyaz ayakkabılı. Yeni referans MAHbPiXbzbg (ep16 s10 alt kısmı). Eski s01-s05 (mavi terlik) iptal, yeniden üretiliyor.
+
+## Ayakkabılı görseller (Canva media id)
+s01 MAHbPnrVTRg · s02 MAHbPvz4OE0 · s03 MAHbPiOtBpg · s04 MAHbPsfxwQ0 · s05 MAHbPoHF8VU
+s06 MAHbPp5q0gQ · s07 MAHbPprJUmA · s08 MAHbPpXgRKc · s09 MAHbPsy8Ok4 · s10 MAHbPp8TzPs
+s11 MAHbPhq12PQ · s12 MAHbPnVAYVM · s13 MAHbPnYWMDE · s14 MAHbPnLg7yQ · s15 MAHbPpgbu2Y
+Tasarım DAHbKwFlLj4 sayfa 28–42.
