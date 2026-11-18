@@ -8,3 +8,4 @@ Görsel listesi: s01 zarf+şapkalı adam (4 Ocak 2009), s02 Levent ofisi 'Ben Bi
 Görsel: s01 MAHbPnCHuRQ (zarf). s02, s03 üretimde.
 Görsel: s02 MAHbPiflSZI (ofis), s03 MAHbPnBRCQo (bilgisayarlar + Cemil sargılı).
 Görsel: s04 MAHbPtNQhAk (pizza + GELECEK A.Ş.), s05 MAHbPtwJwVg (halka arz).
+AYAKKABI: Selim 16. bölümden beri kırmızı-beyaz ayakkabılı. Yeni referans MAHbPiXbzbg (ep16 s10 alt kısmı). Eski s01-s05 (mavi terlik) iptal, yeniden üretiliyor.
