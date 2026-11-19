@@ -84,7 +84,8 @@ def main() -> None:
             if not (is_num and prev_num):
                 n_exp += 1
             prev_num = is_num
-        j = k + max(1, n_exp - 1)
+        # Temkinli atla (%60): rakamla yazılan sayılar/sıra sayıları ("yüz on üçüncü" -> "113.") kelime sayısını şişirir
+        j = k + max(1, int(n_exp * 0.6))
 
     out = []
     for n, line in enumerate(lines):
