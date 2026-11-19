@@ -113,7 +113,8 @@ for (let attempt = 1; ; attempt++) {
 // (atak 20 ms, release 300 ms) → kazanç → yumuşak kırpma (asoftclip, limiter yerine) → yalnız aşırı tepeler için güvenlik limiter'ı.
 // Ölçüm (bölüm 11): yeni çıtırtı olayı 26 → 2; konuşma yazıya dökme benzerliği %98,9; AAC sonrası gerçek tepe ≈ -1,2 dBTP.
 const COMP = 'adeclick=w=55:o=75:a=2:t=2:b=2,acompressor=threshold=0.1:ratio=2.5:attack=20:release=300:knee=6';
-const LIMIT = 'asoftclip=type=cubic:threshold=0.6,alimiter=limit=0.708:level=false:attack=3:release=60';
+const LIMIT = 'asoftclip=type=cubic:threshold=0.7,alimiter=limit=0.708:level=false:attack=3:release=60';
+// (Bölüm 18: eşik 0.6 -> 0.7; çıtırtı olayı 7 -> 4. Daha sert kırpma AAC sonrası yeni tıklamalar üretiyordu.)
 const chain = (g) => `${COMP},volume=${g.toFixed(2)}dB,${LIMIT}`;
 const lufs = (af) => {
   const r = spawnSync('ffmpeg', ['-hide_banner', '-nostats', '-i', wav, '-af', `${af},ebur128`, '-f', 'null', '-'], {encoding: 'utf8'});
