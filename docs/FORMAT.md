@@ -132,3 +132,8 @@ Ham `master.wav`'ı elle remux etme: zincirden geçmemiştir, ses -22 LUFS çık
 - `ep.py voice` artık Whisper'ın kelime zamanlarını `whisper_words.json` olarak kaydeder; `align.py` senaryo kelimelerini bu zamanlara oturtur (`method: …+whisper-words`, eşleşme oranı çıktıda yazar, %60 altıysa eski sessizlik tahmini kullanılır). Eski yöntemde kelimelerin ~%10'u 0,3 sn'den fazla (en kötü 1,1 sn) kayıyordu.
 - Rakamlı altyazı (`caption`) seslendirmeye çapa kelimelerle eşlenir (`mapCaption`, src/lib/timeline.ts): "2009" yalnızca "iki bin dokuz"un süresini kapsar. Eski orantılı eşleme sahne boyunca kaydırıyordu.
 - Kontrol: `ep.py voice` çıktısında "Kelimeler Whisper zamanlarına oturtuldu (eşleşme %9x)" satırını gör; düşükse seslendirme metni senaryodan sapmış demektir.
+
+## Kazanan yorum avatarı (18. bölüm sonrası)
+- Profil fotoğrafı ekran görüntüsünü ELLE kırpma: sohbette görünen resim küçültülmüş olur (921x2000 görünür, gerçeği 1320x2868), tahmini koordinat kayar (18. bölümde avatar yanlış yerden kesildi).
+- Her zaman: `python3 scripts/avatar.py <ekran_görüntüsü> public/episodes/<bölüm>/avatar.png` — daireyi gerçek çözünürlükte otomatik bulur, içinden kırpar.
+- Teslimden önce `avatar.onizleme.png` dosyasına bak (kırmızı daire fotoğrafın kenarına tam oturmalı), sonra o dosyayı sil.
