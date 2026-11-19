@@ -1,0 +1,306 @@
+{
+ "series": {
+  "name": "Hikâye Yorumda",
+  "handle": "@hikayeyorumda",
+  "avatar": "brand/profil.png"
+ },
+ "fps": 30,
+ "music": "music/dark-pulse.wav",
+ "musicVolume": 0.2,
+ "palette": "nostalji",
+ "accent": "#F5A524",
+ "tts": {
+  "engine": "elevenlabs",
+  "model": "eleven_v4",
+  "voice_id": "mCTNxePO8hqCg6KFnASN",
+  "voice_name": "Onur AGCNL"
+ },
+ "outfit": "(he comes from 2026) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, chunky red-and-white high-top sneakers",
+ "era": {
+  "setting": "2014: Maracanã stadium at night in Rio, a frozen stadium, a village school, a tailor shop, a dark room, Paris 2016",
+  "people": "all people are the same round-white-headed cartoon species as the main character",
+  "details": "no readable text",
+  "exception": "the main character keeps his modern outfit"
+ },
+ "title": "Geleceği Bilen Adam — Bölüm 18: Donan Final",
+ "targetDuration": 125,
+ "hud": [
+  {
+   "key": "yil",
+   "label": "YIL",
+   "format": "raw"
+  },
+  {
+   "key": "dolar",
+   "label": "DOLAR",
+   "format": "usd",
+   "accent": true
+  },
+  {
+   "key": "sapma",
+   "label": "ZAMAN SAPMASI %",
+   "format": "raw"
+  }
+ ],
+ "voice": "voice.mp3",
+ "timings": "timings.json",
+ "scenes": [
+  {
+   "type": "image",
+   "id": "maracana",
+   "image": "img/s01.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "tense",
+   "text": "On üç Temmuz iki bin on dört, Maracanã. Yüz on ikinci dakika. Merdivenlerden sahaya iniyordum. Zaman sapması yüzde doksan dokuz. Elime baktım: parmaklarım kayboluyordu.",
+   "caption": "13 Temmuz 2014, Maracanã. 112. dakika. Merdivenlerden sahaya iniyordum. Zaman sapması %99. Elime baktım: parmaklarım kayboluyordu.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 1000000000,
+    "sapma": 99
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "note": {
+    "kicker": "18. BÖLÜM · DONAN FİNAL",
+    "user": "a.h.y46",
+    "text": "Dokunmasın hikaye devam etsin fakirlere yardım etsin. Şapkalı adamda onlara ortaklık teklif etsin",
+    "likes": 2,
+    "from": 2.6,
+    "avatar": "avatar.png"
+   }
+  },
+  {
+   "type": "image",
+   "id": "donma",
+   "image": "img/s02.png",
+   "motion": "push",
+   "palette": "soguk",
+   "tone": "dramatic",
+   "text": "Sonra her şey durdu. Top havada kaldı. Yetmiş dört bin kişi heykel gibi dondu. Bir tek ben, Cemil ve şapkalı adam kıpırdıyorduk. Cemil: Abi bilet parası geri alınır mı?",
+   "caption": "Sonra her şey durdu. Top havada kaldı. 74 bin kişi heykel gibi dondu. Bir tek ben, Cemil ve şapkalı adam kıpırdıyorduk. Cemil: Abi bilet parası geri alınır mı?",
+   "hud": {
+    "yil": 2014,
+    "dolar": 1000000000,
+    "sapma": 99
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "kural",
+   "image": "img/s03.png",
+   "motion": "zoomIn",
+   "palette": "soguk",
+   "tone": "tense",
+   "text": "Şapkalı adam yanıma geldi: Geleceği ne kadar değiştirirsen dünya o kadar kayar. Yüzde yüzde, değiştiren silinir. Bir adım daha atarsan Messi kupayı alır. Ama sen hiç doğmamış olursun.",
+   "caption": "Şapkalı adam yanıma geldi: Geleceği ne kadar değiştirirsen dünya o kadar kayar. %100'de, değiştiren silinir. Bir adım daha atarsan Messi kupayı alır. Ama sen hiç doğmamış olursun.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 1000000000,
+    "sapma": 99
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "karar",
+   "image": "img/s04.png",
+   "motion": "push",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Messi'ye bir adım kalmıştı. Elim titriyordu. Sonra elimi cebime koydum. Yorumdakiler haklıydı: dokunmadım. Zaman aktı. Yüz on üçüncü dakika, Götze. Almanya bire sıfır.",
+   "caption": "Messi'ye bir adım kalmıştı. Elim titriyordu. Sonra elimi cebime koydum. Yorumdakiler haklıydı: dokunmadım. Zaman aktı. 113. dakika, Götze. Almanya 1-0.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 1000000000,
+    "sapma": 99
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "kupa",
+   "image": "img/s05.png",
+   "motion": "zoomIn",
+   "palette": "gunbatimi",
+   "tone": "dramatic",
+   "text": "Messi ödülünü almaya yürürken kupaya baktı. Ben de ona baktım. İçimden dedim ki: Bekle. On sekiz Aralık iki bin yirmi iki, Katar. Sapma yüzde kırka düştü. Parmaklarım geri geldi.",
+   "caption": "Messi ödülünü almaya yürürken kupaya baktı. Ben de ona baktım. İçimden dedim ki: Bekle. 18 Aralık 2022, Katar. Sapma %40'a düştü. Parmaklarım geri geldi.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 1000000000,
+    "sapma": 40
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "ortaklik",
+   "image": "img/s06.png",
+   "motion": "push",
+   "palette": "soguk",
+   "tone": "excited",
+   "text": "Stadyum çıkışında şapkalı adama elimi uzattım: Gelecek Anonim Şirketi ile birleşelim. Güldü: Önce paranı dağıt. Para geleceği büker.",
+   "caption": "Stadyum çıkışında şapkalı adama elimi uzattım: Gelecek A.Ş. ile birleşelim. Güldü: Önce paranı dağıt. Para geleceği büker.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 1000000000,
+    "sapma": 40
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "vakif",
+   "image": "img/s07.png",
+   "motion": "zoomIn",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Bir milyar doları dağıttık. Okullar, kütüphaneler, köy sahaları. Cemil vakfın adını koydu: Yapma Selim Vakfı. Cemil ağlıyordu: Abi bir milyarı yazmak zordu, silmek daha zor! Kasa döndü dolaştı, elli üç milyon dört yüz bine indi. Sapma yüzde on iki.",
+   "caption": "1 milyar doları dağıttık. Okullar, kütüphaneler, köy sahaları. Cemil vakfın adını koydu: Yapma Selim Vakfı. Cemil ağlıyordu: Abi 1 milyarı yazmak zordu, silmek daha zor! Kasa döndü dolaştı, 53.400.000'e indi. Sapma %12.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 53400000,
+    "sapma": 12
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "kasa": {
+    "value": 53400000,
+    "from": 1000000000,
+    "top": 330
+   },
+   "showHud": false
+  },
+  {
+   "type": "image",
+   "id": "takim",
+   "image": "img/s08.png",
+   "motion": "push",
+   "palette": "kahve",
+   "tone": "excited",
+   "text": "Cemil bir kutu uzattı: Abi internetteki biri, Cemil paşa gibi giyiniyor, Selim hep aynı demiş. İçinden takım elbise çıktı. Bereyle ayakkabıları çıkarmadım: Bunlar kalır.",
+   "caption": "Cemil bir kutu uzattı: Abi internetteki biri, Cemil paşa gibi giyiniyor, Selim hep aynı demiş. İçinden takım elbise çıktı. Bereyle ayakkabıları çıkarmadım: Bunlar kalır.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 53400000,
+    "sapma": 12
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "defter",
+   "image": "img/s09.png",
+   "motion": "shake",
+   "palette": "gerilim",
+   "tone": "tense",
+   "text": "O gece defterimi açtım. İki bin on dörtten sonraki tarihler tek tek siliniyordu. Sapma yüzde otuza fırladı. Cemil: Abi iflas mı ediyoruz? Ama hikâye bitmedi. Tek bir tarih kaldı.",
+   "caption": "O gece defterimi açtım. 2014'ten sonraki tarihler tek tek siliniyordu. Sapma %30'a fırladı. Cemil: Abi iflas mı ediyoruz? Ama hikâye bitmedi. Tek bir tarih kaldı.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 53400000,
+    "sapma": 30
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "paris",
+   "image": "img/s10.png",
+   "motion": "push",
+   "palette": "gunbatimi",
+   "tone": "excited",
+   "text": "On Temmuz iki bin on altı, Paris. Ronaldo sakatlanıp kenara çıkacak, ama kupa yine Portekiz'in.",
+   "caption": "10 Temmuz 2016, Paris. Ronaldo sakatlanıp kenara çıkacak, ama kupa yine Portekiz'in.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 53400000,
+    "sapma": 30
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "sapka",
+   "image": "img/s11.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Tam o an rüzgâr şapkalı adamın şapkasını uçurdu. Altında hardal sarısı bir bere vardı. Şapkalı adam kim sence? Yorumlara yaz.",
+   "caption": "Tam o an rüzgâr şapkalı adamın şapkasını uçurdu. Altında hardal sarısı bir bere vardı. Şapkalı adam kim sence? Yorumlara yaz.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 53400000,
+    "sapma": 30
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "bait",
+   "image": "img/s11.png",
+   "words": [
+    "ŞAPKALI ADAM",
+    "KİM?"
+   ],
+   "duration": 3.0,
+   "palette": "tehlike",
+   "tone": "question",
+   "motion": "none"
+  },
+  {
+   "type": "end",
+   "kicker": "GELECEĞİ BİLEN ADAM",
+   "lines": [
+    "19. BÖLÜM",
+    "*YARIN 18.00*"
+   ],
+   "body": "Şapkalı adam kim sence?\nParis'e gidelim mi?\n📓 DEFTERDE: **1 TARİH**",
+   "cta": "TAKİP ET · KAÇIRMA",
+   "duration": 3.6
+  }
+ ]
+}

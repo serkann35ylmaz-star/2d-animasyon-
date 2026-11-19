@@ -21,3 +21,7 @@ HUD: YIL 2014 · DOLAR 1B → 53,4M · ZAMAN SAPMASI 99 → 40 → 12 (sahne 9'd
 
 Doğrulanacak: 13.07.2014 Maracanã, Almanya 1-0 Arjantin, Götze 113'; Messi turnuvanın en iyi oyuncusu, kupaya bakan fotoğraf; 18.12.2022 Katar finali; 10.07.2016 Stade de France, Portekiz 1-0 Fransa, Éder 109', Ronaldo erken sakatlık.
 Kurallar: bahis yok, siyaset/kulüp rekabeti yok, telefon/baba yok, fısıltı etiketi yok, Cemil yalnız para/panik/espri, kulak yok, Selim ayakkabılı, Cemil saçlı.
+
+## Görseller (Canva media id; tasarım DAHbKwFlLj4 sayfa 43–53)
+s01 MAHbV3mbFis (ayakkabı logosu yerelde boyandı) · s02 MAHbVzmt_H0 · s03 MAHbV_GtkQs · s04 MAHbV7EQPTc · s05 MAHbV0nefiI · s06 MAHbVyAGItE
+s07 MAHbV_-k6O0 · s08 MAHbV03VqVA · s09 MAHbV6P9jGY · s10 MAHbVzsdIL0 · s11 MAHbV8gAfvY
