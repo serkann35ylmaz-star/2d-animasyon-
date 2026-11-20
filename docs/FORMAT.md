@@ -137,3 +137,11 @@ Ham `master.wav`'ı elle remux etme: zincirden geçmemiştir, ses -22 LUFS çık
 - Profil fotoğrafı ekran görüntüsünü ELLE kırpma: sohbette görünen resim küçültülmüş olur (921x2000 görünür, gerçeği 1320x2868), tahmini koordinat kayar (18. bölümde avatar yanlış yerden kesildi).
 - Her zaman: `python3 scripts/avatar.py <ekran_görüntüsü> public/episodes/<bölüm>/avatar.png` — daireyi gerçek çözünürlükte otomatik bulur, içinden kırpar.
 - Teslimden önce `avatar.onizleme.png` dosyasına bak (kırmızı daire fotoğrafın kenarına tam oturmalı), sonra o dosyayı sil.
+
+## Sahne efektleri (`fx`, isteğe bağlı — eklenmeyen sahne değişmez)
+Sahneye `"fx": [{"type": "...", "from": 0, "to": 3, "strength": 1}]` eklenir; `from/to` sahne içi saniye, yoksa tüm sahne.
+- `flicker` — bozuk ampul/fener titremesi (düzensiz kararmalar, arada tam karanlık) + otomatik `buzz` sesi. Ör. bodrum, merdiven, su altı fener.
+- `lightning` — şimşek (çift çakış, soğuk mavi kontrast; `every` sn aralık) + otomatik `thunder` sesi. Ör. fırtına.
+- `pulse` — kenarlarda kalp atışı gibi kırmızı nabız (`bpm`) + otomatik `heartbeat`. Ör. geri sayımın son saniyeleri.
+- `underwater` — su altı: turkuaz renk, dalgalanan ışık lekeleri, kenar karartma. Ör. dalış, dipteki gölge.
+Otomatik sesi kapatmak için `"sound": false`. Sesler (`public/sfx/buzz.wav`, `thunder.wav`) ffmpeg ile sentezlendi, lisans sorunu yok.

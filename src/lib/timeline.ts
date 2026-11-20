@@ -69,6 +69,13 @@ const defaultSfx = (scene: Scene, hudChanged: boolean, tagChanged: boolean): Sfx
       // 'riser' (yükselen vızz sesi) kullanılmaz — kullanıcı isteği
       break;
   }
+  // Efekt sesleri (fx): titreme → vızıltı, şimşek → gök gürültüsü, nabız → kalp atışı
+  for (const f of scene.fx ?? []) {
+    if (f.sound === false) continue;
+    if (f.type === 'flicker') out.push({name: 'buzz', at: f.from ?? 0, volume: 0.22});
+    if (f.type === 'lightning') out.push({name: 'thunder', at: (f.from ?? 0) + 0.15, volume: 0.4});
+    if (f.type === 'pulse') out.push({name: 'heartbeat', at: f.from ?? 0, volume: 0.35});
+  }
   if (hudChanged) out.push({name: 'tick', at: 0.08, volume: 0.35});
   if (tagChanged) out.push({name: 'pop', at: 0.05, volume: 0.3});
   return out;

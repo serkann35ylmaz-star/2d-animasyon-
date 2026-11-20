@@ -85,6 +85,23 @@ interface SceneBase {
   choiceTag?: string;
   /** false: üst şerit/değerler/geri sayım gizlenir */
   ui?: boolean;
+  /** Sahne efektleri (isteğe bağlı): titreyen ışık, şimşek, nabız, su altı */
+  fx?: FxCue[];
+}
+
+export interface FxCue {
+  type: 'flicker' | 'lightning' | 'pulse' | 'underwater';
+  /** Sahne içi başlangıç/bitiş (sn); yoksa tüm sahne */
+  from?: number;
+  to?: number;
+  /** 0–1 (varsayılan 1) */
+  strength?: number;
+  /** lightning: ortalama aralık (sn) */
+  every?: number;
+  /** pulse: kalp hızı */
+  bpm?: number;
+  /** false: otomatik ses eklenmesin */
+  sound?: boolean;
 }
 
 export interface DosyaCard {

@@ -9,6 +9,7 @@ import {InfoScene} from './scenes/InfoScene';
 import {KenBurns} from './components/KenBurns';
 import {KasaStrip, NoteStrip, KadroStrip} from './components/Strips';
 import {DosyaOverlay} from './components/Dosya';
+import {Fx} from './components/Fx';
 import {loadFonts, setAccent} from './theme';
 import type {Episode as EpisodeT} from './types';
 
@@ -92,6 +93,7 @@ const SceneView: React.FC<{bs: BuiltScene; ep: EpisodeT; assets: Record<string, 
   return (
     <AbsoluteFill style={{transform: whip ? `translateX(${whip * 18}%)` : undefined, filter: whip ? `blur(${whip * 14}px)` : undefined}}>
       {visual}
+      {scene.fx?.length ? <Fx fx={scene.fx} seed={`s${bs.index}`} /> : null}
       {showCaptions && !dosya ? (
         <AbsoluteFill style={{background: 'linear-gradient(180deg, transparent 52%, rgba(0,0,0,0.42) 78%, rgba(0,0,0,0.5) 100%)'}} />
       ) : null}
