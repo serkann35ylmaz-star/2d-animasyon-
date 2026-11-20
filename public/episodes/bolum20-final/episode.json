@@ -1,0 +1,288 @@
+{
+ "series": {
+  "name": "Hikâye Yorumda",
+  "handle": "@hikayeyorumda",
+  "avatar": "brand/profil.png"
+ },
+ "fps": 30,
+ "music": "music/dark-pulse.wav",
+ "musicVolume": 0.2,
+ "palette": "nostalji",
+ "accent": "#F5A524",
+ "tts": {
+  "engine": "elevenlabs",
+  "model": "eleven_v4",
+  "voice_id": "mCTNxePO8hqCg6KFnASN",
+  "voice_name": "Onur AGCNL"
+ },
+ "outfit": "(he comes from 2026) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, chunky red-and-white high-top sneakers",
+ "era": {
+  "setting": "July 2016: Paris stadium, Istanbul at night, Bosphorus bridge",
+  "people": "all people are the same round-white-headed cartoon species as the main character",
+  "details": "no readable text",
+  "exception": "the main character keeps his modern outfit"
+ },
+ "title": "Geleceği Bilen Adam — Bölüm 20: Büyük Final",
+ "targetDuration": 95,
+ "hud": [
+  {
+   "key": "yil",
+   "label": "YIL",
+   "format": "raw"
+  },
+  {
+   "key": "dolar",
+   "label": "DOLAR",
+   "format": "usd",
+   "accent": true
+  },
+  {
+   "key": "sapma",
+   "label": "ZAMAN SAPMASI %",
+   "format": "raw"
+  }
+ ],
+ "voice": "voice.mp3",
+ "timings": "timings.json",
+ "scenes": [
+  {
+   "type": "image",
+   "id": "kapi",
+   "image": "img/s01.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Yüz dokuzuncu dakika. Kapı açıktı. Gelecekteki beni kapıya ittim: Sen git. Eve dön. Ben Cemil'e iyi bakarım.",
+   "caption": "109. dakika. Kapı açıktı. Gelecekteki beni kapıya ittim: Sen git. Eve dön. Ben Cemil'e iyi bakarım.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 88
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "note": {
+    "kicker": "20. BÖLÜM · BÜYÜK FİNAL",
+    "user": "htdocz",
+    "text": "5 gün sonra darbe olacak dikkat edin",
+    "likes": 4,
+    "from": 2.6
+   }
+  },
+  {
+   "type": "image",
+   "id": "gol",
+   "image": "img/s02.png",
+   "motion": "push",
+   "palette": "gunbatimi",
+   "tone": "excited",
+   "text": "Éder vurdu, gol! Cemil sarıldı: Abi sıradaki tarih ne? Gülümsedim: Beş gün sonra. Ama bu sefer para için değil.",
+   "caption": "Éder vurdu, gol! Cemil sarıldı: Abi sıradaki tarih ne? Gülümsedim: Beş gün sonra. Ama bu sefer para için değil.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 5
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "defter",
+   "image": "img/s03.png",
+   "motion": "zoomIn",
+   "palette": "gerilim",
+   "tone": "tense",
+   "text": "Defterin bütün sayfaları silindi. Bir tek sayfa parlıyordu: On beş Temmuz iki bin on altı.",
+   "caption": "Defterin bütün sayfaları silindi. Bir tek sayfa parlıyordu: 15 Temmuz 2016.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "gece",
+   "image": "img/s04.png",
+   "motion": "push",
+   "palette": "soguk",
+   "tone": "tense",
+   "text": "O gece Boğaz Köprüsü kapandı. Tanklar, askerler. Gökyüzünde jetler, camilerden sela. Cemil: Abi bu gece para hesabı yok.",
+   "caption": "O gece Boğaz Köprüsü kapandı. Tanklar, askerler. Gökyüzünde jetler, camilerden sela. Cemil: Abi bu gece para hesabı yok.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "kosu",
+   "image": "img/s05.png",
+   "motion": "push",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Karışırsam silinirdim. Bu gece silinsem de razıyım dedim ve köprüye koştum.",
+   "caption": "Karışırsam silinirdim. Bu gece silinsem de razıyım dedim ve köprüye koştum.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 40
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "kopru",
+   "image": "img/s06.png",
+   "motion": "shake",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Binlerce insan bayraklarla tankların üstüne yürüdü. Bir çocuğu tankın önünden çektim. Sapma yüzde doksan dokuz. Parmaklarım kayboluyordu.",
+   "caption": "Binlerce insan bayraklarla tankların üstüne yürüdü. Bir çocuğu tankın önünden çektim. Sapma %99. Parmaklarım kayboluyordu.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 99
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "sabah",
+   "image": "img/s07.png",
+   "motion": "zoomIn",
+   "palette": "gunduz",
+   "tone": "dramatic",
+   "text": "Sabah güneş doğdu. Tankların üstünde bayraklar vardı. Darbe girişimi başarısız oldu. Parmaklarım geri geldi. Tarihi ben değil, millet yazmıştı.",
+   "caption": "Sabah güneş doğdu. Tankların üstünde bayraklar vardı. Darbe girişimi başarısız oldu. Parmaklarım geri geldi. Tarihi ben değil, millet yazmıştı.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "anma",
+   "image": "img/s08.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "dramatic",
+   "text": "O gece iki yüz elli bir canımızı kaybettik. Köprünün adı artık On Beş Temmuz Şehitler Köprüsü.",
+   "caption": "O gece 251 canımızı kaybettik. Köprünün adı artık 15 Temmuz Şehitler Köprüsü.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "arda",
+   "image": "img/s09.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Kurtardığım çocuğun adı Arda'ydı. Ona bir top verdim: Sekiz yıl sonra Dortmund'da sol ayağınla öyle bir gol atacaksın ki bütün ülke ayağa kalkacak. Nereden biliyorsun? Ben geleceği bilen adamım.",
+   "caption": "Kurtardığım çocuğun adı Arda'ydı. Ona bir top verdim: Sekiz yıl sonra Dortmund'da sol ayağınla öyle bir gol atacaksın ki bütün ülke ayağa kalkacak. Nereden biliyorsun? Ben geleceği bilen adamım.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "yokolus",
+   "image": "img/s10.png",
+   "motion": "zoomIn",
+   "palette": "soguk",
+   "tone": "dramatic",
+   "text": "Söyledim. Sapma yüzde yüz oldu. Ve ışığa karıştım.",
+   "caption": "Söyledim. Sapma %100 oldu. Ve ışığa karıştım.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 100
+   },
+   "hold": 1.5,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "dortmund",
+   "image": "img/s11.png",
+   "motion": "zoomIn",
+   "palette": "gunbatimi",
+   "tone": "excited",
+   "duration": 4.5,
+   "showHud": false,
+   "tag": "18 HAZİRAN 2024 · DORTMUND",
+   "captions": false
+  },
+  {
+   "type": "end",
+   "kicker": "GELECEĞİ BİLEN ADAM",
+   "lines": [
+    "SON"
+   ],
+   "body": "20 bölüm · 1999 → 2016\nİzlediğin için teşekkürler",
+   "cta": "❤ TEŞEKKÜRLER",
+   "duration": 3.5
+  },
+  {
+   "type": "end",
+   "kicker": "BU HİKÂYEYİ SİZ YAZDINIZ",
+   "lines": [
+    "*TEŞEKKÜRLER*"
+   ],
+   "body": "goktugks3nn_ · miracjuzey6\nmorgilderlerrr · ibrahimugurlutr\nsalih.gungorur · komutanguendouzi6_\nxasanoripov_ · eupturan\nbirvarm1s_biryokmus · mehmetmirac0179\na.h.y46 · arda.1ll\nhtdocz\nve yorum yazan herkes ❤",
+   "cta": "@hikayeyorumda",
+   "duration": 6
+  }
+ ]
+}
