@@ -10,8 +10,8 @@ export interface BuiltScene {
   audio: {start: number; end: number} | null;
   /** Sahne başına göre kelime zamanları (sn) */
   words: WordTiming[];
-  hud: Record<string, number> | null;
-  prevHud: Record<string, number> | null;
+  hud: Record<string, number | string> | null;
+  prevHud: Record<string, number | string> | null;
   sfx: SfxCue[];
 }
 
@@ -128,7 +128,7 @@ export const buildTimeline = (episode: Episode, timings: Timings | null): Timeli
 
   let cursor = 0; // timings içinde sıradaki kelime
   let frame = 0;
-  let hud: Record<string, number> | null = null;
+  let hud: Record<string, number | string> | null = null;
   let lastTag: string | undefined;
   let lastAudioEnd = 0;
   const scenes: BuiltScene[] = [];

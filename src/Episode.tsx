@@ -8,6 +8,7 @@ import {BaitCard, EndCard, TitleCard} from './scenes/CardScenes';
 import {InfoScene} from './scenes/InfoScene';
 import {KenBurns} from './components/KenBurns';
 import {KasaStrip, NoteStrip, KadroStrip} from './components/Strips';
+import {DosyaOverlay} from './components/Dosya';
 import {loadFonts, setAccent} from './theme';
 import type {Episode as EpisodeT} from './types';
 
@@ -83,28 +84,30 @@ const SceneView: React.FC<{bs: BuiltScene; ep: EpisodeT; assets: Record<string, 
       break;
   }
 
-  const hasHud = sceneHasHud(bs, ep);
+  const dosya = ep.style === 'dosya';
+  const hasHud = !dosya && sceneHasHud(bs, ep);
   const showCaptions = scene.captions ?? scene.type === 'image';
   const whip = scene.transition === 'whip' ? interpolate(frame, [0, 6], [1, 0], {extrapolateRight: 'clamp'}) : 0;
 
   return (
     <AbsoluteFill style={{transform: whip ? `translateX(${whip * 18}%)` : undefined, filter: whip ? `blur(${whip * 14}px)` : undefined}}>
       {visual}
-      {showCaptions ? (
+      {showCaptions && !dosya ? (
         <AbsoluteFill style={{background: 'linear-gradient(180deg, transparent 52%, rgba(0,0,0,0.42) 78%, rgba(0,0,0,0.5) 100%)'}} />
       ) : null}
+      {dosya ? <DosyaOverlay ep={ep} scene={scene} values={bs.hud} prev={prevHasHud ? bs.prevHud : null} /> : null}
       {hasHud ? (
         <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0.45) 0%, transparent 22%)'}} />
       ) : null}
       {hasHud && bs.hud ? (
-        <Hud defs={ep.hud!} values={bs.hud} prev={prevHasHud ? bs.prevHud : null} tag={scene.tag} enter={!prevHasHud} />
-      ) : scene.tag && (scene.type === 'image' || scene.type === 'bait') ? (
+        <Hud defs={ep.hud!} values={bs.hud as Record<string, number>} prev={prevHasHud ? (bs.prevHud as Record<string, number>) : null} tag={scene.tag} enter={!prevHasHud} />
+      ) : !dosya && scene.tag && (scene.type === 'image' || scene.type === 'bait') ? (
         <Hud defs={[]} values={{}} prev={null} tag={scene.tag} />
       ) : null}
       {scene.note ? <NoteStrip {...scene.note} avatar={a(scene.note.avatar) ?? undefined} /> : null}
       {scene.kasa ? <KasaStrip {...scene.kasa} /> : null}
       {scene.kadro ? <KadroStrip {...scene.kadro} /> : null}
-      {showCaptions && bs.words.length ? <Captions words={bs.words} /> : null}
+      {showCaptions && bs.words.length ? <Captions words={bs.words} {...(dosya ? {variant: 'dosya' as const, top: 760} : {})} /> : null}
       <Transition kind={scene.transition} />
       {voice && bs.audio ? (
         <Audio

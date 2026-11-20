@@ -36,7 +36,8 @@ export const chunkWords = (words: WordTiming[], sceneEnd: number): Chunk[] => {
   return chunks;
 };
 
-export const Captions: React.FC<{words: WordTiming[]; top?: number}> = ({words, top = 1290}) => {
+export const Captions: React.FC<{words: WordTiming[]; top?: number; variant?: 'klasik' | 'dosya'}> = ({words, top = 1290, variant = 'klasik'}) => {
+  const dosya = variant === 'dosya';
   const frame = useCurrentFrame();
   const {fps, durationInFrames} = useVideoConfig();
   const t = frame / fps;
@@ -52,6 +53,7 @@ export const Captions: React.FC<{words: WordTiming[]; top?: number}> = ({words, 
   return (
     <AbsoluteFill style={{pointerEvents: 'none'}}>
       <div
+        lang="tr"
         style={{
           position: 'absolute',
           top,
@@ -63,8 +65,9 @@ export const Captions: React.FC<{words: WordTiming[]; top?: number}> = ({words, 
           columnGap: 18,
           transform: `translateY(${y}px) scale(${scale})`,
           fontFamily: FONT,
-          fontWeight: 800,
-          fontSize: 70,
+          fontWeight: dosya ? 900 : 800,
+          fontSize: dosya ? 66 : 70,
+          textTransform: dosya ? 'uppercase' : undefined,
           lineHeight: 1.12,
           letterSpacing: '-0.01em',
           textAlign: 'center',
@@ -72,13 +75,17 @@ export const Captions: React.FC<{words: WordTiming[]; top?: number}> = ({words, 
       >
         {chunk.words.map((w, i) => {
           const spoken = t >= w.s - 0.04;
+          const now = spoken && (i === chunk.words.length - 1 || t < chunk.words[i + 1].s - 0.04);
           return (
             <span
               key={i}
               style={{
-                color: spoken ? '#FFFFFF' : 'rgba(255,255,255,0.42)',
-                textShadow: '0 3px 0 rgba(0,0,0,0.35), 0 6px 22px rgba(0,0,0,0.65)',
-                WebkitTextStroke: '1.5px rgba(0,0,0,0.18)',
+                color: dosya ? (now ? '#F39A1E' : '#FFFFFF') : spoken ? '#FFFFFF' : 'rgba(255,255,255,0.42)',
+                textShadow: dosya
+                  ? '0 0 2px #000, 0 3px 0 #000, 0 0 18px rgba(0,0,0,0.9)'
+                  : '0 3px 0 rgba(0,0,0,0.35), 0 6px 22px rgba(0,0,0,0.65)',
+                WebkitTextStroke: dosya ? '2px rgba(0,0,0,0.85)' : '1.5px rgba(0,0,0,0.18)',
+                paintOrder: 'stroke fill',
               }}
             >
               {w.w}

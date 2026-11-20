@@ -48,7 +48,7 @@ interface SceneBase {
   /** Altyazı gösterilsin mi (image sahnelerinde varsayılan: evet) */
   captions?: boolean;
   /** Üst bilgi çubuğu (HUD) değerleri — önceki sahneden devralınır ve birleştirilir */
-  hud?: Record<string, number>;
+  hud?: Record<string, number | string>;
   /** HUD bu sahnede görünsün mü */
   showHud?: boolean;
   /** Sol üstte pembe etiket, ör. "PROBLEM 1" */
@@ -69,6 +69,32 @@ interface SceneBase {
   /** Kalıcı KASA şeridi (her bölüm sonunda aynı yerde): "💰 KASA: X $ → HEDEF: 1 MİLYAR $" */
   kadro?: {filled: number; total?: number; top?: number};
   kasa?: {value: number; from?: number; target?: string; mystery?: boolean; top?: number};
+  // ---- DOSYA formatı (style: 'dosya') ----
+  /** Alt ortada yer/saat etiketi, ör. "07:16 · YANGIN MERDİVENİ" */
+  loc?: string;
+  /** Kırmızı dosya durumu rozeti, ör. {label:'DOSYA', value:'HÂKİMDE'} */
+  status?: {label: string; value: string};
+  /** Geri sayım: sahne başındaki kalan saniye (sahne boyunca gerçek zamanlı azalır) */
+  timer?: number;
+  /** Üstte beliren kart */
+  card?: DosyaCard;
+  /** Açılış başlığı; satırlar \n ile, *turuncu* satır */
+  headline?: string;
+  /** Final seçim butonları ve altındaki etiket */
+  choices?: string[];
+  choiceTag?: string;
+  /** false: üst şerit/değerler/geri sayım gizlenir */
+  ui?: boolean;
+}
+
+export interface DosyaCard {
+  type: 'vote' | 'comment' | 'fact' | 'notify' | 'news';
+  title?: string;
+  text: string;
+  user?: string;
+  likes?: number;
+  /** Sahne başından kaç sn sonra belirsin */
+  from?: number;
 }
 
 export interface ImageScene extends SceneBase {
@@ -208,6 +234,12 @@ export interface Episode {
   /** Seslendirme hızı tahmini (hece/sn) — ses yokken önizleme süreleri için */
   syllablesPerSecond?: number;
   hud?: HudItemDef[];
+  /** Görsel format: 'klasik' (varsayılan) ya da 'dosya' (noir + turuncu arayüz) */
+  style?: 'klasik' | 'dosya';
+  /** DOSYA: üstteki bölüm şeridi */
+  progress?: {labels: string[]; current: number};
+  /** DOSYA: geri sayım etiketi, ör. "BANKAYA KALAN" */
+  timerLabel?: string;
   /** SFX'leri sahne türüne göre otomatik ekle (varsayılan: evet) */
   autoSfx?: boolean;
   scenes: Scene[];
