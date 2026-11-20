@@ -22,3 +22,6 @@ JENERİK ("Bu hikâyeyi siz yazdınız", seslendirmesiz): goktugks3nn_, miracjuz
 HUD: YIL 2016 · SAPMA 88 → 0 → 99 → 0 → 100 (son sahnede HUD yok)
 Doğrulanacak: 15–16 Temmuz 2016 (köprü, sela, jetler, 251 kayıp, köprünün adı); 18.06.2024 Dortmund Türkiye 3-1 Gürcistan (Arda Güler golü); 02.07.2024 Leipzig Avusturya maçında Merih Demiral'ın ilk dakika golü; Hakan Şükür 10,8 sn (9. bölüm).
 Kurallar: kan yok, siyasetçi yok, bahis yok, telefon/baba yok, fısıltı etiketi yok, kulak/burun yok, Selim ayakkabılı, Cemil saçlı, TV/monitörde insan yüzü yok, gerçek oyuncular gerçek görünümlerine benzer (saç/sakal/boy/forma).
+
+## Görseller (DAHbKwFlLj4 sayfa 63–73)
+s01 MAHbdYr8cXg · s02 MAHbdT3L9mw · s03 MAHbdaituU0 (logo yerelde boyandı) · s04 MAHbdX1LImI · s05 MAHbdewQwoo · s06 MAHbdjb1cf4 · s07 MAHbdqDLAUQ · s08 MAHbdmkedfY · s09 MAHbdi2FqbA (küçük Arda) · s10 MAHbdsub1vE · s11 MAHbdkLXl8Q (Dortmund)
