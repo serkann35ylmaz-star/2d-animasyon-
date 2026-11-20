@@ -26,3 +26,6 @@ Doğrulanacak: 10.07.2016 Stade de France, Portekiz 1-0 Fransa (uzatma, Éder 10
 Kurallar: bahis yok, siyaset/kulüp rekabeti yok, telefon/baba yok (son sahne önerisindeki telefon yalnız 1. bölüm geri çağrısı; kullanıcı onayı olmadan kullanma), fısıltı etiketi yok, Cemil yalnız para/panik/espri, kulak/burun yok, Selim ayakkabılı, Cemil saçlı.
 
 KREDİ: ElevenLabs 1290 kredi → seslendirme metni ≤1200 karakter (etiketler dahil). Ronaldo teknik direktör sahnesi çıkarıldı.
+
+## Görseller (DAHbKwFlLj4 sayfa 54–62)
+s01 MAHbcTgJMUU · s02 MAHbcU8RYsA · s03 MAHbcdGpb0I · s04 MAHbcZ7YzlA · s05 MAHbcar5VYo · s06 MAHbcVfLa50 (logo yerelde boyandı) · s07 MAHbcVHsrGw · s08 MAHbcTE9UoE · s09 MAHbcdxEimw

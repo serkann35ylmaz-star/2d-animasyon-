@@ -1,0 +1,259 @@
+{
+ "series": {
+  "name": "Hikâye Yorumda",
+  "handle": "@hikayeyorumda",
+  "avatar": "brand/profil.png"
+ },
+ "fps": 30,
+ "music": "music/dark-pulse.wav",
+ "musicVolume": 0.2,
+ "palette": "nostalji",
+ "accent": "#F5A524",
+ "tts": {
+  "engine": "elevenlabs",
+  "model": "eleven_v4",
+  "voice_id": "mCTNxePO8hqCg6KFnASN",
+  "voice_name": "Onur AGCNL"
+ },
+ "outfit": "(he comes from 2026) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, chunky red-and-white high-top sneakers",
+ "era": {
+  "setting": "10 July 2016: a giant stadium near Paris at night (Euro final), stands, tunnel",
+  "people": "all people are the same round-white-headed cartoon species as the main character",
+  "details": "no readable text",
+  "exception": "the main character keeps his modern outfit"
+ },
+ "title": "Geleceği Bilen Adam — Bölüm 19: İki Selim",
+ "targetDuration": 75,
+ "hud": [
+  {
+   "key": "yil",
+   "label": "YIL",
+   "format": "raw"
+  },
+  {
+   "key": "dolar",
+   "label": "DOLAR",
+   "format": "usd",
+   "accent": true
+  },
+  {
+   "key": "sapma",
+   "label": "ZAMAN SAPMASI %",
+   "format": "raw"
+  }
+ ],
+ "voice": "voice.mp3",
+ "timings": "timings.json",
+ "scenes": [
+  {
+   "type": "image",
+   "id": "guve",
+   "image": "img/s01.png",
+   "motion": "zoomIn",
+   "palette": "gunbatimi",
+   "tone": "tense",
+   "text": "On Temmuz iki bin on altı, Paris. Ronaldo sakatlanıp ağladı, yüzüne bir güve kondu. Cemil: Abi o güve de mi gelecekten?",
+   "caption": "10 Temmuz 2016, Paris. Ronaldo sakatlanıp ağladı, yüzüne bir güve kondu. Cemil: Abi o güve de mi gelecekten?",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 30
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "note": {
+    "kicker": "19. BÖLÜM · İKİ SELİM",
+    "user": "arda.1ll",
+    "text": "gelecekteki sen",
+    "likes": 7,
+    "from": 2.6
+   }
+  },
+  {
+   "type": "image",
+   "id": "yuzlesme",
+   "image": "img/s02.png",
+   "motion": "push",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Şapkalı adam karşımdaydı. Şapkasını çıkardı: benim yüzüm. Beresi solmuş, ayakkabıları yırtık. Ben gelecekteki senim.",
+   "caption": "Şapkalı adam karşımdaydı. Şapkasını çıkardı: benim yüzüm. Beresi solmuş, ayakkabıları yırtık. Ben gelecekteki senim.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 30
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "solan",
+   "image": "img/s03.png",
+   "motion": "zoomIn",
+   "palette": "soguk",
+   "tone": "dramatic",
+   "text": "Elleri saydamdı. Ben dokunan Selim'im. O günden beri siliniyorum.",
+   "caption": "Elleri saydamdı. Ben dokunan Selim'im. O günden beri siliniyorum.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 30
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "james",
+   "image": "img/s04.png",
+   "motion": "shake",
+   "palette": "gerilim",
+   "tone": "tense",
+   "text": "Sapma neden yükseliyor? Cemil terledi: Abi gol kralı James'i Türk Gücü'ne kaptım, ucuzdu! Sapma yüzde yetmiş.",
+   "caption": "Sapma neden yükseliyor? Cemil terledi: Abi gol kralı James'i Türk Gücü'ne kaptım, ucuzdu! Sapma %70.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 70
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "kapi",
+   "image": "img/s05.png",
+   "motion": "push",
+   "palette": "tehlike",
+   "tone": "tense",
+   "text": "Kapı bir kez açılır: yüz dokuzuncu dakika, Éder'in golünde. İki bin yirmi altıya dönüş. Ama yalnızca bir kişi geçebilir.",
+   "caption": "Kapı bir kez açılır: 109. dakika, Éder'in golünde. 2026'ya dönüş. Ama yalnızca bir kişi geçebilir.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 70
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "defter",
+   "image": "img/s06.png",
+   "motion": "zoomIn",
+   "palette": "gerilim",
+   "tone": "dramatic",
+   "text": "Defterin son sayfasında kendi yazım belirdi: Eve dön. Cemil'e iyi bak.",
+   "caption": "Defterin son sayfasında kendi yazım belirdi: Eve dön. Cemil'e iyi bak.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 70
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "ucyol",
+   "image": "img/s07.png",
+   "motion": "push",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Ben geçersem Cemil burada kalır. O geçerse ben burada kalırım. Kimse geçmezse ikimiz de sileniriz. Sapma yüzde seksen sekiz.",
+   "caption": "Ben geçersem Cemil burada kalır. O geçerse ben burada kalırım. Kimse geçmezse ikimiz de sileniriz. Sapma %88.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 88
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "veda",
+   "image": "img/s08.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "dramatic",
+   "text": "Cemil'in gözleri doldu: Abi gidersen kasayı kime bırakıyorsun? Şaka şaka. Git abi. Ama gitme.",
+   "caption": "Cemil'in gözleri doldu: Abi gidersen kasayı kime bırakıyorsun? Şaka şaka. Git abi. Ama gitme.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 88
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "109",
+   "image": "img/s09.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "tense",
+   "text": "Éder vurdu. Top havada yavaşladı. Altın bir kapı açıldı. Selim dönsün mü, kalsın mı? Yorumlara yaz.",
+   "caption": "Éder vurdu. Top havada yavaşladı. Altın bir kapı açıldı. Selim dönsün mü, kalsın mı? Yorumlara yaz.",
+   "hud": {
+    "yil": 2016,
+    "dolar": 53400000,
+    "sapma": 88
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "bait",
+   "image": "img/s09.png",
+   "words": [
+    "DÖNSÜN MÜ?",
+    "KALSIN MI?"
+   ],
+   "duration": 3.0,
+   "palette": "tehlike",
+   "tone": "question",
+   "motion": "none"
+  },
+  {
+   "type": "end",
+   "kicker": "GELECEĞİ BİLEN ADAM",
+   "lines": [
+    "20. BÖLÜM",
+    "*BÜYÜK FİNAL*"
+   ],
+   "body": "Selim 2026'ya dönsün mü,\nCemil'le kalsın mı?\n🔔 YARIN 18.00 · SAPMA **%88**",
+   "cta": "TAKİP ET · KAÇIRMA",
+   "duration": 3.6
+  }
+ ]
+}
