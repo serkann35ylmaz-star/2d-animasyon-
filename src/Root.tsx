@@ -22,11 +22,51 @@ const resolveAsset = async (slug: string, p: string): Promise<string | null> => 
   return null;
 };
 
-const calculateMetadata: CalculateMetadataFunction<EpisodeProps> = async ({props}) => {
+// ---- DİZİ MODU (YouTube birleştirme): izleyiciye soru, "yarın" kartı ve kazanan yorum şeridi çıkarılır ----
+const sentences = (t: string): string[] => t.match(/[^.!?…]+[.!?…]+["')]*|[^.!?…]+$/g)?.map((s) => s.trim()).filter(Boolean) ?? [];
+/** İzleyiciye yöneltilen cümle mi? (soru, "yorumlara yaz", "bir de …" eki) */
+const isAsk = (s: string): boolean => /\?\s*["')]*$/.test(s) || /yorum/i.test(s) || /^bir de\b/i.test(s.trim());
+const stripAsk = (t: string): string => {
+  const ss = sentences(t);
+  while (ss.length && isAsk(ss[ss.length - 1])) ss.pop();
+  return ss.join(' ');
+};
+const toSeries = (ep: EpisodeT): EpisodeT => {
+  const isFinal = ep.scenes.some((s) => s.type === 'end' && /TEŞEKKÜR|SON/i.test(JSON.stringify(s)));
+  let scenes = ep.scenes
+    .filter((s) => s.type !== 'bait' && (isFinal || s.type !== 'end'))
+    .map((s) => ({...s, note: undefined}) as EpisodeT['scenes'][number]);
+  // Son konuşma sahne(ler)inin sonundaki soru cümlelerini kes; tamamen soru olan sahne düşer
+  for (let i = scenes.length - 1; i >= 0; i--) {
+    const s = scenes[i];
+    if (!s.text) continue;
+    const text = stripAsk(s.text);
+    if (text === s.text) break;
+    if (!text) {
+      scenes.splice(i, 1);
+      continue;
+    }
+    scenes[i] = {...s, text, caption: s.caption ? stripAsk(s.caption) || undefined : undefined, hold: Math.max(s.hold ?? 0, 0.8)};
+    break;
+  }
+  // Bölüm başlık kartı
+  const m = ep.title.match(/Bölüm\s*(\d+)(?:\s*:\s*(.+))?/i);
+  const firstImg = scenes.find((s) => s.type === 'image' && (s as {image?: string}).image) as {image?: string} | undefined;
+  if (m) {
+    scenes = [
+      {type: 'title', kicker: 'GELECEĞİ BİLEN ADAM', lines: [`BÖLÜM ${m[1]}`, ...(m[2] ? [`*${m[2].toLocaleUpperCase('tr')}*`] : [])], image: firstImg?.image, duration: 2.4, palette: 'nostalji'} as EpisodeT['scenes'][number],
+      ...scenes,
+    ];
+  }
+  return {...ep, scenes};
+};
+
+const calculateMetadata:CalculateMetadataFunction<EpisodeProps> = async ({props}) => {
   const slug = props.slug;
   const res = await fetch(staticFile(`episodes/${slug}/episode.json`));
   if (!res.ok) throw new Error(`Bölüm bulunamadı: public/episodes/${slug}/episode.json`);
-  const episode = (await res.json()) as EpisodeT;
+  let episode = (await res.json()) as EpisodeT;
+  if (props.series) episode = toSeries(episode);
 
   let timings: Timings | null = null;
   const tPath = episode.timings ?? 'timings.json';

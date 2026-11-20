@@ -30,7 +30,8 @@ const chromiumOptions = {gl: 'swangle'};
 
 console.log('• Paketleniyor…');
 const serveUrl = await bundle({entryPoint: path.join(ROOT, 'src/index.ts'), publicDir: path.join(ROOT, 'public')});
-const inputProps = {slug};
+const series = args.includes('--dizi'); // YouTube dizi modu: soru/yarın kartı/yorum şeridi yok, başta bölüm kartı
+const inputProps = series ? {slug, series: true} : {slug};
 const composition = await selectComposition({serveUrl, id: 'Episode', inputProps, browserExecutable, chromiumOptions});
 const tl = composition.props.timeline;
 console.log(
@@ -62,7 +63,7 @@ if (flag('stills')) {
 
 const draft = flag('draft');
 const frames = opt('frames')?.split('-').map(Number);
-const out = path.join(outDir, `${slug}${draft ? '-draft' : ''}.mp4`);
+const out = path.join(outDir, `${slug}${series ? '-dizi' : ''}${draft ? '-draft' : ''}.mp4`);
 let last = -1;
 const audioOnly = flag('audio'); // sadece sesi yeniden üret + videoya ekle (görüntü aynı kalır)
 if (audioOnly && !existsSync(out)) throw new Error(`--audio için önce video gerekli: ${out}`);
