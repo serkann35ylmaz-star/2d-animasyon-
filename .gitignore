@@ -1,0 +1,6 @@
+node_modules/
+out/
+.cache/
+*.log
+__pycache__/
+yayin/gelecegi-bilen-adam-bolum-10.mp4

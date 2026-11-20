@@ -1,0 +1,2 @@
+[dramatic] Ben Selim. İki bin yirmi altıdan bin dokuz yüz doksan dokuza düştüm. Ne olacağını biliyorum. Kasa: yirmi milyon yüz yetmiş beş bin dolar.
+(sahneler: bkz. episode.json; ses ElevenLabs'te 7LY3BCNgy4H3ldQEJz7K, 106,5 sn)

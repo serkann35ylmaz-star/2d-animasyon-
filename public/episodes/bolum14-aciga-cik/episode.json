@@ -1,0 +1,277 @@
+{
+ "title": "Geleceği Bilen Adam — Bölüm 14: Mühürlü Zarf",
+ "targetDuration": 76,
+ "series": {
+  "name": "Hikâye Yorumda",
+  "handle": "@hikayeyorumda",
+  "avatar": "brand/profil.png"
+ },
+ "fps": 30,
+ "music": "music/dark-pulse.wav",
+ "musicVolume": 0.2,
+ "palette": "nostalji",
+ "accent": "#F5A524",
+ "tts": {
+  "engine": "elevenlabs",
+  "model": "eleven_v4",
+  "voice_id": "mCTNxePO8hqCg6KFnASN",
+  "voice_name": "Onur AGCNL"
+ },
+ "era": {
+  "setting": "Istanbul 2006: a live TV studio with a red ON AIR lamp, a notary office, a stadium-like living room with a CRT television showing the 2006 World Cup final, a street phone queue in 2007",
+  "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+  "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+  "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+ },
+ "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+ "hud": [
+  {
+   "key": "yil",
+   "label": "YIL",
+   "format": "raw"
+  },
+  {
+   "key": "nakit",
+   "label": "NAKİT",
+   "format": "tl"
+  },
+  {
+   "key": "dolar",
+   "label": "DOLAR",
+   "format": "usd",
+   "accent": true
+  }
+ ],
+ "scenes": [
+  {
+   "type": "image",
+   "id": "acilis",
+   "image": "img/s01.png",
+   "motion": "zoomIn",
+   "palette": "gerilim",
+   "tone": "dramatic",
+   "text": "Canlı yayına on saniye var. Ben Selim. İki bin yirmi altıdan bin dokuz yüz doksan dokuza düştüm. Ne olacağını biliyorum. Kasa: dokuz milyon dört yüz bin dolar.",
+   "hud": {
+    "yil": 2006,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "note": {
+    "kicker": "14. BÖLÜM · MÜHÜRLÜ ZARF",
+    "user": "xasanoripov_",
+    "text": "Video çektin zaten, saklanmana ne gerek var",
+    "likes": 31,
+    "from": 2.6,
+    "avatar": "avatar.png"
+   },
+   "caption": "Canlı yayına 10 saniye var. Ben Selim. 2026'dan 1999'a düştüm. Ne olacağını biliyorum. Kasa: 9.400.000 dolar."
+  },
+  {
+   "type": "image",
+   "id": "meydan",
+   "image": "img/s02.png",
+   "motion": "push",
+   "palette": "nostalji",
+   "tone": "tense",
+   "text": "Sunucu: Kendini gelecekten gelmiş sayan adam! Profesör: Tahmin kolay. Kanıtla.",
+   "hud": {
+    "yil": 2006,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "zarf",
+   "image": "img/s03.png",
+   "motion": "zoomIn",
+   "palette": "kahve",
+   "tone": "whisper",
+   "text": "Üç tahmin yazdım. Noter mühürledi. Dokuz Temmuz iki bin altı, dokuz Ocak iki bin yedi, yirmi dokuz Haziran iki bin yedi.",
+   "hud": {
+    "yil": 2006,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "3 tahmin yazdım. Noter mühürledi. 9 Temmuz 2006, 9 Ocak 2007, 29 Haziran 2007."
+  },
+  {
+   "type": "image",
+   "id": "cemil",
+   "image": "img/s04.png",
+   "motion": "shake",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Telefon çaldı. Cemil: Abi canlı yayındasın, herkes kulübü arıyor! Savunmaya Ramos, forvete Lewandowski geldi. Maaşlar kasayı yer!",
+   "hud": {
+    "yil": 2006,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "final",
+   "image": "img/s05.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Dokuz Temmuz iki bin altı, Berlin. Dünya Kupası finali, bire bir. Uzatmanın yüz onuncu dakikası. Şimdi bir kafa atılacak.",
+   "hud": {
+    "yil": 2006,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "9 Temmuz 2006, Berlin. Dünya Kupası finali, 1-1. Uzatmanın 110. dakikası. Şimdi bir kafa atılacak."
+  },
+  {
+   "type": "image",
+   "id": "kafa",
+   "image": "img/s06.png",
+   "motion": "shake",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Zidane, Materazzi'ye kafa attı. Kırmızı kart. İtalya penaltılarla kupayı aldı. Profesör: Tesadüf... olamaz.",
+   "hud": {
+    "yil": 2006,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "para",
+   "image": "img/s07.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Google, YouTube'u almak istedi. Ben sitedeki payımı sattım: kırk bir milyon dolar. Cemil: Abi kasada elli milyon var, nereye saklayacağım!",
+   "hud": {
+    "yil": 2006,
+    "nakit": 0,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "kasa": {
+    "value": 50400000,
+    "from": 9400000,
+    "top": 330
+   },
+   "caption": "Google, YouTube'u almak istedi. Ben sitedeki payımı sattım: 41 milyon dolar. Cemil: Abi kasada 50 milyon var, nereye saklayacağım!"
+  },
+  {
+   "type": "image",
+   "id": "telefon",
+   "image": "img/s08.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "whisper",
+   "text": "Dokuz Ocak iki bin yedi: tuşsuz telefon. Yirmi dokuz Haziran: kuyrukta ilk ben. Üç tahmin de tuttu.",
+   "hud": {
+    "yil": 2007,
+    "nakit": 0,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "9 Ocak 2007: tuşsuz telefon. 29 Haziran: kuyrukta ilk ben. 3 tahmin de tuttu."
+  },
+  {
+   "type": "image",
+   "id": "kagit",
+   "image": "img/s09.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "tense",
+   "text": "Noter zarfı son kez açtı. Dördüncü bir kâğıt vardı. Benim yazım değil: Bir sonraki ne olacak?",
+   "hud": {
+    "yil": 2007,
+    "nakit": 0,
+    "dolar": 50400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "kadro": {
+    "filled": 7,
+    "total": 11,
+    "top": 215
+   },
+   "kasa": {
+    "value": 50400000,
+    "from": 50400000,
+    "top": 330
+   }
+  },
+  {
+   "type": "bait",
+   "image": "img/s09.png",
+   "words": [
+    "4. KÂĞIT",
+    "HANGİ TARİH?"
+   ],
+   "duration": 3.0,
+   "palette": "tehlike",
+   "tone": "question",
+   "motion": "none",
+   "text": "Dördüncü kâğıda hangi tarihi yazardın? Yorumlara yaz."
+  },
+  {
+   "type": "end",
+   "kicker": "GELECEĞİ BİLEN ADAM",
+   "lines": [
+    "15. BÖLÜM",
+    "*YARIN 18.00*"
+   ],
+   "body": "Dördüncü kâğıda hangi tarihi\nyazardın? Yorumlara yaz!\n⚽ KADRO: **7/11**",
+   "cta": "TAKİP ET · KAÇIRMA",
+   "duration": 3.6,
+   "kasa": {
+    "value": 50400000,
+    "from": 50400000,
+    "top": 1420
+   }
+  }
+ ],
+ "voice": "voice.mp3",
+ "timings": "timings.json"
+}

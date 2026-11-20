@@ -1,0 +1,25 @@
+[dramatic] Yorumlar konuştu: Dolar.
+[calm] Necmi'nin masasına hiç dönmedin.
+[calm] Ertesi sabah döviz bürosundasın.
+[excited] Elli milyon lira, yüz on bir dolar etti.
+[sad] Ayakkabılarının parası, bir avuç yeşil kâğıt.
+[whispers] Az görünüyor. Ama sen biliyorsun.
+[dramatic] Kara Çarşamba'da, Şubat iki bin birde, bu dolar katlanacak.
+[tense] Ama asıl plan bu değil.
+[whispers] Defterine yeni bir satır yazıyorsun: Üç Ocak, iki bin dokuz.
+[dramatic] Bitkoin. Dünyanın ilk kripto parası.
+[excited] Mayıs iki bin onda biri, on bin Bitkoin'le iki pizza alacak.
+[whispers] Senin yüz on bir dolarınla binlerce Bitkoin alabilirsin.
+[tense] Tek sorun: on yıl beklemek.
+[tense] Ve bu dolarları on yıl boyunca saklamak.
+[tense] Bankaya da yatıramazsın. Kimliğin iki bin yirmi altıdan.
+[calm] Dolarları yastığının altına saklıyorsun.
+[whispers] On yıl. Her gece aynı yastık.
+[tense] O gece kapı çalıyor.
+[whispers] Kapıda Necmi var.
+[whispers] Seni kahvehaneden beri takip ediyormuş.
+[tense] "Parayı getirmedin," dedi.
+[tense] "Galatasaray'ı nereden biliyorsun?"
+[whispers] Necmi senin bir şey bildiğini anladı.
+[dramatic] Ve o, bu sırrı istiyor.
+[curious] Sen olsan ne yapardın?

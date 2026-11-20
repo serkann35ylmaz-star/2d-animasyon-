@@ -1,0 +1,399 @@
+{
+ "series": {
+  "name": "Hikâye Yorumda",
+  "handle": "@hikayeyorumda",
+  "avatar": "brand/profil.png"
+ },
+ "fps": 30,
+ "music": "music/dark-pulse.wav",
+ "musicVolume": 0.2,
+ "palette": "nostalji",
+ "accent": "#F5A524",
+ "tts": {
+  "engine": "elevenlabs",
+  "model": "eleven_v4",
+  "voice_id": "mCTNxePO8hqCg6KFnASN",
+  "voice_name": "Onur AGCNL"
+ },
+ "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+ "era": {
+  "setting": "2008-2009: a stadium in Vienna, a night street, a training ground, a small shoe shop, an awards stage in Paris, a small dark room with an old CRT computer, a kitchen with pizza",
+  "people": "all people are the same round-white-headed cartoon species as the main character (no realistic humans); clothing of the late 2000s",
+  "details": "old beige desktop computer, CRT monitor showing only code (no faces), no readable text",
+  "exception": "the main character is a time traveler from 2026 so only he keeps his modern outfit"
+ },
+ "title": "Geleceği Bilen Adam — Bölüm 17: Ben Biliyorum A.Ş.",
+ "targetDuration": 190,
+ "hud": [
+  {
+   "key": "yil",
+   "label": "YIL",
+   "format": "raw"
+  },
+  {
+   "key": "dolar",
+   "label": "DOLAR",
+   "format": "usd",
+   "accent": true
+  },
+  {
+   "key": "sapma",
+   "label": "ZAMAN SAPMASI %",
+   "format": "raw"
+  }
+ ],
+ "voice": "voice.mp3",
+ "timings": "timings.json",
+ "scenes": [
+  {
+   "type": "image",
+   "id": "zarf",
+   "image": "img/s01.png",
+   "motion": "zoomIn",
+   "palette": "soguk",
+   "tone": "tense",
+   "text": "Dört Ocak iki bin dokuz. Kapıda yeni bir zarf. Bitcoin'i bildin, peki bir sonraki tarih? Altıncı kâğıda yazdım: on üç Temmuz iki bin on dört, Rio. Şapkalı adam sokaktan seslendi: O geceye dokunma. Dokunursan silinirsin.",
+   "caption": "4 Ocak 2009. Kapıda yeni bir zarf. Bitcoin'i bildin, peki bir sonraki tarih? Altıncı kâğıda yazdım: 13 Temmuz 2014, Rio. Şapkalı adam sokaktan seslendi: O geceye dokunma. Dokunursan silinirsin.",
+   "hud": {
+    "yil": 2009,
+    "dolar": 53400000,
+    "sapma": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "note": {
+    "kicker": "17. BÖLÜM · BEN BİLİYORUM A.Ş.",
+    "user": "mehmetmirac0179",
+    "text": "2014 Messi'nin dünya kupası finalinde kupayı son anda kaçırması",
+    "likes": 8,
+    "from": 2.6,
+    "avatar": "avatar.png"
+   }
+  },
+  {
+   "type": "image",
+   "id": "sirket",
+   "image": "img/s02.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Aynı hafta bir şirket kurdum: Ben Biliyorum Anonim Şirketi. Levent'te küçük bir ofis. Cemil genel müdür yardımcısı oldu, kartvizitine Yapma Selim yazdırdı. Kasa elli üç milyon dört yüz bin dolar.",
+   "caption": "Aynı hafta bir şirket kurdum: Ben Biliyorum Anonim Şirketi. Levent'te küçük bir ofis. Cemil genel müdür yardımcısı oldu, kartvizitine Yapma Selim yazdırdı. Kasa 53.400.000 dolar.",
+   "hud": {
+    "yil": 2009,
+    "dolar": 53400000,
+    "sapma": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "bitcoin",
+   "image": "img/s03.png",
+   "motion": "shake",
+   "palette": "gerilim",
+   "tone": "excited",
+   "text": "İki bin dokuz. Bilgisayarlar çoğaldı, her blok elli coin. Sayaç beş bine çıktı. Cemil hediyesini aldı: saç ekimi! Sargılı kafayla: Abi geri dönüşü yok!",
+   "caption": "2009. Bilgisayarlar çoğaldı, her blok 50 coin. Sayaç 5.000'e çıktı. Cemil hediyesini aldı: saç ekimi! Sargılı kafayla: Abi geri dönüşü yok!",
+   "hud": {
+    "yil": 2009,
+    "dolar": 53400000,
+    "sapma": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "pizza",
+   "image": "img/s04.png",
+   "motion": "push",
+   "palette": "kahve",
+   "tone": "tense",
+   "text": "Yirmi iki Mayıs iki bin on. Biri iki pizza için on bin coin verdi. Cemil pizzaya uzandı, elini tuttum: Pizzayı parayla al, coin'i tut. Karşı binada yeni bir tabela vardı: Gelecek Anonim Şirketi. Şapkalı adamın şirketi.",
+   "caption": "22 Mayıs 2010. Biri 2 pizza için 10.000 coin verdi. Cemil pizzaya uzandı, elini tuttum: Pizzayı parayla al, coin'i tut. Karşı binada yeni bir tabela vardı: Gelecek Anonim Şirketi. Şapkalı adamın şirketi.",
+   "hud": {
+    "yil": 2010,
+    "dolar": 53400000,
+    "sapma": 1
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "halkaarz",
+   "image": "img/s05.png",
+   "motion": "zoomIn",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Yirmi dokuz Haziran iki bin on. Elektrikli araba şirketi borsaya açıldı, hisse on yedi dolar. Sıraya ilk ben girdim. Cemil: Abi elektrikli araba mı, kim alır?",
+   "caption": "29 Haziran 2010. Elektrikli araba şirketi borsaya açıldı, hisse 17 dolar. Sıraya ilk ben girdim. Cemil: Abi elektrikli araba mı, kim alır?",
+   "hud": {
+    "yil": 2010,
+    "dolar": 53400000,
+    "sapma": 4
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "loca",
+   "image": "img/s06.png",
+   "motion": "push",
+   "palette": "gunbatimi",
+   "tone": "excited",
+   "text": "On bir Temmuz iki bin on, Johannesburg. Bu kez locadaydık. İspanya bire sıfır şampiyon, Iniesta yüz on altıncı dakikada attı. Piqué ve Busquets dünya şampiyonu! Yorumdaki herkes haklıydı.",
+   "caption": "11 Temmuz 2010, Johannesburg. Bu kez locadaydık. İspanya 1-0 şampiyon, Iniesta 116. dakikada attı. Piqué ve Busquets dünya şampiyonu! Yorumdaki herkes haklıydı.",
+   "hud": {
+    "yil": 2010,
+    "dolar": 53400000,
+    "sapma": 4
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "instagram",
+   "image": "img/s07.png",
+   "motion": "zoomIn",
+   "palette": "gunbatimi",
+   "tone": "excited",
+   "text": "Altı Ekim iki bin on. Yeni bir fotoğraf uygulaması doğdu: Instagram. İlk günden yatırım yaptım. Cemil: Abi fotoğrafa filtre koymak iş mi?",
+   "caption": "6 Ekim 2010. Yeni bir fotoğraf uygulaması doğdu: Instagram. İlk günden yatırım yaptım. Cemil: Abi fotoğrafa filtre koymak iş mi?",
+   "hud": {
+    "yil": 2010,
+    "dolar": 53400000,
+    "sapma": 6
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "ev",
+   "image": "img/s08.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "dramatic",
+   "text": "Sonra bir anahtar aldım. İki binde kaybettiğimiz çocukluk evimizin anahtarı. Kapıyı açtım. Duvardaki boy çizgileri hâlâ oradaydı.",
+   "caption": "Sonra bir anahtar aldım. 2000'de kaybettiğimiz çocukluk evimizin anahtarı. Kapıyı açtım. Duvardaki boy çizgileri hâlâ oradaydı.",
+   "hud": {
+    "yil": 2011,
+    "dolar": 53400000,
+    "sapma": 8
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "satis",
+   "image": "img/s09.png",
+   "motion": "shake",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Dokuz Nisan iki bin on iki. Instagram bir milyar dolara satıldı! Payım fırladı. Kasa dört yüz milyon dolar! Cemil defteri bıraktı: Abi bu kadar sıfırı nereye yazacağım!",
+   "caption": "9 Nisan 2012. Instagram 1 milyar dolara satıldı! Payım fırladı. Kasa 400 milyon dolar! Cemil defteri bıraktı: Abi bu kadar sıfırı nereye yazacağım!",
+   "hud": {
+    "yil": 2012,
+    "dolar": 400000000,
+    "sapma": 19
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "kasa": {
+    "value": 400000000,
+    "from": 53400000,
+    "top": 330
+   },
+   "showHud": false
+  },
+  {
+   "type": "image",
+   "id": "yali",
+   "image": "img/s10.png",
+   "motion": "push",
+   "palette": "gunbatimi",
+   "tone": "excited",
+   "text": "Boğaz'da bir yalı aldık. Cemil yata Yapma Selim adını verdi. Mavi terliklerimi duvara astım: Her şey bununla başladı. Ama ekranda bir sayı vardı: zaman sapması yüzde on dokuz.",
+   "caption": "Boğaz'da bir yalı aldık. Cemil yata Yapma Selim adını verdi. Mavi terliklerimi duvara astım: Her şey bununla başladı. Ama ekranda bir sayı vardı: zaman sapması %19.",
+   "hud": {
+    "yil": 2012,
+    "dolar": 400000000,
+    "sapma": 19
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "messi",
+   "image": "img/s11.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Dört yılda dört altın top: Messi. Cemil: Bizimkiler hiç durmuyor! Şapkalı adam: Her zirvenin ardından bir düşüş gelir.",
+   "caption": "4 yılda 4 altın top: Messi. Cemil: Bizimkiler hiç durmuyor! Şapkalı adam: Her zirvenin ardından bir düşüş gelir.",
+   "hud": {
+    "yil": 2013,
+    "dolar": 400000000,
+    "sapma": 22
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "stratosfer",
+   "image": "img/s12.png",
+   "motion": "zoomIn",
+   "palette": "soguk",
+   "tone": "excited",
+   "text": "On dört Ekim iki bin on iki. Bir adam otuz dokuz kilometre yükseklikten atladı! Canlı izledik. Cemil saçını tuttu: Abi çıldırmış!",
+   "caption": "14 Ekim 2012. Bir adam 39 kilometre yükseklikten atladı! Canlı izledik. Cemil saçını tuttu: Abi çıldırmış!",
+   "hud": {
+    "yil": 2012,
+    "dolar": 400000000,
+    "sapma": 25
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "marmaray",
+   "image": "img/s13.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Yirmi dokuz Ekim iki bin on üç. İstanbul'da iki kıtayı birleştiren tünel açıldı. İlk seferdeydik. Bayraklar, alkışlar, gözyaşları.",
+   "caption": "29 Ekim 2013. İstanbul'da iki kıtayı birleştiren tünel açıldı. İlk seferdeydik. Bayraklar, alkışlar, gözyaşları.",
+   "hud": {
+    "yil": 2013,
+    "dolar": 400000000,
+    "sapma": 30
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "milyar",
+   "image": "img/s14.png",
+   "motion": "shake",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Yirmi yedi Kasım iki bin on üç: Bitcoin bin doları geçti. On dokuz Şubat iki bin on dört: bir mesajlaşma uygulaması on dokuz milyar dolara satıldı. Payım vardı. Kasa: bir milyar dolar! Hedef tamam! Cemil ağladı. Ama zaman sapması yüzde altmış birdi.",
+   "caption": "27 Kasım 2013: Bitcoin 1.000 doları geçti. 19 Şubat 2014: bir mesajlaşma uygulaması 19 milyar dolara satıldı. Payım vardı. Kasa: 1 milyar dolar! Hedef tamam! Cemil ağladı. Ama zaman sapması %61'di.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 1000000000,
+    "sapma": 61
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "kasa": {
+    "value": 1000000000,
+    "from": 400000000,
+    "top": 330
+   },
+   "showHud": false
+  },
+  {
+   "type": "image",
+   "id": "rio",
+   "image": "img/s15.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "On iki Temmuz iki bin on dört, Rio. Özel jetle indik. Yarın final. Şapkalı adam son kez konuştu: Para bitti, asıl sınav şimdi. Sapma yüzde yüz olursa Messi kupayı kaçırmayabilir. Ya da sen olmayabilirsin.",
+   "caption": "12 Temmuz 2014, Rio. Özel jetle indik. Yarın final. Şapkalı adam son kez konuştu: Para bitti, asıl sınav şimdi. Sapma %100 olursa Messi kupayı kaçırmayabilir. Ya da sen olmayabilirsin.",
+   "hud": {
+    "yil": 2014,
+    "dolar": 1000000000,
+    "sapma": 61
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "bait",
+   "image": "img/s15.png",
+   "words": [
+    "DOKUNSUN MU?",
+    "DOKUNMASIN MI?"
+   ],
+   "duration": 3.0,
+   "palette": "tehlike",
+   "tone": "question",
+   "motion": "none",
+   "text": "Selim on üç Temmuz iki bin on dörtte Messi'ye dokunsun mu, dokunmasın mı? Yorumlara yaz.",
+   "caption": "Selim 13 Temmuz 2014'te Messi'ye dokunsun mu, dokunmasın mı? Yorumlara yaz."
+  },
+  {
+   "type": "end",
+   "kicker": "GELECEĞİ BİLEN ADAM",
+   "lines": [
+    "18. BÖLÜM",
+    "*YARIN 18.00*"
+   ],
+   "body": "Selim 13 Temmuz 2014'te\nMessi'ye dokunsun mu?\n💰 HEDEF: **1 MİLYAR $ ✅**",
+   "cta": "TAKİP ET · KAÇIRMA",
+   "duration": 3.6,
+   "kasa": {
+    "value": 1000000000,
+    "from": 1000000000,
+    "top": 1420
+   }
+  }
+ ]
+}

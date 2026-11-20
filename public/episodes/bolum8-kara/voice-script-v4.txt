@@ -1,0 +1,17 @@
+[dramatic] Ben Selim. İki bin yirmi altıdan bin dokuz yüz doksan dokuza düştüm. Ne olacağını biliyorum. Kasa: on iki bin dolar.
+[tense] Yirmi Şubat iki bin bir. Herkes borsa diyordu.
+[excited] Cemil gazeteyi masaya vurdu: "Bütün paramı borsaya bastım Selim!"
+[calm] Ben sadece gülümsedim. "Ben biliyorum."
+[whispers] Defterime çoktan yazmıştım: yarın Kara Çarşamba.
+[tense] Bütün dolarlarımı liraya çevirdim.
+[shouting] Cemil kolumu tuttu: "Yapma Selim! Herkes dolar alırken sen satıyorsun!"
+[dramatic] Yirmi bir Şubat, Kara Çarşamba. Gecelik faiz yüzde yedi bin beş yüze çıktı.
+[excited] Paramı bir geceliğine bankaya yatırdım. Bir gecede yüzde yirmi.
+[tense] Ertesi sabah kur serbest bırakıldı.
+[dramatic] Dolar bir günde altı yüz yetmiş beş binden bir milyona fırladı.
+[calm] Ama ben sabahın ilk saatinde, kur fırlamadan dolara dönmüştüm.
+[sad] Cemil'in borsadaki parası erimişti.
+[shouting] "Selim, nereden bildin?"
+[whispers] Borsada her şey yerlerdeydi. Herkes satıyordu.
+[dramatic] Tam o an kararımı verdim.
+[curious] Herkes satarken ben alayım mı, bekleyeyim mi?

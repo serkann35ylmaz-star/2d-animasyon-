@@ -1,0 +1,469 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 4: Gece Otobüsü",
+  "targetDuration": 75,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Istanbul, late September 1999, at night",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "dolar",
+      "label": "DOLAR",
+      "format": "usd",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "info",
+      "id": "kazanan",
+      "tone": "dramatic",
+      "hold": 1.6,
+      "text": "Yorumlar konuştu: Kaç. Kazanan yorum, izferhatt'tan.",
+      "info": {
+        "layout": "comment",
+        "kicker": "3. BÖLÜMÜN KAZANAN YORUMU",
+        "badge": "KAZANAN YORUM",
+        "user": "izferhatt",
+        "text": "Kaç Necmi'nin a*****ı s***m",
+        "likes": 27,
+        "caption": "Yorumların kararı: *KAÇ*"
+      }
+    },
+    {
+      "type": "image",
+      "id": "bekliyor",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.3,
+        0.35
+      ],
+      "palette": "tehlike",
+      "tone": "tense",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Necmi kapıda, cevap bekliyor."
+    },
+    {
+      "type": "title",
+      "image": "img/t01.png",
+      "kicker": "BÖLÜM 4 · GECE OTOBÜSÜ",
+      "lines": [
+        "GELECEĞİ",
+        "*BİLEN*",
+        "ADAM"
+      ],
+      "duration": 1.9,
+      "palette": "neon"
+    },
+    {
+      "type": "image",
+      "id": "blof",
+      "image": "img/s02.png",
+      "motion": "push",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "palette": "tehlike",
+      "tone": "whisper",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "\"Yarın kahvehanede anlatırım,\" dedin."
+    },
+    {
+      "type": "image",
+      "id": "kacma",
+      "image": "img/s02.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "palette": "tehlike",
+      "tone": "tense",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Necmi gülümsedi. \"Yarın,\" dedi. \"Kaçma.\""
+    },
+    {
+      "type": "image",
+      "id": "aldin",
+      "image": "img/s03.png",
+      "motion": "push",
+      "focus": [
+        0.6,
+        0.6
+      ],
+      "palette": "soguk",
+      "tone": "tense",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Kapı kapanır kapanmaz, yastığın altındaki dolarları aldın."
+    },
+    {
+      "type": "image",
+      "id": "defter",
+      "image": "img/s03.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "palette": "soguk",
+      "tone": "whisper",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Defterini de."
+    },
+    {
+      "type": "image",
+      "id": "firladin",
+      "image": "img/s04.png",
+      "motion": "shake",
+      "transition": "flash",
+      "palette": "soguk",
+      "tone": "dramatic",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Gece yarısı, terliklerle sokağa fırladın.",
+      "prompt_en": "Night, rain, a 1999 Istanbul back street: the main character runs toward the camera in cheap bright blue plastic slippers, clutching a thick black notebook and a few green US dollar bills, looking back over his shoulder in panic. Old apartment buildings, closed metal shop shutters, a yellow 1990s taxi, wet cobblestones reflecting a single street lamp. A closed corner shop sign reads exactly 'BAKKAL'. No other text",
+      "focus": [
+        1,
+        0.12
+      ]
+    },
+    {
+      "type": "image",
+      "id": "kose",
+      "image": "img/s04.png",
+      "motion": "zoomIn",
+      "focus": [
+        1,
+        0.12
+      ],
+      "palette": "soguk",
+      "tone": "whisper",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Her köşede Necmi'nin adamlarını gördüğünü sandın."
+    },
+    {
+      "type": "image",
+      "id": "otogar",
+      "image": "img/s05.png",
+      "motion": "zoomIn",
+      "palette": "neon",
+      "tone": "tense",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Tek bir yer aklına geldi: Esenler Otogarı.",
+      "prompt_en": "1999 Istanbul Esenler intercity bus terminal at night: rows of boxy 1990s intercity coaches with lit front destination boards reading exactly 'İZMİR' and 'ANKARA', small ticket kiosks, tea seller, tired travelers with suitcases (each a different cartoon person, men and women). A young bus attendant (muavin) with a thin mustache, white shirt and dark vest grins and eagerly reaches for a green 20 US dollar bill that the main character, in cheap bright blue plastic slippers and holding a thick black notebook, is handing him. Warm sodium lights and cool night blue. No other text"
+    },
+    {
+      "type": "info",
+      "id": "sorun",
+      "tag": "PROBLEM",
+      "tone": "tense",
+      "hold": 1.45,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Ama bir sorun var. Cebinde tek lira yok.",
+      "info": {
+        "layout": "list",
+        "kicker": "GECE 00.30 · OTOGAR",
+        "heading": "Bilet için ne var?",
+        "items": [
+          {
+            "text": "Cebinde *0 TL*",
+            "state": "bad"
+          },
+          {
+            "text": "Döviz bürosu · gece *kapalı*",
+            "state": "bad"
+          },
+          {
+            "text": "Tek paran: *111 dolar*",
+            "state": "ok"
+          }
+        ]
+      }
+    },
+    {
+      "type": "info",
+      "id": "enflasyon",
+      "tone": "calm",
+      "hold": 1.45,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Ama 1999'da dolar her yerde geçiyor.",
+      "info": {
+        "layout": "list",
+        "kicker": "1999 TÜRKİYE",
+        "heading": "Neden dolar geçiyor?",
+        "items": [
+          {
+            "text": "Enflasyon yüzde *60'ın* üstünde",
+            "state": "ok"
+          },
+          {
+            "text": "Esnaf liraya değil *dolara* güveniyor",
+            "state": "ok"
+          },
+          {
+            "text": "Pazarlık bile *dolarla*",
+            "state": "ok"
+          }
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "id": "muavin",
+      "image": "img/s05.png",
+      "motion": "zoomOut",
+      "focus": [
+        0.6,
+        0.2
+      ],
+      "palette": "neon",
+      "tone": "excited",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 111
+      },
+      "text": "Muavin doları görünce gözleri parladı: \"Yirmi dolar, abi.\""
+    },
+    {
+      "type": "info",
+      "id": "kalan",
+      "tone": "sad",
+      "hold": 1.45,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "text": "Bir bilet, yirmi dolar. Geriye 91 dolar kaldı.",
+      "info": {
+        "layout": "big",
+        "kicker": "İZMİR OTOBÜSÜ · TEK BİLET",
+        "heading": "Kalan para",
+        "value": 91,
+        "from": 111,
+        "format": "usd",
+        "caption": "Bilet *20 dolar*a gitti"
+      }
+    },
+    {
+      "type": "image",
+      "id": "cam",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.6,
+        0.5
+      ],
+      "palette": "soguk",
+      "tone": "calm",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "text": "Cam kenarına oturdun. Gözlerin kapanıyor.",
+      "prompt_en": "Inside a dark 1999 Turkish intercity coach at night, dim blue aisle lights, rain streaks on the window, highway lights passing outside. The main character sits at a window seat holding a thick black notebook, exhausted, eyes half closed. In the seat diagonally behind him, half in shadow, sits a burly henchman of the same round-white-headed cartoon species (no nose), thick black mustache, short black hair, black leather jacket, slowly turning the pages of a thick black notebook and staring at the main character. Other passengers asleep. Tense, eerie mood. No text"
+    },
+    {
+      "type": "image",
+      "id": "uyku",
+      "image": "img/s06.png",
+      "motion": "panLeft",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "palette": "soguk",
+      "tone": "whisper",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "text": "Otobüste herkes uyuyordu. Herkes değil."
+    },
+    {
+      "type": "image",
+      "id": "ses",
+      "image": "img/s06.png",
+      "motion": "push",
+      "focus": [
+        0.4,
+        0.35
+      ],
+      "palette": "soguk",
+      "tone": "tense",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "text": "Ama arka koltuktan bir ses geldi."
+    },
+    {
+      "type": "image",
+      "id": "sayfalar",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.35,
+        0.4
+      ],
+      "palette": "soguk",
+      "tone": "whisper",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "text": "Kalın, siyah bir defterin sayfaları çevriliyordu."
+    },
+    {
+      "type": "image",
+      "id": "aynisi",
+      "image": "img/s02.png",
+      "motion": "push",
+      "transition": "flash",
+      "focus": [
+        0.4,
+        0.6
+      ],
+      "palette": "tehlike",
+      "tone": "dramatic",
+      "hold": 0.6,
+      "text": "Necmi'nin defterinin aynısı."
+    },
+    {
+      "type": "image",
+      "id": "mola",
+      "image": "img/s06.png",
+      "motion": "panRight",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "palette": "soguk",
+      "tone": "tense",
+      "hold": 0.6,
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "dolar": 91
+      },
+      "text": "Otobüs yola çıktı. İlk mola, iki saat sonra."
+    },
+    {
+      "type": "bait",
+      "image": "img/s06.png",
+      "words": [
+        "İN",
+        "KAL"
+      ],
+      "duration": 3.4,
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "palette": "soguk",
+      "tone": "question",
+      "motion": "none",
+      "text": "Sen olsan ne yapardın?"
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "5. BÖLÜM",
+        "*YARIN*"
+      ],
+      "body": "Yorumlara **İN** ya da **KAL** yaz.\nSabitlenen yorum videoya girer!",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.4
+    }
+  ]
+}

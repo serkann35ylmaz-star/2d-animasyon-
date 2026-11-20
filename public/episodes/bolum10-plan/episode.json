@@ -1,0 +1,597 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 10: Büyük Plan",
+  "targetDuration": 135,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "era": {
+    "setting": "Istanbul and Lisbon, 2002-2003: gold, bank stocks, online retail, then a football club visit in April 2003",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  },
+  "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "dolar",
+      "label": "DOLAR",
+      "format": "usd",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "image",
+      "id": "acilis",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "palette": "gerilim",
+      "tone": "dramatic",
+      "text": "Ben Selim. 2026'dan 1999'a düştüm. Ne olacağını biliyorum. Kasa: 20.175.000 dolar.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "note": {
+        "kicker": "10. BÖLÜM · BÜYÜK PLAN",
+        "user": "morgilderlerrr",
+        "text": "Altına yatır keyfine bak",
+        "likes": 9,
+        "from": 2.6
+      }
+    },
+    {
+      "type": "image",
+      "id": "bavul",
+      "image": "img/s01.png",
+      "motion": "push",
+      "palette": "gerilim",
+      "tone": "excited",
+      "text": "Cemil bavulu görünce bayıldı. Ayılınca ilk sözü: Bavul çok ağır abi!",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.7,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "sar",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "palette": "soguk",
+      "tone": "calm",
+      "text": "Nasıl mı? Geri sarıyorum.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.4,
+        0.55
+      ],
+      "transition": "flash"
+    },
+    {
+      "type": "image",
+      "id": "h1",
+      "image": "img/s02.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "tense",
+      "text": "Birinci hamle: altın. Irak'ta savaş kokusu vardı, herkes korkuyordu. Ben sığınağı seçtim.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 24600
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.45
+      ]
+    },
+    {
+      "type": "image",
+      "id": "h1c",
+      "image": "img/s02.png",
+      "motion": "shake",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Cemil kuyumcuda neredeyse ağlayacaktı: Altın mı? Anneannem gibi mi yapıyoruz?",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 24600
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "h1k",
+      "image": "img/s02.png",
+      "motion": "push",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "24.600 dolar, 29.500'e çıktı. Selim'in kuralı: herkes korkarken sığınağı ara.",
+      "hud": {
+        "yil": 2002,
+        "nakit": 0,
+        "dolar": 29500
+      },
+      "hold": 0.4,
+      "focus": [
+        0.6,
+        0.5
+      ],
+      "kasa": {
+        "value": 29500,
+        "from": 24600,
+        "top": 1130
+      }
+    },
+    {
+      "type": "image",
+      "id": "h2",
+      "image": "img/s03.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "excited",
+      "text": "İkinci hamle: bankalar. Kara Çarşamba'da ezilen bankalar 2003'te ayağa kalkıyordu.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 29500
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "h2c",
+      "image": "img/s03.png",
+      "motion": "shake",
+      "palette": "gunduz",
+      "tone": "excited",
+      "text": "Cemil kolumu çekti: Batan bankaya para mı atılır Selim?",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 29500
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.55
+      ]
+    },
+    {
+      "type": "image",
+      "id": "h2k",
+      "image": "img/s03.png",
+      "motion": "push",
+      "palette": "gunduz",
+      "tone": "calm",
+      "text": "Ben güldüm. 29 bin, 80 bine çıktı. Kural: herkes dipten kaçarken, ben dibe bakarım.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 80000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.6,
+        0.5
+      ],
+      "kasa": {
+        "value": 80000,
+        "from": 29500,
+        "top": 1130
+      }
+    },
+    {
+      "type": "image",
+      "id": "h3",
+      "image": "img/s04.png",
+      "motion": "zoomIn",
+      "palette": "soguk",
+      "tone": "tense",
+      "text": "Üçüncü hamle: Amazon. Herkes internet işi bitti diyordu. Ama bu şirket ilk kârını yazmıştı.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 80000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.6,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "h3c",
+      "image": "img/s04.png",
+      "motion": "shake",
+      "palette": "soguk",
+      "tone": "excited",
+      "text": "Cemil bilgisayara baktı: Kitap satan site mi? Ben kitabı kitapçıdan alırım!",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 80000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "h3k",
+      "image": "img/s04.png",
+      "motion": "push",
+      "palette": "soguk",
+      "tone": "calm",
+      "text": "80 bin, 175 bine çıktı. Kural: herkes alay ederken, rakamlara bak.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.6,
+        0.5
+      ],
+      "kasa": {
+        "value": 175000,
+        "from": 80000,
+        "top": 1130
+      }
+    },
+    {
+      "type": "image",
+      "id": "foto",
+      "image": "img/s05.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "whisper",
+      "text": "O sırada köşedeki fotoğrafçı hâlâ bizi izliyordu.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.7,
+        0.35
+      ]
+    },
+    {
+      "type": "image",
+      "id": "sapka",
+      "image": "img/s05.png",
+      "motion": "push",
+      "palette": "tehlike",
+      "tone": "dramatic",
+      "text": "Şapkasını çıkardı. Kuyumcu!",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.3
+      ],
+      "transition": "flash"
+    },
+    {
+      "type": "image",
+      "id": "cigl",
+      "image": "img/s05.png",
+      "motion": "shake",
+      "palette": "tehlike",
+      "tone": "excited",
+      "text": "Cemil çığlık attı: Sen miydin?!",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.4
+      ]
+    },
+    {
+      "type": "image",
+      "id": "ortak",
+      "image": "img/s06.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "calm",
+      "text": "Kuyumcu hesapları görünce elini uzattı: Yarı yarıya ortak olalım. 20 milyon dolar.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "kasa": {
+        "value": 20175000,
+        "from": 175000,
+        "top": 1130
+      }
+    },
+    {
+      "type": "image",
+      "id": "sustum",
+      "image": "img/s06.png",
+      "motion": "push",
+      "palette": "kahve",
+      "tone": "whisper",
+      "text": "Parayı görünce bir an sustum.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "hayal",
+      "image": "img/s07.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "dramatic",
+      "text": "Çocukluk hayalimi gerçekleştirmek istiyorum. Madem geleceği biliyorum: Ronaldo ve Messi'yi aynı takımda istiyorum.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.4,
+        0.45
+      ],
+      "kadro": {
+        "filled": 0,
+        "total": 2,
+        "top": 1010
+      }
+    },
+    {
+      "type": "image",
+      "id": "sinema",
+      "image": "img/s07.png",
+      "motion": "shake",
+      "palette": "kahve",
+      "tone": "excited",
+      "text": "Cemil: Kim bunlar abi? Biri 18, öbürü 16 yaşında! Bırak çocukları!",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.7,
+        0.45
+      ],
+      "kadro": {
+        "filled": 0,
+        "total": 2,
+        "top": 1010
+      }
+    },
+    {
+      "type": "image",
+      "id": "bil",
+      "image": "img/s07.png",
+      "motion": "zoomIn",
+      "palette": "kahve",
+      "tone": "calm",
+      "text": "Bugün kimse tanımıyor. Yirmi yıl sonra bütün dünya konuşacak. Ben biliyorum.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.3,
+        0.45
+      ],
+      "kadro": {
+        "filled": 0,
+        "total": 2,
+        "top": 1010
+      }
+    },
+    {
+      "type": "image",
+      "id": "lizbon",
+      "image": "img/s08.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "tense",
+      "text": "Nisan 2003. Lizbon. İlk durak: Sporting'in Alvalade tesisleri.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "transition": "flash"
+    },
+    {
+      "type": "image",
+      "id": "cevir",
+      "image": "img/s09.png",
+      "motion": "shake",
+      "palette": "gunduz",
+      "tone": "excited",
+      "text": "Cemil çevirmen oldu: Ben Portekizce bilmem abi, sadece obrigado biliyorum!",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.6
+      ]
+    },
+    {
+      "type": "image",
+      "id": "yonetici",
+      "image": "img/s09.png",
+      "motion": "push",
+      "palette": "soguk",
+      "tone": "tense",
+      "text": "Kulüp yöneticisi ciddiydi: Fiyat 12 milyon sterlin. Ama bir de başka biri soruyor.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.5,
+        0.3
+      ]
+    },
+    {
+      "type": "image",
+      "id": "genc",
+      "image": "img/s10.png",
+      "motion": "zoomIn",
+      "palette": "gunduz",
+      "tone": "whisper",
+      "text": "Sahada 28 numaralı ince bir genç top sürüyordu. Ben sadece izledim.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.8,
+        0.35
+      ]
+    },
+    {
+      "type": "image",
+      "id": "defter",
+      "image": "img/s11.png",
+      "motion": "zoomIn",
+      "palette": "tehlike",
+      "tone": "dramatic",
+      "text": "Defterimi açtım. Bir sayfada küçük bir çocuk, elinde top, mavi bordo forma. Sıra ona.",
+      "hud": {
+        "yil": 2003,
+        "nakit": 0,
+        "dolar": 20175000
+      },
+      "hold": 0.4,
+      "focus": [
+        0.4,
+        0.6
+      ]
+    },
+    {
+      "type": "bait",
+      "image": "img/s11.png",
+      "words": [
+        "KULÜP",
+        "ADI"
+      ],
+      "duration": 3.0,
+      "palette": "tehlike",
+      "tone": "question",
+      "motion": "none",
+      "text": "Kulübümüzün adı ne olsun? Yorumlara yaz."
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "11. BÖLÜM",
+        "*YARIN 18.00*"
+      ],
+      "body": "Kulübümüzün adı ne olsun?\nYorumlara yaz, en iyisi seçilir!\n⚽ KADRO: **0/2**",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.6,
+      "kasa": {
+        "value": 20175000,
+        "from": 20175000,
+        "top": 1420
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[dramatic] Yorumlar konuştu: Kal. Kazanan yorum, Fuat'tan.
+[tense] İlk mola. Herkes otobüsten indi.
+[whispers] Sen kaldın.
+[tense] Defterli adam da indi. Sonra geri döndü.
+[whispers] Otobüste sadece ikiniz vardınız.
+[tense] Yanına oturdu. Defterini açık bırakıp çay almaya indi.
+[whispers] Tuzak mıydı, bilmiyordun. Ama baktın.
+[dramatic] Necmi'nin borçlular listesi.
+[dramatic] Ve bir isimde kalbin durdu. Babanın adı.
+[tense] Borç: beş milyar lira. Son ödeme: on yedi Mayıs iki bin.
+[sad] O zaman hatırladın.
+[sad] İki bin baharında evinizi kaybettiniz. Sen yedi yaşındaydın.
+[sad] Baban sebebini hiç söylemedi. Sebep buymuş.
+[dramatic] Necmi'ye elli milyon yatırsaydın, bire yüzden tam beş milyar alacaktın.
+[sad] Beş milyar, bugün on bir bin dolar. Cebinde doksan bir dolar var.
+[tense] Adam geri döndü. Yüzüne uzun uzun baktı.
+[whispers] "Sen bana birini hatırlatıyorsun," dedi.
+[dramatic] "Necmi'nin bir borçlusuna tıpatıp benziyorsun."
+[tense] Otobüs kalkmak üzere.
+[curious] Sen olsan ne yapardın?

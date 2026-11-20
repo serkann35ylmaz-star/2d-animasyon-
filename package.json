@@ -1,0 +1,29 @@
+{
+  "name": "2d-animasyon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dikey (9:16) 2D animasyonlu hikaye videoları üreten motor — Remotion tabanlı",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "node scripts/render.mjs",
+    "still": "node scripts/still.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fontsource/inter": "5.2.8",
+    "@fontsource/jetbrains-mono": "5.2.8",
+    "@remotion/bundler": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.0",
+    "@types/react": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}

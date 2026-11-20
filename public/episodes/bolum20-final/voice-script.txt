@@ -1,0 +1,10 @@
+[dramatic] Yüz dokuzuncu dakika. Kapı açıktı. Gelecekteki beni kapıya ittim: Sen git. Eve dön. Ben Cemil'e iyi bakarım.
+[excited] Éder vurdu, gol! Cemil sarıldı: Abi sıradaki tarih ne? Gülümsedim: Beş gün sonra. Ama bu sefer para için değil.
+[tense] Defterin bütün sayfaları silindi. Bir tek sayfa parlıyordu: On beş Temmuz iki bin on altı.
+[tense] O gece Boğaz Köprüsü kapandı. Tanklar, askerler. Gökyüzünde jetler, camilerden sela. Cemil: Abi bu gece para hesabı yok.
+[dramatic] Karışırsam silinirdim. Bu gece silinsem de razıyım dedim ve köprüye koştum.
+[dramatic] Binlerce insan bayraklarla tankların üstüne yürüdü. Bir çocuğu tankın önünden çektim. Sapma yüzde doksan dokuz. Parmaklarım kayboluyordu.
+[dramatic] Sabah güneş doğdu. Tankların üstünde bayraklar vardı. Darbe girişimi başarısız oldu. Parmaklarım geri geldi. Tarihi ben değil, millet yazmıştı.
+[dramatic] O gece iki yüz elli bir canımızı kaybettik. Köprünün adı artık On Beş Temmuz Şehitler Köprüsü.
+[excited] Kurtardığım çocuğun adı Arda'ydı. Ona bir top verdim: Sekiz yıl sonra Dortmund'da sol ayağınla öyle bir gol atacaksın ki bütün ülke ayağa kalkacak. Nereden biliyorsun? Ben geleceği bilen adamım.
+[dramatic] Söyledim. Sapma yüzde yüz oldu. Ve ışığa karıştım.

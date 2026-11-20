@@ -1,0 +1,14 @@
+# 16. bölüm üretim notları
+Canva referansı (Selim+Cemil, yeni hesap): MAHbEz7sTuE. Takım forması: kırmızı-beyaz dikey çizgili, göğüste kurt arması (Türk Gücü SK).
+Görseller: s01 MAHbKo5GuBg (EURO finali Viyana, Torres), s02 MAHbKkRdEwE (Viyana sokağı Selim+Cemil).
+Hazır: s03 MAHbKmfcYpI (kadro 11/11), s04 MAHbKvtJQvk (ayakkabı). Ses deneme 3/5 de başarısız.
+Kalan: (s03-s04 yapıldı) ; eski liste: s03 kadro 11/11 (Dani Alves, Piqué, Busquets, kurt armalı formayla, Cemil defter), s04 ayakkabı kutusu (terlik→kırmızı-beyaz ayakkabı), s05 Ballon d'Or montajı (Ronaldo 1., Messi 2.), s06 3 Ocak 2009 gece oda/eski bilgisayar/defter 'Bitcoin', s07 9 Ocak bilgisayar çalışıyor (ekranda yalnız kod, yüz yok), s08 pizza, s09 şapkalı adam + zarf + 2026 akıllı saati, s10 final (Selim+Cemil, kadro tamam).
+Ses: ElevenLabs flow G8756nfPQ6bFJN0ai6sn, voice-script.txt; deneme 1/5, 2/5 'Free generations busy'. Kullanıcı: 5 deneme olmazsa kendisi üretecek.
+Doğrulandı: Euro 2008 finali 29.06.2008 Viyana 1-0 Torres 33'; Bitcoin ilk blok 3 Ocak 2009, v0.1 9 Ocak 2009, 50 BTC; pizza 22 Mayıs 2010 10.000 BTC; Piqué/Alves 2008 yazı Barça; Busquets ilk maç 13 Eylül 2008. Doğrulanamadı: Ballon d'Or 2008 sıralaması (hafıza).
+Kazanan yorum: birvarm1s_biryokmus (8 beğeni); avatar.png kullanıcı ekran görüntüsünden kırpıldı (kullanıcı 'en iyi yorumun sahibi' diye gönderdi; kullanıcı adı varsayım, eşleşme: ekran görüntüsündeki avatar).
+Hazır ek: s05 MAHbKmNUmoU (Ballon d'Or), s06 MAHbKu42U2M (3 Ocak 2009 gece, Bitcoin). Kalan görseller: s07 (9 Ocak bilgisayar çalışıyor, ekranda yalnız kod), s08 (pizza), s09 (şapkalı adam + zarf + 2026 akıllı saati), s10 (final).
+SES: ElevenLabs 5/5 deneme başarısız ('Free generations busy'); kullanıcıya voice-script.txt gönderildi, kullanıcı üretip mp3 atacak. mp3 gelince: voice-raw.mp3 olarak koy, episode.json yaz, ep.py voice bolum16-bitcoin, render (KEEP_WAV=1), ses_kontrol, avatar.png hazır (birvarm1s_biryokmus).
+Hazır ek: s07 MAHbKs47uwM (9 Ocak bilgisayar), s08 MAHbKl5S9XA (pizza). Kalan: s09 şapkalı adam + zarf + 2026 saati, s10 final (Selim yeni ayakkabılar + Cemil + kadro tamam).
+Ses geldi (kullanıcı ürettirdi): 74,5 sn, hizalama temiz (182 kelime). episode.json hazır, süre 80,4 sn. Kalan: s09, s10 görselleri, export img/s01–s10, render.
+Oyuncu görselleri yenilendi (kullanıcı: gerçek hallerine benzet): s03 MAHbK0v9Mo4 (Piqué/Busquets/Alves), s05 MAHbKy_uh-g (Ronaldo/Messi), s10 MAHbKzDYXDQ (11 oyuncu: Neuer, Ramos, Piqué, Lewandowski, Ribéry, Alves, Busquets, Modrić, Ronaldo, Messi, Roberto Carlos). Oyuncu görsellerinde saç/sakal/boy/yapı belirtilmeli.
+Kulak kuralı: s03 ve s05 kulaksız (MAHbLaZA5tg, MAHbLRjzzdU). s10 (MAHbLaQ_xk4) 11 oyuncu: birkaç küçük kulak izi kaldı. Üretimde 'kafa yumurta/top şeklinde, saç yanlara sarılır, kulak yok' ifadesi kullan.

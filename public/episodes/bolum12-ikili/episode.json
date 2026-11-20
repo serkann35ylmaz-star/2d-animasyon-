@@ -1,0 +1,426 @@
+{
+ "title": "Geleceği Bilen Adam — Bölüm 12: Altın İkili",
+ "targetDuration": 85,
+ "series": {
+  "name": "Hikâye Yorumda",
+  "handle": "@hikayeyorumda",
+  "avatar": "brand/profil.png"
+ },
+ "fps": 30,
+ "music": "music/dark-pulse.wav",
+ "musicVolume": 0.2,
+ "palette": "nostalji",
+ "accent": "#F5A524",
+ "tts": {
+  "engine": "elevenlabs",
+  "model": "eleven_v4",
+  "voice_id": "mCTNxePO8hqCg6KFnASN",
+  "voice_name": "Onur AGCNL"
+ },
+ "era": {
+  "setting": "Barcelona, November 2003 (a family dinner negotiation), then a fast football montage 2003-2005 with a red-white club",
+  "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+  "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+  "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+ },
+ "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+ "hud": [
+  {
+   "key": "yil",
+   "label": "YIL",
+   "format": "raw"
+  },
+  {
+   "key": "nakit",
+   "label": "NAKİT",
+   "format": "tl"
+  },
+  {
+   "key": "dolar",
+   "label": "DOLAR",
+   "format": "usd",
+   "accent": true
+  }
+ ],
+ "scenes": [
+  {
+   "type": "image",
+   "id": "acilis",
+   "image": "img/s01.png",
+   "motion": "zoomIn",
+   "palette": "gerilim",
+   "tone": "dramatic",
+   "text": "Ben Selim. İki bin yirmi altıdan bin dokuz yüz doksan dokuza düştüm. Ne olacağını biliyorum. Kasa: dört milyon dokuz yüz yetmiş beş bin dolar.",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 4975000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "note": {
+    "kicker": "12. BÖLÜM · ALTIN İKİLİ",
+    "user": "salih.gungorur",
+    "text": "Messi'ye uzun teklif listesi",
+    "likes": 11,
+    "from": 2.6
+   }
+  },
+  {
+   "type": "image",
+   "id": "masa",
+   "image": "img/s02.png",
+   "motion": "push",
+   "palette": "nostalji",
+   "tone": "calm",
+   "text": "Barselona. Messi'nin babası Jorge ile yemekteydik.",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 4975000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "liste",
+   "image": "img/s03.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "calm",
+   "text": "Teklif listesini masaya koydum: kıyafet hakkı, sınırsız döner, Boğaz'da villa.",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 4975000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "cemil",
+   "image": "img/s04.png",
+   "motion": "shake",
+   "palette": "nostalji",
+   "tone": "calm",
+   "text": "Cemil kasayı hesapladı: Abi biz iflas ederiz!",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 4975000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "jorge",
+   "image": "img/s02.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "calm",
+   "text": "Jorge: Oğlum parayla gelmez.",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 4975000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "sart",
+   "image": "img/s02.png",
+   "motion": "push",
+   "palette": "nostalji",
+   "tone": "calm",
+   "text": "Ben bir şart ekledim: Barça'ya geri dönüş maddesi.",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 4975000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "bil",
+   "image": "img/s02.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "calm",
+   "text": "Ben biliyorum.",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 4975000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "imza",
+   "image": "img/s05.png",
+   "motion": "shake",
+   "palette": "nostalji",
+   "tone": "calm",
+   "text": "İmza atıldı. Kasa: üç milyon yedi yüz yirmi beş bin dolar. Kadro: iki.",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "kasa": {
+    "value": 3725000,
+    "from": 4975000,
+    "top": 330
+   },
+   "kadro": {
+    "filled": 2,
+    "total": 2,
+    "top": 215
+   },
+   "showHud": false
+  },
+  {
+   "type": "info",
+   "id": "debut",
+   "tone": "whisper",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 1.0,
+   "text": "Messi, Kasım iki bin üçte, on altı yaşında Barcelona'nın A takımında ilk maçına çıkmıştı.",
+   "info": {
+    "layout": "big",
+    "kicker": "BİLİYOR MUYDUN · 2003",
+    "heading": "Messi'nin ilk A takım maçı",
+    "value": 16,
+    "from": 0,
+    "format": "number",
+    "caption": "yaşında · *Porto'ya karşı*"
+   }
+  },
+  {
+   "type": "image",
+   "id": "ilkmac",
+   "image": "img/s06.png",
+   "motion": "shake",
+   "palette": "gunduz",
+   "tone": "dramatic",
+   "text": "İlk maç altı sıfır. O sezon kimse bu ikiliyi durduramadı.",
+   "hud": {
+    "yil": 2003,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "seri",
+   "image": "img/s06.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "calm",
+   "text": "Onuncu maçta rakip kaleci, kaleyi bırakıp kaçtı.",
+   "hud": {
+    "yil": 2004,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "kral",
+   "image": "img/s07.png",
+   "motion": "zoomIn",
+   "palette": "gunduz",
+   "tone": "calm",
+   "text": "Lig bizdi. Ronaldo gol kralı, Messi asist kralı.",
+   "hud": {
+    "yil": 2004,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "raf",
+   "image": "img/s07.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "calm",
+   "text": "Vitrin yetmedi, Cemil raf aldı.",
+   "hud": {
+    "yil": 2004,
+    "nakit": 0,
+    "dolar": 3725000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "cemilbirak",
+   "image": "img/s08.png",
+   "motion": "push",
+   "palette": "gunduz",
+   "tone": "calm",
+   "text": "Kulübü Cemil'e emanet ettim: Sen yardımcımsın, kasayı koru.",
+   "hud": {
+    "yil": 2004,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "kasa": {
+    "value": 9400000,
+    "from": 3725000,
+    "top": 330
+   }
+  },
+  {
+   "type": "image",
+   "id": "rapor",
+   "image": "img/s04.png",
+   "motion": "shake",
+   "palette": "kahve",
+   "tone": "calm",
+   "text": "Cemil telefonda bağırdı: Abi stadyum doldu, biletler bitti! Ben sakince cevap verdim: Güzel.",
+   "hud": {
+    "yil": 2004,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "internet",
+   "image": "img/s11.png",
+   "motion": "zoomIn",
+   "palette": "nostalji",
+   "tone": "whisper",
+   "text": "On dört Şubat iki bin beş. Bir internet kafede tek bir alan adı yazdım: YouTube dot com. On dolar. Henüz kimse almamıştı.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "tarih",
+   "image": "img/s11.png",
+   "motion": "push",
+   "palette": "nostalji",
+   "tone": "whisper",
+   "text": "O gün kimse bilmiyordu: bu alan adı bir gün dünyanın en büyük video sitesi olacaktı.",
+   "hud": {
+    "yil": 2005,
+    "nakit": 0,
+    "dolar": 9400000
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "bait",
+   "image": "img/s11.png",
+   "words": [
+    "BU ALAN ADI",
+    "NE OLSUN?"
+   ],
+   "duration": 3.0,
+   "palette": "tehlike",
+   "tone": "question",
+   "motion": "none",
+   "text": "Bu alan adıyla ne yapmalıyım? Yorumlara yaz."
+  },
+  {
+   "type": "end",
+   "kicker": "GELECEĞİ BİLEN ADAM",
+   "lines": [
+    "13. BÖLÜM",
+    "*YARIN 18.00*"
+   ],
+   "body": "Bu alan adıyla ne yapmalıyım?\nYorumlara yaz!\n⚽ KADRO: **2/2** ✅",
+   "cta": "TAKİP ET · KAÇIRMA",
+   "duration": 3.6,
+   "kasa": {
+    "value": 9400000,
+    "from": 9400000,
+    "top": 1420
+   }
+  }
+ ],
+ "voice": "voice.mp3",
+ "timings": "timings.json"
+}

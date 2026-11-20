@@ -1,0 +1,257 @@
+{
+  "title": "Geleceği Bilen Adam — Bölüm 1",
+  "outfit": "(he comes from 2026, so modern streetwear) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, chunky red-and-white high-top sneakers",
+  "targetDuration": 30,
+  "series": {
+    "name": "Hikâye Yorumda",
+    "handle": "@hikayeyorumda",
+    "avatar": "brand/profil.png"
+  },
+  "fps": 30,
+  "voice": "voice.mp3",
+  "music": "music/dark-pulse.wav",
+  "musicVolume": 0.2,
+  "hud": [
+    {
+      "key": "yil",
+      "label": "YIL",
+      "format": "raw"
+    },
+    {
+      "key": "nakit",
+      "label": "GEÇERLİ NAKİT",
+      "format": "tl"
+    },
+    {
+      "key": "sarj",
+      "label": "ŞARJ",
+      "format": "percent",
+      "accent": true
+    }
+  ],
+  "scenes": [
+    {
+      "type": "image",
+      "id": "uyanis",
+      "image": "img/s01.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.0,
+        0.5
+      ],
+      "text": "Uyandın. Takvim 1999'u gösteriyor.",
+      "prompt": "Karakter 90'lar Türk evinde yatakta doğruluyor; duvarda 1999 takvimi, tüplü televizyon, dantel örtü, sabah ışığı ve pencereden pembe neon",
+      "prompt_en": "the character sitting up in bed, startled, in a 1990s Turkish bedroom: a 1999 wall calendar, a bulky CRT television on a lace doily, patterned wallpaper, early-morning light mixed with pink neon from the window",
+      "tone": "dramatic",
+      "palette": "sabah"
+    },
+    {
+      "type": "image",
+      "id": "telefon",
+      "image": "img/s02.png",
+      "motion": "push",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "text": "Cebinde 2026'dan kalma bir telefon var.",
+      "prompt": "Karakterin elinde parlayan modern akıllı telefon, arkada kablolu ev telefonu ve tüplü TV",
+      "prompt_en": "close-up of the character holding a glowing modern smartphone, its light on his face, a corded rotary-style home phone and a CRT TV behind him",
+      "tone": "tense",
+      "palette": "soguk"
+    },
+    {
+      "type": "title",
+      "image": "img/s04.png",
+      "kicker": "BÖLÜM 1 · 1999",
+      "lines": [
+        "GELECEĞİ",
+        "*BİLEN*",
+        "ADAM"
+      ],
+      "duration": 1.9,
+      "prompt": "1999 İstanbul gece sokağı, eski Şahin otomobil, ankesörlü telefon kulübesi, karakter arkası dönük yürüyor",
+      "prompt_en": "a wide shot of a rainy 1999 Istanbul street at night, the character small in the lower third, seen completely FROM BEHIND walking away from the camera (we see his back and the back of his beanie, not his face), an old boxy 1990s sedan parked by the curb, a payphone booth, shop signs are only abstract glowing pink shapes with absolutely no letters or words, wet asphalt reflections, the upper half of the image is dark empty night sky",
+      "palette": "neon"
+    },
+    {
+      "type": "image",
+      "id": "problem1",
+      "image": "img/s05.png",
+      "motion": "shake",
+      "tag": "PROBLEM 1",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 23
+      },
+      "text": "Birinci problem. Paran burada geçmiyor.",
+      "prompt": "Karakter açık cüzdanına bakıyor, şaşkın ve terli",
+      "prompt_en": "the character staring into his open wallet in shock, a sweat drop on his head, standing in a narrow 1990s apartment hallway",
+      "tone": "dramatic",
+      "palette": "gerilim"
+    },
+    {
+      "type": "info",
+      "id": "dolar",
+      "text": "Bir dolar, yarım milyon lira.",
+      "info": {
+        "layout": "big",
+        "kicker": "PROBLEM 1 · PARA",
+        "heading": "1999 sonunda 1 dolar",
+        "value": 540000,
+        "format": "tl",
+        "caption": "Paradan *6 sıfır* ancak 2005'te atılacak"
+      },
+      "hold": 0.7,
+      "tone": "neutral"
+    },
+    {
+      "type": "image",
+      "id": "bakkal",
+      "image": "img/s07.png",
+      "motion": "zoomIn",
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 23
+      },
+      "text": "200 liralıkların burada sahte para.",
+      "prompt": "Bakkal tezgâhı, karakter modern banknot uzatıyor, bıyıklı bakkal şüpheyle bakıyor",
+      "prompt_en": "a 1990s Turkish corner shop counter with glass jars of candy and cigarette racks, the character holding out a modern banknote, a mustached shopkeeper squinting at it suspiciously",
+      "tone": "tense",
+      "palette": "kahve",
+      "focus": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "type": "image",
+      "id": "sarj",
+      "image": "img/s08.png",
+      "motion": "zoomIn",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "hud": {
+        "yil": 1999,
+        "nakit": 0,
+        "sarj": 9
+      },
+      "text": "Telefonun yüzde dokuz şarjda.",
+      "prompt": "Telefon ekranında kırmızı düşük pil uyarısı, karakter eski bir prize bakıyor",
+      "prompt_en": "the character looking desperately at an old round wall socket, his smartphone showing a red low-battery icon in his hand",
+      "tone": "tense",
+      "palette": "soguk"
+    },
+    {
+      "type": "image",
+      "id": "koz",
+      "image": "img/s09.png",
+      "motion": "push",
+      "transition": "flash",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "text": "Ama bir bilgin var.",
+      "prompt": "Karakter dramatik ışıkta, kararlı yüz ifadesi",
+      "prompt_en": "the character in dramatic side lighting, determined expression, looking straight at the viewer",
+      "tone": "dramatic",
+      "palette": "tehlike"
+    },
+    {
+      "type": "info",
+      "id": "final",
+      "text": "Galatasaray, UEFA Kupası'nı alacak.",
+      "info": {
+        "layout": "list",
+        "kicker": "GELECEK · KESİN BİLGİ",
+        "heading": "UEFA Kupası finali",
+        "items": [
+          {
+            "text": "17 Mayıs 2000 · Kopenhag",
+            "state": "ok"
+          },
+          {
+            "text": "Galatasaray – Arsenal",
+            "state": "ok"
+          },
+          {
+            "text": "Penaltılar: *4–1*",
+            "state": "ok"
+          }
+        ]
+      },
+      "hold": 0.7,
+      "tone": "excited"
+    },
+    {
+      "type": "image",
+      "id": "anlat",
+      "image": "img/s12.png",
+      "motion": "panRight",
+      "text": "Herkese anlatabilirsin.",
+      "prompt": "Karakter kahvehanede ayağa kalkmış, elinde telefon, herkes ona bakıyor",
+      "prompt_en": "the character standing up in the coffeehouse raising his smartphone, everyone turning to stare at him in disbelief",
+      "tone": "neutral",
+      "palette": "kahve"
+    },
+    {
+      "type": "image",
+      "id": "sus",
+      "image": "img/s13.png",
+      "motion": "panLeft",
+      "text": "Ya da susabilirsin.",
+      "prompt": "Karakter yağmurlu gece penceresinden dışarı bakıyor, sırrını saklıyor",
+      "prompt_en": "the character alone at a rainy night window, finger on his lips, keeping a secret, pink neon reflections on the glass",
+      "tone": "whisper",
+      "palette": "soguk"
+    },
+    {
+      "type": "bait",
+      "image": "img/s14.png",
+      "words": [
+        "ANLAT",
+        "SUS"
+      ],
+      "duration": 2.6,
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "text": "Sen olsan ne yapardın?",
+      "prompt": "Karakter yakın plan, eli kameraya doğru, endişeli yüz, neon arka plan",
+      "prompt_en": "close-up of the character holding his open hand toward the camera, worried face, blurred pink neon background",
+      "palette": "neon",
+      "motion": "none"
+    },
+    {
+      "type": "end",
+      "kicker": "GELECEĞİ BİLEN ADAM",
+      "lines": [
+        "2. BÖLÜM",
+        "*YARIN*"
+      ],
+      "body": "Yorumlara **ANLAT** ya da **SUS** yaz.\nÇoğunluk 2. bölümü yazar.",
+      "cta": "TAKİP ET · KAÇIRMA",
+      "duration": 3.0
+    }
+  ],
+  "tts": {
+    "engine": "elevenlabs",
+    "model": "eleven_v4",
+    "voice_id": "mCTNxePO8hqCg6KFnASN",
+    "voice_name": "Onur AGCNL"
+  },
+  "palette": "nostalji",
+  "accent": "#F5A524",
+  "era": {
+    "setting": "Istanbul, autumn 1999, an old working-class neighborhood",
+    "people": "all other people are the same round-white-headed cartoon species as the main character (no realistic humans), dressed in authentic late-1990s Turkish clothing: men with short dark hair or flat caps, some with thick black mustaches, in knitted vests, flannel or plain collared shirts, pleated trousers and leather jackets, older men with prayer beads; women with eyelashes and a dark hair bun or a headscarf, in long skirts, blouses and cardigans; children in tracksuits; nobody has a smartphone",
+    "details": "boxy Tofas Sahin and Dogan sedans, Renault 12 Toros, yellow taxis, card payphone booths, bulky CRT televisions, cassette players, brick-style mobile phones, tulip-shaped tea glasses, lace doilies, patterned wallpaper, shop signs with no readable text",
+    "exception": "the main character is a time traveler from 2026, so only he keeps his modern outfit and modern smartphone"
+  }
+}

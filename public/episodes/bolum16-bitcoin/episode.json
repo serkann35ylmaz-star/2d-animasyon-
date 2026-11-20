@@ -1,0 +1,271 @@
+{
+ "series": {
+  "name": "Hikâye Yorumda",
+  "handle": "@hikayeyorumda",
+  "avatar": "brand/profil.png"
+ },
+ "fps": 30,
+ "music": "music/dark-pulse.wav",
+ "musicVolume": 0.2,
+ "palette": "nostalji",
+ "accent": "#F5A524",
+ "tts": {
+  "engine": "elevenlabs",
+  "model": "eleven_v4",
+  "voice_id": "mCTNxePO8hqCg6KFnASN",
+  "voice_name": "Onur AGCNL"
+ },
+ "outfit": "(he comes from 2026, so modern streetwear, but he sold his sneakers) mustard-yellow ribbed knit beanie, oversized dark navy bomber jacket with burnt-orange inner lining, charcoal-grey t-shirt, loose black cargo pants, cheap bright blue plastic slippers on bare feet (no sneakers)",
+ "title": "Geleceği Bilen Adam — Bölüm 16: Beşinci Kâğıt",
+ "targetDuration": 100,
+ "era": {
+  "setting": "2008-2009: a stadium in Vienna, a night street, a training ground, a small shoe shop, an awards stage in Paris, a small dark room with an old CRT computer, a kitchen with pizza",
+  "people": "all people are the same round-white-headed cartoon species as the main character (no realistic humans); clothing of the late 2000s",
+  "details": "old beige desktop computer, CRT monitor showing only code (no faces), no readable text",
+  "exception": "the main character is a time traveler from 2026 so only he keeps his modern outfit"
+ },
+ "hud": [
+  {
+   "key": "yil",
+   "label": "YIL",
+   "format": "raw"
+  },
+  {
+   "key": "dolar",
+   "label": "DOLAR",
+   "format": "usd",
+   "accent": true
+  },
+  {
+   "key": "btc",
+   "label": "BTC",
+   "format": "raw"
+  }
+ ],
+ "voice": "voice.mp3",
+ "timings": "timings.json",
+ "scenes": [
+  {
+   "type": "image",
+   "id": "final08",
+   "image": "img/s01.png",
+   "motion": "zoomIn",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Yirmi dokuz Haziran iki bin sekiz, Viyana. İspanya Almanya'yı bire sıfır yendi, Torres attı. Beşinci kâğıdın tarihi buydu. Yorumdaki herkes haklıydı.",
+   "hud": {
+    "yil": 2008,
+    "dolar": 53400000,
+    "btc": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "29 Haziran 2008, Viyana. İspanya Almanya'yı 1-0 yendi, Torres attı. Beşinci kâğıdın tarihi buydu. Yorumdaki herkes haklıydı.",
+   "note": {
+    "kicker": "16. BÖLÜM · BEŞİNCİ KÂĞIT",
+    "user": "birvarm1s_biryokmus",
+    "text": "29 Haziran 2008: İspanya Avrupa şampiyonu… 11 Temmuz 2010: İspanya Dünya Kupası",
+    "likes": 8,
+    "from": 2.6,
+    "avatar": "avatar.png"
+   }
+  },
+  {
+   "type": "image",
+   "id": "sokak",
+   "image": "img/s02.png",
+   "motion": "push",
+   "palette": "soguk",
+   "tone": "tense",
+   "text": "Ama bu maçı herkes izledi. Ben kimsenin izlemediği bir tarih arıyorum. Cemil: Abi bu sefer ne alacağız?",
+   "hud": {
+    "yil": 2008,
+    "dolar": 53400000,
+    "btc": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "kadro",
+   "image": "img/s03.png",
+   "motion": "zoomIn",
+   "palette": "gunduz",
+   "tone": "excited",
+   "text": "Cemil defterden okudu: Barça'dan önce kaptık! Sağ bek Dani Alves, stoper Piqué, ön libero Busquets. Kadro on bir, on bir!",
+   "hud": {
+    "yil": 2008,
+    "dolar": 53400000,
+    "btc": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "Cemil defterden okudu: Barça'dan önce kaptık! Sağ bek Dani Alves, stoper Piqué, ön libero Busquets. Kadro 11, 11!",
+   "kadro": {
+    "filled": 11,
+    "total": 11,
+    "top": 215
+   },
+   "showHud": false
+  },
+  {
+   "type": "image",
+   "id": "ayakkabi",
+   "image": "img/s04.png",
+   "motion": "push",
+   "palette": "kahve",
+   "tone": "excited",
+   "text": "Cemil bir kutu uzattı: Abi, internetteki biri Selime ayakkabı alın demiş. Terlikleri çıkardım, ayakkabıları giydim.",
+   "hud": {
+    "yil": 2008,
+    "dolar": 53400000,
+    "btc": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "image",
+   "id": "ballon",
+   "image": "img/s05.png",
+   "motion": "zoomIn",
+   "palette": "gunbatimi",
+   "tone": "excited",
+   "text": "Aralık iki bin sekiz. Ballon d'Or: Ronaldo birinci, Messi ikinci. Cemil: Bizimkiler birinci ve ikinci!",
+   "hud": {
+    "yil": 2008,
+    "dolar": 53400000,
+    "btc": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "Aralık 2008. Ballon d'Or: Ronaldo birinci, Messi ikinci. Cemil: Bizimkiler birinci ve ikinci!"
+  },
+  {
+   "type": "image",
+   "id": "gece",
+   "image": "img/s06.png",
+   "motion": "zoomIn",
+   "palette": "soguk",
+   "tone": "whisper",
+   "text": "Üç Ocak iki bin dokuz, gece. Defterimi açtım: Bitcoin. Dünyada bir şey doğuyor. Kimse bilmiyor. Cemil: Oyun parası mı bu?",
+   "hud": {
+    "yil": 2009,
+    "dolar": 53400000,
+    "btc": 0
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "3 Ocak 2009, gece. Defterimi açtım: Bitcoin. Dünyada bir şey doğuyor. Kimse bilmiyor. Cemil: Oyun parası mı bu?"
+  },
+  {
+   "type": "image",
+   "id": "yazilim",
+   "image": "img/s07.png",
+   "motion": "shake",
+   "palette": "gerilim",
+   "tone": "tense",
+   "text": "Dokuz Ocak. Yazılım çıktı. Bilgisayarı çalıştırdım. Her blok elli coin. Cemil: Abi elektrik faturası!",
+   "hud": {
+    "yil": 2009,
+    "dolar": 53400000,
+    "btc": 50
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "9 Ocak. Yazılım çıktı. Bilgisayarı çalıştırdım. Her blok 50 coin. Cemil: Abi elektrik faturası!"
+  },
+  {
+   "type": "image",
+   "id": "pizza",
+   "image": "img/s08.png",
+   "motion": "push",
+   "palette": "kahve",
+   "tone": "tense",
+   "text": "Bir gün biri iki pizza için on bin coin verecek. Cemil: Ben pizza alırım! Ben: Sen pizzayı parayla al. Coin'i tut.",
+   "hud": {
+    "yil": 2009,
+    "dolar": 53400000,
+    "btc": 50
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "Bir gün biri iki pizza için 10.000 coin verecek. Cemil: Ben pizza alırım! Ben: Sen pizzayı parayla al. Coin'i tut."
+  },
+  {
+   "type": "image",
+   "id": "adam",
+   "image": "img/s09.png",
+   "motion": "zoomIn",
+   "palette": "tehlike",
+   "tone": "dramatic",
+   "text": "Kapı çaldı. Şapkalı adam bir zarf bıraktı. İçinde yeni bir kâğıt vardı: Bitcoin'i bildin. Peki bir sonraki tarih? Kolunda iki bin yirmi altıdan bir saat parlıyordu.",
+   "hud": {
+    "yil": 2009,
+    "dolar": 53400000,
+    "btc": 50
+   },
+   "hold": 0.4,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "caption": "Kapı çaldı. Şapkalı adam bir zarf bıraktı. İçinde yeni bir kâğıt vardı: Bitcoin'i bildin. Peki bir sonraki tarih? Kolunda 2026'dan bir saat parlıyordu."
+  },
+  {
+   "type": "bait",
+   "image": "img/s10.png",
+   "words": [
+    "6. KÂĞIT",
+    "HANGİ TARİH?",
+    "CEMİL’E HEDİYE?"
+   ],
+   "duration": 3.0,
+   "palette": "tehlike",
+   "tone": "question",
+   "motion": "none",
+   "text": "Altıncı kâğıda hangi tarihi yazardın? Bir de Cemil'e ne hediye almalı? Yorumlara yaz."
+  },
+  {
+   "type": "end",
+   "kicker": "GELECEĞİ BİLEN ADAM",
+   "lines": [
+    "17. BÖLÜM",
+    "*YARIN 18.00*"
+   ],
+   "body": "Altıncı kâğıda hangi tarihi\nyazardın? Cemil'e ne alalım?\n⚽ KADRO: **11/11**",
+   "cta": "TAKİP ET · KAÇIRMA",
+   "duration": 3.6,
+   "kasa": {
+    "value": 53400000,
+    "from": 53400000,
+    "top": 1420
+   }
+  }
+ ]
+}
