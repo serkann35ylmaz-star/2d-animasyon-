@@ -1,0 +1,317 @@
+{
+ "title": "ADA 9 — Bölüm 1: Dört Dakika",
+ "series": {
+  "name": "Hikâye Yorumda",
+  "handle": "@hikayeyorumda",
+  "avatar": "brand/profil.png"
+ },
+ "style": "dosya",
+ "fps": 30,
+ "accent": "#F39A1E",
+ "music": "music/dark-pulse.wav",
+ "musicVolume": 0.18,
+ "palette": "gerilim",
+ "targetDuration": 95,
+ "tts": {
+  "engine": "elevenlabs",
+  "model": "eleven_v4",
+  "voice_id": "mCTNxePO8hqCg6KFnASN",
+  "voice_name": "Onur AGCNL"
+ },
+ "progress": {
+  "labels": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "Ç"
+  ],
+  "current": 0
+ },
+ "timerLabel": "KÖPEKBALIĞI DÖNÜŞÜNE",
+ "hud": [
+  {
+   "key": "mesafe",
+   "label": "MESAFE",
+   "format": "raw"
+  },
+  {
+   "key": "nabiz",
+   "label": "NABIZ",
+   "format": "raw",
+   "accent": true
+  },
+  {
+   "key": "canta",
+   "label": "ÇANTA",
+   "format": "raw"
+  }
+ ],
+ "references": {
+  "kemal": "MAHbfFvokfA",
+  "stil": "MAHbfLVjsik"
+ },
+ "scenes": [
+  {
+   "type": "image",
+   "id": "s01",
+   "image": "img/s01.png",
+   "text": "Bu çantayı alamazsa adada ölecek. Aradaki tek engel, altı metrelik bir büyük beyaz.",
+   "prompt": "A sharp black rock sticking out of turquoise ocean water 40 meters from a tropical island shore, an olive military backpack hanging caught by its strap on the rock, a huge great white shark dorsal fin circling around the rock. Seen from the shore over Kemal's shoulder. Kemal: the same character as the reference image — fit muscular ex special forces soldier, glossy white round ball head, short dark buzz cut, stitched war scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, wet olive green t-shirt, NOT wearing a backpack Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "headline": "TEK KURAL:\n*SUYU SIÇRATMA.*",
+   "loc": "06:12 · AÇIK OKYANUS",
+   "hud": {
+    "mesafe": "40 m",
+    "nabiz": 96,
+    "canta": "KAYADA"
+   },
+   "motion": "push",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "tone": "tense"
+  },
+  {
+   "type": "image",
+   "id": "s02",
+   "image": "img/s02.png",
+   "text": "Adı Kemal. On iki yıl özel kuvvetlerde görev yaptı. Emekli olunca, kızının tedavi parası için bir yük gemisinde güvenlikçi oldu.",
+   "prompt": "Kemal standing on the deck of a big cargo ship at sea in the evening, looking down at a small photo of his little daughter in his hand, containers behind him, an olive military backpack on his back. Kemal: the same character as the reference image — fit muscular ex special forces soldier, glossy white round ball head, short dark buzz cut, stitched war scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, wet olive green t-shirt, NOT wearing a backpack Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "loc": "KEMAL · 41 · EMEKLİ ÖZEL KUVVETLER",
+   "motion": "zoomIn",
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "tone": "calm"
+  },
+  {
+   "type": "image",
+   "id": "s03",
+   "image": "img/s03.png",
+   "text": "Üç gece önce, gemi fırtınada battı.",
+   "prompt": "Night storm at sea, a huge cargo ship tilted and sinking into giant black waves, lightning in the sky, tiny figure of Kemal in the water holding a broken wooden plank. Wide dramatic shot. Darker storm scene but characters still readable. Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "loc": "3 GECE ÖNCE · FIRTINA",
+   "fx": [
+    {
+     "type": "lightning",
+     "every": 1.6
+    }
+   ],
+   "motion": "shake",
+   "tone": "dramatic"
+  },
+  {
+   "type": "image",
+   "id": "s04",
+   "image": "img/s04.png",
+   "text": "Kemal bir enkaza tutunup, haritada adı bile olmayan bir adaya ulaştı. Haritadaki adı sadece bir numara: dokuz.",
+   "prompt": "Close-up of an old paper nautical sea chart on a wooden table, blue ocean with many tiny islands, one tiny unnamed island circled in red marker. Comic illustration, warm light. Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "caption": "Kemal bir enkaza tutunup, haritada adı bile olmayan bir adaya ulaştı. Haritadaki adı sadece bir numara: 9.",
+   "loc": "ADA 9 · HARİTADA ADI YOK",
+   "motion": "zoomIn",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "tone": "calm"
+  },
+  {
+   "type": "image",
+   "id": "s05",
+   "image": "img/s05.png",
+   "text": "Ama kıyıya çıkarken bir dalga çantayı sırtından kopardı. Çanta, kırk metre açıktaki bir kayaya takıldı.",
+   "prompt": "A big wave crashing over Kemal near a rocky shore, the strap of the olive military backpack on his back snapping and the backpack flying away from his back into the sea toward a black rock. Dynamic action shot. Kemal: the same character as the reference image — fit muscular ex special forces soldier, glossy white round ball head, short dark buzz cut, stitched war scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, wet olive green t-shirt, NOT wearing a backpack Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "caption": "Ama kıyıya çıkarken bir dalga çantayı sırtından kopardı. Çanta, 40 metre açıktaki bir kayaya takıldı.",
+   "hud": {
+    "canta": "KAYIP"
+   },
+   "status": {
+    "label": "ÇANTA",
+    "value": "KAYIP"
+   },
+   "motion": "shake",
+   "transition": "whip",
+   "tone": "tense"
+  },
+  {
+   "type": "image",
+   "id": "s06",
+   "image": "img/s06.png",
+   "text": "İçinde telsiz, su arıtma tableti, işaret fişeği ve kızının fotoğrafı var. Adada tatlı su yok. Telsiz olmadan onu kimse bulamaz.",
+   "prompt": "Top-down flat lay of the contents of an olive military backpack on wet sand: a handheld radio, water purification tablets, a red signal flare, a knife, and a small photo of a smiling little girl. Comic illustration, warm light. Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "status": {
+    "label": "TATLI SU",
+    "value": "YOK"
+   },
+   "motion": "panDown",
+   "tone": "calm"
+  },
+  {
+   "type": "image",
+   "id": "s07",
+   "image": "img/s07.png",
+   "text": "Ve kayanın etrafında bir yüzgeç dönüyor.",
+   "prompt": "Low angle at water level: a giant great white shark dorsal fin cutting through turquoise water toward the viewer, the rock with the hanging backpack behind it. Tense. Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "hud": {
+    "nabiz": 142
+   },
+   "motion": "push",
+   "focus": [
+    0.5,
+    0.55
+   ],
+   "tone": "whisper"
+  },
+  {
+   "type": "image",
+   "id": "s08",
+   "image": "img/s08.png",
+   "text": "Sonra ufukta, ölmüş dev bir balina beliriyor. Köpekbalığı ona gidiyor.",
+   "prompt": "Wide ocean view at golden hour: far on the horizon a huge dead whale carcass floating with seagulls above it, the great white shark fin swimming away toward it. Kemal crouched on the rocky shore watching in the foreground. Kemal: the same character as the reference image — fit muscular ex special forces soldier, glossy white round ball head, short dark buzz cut, stitched war scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, wet olive green t-shirt, NOT wearing a backpack Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "motion": "panRight",
+   "tone": "calm"
+  },
+  {
+   "type": "image",
+   "id": "s09",
+   "image": "img/s09.png",
+   "text": "Kemal suya girmiyor. Saatine basıyor. Köpekbalığı dört dakika sonra geri dönüyor, bir tur atıyor ve yeniden balinaya gidiyor. Artık biliyor: dört dakikası var.",
+   "prompt": "Close-up of Kemal crouching behind a rock, pressing the button of a black military wristwatch on his tattooed arm, eyes narrowed watching the sea. Kemal: the same character as the reference image — fit muscular ex special forces soldier, glossy white round ball head, short dark buzz cut, stitched war scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, wet olive green t-shirt, NOT wearing a backpack Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "caption": "Kemal suya girmiyor. Saatine basıyor. Köpekbalığı 4 dakika sonra geri dönüyor, bir tur atıyor ve yeniden balinaya gidiyor. Artık biliyor: 4 dakikası var.",
+   "loc": "ÖLÇÜYOR · 03:58",
+   "motion": "zoomIn",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "tone": "tense"
+  },
+  {
+   "type": "image",
+   "id": "s10",
+   "image": "img/s10.png",
+   "text": "Kronometreye basıyor ve suya giriyor. Sıçratmadan.",
+   "prompt": "Kemal slowly and silently sliding into calm turquoise water from the rocks, no splash, determined face, backpack-less. Kemal: the same character as the reference image — fit muscular ex special forces soldier, glossy white round ball head, short dark buzz cut, stitched war scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, wet olive green t-shirt, NOT wearing a backpack Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "timer": 240,
+   "loc": "06:20 · SUYA GİRİŞ",
+   "motion": "push",
+   "sfx": [
+    {
+     "name": "tick",
+     "volume": 0.5
+    }
+   ],
+   "tone": "whisper"
+  },
+  {
+   "type": "image",
+   "id": "s11",
+   "image": "img/s11.png",
+   "text": "Kırk metre. Yirmi beş. Bacağına kramp giriyor. İki dakika kaldı.",
+   "prompt": "Kemal swimming in the ocean, face grimacing in pain, one leg cramping, the rock with the backpack still ahead of him. Split view slightly above and below the water line. Kemal: the same character as the reference image — fit muscular ex special forces soldier, glossy white round ball head, short dark buzz cut, stitched war scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, wet olive green t-shirt, NOT wearing a backpack Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "caption": "40 metre. 25. Bacağına kramp giriyor. 2 dakika kaldı.",
+   "timer": 120,
+   "hud": {
+    "mesafe": "25 m",
+    "nabiz": 168
+   },
+   "motion": "shake",
+   "tone": "tense"
+  },
+  {
+   "type": "image",
+   "id": "s12",
+   "image": "img/s12.png",
+   "text": "Ama bir balina leşi tek bir köpekbalığını değil, hepsini çağırır.",
+   "prompt": "Far away on the horizon the dead whale carcass surrounded by dozens of shark fins in bloody water, seagulls circling. Ominous. Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "timer": 95,
+   "card": {
+    "type": "fact",
+    "title": "GERÇEK KURAL",
+    "text": "Tek bir balina leşinin başında aynı anda 40'a yakın büyük beyaz köpekbalığı görüldü.",
+    "from": 0.3
+   },
+   "motion": "zoomIn",
+   "tone": "dramatic"
+  },
+  {
+   "type": "image",
+   "id": "s13",
+   "image": "img/s13.png",
+   "text": "Kayaya ulaşıyor ama askı sıkışmış. Çekiyor, çanta yırtılıyor ve içinden bir şey düşüp batıyor: kızının fotoğrafı.",
+   "prompt": "Underwater view: a small photo of a smiling little girl slowly sinking down through turquoise water with light rays, above it Kemal's tattooed hand reaching down, the torn backpack on the rock at the surface. Kemal: the same character as the reference image — fit muscular ex special forces soldier, glossy white round ball head, short dark buzz cut, stitched war scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, wet olive green t-shirt, NOT wearing a backpack Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "timer": 60,
+   "hud": {
+    "mesafe": "0 m",
+    "canta": "YIRTIK"
+   },
+   "status": {
+    "label": "FOTOĞRAF",
+    "value": "BATIYOR"
+   },
+   "fx": [
+    {
+     "type": "underwater",
+     "strength": 0.7
+    }
+   ],
+   "motion": "panDown",
+   "tone": "sad"
+  },
+  {
+   "type": "image",
+   "id": "s14",
+   "image": "img/s14.png",
+   "text": "Otuz saniye kaldı. Dipte bir gölge yükseliyor. Bu o değil. Bu ondan daha büyük.",
+   "prompt": "Underwater view looking down into the deep: the tiny sinking photo in the foreground, and from the dark blue depths below a gigantic shark silhouette rising up, much bigger than a normal great white. Terrifying scale. Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "caption": "30 saniye kaldı. Dipte bir gölge yükseliyor. Bu o değil. Bu ondan daha büyük.",
+   "timer": 30,
+   "hud": {
+    "nabiz": 190
+   },
+   "status": {
+    "label": "DİPTE",
+    "value": "GÖLGE"
+   },
+   "fx": [
+    {
+     "type": "underwater",
+     "strength": 0.8
+    },
+    {
+     "type": "pulse",
+     "bpm": 96
+    }
+   ],
+   "motion": "push",
+   "focus": [
+    0.5,
+    0.65
+   ],
+   "tone": "whisper"
+  },
+  {
+   "type": "image",
+   "id": "s15",
+   "image": "img/s15.png",
+   "text": "Fotoğraf için dalsın mı, yoksa çantayla dönsün mü? Yorumlara tek kelime yaz: dal ya da dön.",
+   "prompt": "Kemal holding onto the black rock in the sea with the torn backpack, looking down into the dark water, then back toward the island. Decision moment. Kemal: the same character as the reference image — fit muscular ex special forces soldier, glossy white round ball head, short dark buzz cut, stitched war scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, wet olive green t-shirt, NOT wearing a backpack Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "choices": [
+    "DAL",
+    "DÖN"
+   ],
+   "choiceTag": "ADA 9 · 1. BÖLÜM",
+   "hold": 1.5,
+   "motion": "zoomIn",
+   "focus": [
+    0.5,
+    0.45
+   ],
+   "tone": "question"
+  }
+ ]
+}
