@@ -69,7 +69,7 @@ shot("giris", "Kronometreye basıp sessizce suya giriyorsun.", timer=240, loc="0
 
 # 4) BİRİNCİ SORUN — gerçek bir kuraldan doğar
 shot("kramp", "Birinci sorun.", timer=150, sfx=TIN, hud={"mesafe": "25 m", "nabiz": 168}, motion="zoomIn", focus=[0.5, 0.25], tone="dramatic")
-shot("kramp", "Bacağına kramp giriyor.", fx=[{"type": "flash"}], motion="shake", focus=[0.45, 0.7], tone="tense")
+shot("kramp", "Bacağına kramp giriyor.", fx=[{"type": "flash"}], motion="shake", focus=[0.5, 0.35], tone="tense")
 shot("hiz", "Ve büyük beyaz, kısa bir atakta saatte otuz beş kilometreyi geçer.", "Ve büyük beyaz, kısa bir atakta saatte 35 kilometreyi geçer.", timer=135,
      card={"type": "fact", "title": "GERÇEK KURAL", "text": "Büyük beyaz köpekbalığı kısa ataklarda saatte 35 km'yi aşan hızlara çıkabilir.", "from": 0.3},
      motion="push", focus=[0.5, 0.45], tone="dramatic")
