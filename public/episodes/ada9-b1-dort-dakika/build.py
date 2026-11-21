@@ -1,91 +1,120 @@
-# episode.json üretici (elle düzenlemek yerine buradan)
-import json
-K = ("Kemal: the same character as the reference image — fit muscular ex special forces soldier, glossy white round ball head, "
-     "short dark buzz cut, stitched war scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, "
-     "wet olive green t-shirt, NOT wearing a backpack")
-S = ("Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, "
-     "thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. "
-     "Vertical 9:16, no text, no letters, no logos.")
+# episode.json üretici — "Sabit iskelet" (8 parça) + sık kesme ritmi.
+# Her cümle ayrı plan; aynı görsel farklı kadrajla (focus/motion) tekrar kullanılır.
+import json, os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+# ---- Görseller (img/<ad>.png) ve istemleri ----
+K = ("the main character from the first reference image: fit muscular ex special forces soldier, flat matte white round head "
+     "(no gloss, no shine), simple black oval eyes, small black eyebrows, short dark buzz cut drawn with ink strokes, "
+     "stitched scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, olive green t-shirt")
+STYLE = ("Copy exactly the art style of the reference images: crisp hand-inked comic book illustration, bold clean black ink outlines "
+         "around every shape, fine ink hatching texture, cel shading, matte flat white heads, sharp high-definition line art. "
+         "Natural muted colors: deep teal-green sea drawn with ink lines (not neon, not oversaturated, not photographic), "
+         "warm orange accents. No soft painterly blur, no glow, no 3D render. Vertical 9:16, no text, no letters, no logos.")
+IMG = {
+  "kanca":   "Over-the-shoulder view from a rocky island shore: 40 meters out a sharp black rock in the sea with an olive military backpack caught on it by its strap, a great white shark dorsal fin circling the rock. Early morning light. Main character seen from behind, no backpack on him. " + K,
+  "gemi":    "Main character on the deck of a cargo ship at dusk, olive military backpack on his back, looking down at a small photo of his smiling little daughter in his hand, shipping containers behind. " + K,
+  "firtina": "Night storm at sea, a cargo ship tilting and sinking into big waves, a lightning bolt, the main character in the water in the foreground holding a broken wooden plank. Dark but readable. " + K,
+  "harita":  "Close-up of an old paper sea chart on a wooden table, many tiny islands, one tiny unnamed island circled with a red marker, a brass compass and a pencil. Warm lamp light.",
+  "dalga":   "A white foaming wave crashing over the main character waist-deep near a rocky shore, the strap of the olive backpack on his back snapping, the backpack flying away toward a sharp black rock, shocked face, one hand reaching out. " + K,
+  "canta":   "Top-down flat lay on wet sand: contents of an olive military backpack: a black handheld radio, water purification tablets, a red signal flare, a folding knife, a water bottle, and a small photo of a smiling little girl with a matte white round head.",
+  "balina":  "Wide sea view at golden hour: far on the horizon a huge dead whale carcass floating with seagulls above it, ONE great white shark fin swimming away toward it. In the foreground the main character crouching on dark rocks, watching, no backpack. Only one shark. " + K,
+  "saat":    "Close-up: the main character crouching behind a wet rock, pressing the button of a black military wristwatch on his tattooed arm, eyes narrowed, looking at the sea. " + K,
+  "giris":   "The main character silently sliding chest-deep into calm sea from flat rocks, no splash, smooth ripples, determined face; far away the black rock with the backpack. " + K,
+  "kramp":   "Split view half above and half below the water line: the main character swimming, face grimacing in pain, underwater his leg bent and cramping with small pain marks. " + K,
+  "hiz":     "Low angle at water level: a huge great white shark dorsal fin cutting fast through the sea straight toward the viewer, its long body visible under the surface, spray behind the fin. Tense.",
+  "aski":    "The main character at the black rock in the sea pulling hard at the olive backpack whose strap is stuck in a crack of the rock, the backpack fabric tearing open, gritted teeth. " + K,
+  "foto":    "Underwater, light rays from the surface: a small rectangular paper polaroid photograph (a flat paper object, NOT a person) slowly sinking, the photo shows a smiling little girl with a matte white round head; above it a white cartoon hand on a black-tattooed arm reaching down.",
+  "donus":   "Wide sea view: far away near the floating whale carcass the single great white shark fin turns around and heads back fast toward the viewer, leaving a long wake, seagulls scattering. Ominous.",
+  "karar":   "The main character holding onto the black rock in the sea, the torn backpack in his other hand, looking down into the water where a small photo glints three meters below, torn worried expression, sweat drops. " + K,
+  "golge":   "Underwater looking down into the deep: the small sinking polaroid photo in the foreground, and rising from the dark blue depth below a gigantic shark silhouette, far bigger than a normal great white. Terrifying scale.",
+}
+
 sc = []
-def a(id, text, prompt, **kw):
-    d = {"type": "image", "id": id, "image": f"img/{id}.png", "text": text, "prompt": f"{prompt} {S}"}
+def shot(img, text, caption=None, **kw):
+    d = {"type": "image", "id": f"p{len(sc)+1:02d}", "image": f"img/{img}.png", "text": text}
+    if caption: d["caption"] = caption
     d.update(kw); sc.append(d)
 
-a("s01", "Çantan okyanusun ortasında bir kayaya takıldı. Kırk metre açıkta. Etrafında altı metrelik bir büyük beyaz dönüyor. Tek bir kural var: suyu sıçratmayacaksın.",
-  "A sharp black rock sticking out of turquoise ocean water 40 meters from a tropical island shore, an olive military backpack hanging caught by its strap on the rock, a huge great white shark dorsal fin circling around the rock. Seen from the shore over Kemal's shoulder. " + K,
-  caption="Çantan okyanusun ortasında bir kayaya takıldı. 40 metre açıkta. Etrafında 6 metrelik bir büyük beyaz dönüyor. Tek bir kural var: suyu sıçratmayacaksın.",
-  headline="TEK KURAL:\n*SUYU SIÇRATMA.*", loc="06:12 · AÇIK OKYANUS", hud={"mesafe": "40 m", "nabiz": 96, "canta": "KAYADA"},
-  motion="push", focus=[0.5, 0.45], tone="tense")
-a("s02", "On iki yıl özel kuvvetlerdeydin. Emekli olunca, kızının tedavi parası için bir yük gemisinde güvenlikçi oldun.",
-  "Kemal standing on the deck of a big cargo ship at sea in the evening, looking down at a small photo of his little daughter in his hand, containers behind him, an olive military backpack on his back. " + K,
-  caption="12 yıl özel kuvvetlerdeydin. Emekli olunca, kızının tedavi parası için bir yük gemisinde güvenlikçi oldun.",
-  loc="EMEKLİ ÖZEL KUVVETLER · 12 YIL", motion="zoomIn", focus=[0.5, 0.4], tone="calm")
-a("s03", "Üç gece önce, gemi fırtınada battı.",
-  "Night storm at sea, a huge cargo ship tilted and sinking into giant black waves, lightning in the sky, tiny figure of Kemal in the water holding a broken wooden plank. Wide dramatic shot. Darker storm scene but characters still readable.",
-  caption="3 gece önce, gemi fırtınada battı.",
-  loc="3 GECE ÖNCE · FIRTINA", fx=[{"type": "lightning", "every": 1.6}], motion="shake", tone="dramatic")
-a("s04", "Bir enkaza tutunup, haritada adı bile olmayan bir adaya çıktın. Haritada sadece bir numara var: dokuz.",
-  "Close-up of an old paper nautical sea chart on a wooden table, blue ocean with many tiny islands, one tiny unnamed island circled in red marker. Comic illustration, warm light.",
-  caption="Bir enkaza tutunup, haritada adı bile olmayan bir adaya çıktın. Haritada sadece bir numara var: 9.",
-  loc="ADA 9 · HARİTADA ADI YOK", motion="zoomIn", focus=[0.5, 0.5], tone="calm")
-a("s05", "Ama kıyıya çıkarken bir dalga çantanı sırtından kopardı. Çanta, kırk metre açıktaki kayaya takıldı.",
-  "A big wave crashing over Kemal near a rocky shore, the strap of the olive military backpack on his back snapping and the backpack flying away from his back into the sea toward a black rock. Dynamic action shot. " + K,
-  caption="Ama kıyıya çıkarken bir dalga çantanı sırtından kopardı. Çanta, 40 metre açıktaki kayaya takıldı.",
-  hud={"canta": "KAYIP"}, status={"label": "ÇANTA", "value": "KAYIP"}, motion="shake", transition="whip", tone="tense")
-a("s06", "İçinde telsiz, su arıtma tableti, işaret fişeği ve kızının fotoğrafı var. Adada tatlı su yok. Telsiz olmadan seni kimse bulamaz.",
-  "Top-down flat lay of the contents of an olive military backpack on wet sand: a handheld radio, water purification tablets, a red signal flare, a knife, and a small photo of a smiling little girl. Comic illustration, warm light.",
-  status={"label": "TATLI SU", "value": "YOK"}, motion="panDown", tone="calm")
-a("s07", "Ve kayanın etrafında bir yüzgeç dönüyor.",
-  "Low angle at water level: a giant great white shark dorsal fin cutting through turquoise water toward the viewer, the rock with the hanging backpack behind it. Tense.",
-  hud={"nabiz": 142}, motion="push", focus=[0.5, 0.55], tone="whisper")
-a("s08", "Sonra ufukta, ölmüş dev bir balina beliriyor. Köpekbalığı ona yöneliyor.",
-  "Wide ocean view at golden hour: far on the horizon a huge dead whale carcass floating with seagulls above it, the great white shark fin swimming away toward it. Kemal crouched on the rocky shore watching in the foreground. " + K,
-  motion="panRight", tone="calm")
-a("s09", "Suya girmiyorsun. Saatine basıyorsun. Dört dakika sonra geri dönüyor, bir tur atıyor, yine balinaya gidiyor. Artık biliyorsun. Dört dakikan var.",
-  "Close-up of Kemal crouching behind a rock, pressing the button of a black military wristwatch on his tattooed arm, eyes narrowed watching the sea. " + K,
-  caption="Suya girmiyorsun. Saatine basıyorsun. 4 dakika sonra geri dönüyor, bir tur atıyor, yine balinaya gidiyor. Artık biliyorsun. 4 dakikan var.",
-  loc="ÖLÇÜYOR · 03:58", motion="zoomIn", focus=[0.5, 0.45], tone="tense")
-a("s10", "Kronometreye basıp suya giriyorsun. Sıçratmadan.",
-  "Kemal slowly and silently sliding into calm turquoise water from the rocks, no splash, determined face, backpack-less. " + K,
-  timer=240, loc="06:20 · SUYA GİRİŞ", motion="push", sfx=[{"name": "tick", "volume": 0.5}], tone="whisper")
-a("s11", "Birinci sorun. Kırk metre. Yirmi beş. Bacağına kramp giriyor. İki dakika kaldı.",
-  "Kemal swimming in the ocean, face grimacing in pain, one leg cramping, the rock with the backpack still ahead of him. Split view slightly above and below the water line. " + K,
-  caption="Birinci sorun. 40 metre. 25. Bacağına kramp giriyor. 2 dakika kaldı.",
-  timer=120, hud={"mesafe": "25 m", "nabiz": 168}, motion="shake", tone="tense")
-a("s12", "Ve unutma. Büyük beyaz, kısa bir atakta saatte otuz beş kilometreyi geçer. Kırk metre, onun için dört saniye.",
-  "Wide ocean view at sunset: a huge dead whale carcass floating in the sea, only one great white shark fin next to it, seagulls circling above.",
-  caption="Ve unutma. Büyük beyaz, kısa bir atakta saatte 35 kilometreyi geçer. 40 metre, onun için 4 saniye.",
-  timer=95, card={"type": "fact", "title": "GERÇEK KURAL", "text": "Büyük beyaz köpekbalığı kısa ataklarda saatte 35 km'yi aşan hızlara çıkabilir.", "from": 0.3},
-  motion="zoomIn", tone="dramatic")
-a("s13", "İkinci sorun. Kayaya ulaşıyorsun ama askı sıkışmış. Çekiyorsun, çanta yırtılıyor. İçinden bir şey düşüp batıyor. Kızının fotoğrafı.",
-  "Underwater view: a small photo of a smiling little girl slowly sinking down through turquoise water with light rays, above it Kemal's tattooed hand reaching down, the torn backpack on the rock at the surface. " + K,
-  timer=60, hud={"mesafe": "0 m", "canta": "YIRTIK"}, status={"label": "FOTOĞRAF", "value": "BATIYOR"},
-  fx=[{"type": "underwater", "strength": 0.7}], motion="panDown", tone="sad")
-a("s14", "Üçüncü sorun. Otuz saniye kaldı. Dipte bir gölge yükseliyor. Bu o değil. Bu, ondan daha büyük.",
-  "Underwater view looking down into the deep: the tiny sinking photo in the foreground, and from the dark blue depths below a gigantic shark silhouette rising up, much bigger than a normal great white. Terrifying scale.",
-  caption="Üçüncü sorun. 30 saniye kaldı. Dipte bir gölge yükseliyor. Bu o değil. Bu, ondan daha büyük.",
-  timer=30, hud={"nabiz": 190}, status={"label": "DİPTE", "value": "GÖLGE"},
-  fx=[{"type": "underwater", "strength": 0.8}, {"type": "pulse", "bpm": 96}], motion="push", focus=[0.5, 0.65], tone="whisper")
-a("s15", "Fotoğraf için dalar mısın, yoksa çantayla dönüp hayatını mı kurtarırsın? Yorumlara tek kelime yaz. Dal ya da dön. Çoğunluk hangisini yazarsa, hikâye oradan devam eder.",
-  "Kemal holding onto the black rock in the sea with the torn backpack, looking down into the dark water, then back toward the island. Decision moment. " + K,
-  choices=["DAL", "DÖN"], choiceTag="ADA 9 · 1. BÖLÜM", hold=1.5, motion="zoomIn", focus=[0.5, 0.45], tone="question")
+TIN = [{"name": "tin", "volume": 0.6}]
+
+# 1) KANCA — saat + kural
+shot("kanca", "Saat altı on iki.", "Saat 06:12.", headline="TEK KURAL:\n*SUYU SIÇRATMA.*", loc="06:12 · AÇIK OKYANUS",
+     hud={"mesafe": "40 m", "nabiz": 96, "canta": "KAYADA"}, motion="push", focus=[0.62, 0.42], sfx=TIN, tone="tense")
+shot("kanca", "Çantan okyanusun ortasında bir kayaya takıldı. Kırk metre açıkta.", "Çantan okyanusun ortasında bir kayaya takıldı. 40 metre açıkta.",
+     motion="zoomIn", focus=[0.7, 0.4], tone="tense")
+shot("kanca", "Etrafında altı metrelik bir büyük beyaz dönüyor.", "Etrafında 6 metrelik bir büyük beyaz dönüyor.", motion="panRight", focus=[0.85, 0.45], tone="tense")
+shot("kanca", "Tek bir kural var. Suyu sıçratmayacaksın.", motion="zoomOut", focus=[0.5, 0.5], tone="tense")
+
+# 2) ÖZET — kim, neden burada
+shot("gemi", "On iki yıl özel kuvvetlerdeydin.", "12 yıl özel kuvvetlerdeydin.", loc="EMEKLİ ÖZEL KUVVETLER · 12 YIL", motion="zoomIn", focus=[0.5, 0.3], tone="calm")
+shot("gemi", "Kızının tedavi parası için bir yük gemisinde güvenlikçi oldun.", motion="push", focus=[0.55, 0.55], tone="calm")
+shot("firtina", "Üç gece önce gemi fırtınada battı.", "3 gece önce gemi fırtınada battı.", loc="3 GECE ÖNCE · FIRTINA",
+     fx=[{"type": "lightning", "every": 1.4}], motion="shake", tone="dramatic")
+shot("harita", "Bir enkaza tutunup, haritada adı bile olmayan bir adaya çıktın.", motion="zoomIn", focus=[0.5, 0.55], tone="calm")
+shot("harita", "Haritada sadece bir numara var. Dokuz.", "Haritada sadece bir numara var. 9.", loc="ADA 9 · HARİTADA ADI YOK", motion="push", focus=[0.5, 0.56], intensity=1.6, sfx=TIN, tone="dramatic")
+
+# 3) EYLEM — çanta neden hayati, süreyi ölçmek
+shot("dalga", "Kıyıya çıkarken bir dalga çantanı sırtından kopardı.", hud={"canta": "KAYIP"}, status={"label": "ÇANTA", "value": "KAYIP"},
+     fx=[{"type": "flash"}], motion="shake", transition="whip", tone="tense")
+shot("canta", "İçinde telsiz, su arıtma tableti, işaret fişeği ve kızının fotoğrafı var.", motion="panDown", tone="calm")
+shot("canta", "Adada tatlı su yok. Telsiz olmadan seni kimse bulamaz.", status={"label": "TATLI SU", "value": "YOK"}, motion="zoomIn", focus=[0.3, 0.6], tone="calm")
+shot("balina", "Sonra ufukta ölmüş dev bir balina beliriyor.", motion="zoomIn", focus=[0.55, 0.2], tone="calm")
+shot("balina", "Yüzgeç ona yöneliyor.", motion="push", focus=[0.75, 0.35], tone="calm")
+shot("saat", "Suya girmiyorsun. Saatine basıyorsun.", loc="ÖLÇÜYOR", motion="push", focus=[0.6, 0.6], sfx=[{"name": "tick", "volume": 0.5}], tone="tense")
+shot("balina", "Dört dakika sonra geri dönüyor, bir tur atıyor, yine gidiyor.", "4 dakika sonra geri dönüyor, bir tur atıyor, yine gidiyor.", motion="panLeft", focus=[0.6, 0.3], tone="tense")
+shot("saat", "Artık biliyorsun. Dört dakikan var.", "Artık biliyorsun. 4 dakikan var.", motion="zoomIn", focus=[0.5, 0.35], tone="dramatic")
+shot("giris", "Kronometreye basıp sessizce suya giriyorsun.", timer=240, loc="06:20 · SUYA GİRİŞ", motion="push", sfx=[{"name": "tick", "volume": 0.5}], tone="whisper")
+
+# 4) BİRİNCİ SORUN — gerçek bir kuraldan doğar
+shot("kramp", "Birinci sorun.", timer=150, sfx=TIN, hud={"mesafe": "25 m", "nabiz": 168}, motion="zoomIn", focus=[0.5, 0.25], tone="dramatic")
+shot("kramp", "Bacağına kramp giriyor.", fx=[{"type": "flash"}], motion="shake", focus=[0.45, 0.7], tone="tense")
+shot("hiz", "Ve büyük beyaz, kısa bir atakta saatte otuz beş kilometreyi geçer.", "Ve büyük beyaz, kısa bir atakta saatte 35 kilometreyi geçer.", timer=135,
+     card={"type": "fact", "title": "GERÇEK KURAL", "text": "Büyük beyaz köpekbalığı kısa ataklarda saatte 35 km'yi aşan hızlara çıkabilir.", "from": 0.3},
+     motion="push", focus=[0.5, 0.45], tone="dramatic")
+shot("hiz", "Kırk metre, onun için dört saniye. Çırpınırsan duyar.", "40 metre, onun için 4 saniye. Çırpınırsan duyar.", motion="zoomIn", focus=[0.5, 0.35], tone="whisper")
+
+# 5) İKİNCİ SORUN — daha yakın, daha kişisel
+shot("aski", "İkinci sorun.", timer=90, sfx=TIN, hud={"mesafe": "0 m"}, motion="zoomIn", focus=[0.5, 0.35], tone="dramatic")
+shot("aski", "Kayaya ulaşıyorsun ama askı sıkışmış.", motion="push", focus=[0.6, 0.55], tone="tense")
+shot("aski", "Çekiyorsun. Çanta yırtılıyor.", hud={"canta": "YIRTIK"}, fx=[{"type": "flash"}], motion="shake", focus=[0.6, 0.6], tone="tense")
+shot("foto", "İçinden kızının fotoğrafı düşüp batıyor.", status={"label": "FOTOĞRAF", "value": "BATIYOR"},
+     fx=[{"type": "underwater", "strength": 0.6}], motion="panDown", tone="sad")
+
+# 6) ÜÇÜNCÜ SORUN — en büyüğü, geri dönüşü yok
+shot("donus", "Üçüncü sorun.", timer=30, sfx=TIN, motion="zoomIn", focus=[0.5, 0.35], tone="dramatic")
+shot("donus", "Kronometre otuz saniye. Yüzgeç balinadan ayrılıyor. Geri dönüyor.", "Kronometre 30 saniye. Yüzgeç balinadan ayrılıyor. Geri dönüyor.",
+     hud={"nabiz": 184}, motion="push", focus=[0.5, 0.5], intensity=1.4, tone="tense")
+
+# 7) "NEDEN OLMASIN?" — kahraman karanlık seçeneğe göz kırpar
+shot("karar", "Fotoğraf hâlâ görünüyor. Üç metre aşağıda.", "Fotoğraf hâlâ görünüyor. 3 metre aşağıda.", timer=22, motion="zoomIn", focus=[0.5, 0.7], tone="whisper")
+shot("karar", "Dalmak beş saniye. Neden olmasın?", "Dalmak 5 saniye. Neden olmasın?", motion="push", focus=[0.5, 0.35], tone="whisper")
+
+# 8) GÖREMEDİĞİN ŞEY + OYLAMA
+shot("golge", "Göremediğin şey, dipte yükselen gölge.", timer=15, status={"label": "DİPTE", "value": "GÖLGE"},
+     fx=[{"type": "underwater", "strength": 0.8}, {"type": "pulse", "bpm": 96}], motion="push", focus=[0.5, 0.7], tone="whisper")
+shot("golge", "Bu o değil. Bu, ondan daha büyük.", hud={"nabiz": 196}, fx=[{"type": "underwater", "strength": 0.8}, {"type": "pulse", "bpm": 110}, {"type": "flash"}],
+     motion="zoomIn", focus=[0.5, 0.75], intensity=1.5, tone="dramatic")
+shot("karar", "Yorumlara tek kelime yaz. Dal ya da dön. Çoğunluk hangisini yazarsa, hikâye oradan devam eder.",
+     choices=["DAL", "DÖN"], choiceTag="ADA 9 · 1. BÖLÜM", hold=1.5, motion="zoomOut", focus=[0.5, 0.45], tone="question")
 
 ep = {
   "title": "ADA 9 — Bölüm 1: Dört Dakika",
   "series": {"name": "Hikâye Yorumda", "handle": "@hikayeyorumda", "avatar": "brand/profil.png"},
-  "style": "dosya", "fps": 30, "accent": "#F39A1E",
-  "music": "music/dark-pulse.wav", "musicVolume": 0.18,
-  "palette": "gerilim", "targetDuration": 95,
-  "tts": {"engine": "elevenlabs", "model": "eleven_v4", "voice_id": "mCTNxePO8hqCg6KFnASN", "voice_name": "Onur AGCNL"},
+  "style": "dosya", "fps": 30, "tightSilence": True, "accent": "#F39A1E",
+  "music": "music/dark-pulse.wav", "musicVolume": 0.16,
+  "palette": "gerilim", "targetDuration": 100,
   "progress": {"labels": ["1", "2", "3", "4", "5", "6", "Ç"], "current": 0},
   "timerLabel": "KÖPEKBALIĞI DÖNÜŞÜNE",
   "hud": [{"key": "mesafe", "label": "MESAFE", "format": "raw"},
           {"key": "nabiz", "label": "NABIZ", "format": "raw", "accent": True},
           {"key": "canta", "label": "ÇANTA", "format": "raw"}],
-  "references": {"kemal": "MAHbfFvokfA", "stil": "MAHbfLVjsik"},
+  "references": {"kemal": "MAHbg3gfdCA", "stil": ["MAHbfB2pquw", "MAHbfLVjsik"]},
+  "images": {k: f"{v} {STYLE}" for k, v in IMG.items()},
   "scenes": sc,
 }
-json.dump(ep, open(__file__.replace("build.py", "episode.json"), "w"), ensure_ascii=False, indent=1)
-txt = "\n\n".join(s["text"] for s in sc)
-open(__file__.replace("build.py", "voice-script.txt"), "w").write(txt + "\n")
-print(len(txt), "karakter")
+json.dump(ep, open(os.path.join(HERE, "episode.json"), "w"), ensure_ascii=False, indent=1)
+txt = "\n".join(s["text"] for s in sc)
+open(os.path.join(HERE, "voice-script.txt"), "w").write(txt + "\n")
+print(len(txt), "karakter,", len(txt.split()), "kelime,", len(sc), "plan,", len(IMG), "görsel")

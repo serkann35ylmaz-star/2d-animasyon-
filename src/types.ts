@@ -90,7 +90,7 @@ interface SceneBase {
 }
 
 export interface FxCue {
-  type: 'flicker' | 'lightning' | 'pulse' | 'underwater';
+  type: 'flicker' | 'lightning' | 'pulse' | 'underwater' | 'flash';
   /** Sahne içi başlangıç/bitiş (sn); yoksa tüm sahne */
   from?: number;
   to?: number;

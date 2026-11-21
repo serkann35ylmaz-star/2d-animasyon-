@@ -2,6 +2,7 @@
 //   flicker   — bozuk ampul: düzensiz kararmalar, arada tam karanlık (referans 2. video, merdiven boşluğu)
 //   lightning — şimşek: çift parlama + soğuk mavi ışık, sonra karanlık
 //   pulse     — kalp atışı: kenarlarda nabız gibi atan kırmızı karartma
+//   flash     — şok anı: kırmızı flaş + kısa ekran sarsıntısı (sahne başında, ~0.35 sn)
 //   underwater— su altı: koyu turkuaz renk, yavaş dalgalanan ışık lekeleri, kenar karartma
 import React from 'react';
 import {AbsoluteFill, random, useCurrentFrame, useVideoConfig} from 'remotion';
@@ -71,6 +72,12 @@ export const Fx: React.FC<{fx: FxCue[]; seed: string}> = ({fx, seed}) => {
                 }}
               />
             );
+          }
+          case 'flash': {
+            const d = t - (c.from ?? 0);
+            if (d < 0 || d > 0.45) return null;
+            const a = d < 0.05 ? d / 0.05 : Math.max(0, 1 - (d - 0.05) / 0.4);
+            return <AbsoluteFill key={i} style={{backgroundColor: '#d4161c', opacity: 0.55 * a * s, mixBlendMode: 'screen', pointerEvents: 'none'}} />;
           }
           case 'underwater': {
             const blobs = [0, 1, 2, 3].map((j) => {

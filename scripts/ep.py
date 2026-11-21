@@ -291,7 +291,11 @@ def cmd_voice(slug: str, src: str, segments: str | None = None) -> None:
         shutil.copy(path, tmp)
         path = tmp
     # 44.1 kHz stereo MP3; baştaki/sondaki sessizlik korunur (hizalama için önemli)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, "-ar", "44100", "-ac", "2", "-c:a", "libmp3lame", "-q:a", "2", dst], check=True)
+    # tightSilence: cümle arası sessizlikleri ~0,09 sn'ye indirir (tempo); baş/son sessizliğe dokunmaz
+    af = []
+    if ep.get("tightSilence"):
+        af = ["-af", "silenceremove=start_periods=0:stop_periods=-1:stop_duration=0.12:stop_threshold=-42dB:stop_silence=0.09"]
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", path, *af, "-ar", "44100", "-ac", "2", "-c:a", "libmp3lame", "-q:a", "2", dst], check=True)
     print(f"✓ {os.path.relpath(dst, ROOT)}")
     # TTS'in verdiği cümle zamanları (varsa) hizalamayı kesinleştirir; yoksa eski dosya silinir
     seg_dst = os.path.join(d, "segments.json")
