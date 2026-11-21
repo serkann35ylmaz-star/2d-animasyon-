@@ -49,9 +49,10 @@ a("s11", "Kırk metre. Yirmi beş. Bacağına kramp giriyor. İki dakika kaldı.
   "Kemal swimming in the ocean, face grimacing in pain, one leg cramping, the rock with the backpack still ahead of him. Split view slightly above and below the water line. " + K,
   caption="40 metre. 25. Bacağına kramp giriyor. 2 dakika kaldı.",
   timer=120, hud={"mesafe": "25 m", "nabiz": 168}, motion="shake", tone="tense")
-a("s12", "Ama bir balina leşi tek bir köpekbalığını değil, hepsini çağırır.",
-  "Far away on the horizon the dead whale carcass surrounded by dozens of shark fins in bloody water, seagulls circling. Ominous.",
-  timer=95, card={"type": "fact", "title": "GERÇEK KURAL", "text": "Tek bir balina leşinin başında aynı anda 40'a yakın büyük beyaz köpekbalığı görüldü.", "from": 0.3},
+a("s12", "Ama büyük beyaz, kısa bir atakta saatte otuz beş kilometreyi geçer. Kırk metre, onun için dört saniye.",
+  "Wide ocean view at sunset: a huge dead whale carcass floating in the sea, only one great white shark fin next to it, seagulls circling above.",
+  caption="Ama büyük beyaz, kısa bir atakta saatte 35 kilometreyi geçer. 40 metre, onun için 4 saniye.",
+  timer=95, card={"type": "fact", "title": "GERÇEK KURAL", "text": "Büyük beyaz köpekbalığı kısa ataklarda saatte 35 km'yi aşan hızlara çıkabilir.", "from": 0.3},
   motion="zoomIn", tone="dramatic")
 a("s13", "Kayaya ulaşıyor ama askı sıkışmış. Çekiyor, çanta yırtılıyor ve içinden bir şey düşüp batıyor: kızının fotoğrafı.",
   "Underwater view: a small photo of a smiling little girl slowly sinking down through turquoise water with light rays, above it Kemal's tattooed hand reaching down, the torn backpack on the rock at the surface. " + K,

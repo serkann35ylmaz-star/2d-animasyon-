@@ -226,13 +226,14 @@
    "type": "image",
    "id": "s12",
    "image": "img/s12.png",
-   "text": "Ama bir balina leşi tek bir köpekbalığını değil, hepsini çağırır.",
-   "prompt": "Far away on the horizon the dead whale carcass surrounded by dozens of shark fins in bloody water, seagulls circling. Ominous. Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "text": "Ama büyük beyaz, kısa bir atakta saatte otuz beş kilometreyi geçer. Kırk metre, onun için dört saniye.",
+   "prompt": "Wide ocean view at sunset: a huge dead whale carcass floating in the sea, only one great white shark fin next to it, seagulls circling above. Same art style as the reference images: bright clean comic illustration, glossy white round ball heads with simple black eyes, thick black ink outlines, white cartoon hands, detailed hand-drawn background, warm orange and teal cinematic light, not too dark. Vertical 9:16, no text, no letters, no logos.",
+   "caption": "Ama büyük beyaz, kısa bir atakta saatte 35 kilometreyi geçer. 40 metre, onun için 4 saniye.",
    "timer": 95,
    "card": {
     "type": "fact",
     "title": "GERÇEK KURAL",
-    "text": "Tek bir balina leşinin başında aynı anda 40'a yakın büyük beyaz köpekbalığı görüldü.",
+    "text": "Büyük beyaz köpekbalığı kısa ataklarda saatte 35 km'yi aşan hızlara çıkabilir.",
     "from": 0.3
    },
    "motion": "zoomIn",
