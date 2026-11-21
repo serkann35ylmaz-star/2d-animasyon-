@@ -10,8 +10,8 @@ K = ("the main character from the first reference image: fit muscular ex special
      "stitched scar over his left eye and cheek, right arm fully covered with a black tattoo sleeve, olive green t-shirt")
 STYLE = ("Copy exactly the art style of the reference images: crisp hand-inked comic book illustration, bold clean black ink outlines "
          "around every shape, fine ink hatching texture, cel shading, matte flat white heads, sharp high-definition line art. "
-         "Natural muted colors: deep teal-green sea drawn with ink lines (not neon, not oversaturated, not photographic), "
-         "warm orange accents. No soft painterly blur, no glow, no 3D render. Vertical 9:16, no text, no letters, no logos.")
+         "THE SEA MUST BE CLEAN AND SIMPLE: smooth flat teal color with a soft gradient, only a few long smooth wave lines, "
+         "no dense hatching, no scratchy lines, no noise, no white foam dots; warm orange accents. No soft painterly blur, no glow, no 3D render. Vertical 9:16, no text, no letters, no logos.")
 IMG = {
   "kanca":   "Over-the-shoulder view from a rocky island shore: 40 meters out a sharp black rock in the sea with an olive military backpack caught on it by its strap, a great white shark dorsal fin circling the rock. Early morning light. Main character seen from behind, no backpack on him. " + K,
   "gemi":    "Main character on the deck of a cargo ship at dusk, olive military backpack on his back, looking down at a small photo of his smiling little daughter in his hand, shipping containers behind. " + K,
